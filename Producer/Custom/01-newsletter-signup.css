@@ -1,0 +1,47 @@
+/* START - Relayout the newsletter signup element */
+& {
+    padding-left: 50px;
+    padding-right: 50px;
+    
+    @media (max-width: 768px) {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+}
+
+div.newsletter-signup {
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0.75)), url(https://media-production.lp-cdn.com/cdn-cgi/image/format=auto,quality=85/https://media-production.lp-cdn.com/media/322a0806-a0e7-44fc-990d-4ac4b781d57d);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 96px;
+    padding-bottom: 96px;
+    padding-left: 50px;
+    padding-right: 50px;
+
+    @media (max-width: 768px) {
+        padding-top: 64px;
+        padding-bottom: 64px;
+        padding-left: 25px;
+        padding-right: 25px;
+
+        div.lp-container-custom {
+            padding-left: 0px;
+            padding-right: 0px;
+        }
+    }
+}
+
+div.newsletter-signup {
+    input {
+        padding: 20px;
+        background: rgba(255, 255, 255, 0.5);
+        backdrop-filter: blur(5px);
+        border-bottom: none;
+    }
+}
+
+/* END */

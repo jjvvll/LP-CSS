@@ -1,0 +1,10 @@
+/* START - Adjust the element padding */
+div.text-wrapper {
+    padding: 64px;
+
+    @media (max-width: 768px) {
+        padding: 25px;
+    }
+}
+
+/* END */

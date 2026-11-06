@@ -1,0 +1,74 @@
+/* ----- AGENTS LIST ----- */
+/* START - Fix title container taking space if empty */
+.lp-title-group:not(:has(*)) {
+    display: none;
+}
+
+/* END */
+
+/* START - Adjust the element max width */
+.agents-list {
+    max-width: unset;
+}
+
+/* END */
+
+/* START - Adjust agent titles aspect ratio */
+.agents-list__item {
+    aspect-ratio: 3/4;
+    height: unset;
+}
+
+/* END */
+
+/* START - Theme agent list name */
+.agents-list__first-name,
+.agents-list__last-name {
+    color: var(--typography-light);
+    text-transform: uppercase;
+}
+
+/* END */
+
+/* START - Theme agent list title on hover */
+.agents-list__item-tag {
+    border-color: var(--accent-light);
+    background: var(--accent-light);
+    color: var(--accent-dark);
+    text-transform: var(--text-case);
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    max-width: 100%;
+    display: block;
+
+    &:before {
+        min-width: 14px;
+    }
+}
+
+.agents-list__item:hover {
+    .agents-list__item-tag {
+        background: transparent;
+        border-color: var(--accent-light);
+        color: var(--accent-light);
+    }
+}
+
+/* END */
+
+.agents-list-title {
+    &:before {
+        border-color: var(--accent-dark);
+    }
+}
+
+.lp-title-group {
+    max-width: unset;
+
+    .agents-list-description {
+        max-width: unset;
+    }
+}
+
+/* ----- AGENTS LIST ----- */

@@ -1,0 +1,35 @@
+/* START - Theme pagination slider arrows */
+.lp-arrow {
+    border-color: var(--accent-light);
+    background: var(--accent-light);
+
+    &:after {
+        background: var(--accent-dark);
+    }
+
+    &:hover:not(:disabled) {
+        border-color: var(--accent-light);
+        background: transparent;
+
+        &:after {
+            background: var(--accent-light);
+        }
+    }
+}
+
+/* END */
+
+/* START - Theme the cta button */
+.blog-post-gallery__btn {
+    background: var(--accent-light);
+    color: var(--accent-dark);
+    border: 1px solid var(--accent-light);
+
+    &:hover {
+        background: transparent !important;
+        color: var(--accent-light) !important;
+        border: 1px solid var(--accent-light) !important;
+    }
+}
+
+/* END */

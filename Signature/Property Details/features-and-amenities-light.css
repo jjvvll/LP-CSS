@@ -1,0 +1,145 @@
+/*Start - Theme the schedule a showing form*/
+.schedule-showing {
+    .schedule__header {
+        border-bottom: 1px solid var(--border-light-inactive);
+    }
+
+    .lp-arrow {
+        &:after {
+            background: var(--accent-light);
+        }
+    }
+
+    /*Theme the text color*/
+    .schedule__title,
+    .type-selector__label {
+        color: var(--typography-light);
+    }
+
+    .calendar__slide {
+        &:not(.selected) {
+            .calendar__item {
+                border: 1px solid var(--border-light-inactive);
+            }
+
+            .calendar__date,
+            .calendar__day {
+                color: var(--typography-light) !important;
+            }
+
+            hr {
+                background: var(--border-light-inactive) !important;
+            }
+        }
+
+        &:is(.selected) {
+            .calendar__item {
+                border: 1px solid var(--border-light-active);
+                background: var(--accent-light);
+            }
+
+            .calendar__date,
+            .calendar__day {
+                color: var(--typography-dark) !important;
+            }
+
+            hr {
+                background: var(--border-dark-inactive) !important;
+            }
+        }
+    }
+
+    .custom-select {
+
+        /* Theme dropdown toggle */
+        .custom-select-toggle {
+            color: var(--typography-light) !important;
+            border-bottom: 1px solid var(--border-light-inactive) !important;
+
+            &:after {
+                background: var(--accent-light);
+            }
+        }
+
+        /* Theme dropdown background */
+        .custom-select-content {
+            background-color: var(--primary-light) !important;
+            color: var(--typography-dark);
+
+            /* Do not display ugly scrollbar */
+            &::-webkit-scrollbar {
+                display: none;
+            }
+
+            /* Theme selected option */
+            .custom-select-item.is-selected {
+                color: var(--accent-dark);
+                opacity: 0.5;
+            }
+        }
+    }
+
+    .info-form {
+        .lp-label {
+            color: var(--typography-light) !important;
+        }
+
+        .lp-input {
+            color: var(--typography-light) !important;
+            border-bottom: 1px solid var(--border-light-inactive) !important;
+        }
+
+        .lp-disclaimer {
+            color: var(--typography-light) !important;
+        }
+    }
+}
+
+/*End*/
+
+/*START - change time link*/
+a.bf-s {
+    position: relative !important;
+    color: var(--typography-light) !important;
+    transition: 0.4s;
+    opacity: 1 !important;
+    text-decoration: none !important;
+    font-size: 14px;
+
+    &:hover {
+        color: var(--accent-light) !important;
+    }
+
+    &:before,
+    &:after {
+        transition: 0.4s;
+        text-decoration: none !important;
+        line-height: 1;
+        content: "" "";
+        height: 1px;
+        position: absolute !important;
+        bottom: 0;
+        left: 0;
+    }
+
+    &:before {
+        width: 100% !important;
+        background-color: var(--border-light-inactive) !important;
+    }
+
+    &:after {
+        width: 0% !important;
+        background-color: var(--border-light-active) !important;
+    }
+
+    &:hover:after {
+        width: 100% !important;
+    }
+}
+
+/*END*/
+
+.type-selector__input:checked+.type-selector__label {
+    border-color: var(--accent-light);
+    box-shadow: inset 0 -3px 0 0 var(--accent-light);
+}

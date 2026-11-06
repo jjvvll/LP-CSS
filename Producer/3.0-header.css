@@ -1,0 +1,311 @@
+/*-------------------HEADER START--------------------- WB JV*/
+
+/* START - Adjust the header navigation max-width */
+nav#global-navbar {
+    div.container {
+        max-width: 1400px;
+        padding-left: 50px;
+        padding-right: 50px;
+
+        @media (max-width: 768px) {
+            padding-left: 25px;
+            padding-right: 25px;
+        }
+    }
+}
+
+/* END */
+
+/* START - Make the header navigation auto resize */
+nav#global-navbar {
+    transition: 0.4s;
+    transform: unset !important;
+
+    div.header {
+        height: auto;
+        transform: unset !important;
+    }
+
+    &:not(.scroll) {
+        div.header {
+            div.container {
+                div.navbar {
+                    padding-top: 28px;
+                    padding-bottom: 16px;
+
+                    @media (max-width: 768px) {
+                        padding-top: 16px;
+                    }
+                }
+            }
+        }
+    }
+
+     &:is(.scroll) {
+        div.header {
+            div.container {
+                div.navbar {
+                    padding-top: 16px;
+                    padding-bottom: 16px;
+                }
+            }
+        }
+    }
+}
+
+/* END */
+
+/* START - Adjust the logo size */
+nav#global-navbar {
+    div.navbar {
+        div.logo {
+            margin-right: 0px;
+            max-width: 160px;
+
+            img {
+                max-height: unset;
+            }
+
+            @media (max-width: 768px) {
+                max-width: 100px;
+            }
+        }
+    }
+}
+
+/* END */
+
+/* START - Adjust displayed logo on the header navigation */
+nav#global-navbar {
+    &:not(.scroll) {
+        div.navbar {
+            div.logo {
+                img.light {
+                    display: block !important;
+                }
+
+                img.dark {
+                    display: none !important;
+                }
+            }
+
+        }
+    }
+
+    &:is(.scroll) {
+        div.navbar {
+            div.logo {
+                img.light {
+                    display: block !important;
+                }
+
+                img.dark {
+                    display: none !important;
+                }
+            }
+
+        }
+    }
+}
+
+/* END */
+
+/* START - Adjust the main navigation menu layout */
+nav#global-navbar {
+    div.navbar {
+        min-height: fit-content;
+        transition: 0.4s;
+
+        div.navigation {
+            & > ul {
+                margin-left: 0px;
+                gap: 24px;
+
+                li.navigation__item {
+                    a.navigation__link {
+                        padding: 0px;
+                    }
+                }
+            }
+        }
+
+        button.hamburger {
+            margin-left: 0px;
+            padding-left: 24px;
+            padding-right: 0px;
+        }
+    }
+}
+
+/* END */
+
+
+/* START - Theme header main navigation */
+nav#global-navbar {
+    div.navbar {
+        div.navigation {
+            & > ul {
+                li.navigation__item {
+                    a.navigation__link {
+                        span {
+                            color: var(--color-light);
+
+                            &:after {
+                                background: var(--color-light);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    div.navbar {
+        div.navigation {
+            & > ul {
+                li.sub-nav-container {
+                    a.navigation__link {
+                        color: var(--color-light);
+                    }
+                }
+            }
+        }
+    }
+
+    div.navbar {
+        button.hamburger {
+            span.hamburger__bars {
+                background: var(--color-light);
+
+                &:before,
+                &:after {
+                    background: var(--color-light);
+                }
+            }
+        }
+    }
+
+    &:is(.scroll) {
+        background: var(--color-dark) !important;
+
+        div.navbar {
+            div.navigation {
+                & > ul {
+                    li.navigation__item,
+                    li.sub-nav-container {
+                        a.navigation__link {
+                            color: var(--color-light);
+
+                            span {
+                                color: var(--color-light);
+                            }
+
+                            &:hover {
+                                color: var(--color-light);
+
+                                span {
+                                    color: var(--color-light);
+                                }
+                            }
+                        }
+                    }
+
+                    li.navigation__item {
+                        a.navigation__link {
+                            span {
+                                &:after {
+                                    background: var(--color-light);
+                                }
+                            }
+
+                            &:hover {
+                                span {
+                                    &:after {
+                                        background: var(--color-light);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        div.navbar {
+            button.hamburger {
+                span.hamburger__bars {
+                    background: var(--color-light);
+
+                    &:before,
+                    &:after {
+                        background: var(--color-light);
+                    }
+                }
+
+                &:hover {
+                    span.hamburger__bars {
+                        background: var(--color-light);
+
+                        &:before,
+                        &:after {
+                            background: var(--color-light);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* END */
+
+/* START - Theme the dropdown box */
+nav#global-navbar {
+    div.navbar {
+        div.navigation {
+            & > ul {
+                li.sub-nav-container {
+                    div.sub-nav {
+                        transform: translate(0, calc(100% + 16px));
+
+                        & > ul {
+                            background: var(--primary-light);
+                            padding-top: 0px;
+                            padding-bottom: 0px;
+
+                            li.sub-nav__item {
+                                a.sub-nav__link {
+                                    padding: 16px 12px;
+                                    cursor: pointer;
+
+                                    &:hover {
+                                        background: var(--color-dark);
+
+                                        span {
+                                            color: var(--color-light);
+
+                                            &:after {
+                                                background: var(--color-light);
+                                            }
+                                        }
+                                    }
+
+                                    span {
+                                        color: var(--color-dark);
+
+                                        &:after {
+                                            background: var(--border-dark-inactive);
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* END */
+/*-------------------HEADER END--------------------- WB JV*/

@@ -1,0 +1,53 @@
+#section-9df68c3b-bd16-4172-aefb-9e0dec59acab {
+    & {
+        background-size: contain;
+
+        @media only screen and (max-width: 768px) {
+            background-size: cover !important;
+        }
+
+        background-color: #FFF !important;
+    }
+
+    .center-block {
+        min-height: 100vh;
+        padding: 0 !important;
+        position: relative;
+
+        h1 {
+            position: absolute;
+            top: 20vh;
+            left: 0;
+            right: 0;
+        }
+
+        & .opening-description {
+            font-size: 20px !important;
+            max-width: 1000px;
+            font-family: 'Allura', cursive !important;
+            margin-left: auto;
+            margin-right: auto;
+            position: absolute;
+            padding-left: 50px;
+            padding-right: 50px;
+            bottom: 3vh;
+            left: 0;
+            right: 0;
+
+            @media only screen and (max-width: 768px) {
+                bottom: 3vh;
+                padding-left: 20px;
+                padding-right: 20px;
+                padding-bottom: 20px;
+            }
+        }
+    }
+
+    .opening-with-search {
+        padding: 0 !important;
+    }
+
+    .opening-with-search .bottom-spacer {
+        display: none !important;
+    }
+}

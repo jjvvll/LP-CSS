@@ -1,0 +1,8 @@
+/* START - Fix padding on mobile */
+div.popup-modal__wrap {
+    @media (max-width: 768px) {
+        padding-top: 64px;
+    }
+}
+
+/* END */

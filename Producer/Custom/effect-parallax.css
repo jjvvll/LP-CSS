@@ -1,0 +1,20 @@
+/* Start - Create the parallax scrolling effect */
+& {
+    /* The image used */
+    background-image: url("https://res.cloudinary.com/luxuryp/images/w_320,c_limit,f_auto,q_auto/uykvbtqjmtremrtft2mk/jrb-logo-black-1-1");
+    background-attachment: fixed;
+    background-position: 96%;
+    background-repeat: no-repeat;
+    background-size: 320px;
+}
+
+/* End */
+
+/* Start - Create the parallax scrolling effect */
+& {
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+/* End */

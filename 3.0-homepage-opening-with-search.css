@@ -1,0 +1,81 @@
+/* START - Adjust the header text content width */
+div.lp-container {
+    div.lp-title-group {
+        max-width: unset;
+
+        h1.opening-title {
+            max-width: 1400px;
+
+            @media (max-width: 1280px) and (min-width: 1025px) {
+                font-size: 52px;
+            }
+        }
+
+        div.opening-description {
+            max-width: 900px;
+        }
+
+        h1.opening-title,
+        div.opening-description {
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+}
+
+/* END */
+
+/* START - Adjust the element font size */
+div.opening-description {
+    & > * {
+        font-family: var(--global-primary-font-family);
+        font-weight: normal;
+        font-size: var(--global-body-font-size);
+        text-transform: initial !important;
+    }
+}
+
+/* END */
+
+/* START - Theme the homepage opening search results */
+div.opening-with-search {
+    div.search-results {
+        background: rgb(from var(--accent-dark) r g b / 90%);
+
+        a {
+            transition: 0.4s;
+            color: var(--typography-light);
+            font-size: var(--global-body-font-size);
+            text-transform: var(--text-case);
+
+            &:hover {
+                color: var(--accent-light);
+                opacity: 0.5;
+            }
+        }
+    }
+}
+
+/* END */
+
+/* START - Theme the homepage opening search  */
+div.search-input-container {
+    height: 44px !important;
+    background: transparent !important;
+    border: 1px solid var(--border-light-active) !important;
+
+    span.search-icon {
+        color: var(--typography-light) !important;
+    }
+
+    input {
+        color: var(--typography-light) !important;
+
+        &::placeholder {
+            opacity: 1;
+            color: var(--typography-light) !important;
+        }
+    }
+}
+
+/* END */

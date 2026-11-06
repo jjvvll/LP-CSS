@@ -1,0 +1,93 @@
+/* START - Fix height of element on mobile*/
+.opening-search__search-box {
+    @media (max-width: 768px) {
+        margin-top: 0px;
+    }
+}
+
+/* END */
+
+/* START - Fix pre-title taking to much spacing */
+.opening-search__pre-title {
+    margin-bottom: 0px;
+}
+
+/* END */
+
+/* START - Adjust dimenions if only 1 slide */
+.opening-search__content {
+    padding-left: 0px;
+}
+
+.opening-search__title {
+    margin-bottom: 0px;
+    transform: unset;
+}
+
+.opening-search__container {
+    @media (min-width: 1920px) {
+        padding-right: var(--padding);
+    }
+}
+
+.opening-search-socials {
+    @media (min-width: 1025px) {
+        right: 0px;
+    }
+    
+    @media (max-width: 1024px) {
+        margin-top: 0px;
+    }
+}
+
+.opening-search__search-box {
+    padding-right: 0px;
+    
+    @media (min-width: 1920px) {
+        right: 0px;
+    }
+    
+    @media (max-width: 1024px) {
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+}
+
+/* END */
+
+/* START - Adjust the element's slide title */
+.opening-search__title {
+    text-transform: uppercase;
+}
+
+/* END */
+
+/* START - Adjust the homepage opening title */
+.opening-search__title {
+    @media (max-width: 1440px) and (min-width: 1025px) {
+        font-size: var(--global-h3-font-size);
+    }
+}
+
+/* END */
+
+/* START - Adjust the slide title max-width */
+.opening-search__text-slider {
+    max-width: 600px;
+}
+
+/* END */
+
+/* START - Theme the opening element search bar */
+.opening-search__search-input {
+    background: #FFF;
+    color: #000;
+}
+
+.opening-search__pin-map {
+    &:after {
+        background: #000;
+    }
+}
+
+/* END */

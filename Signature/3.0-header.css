@@ -1,0 +1,71 @@
+/* START - Adjust the header navigation layout */
+nav#global-navbar {
+    header {
+        @media (max-width: 768px) {
+            padding-top: 32px;
+            padding-bottom: 32px;
+        }
+
+        &:is(.scroll) {
+            padding-top: 24px;
+            padding-bottom: 24px;
+        }
+
+        button.hamburger-component {
+            margin-left: 22px;
+        }
+
+        a.navigation__link {
+            text-transform: var(--text-case);
+        }
+    }
+}
+
+/* END */
+
+/* START - Adjust the header navigation logo */
+nav#global-navbar {
+    header {
+        div.logo {
+            a.logo__link {
+                max-width: 72px;
+                height: unset;
+
+                @media (max-width: 768px) {
+                    max-width: 60px;
+                }
+            }
+        }
+    }
+}
+
+/* END */
+
+/* START - Adjust the header navigation theme */
+nav#global-navbar {
+    header:not(.scroll) {
+        a.navigation__link {
+            color: var(--accent-light);
+
+            &:hover {
+                color: var(--accent-light);
+                opacity: 0.5;
+            }
+        }
+    }
+
+    header:is(.scroll) {
+        background: var(--accent-dark) !important;
+
+        a.navigation__link {
+            color: var(--accent-light);
+
+            &:hover {
+                color: var(--accent-light);
+                opacity: 0.5;
+            }
+        }
+    }
+}
+
+/* END */

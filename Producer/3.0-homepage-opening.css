@@ -1,0 +1,16 @@
+/* START - Adjust subtitle font-size */
+span.subtitle {
+    font-size: 18px;
+}
+
+/* END */
+
+/* START - Increase button font size */
+a.btn {
+    div.homepage-subheading-button {
+        font-weight: 700;
+        font-size: 16px;
+    }
+}
+
+/* END */

@@ -1,0 +1,82 @@
+/*START SIDE MENU ===================================================== WB JV*/
+/* START - Reposition close button */
+div#global-sidemenu {
+  button.sidemenu-close {
+    top: 32px;
+    right: 32px;
+
+    @media (max-width: 768px) {
+      top: 16px;
+      right: 16px;
+    }
+  }
+}
+
+/* END */
+
+/* START - Theme the sidemenu underline on hover */
+div#global-sidemenu {
+  ul.section-options {
+    li.option {
+      a {
+        color: var(--color-light);
+        text-transform: uppercase;
+
+        &:after {
+          border-bottom-color: var(--color-light);
+          border-right-color: var(--color-light);
+        }
+
+        &:hover {
+          color: var(--color-fallback-2);
+          border-color: var(--color-fallback-2);
+
+          &:after {
+            border-bottom-color: var(--color-fallback-2);
+            border-right-color: var(--color-fallback-2);
+          }
+        }
+      }
+    }
+  }
+}
+
+/* END */
+
+/* START - Resize side menu font size */
+div#global-sidemenu {
+  ul.section-options {
+    li.option {
+      &:is(.sub-nav-container) {
+        align-items: end;
+
+        a {
+          max-width: fit-content;
+        }
+
+        a.sub-nav-link {
+          font-size: var(--global-h5-font-size);
+
+          @media (max-width: 768px) {
+            font-size: 18px;
+          }
+        }
+      }
+
+      a {
+        font-size: var(--global-h3-font-size);
+        line-height: unset;
+
+        &:not(.sub-nav-link) {
+          @media (max-width: 768px) {
+            font-size: 28px;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* END */
+
+/*END SIDE MENU ===================================================== WB JV*/

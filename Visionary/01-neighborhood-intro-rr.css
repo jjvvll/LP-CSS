@@ -1,0 +1,46 @@
+/* START - Adjust neighborhood intro max width */
+.neighborhood-intro__content-box {
+    max-width: fit-content;
+}
+
+/* END */
+
+.neighborhood-intro {
+    &:is(.neighborhood-intro__horizon-left) {
+        .neighborhood-intro__pre-title {
+            margin: unset !important;
+        }
+    }
+}
+
+/* START - Add background blur to the content background container */
+.neighborhood-intro__content-box {
+    backdrop-filter: blur(6px);
+}
+
+/* END */
+
+/* START - Hide arrow button theme */
+.neighborhood-intro__scroll-btn {
+    display: none;
+}
+
+/* END */
+
+/* START - Add neighborhood title body content */
+div.neighborhood-intro__content-box {
+    h2.neighborhood-intro__title {
+        &:after {
+            content: 'Explore Orange County\'s Coastal Communities';
+            font-size: 16px;
+            display: block;
+            margin-top: 32px;
+        }
+    }
+}
+
+/* END */
+
+.neighborhood-intro__content-box {
+    max-width: unset;
+}

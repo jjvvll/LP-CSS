@@ -1,0 +1,10 @@
+/* START - Remove title max width */
+div.lp-title-group {
+    max-width: unset;
+
+    h1.opening-title {
+        max-width: unset;
+    }
+}
+
+/* END */

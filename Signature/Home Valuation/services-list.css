@@ -1,0 +1,16 @@
+/*Start - Remove the vertical paddings*/
+.lp-vertical-paddings {
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+/*End*/
+
+/*Start - Theme the services icon*/
+.services__item {
+    .services__item-icon {
+        background-color: #F51010;
+    }
+}
+
+/*End*/

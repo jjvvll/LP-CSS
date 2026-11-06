@@ -1,0 +1,133 @@
+footer .footer-container a:hover {
+    color: currentColor;
+    opacity: 1;
+}
+
+/*START, center social icons on footer */
+@media(max-width:560px) {
+    footer .footer-container ul.lp-socials {
+        justify-content: center;
+    }
+}
+
+/*END*/
+
+/*mobile view footer link underline*/
+@media (max-width: 768px) {
+
+    footer#global-footer a.link:before,
+    footer#global-footer a.footer-row-link:before,
+    footer#global-footer a:not(.lp-socials__link):before {
+        background-color: #fff !important;
+    }
+}
+
+/*END - footer link underline*/
+
+/*START - footer link underline*/
+footer#global-footer {
+
+    a.link,
+    a.footer-row-link,
+    a:not(.lp-socials__link) {
+        position: relative !important;
+        color: #fff !important;
+        transition: 0.4s;
+        color: #fff !important;
+
+        &:hover {
+            color: #fff !important;
+        }
+
+        &:before,
+        &:after {
+            transition: 0.4s;
+            text-decoration: none !important;
+            line-height: 1;
+            content: "" "";
+            height: 1px;
+            position: absolute !important;
+            bottom: 0;
+            left: 0;
+        }
+
+        &:before {
+            width: 100% !important;
+            background-color: rgba(255, 255, 255, 0.25) !important;
+        }
+
+        &:after {
+            width: 0% !important;
+            background-color: #fff !important;
+        }
+
+        &:hover:after {
+            width: 100% !important;
+        }
+    }
+}
+
+/*END - footer link underline*/
+
+/*START - adjust footer logo size*/
+footer#global-footer .footer-container .logo img {
+    max-width: 200px;
+    max-height: 130px;
+}
+
+/*END - adjust footer logo size*/
+
+#global-footer {
+    .lp-socials {
+        a {
+            background: #fff;
+            border-color: #fff;
+
+            span {
+                color: #000;
+            }
+
+            &:hover {
+                background: transparent;
+
+                span {
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
+
+#global-footer .top__left__upper {
+    margin-bottom: 0px;
+}
+
+#global-footer .middle__left {
+    font-size: 12px;
+
+    .c573 {
+        p {
+            font-size: 12px;
+            margin-bottom: 20px;
+            margin-top: 20px;
+        }
+    }
+
+    img {
+        max-height: 52px;
+        filter: invert(1);
+    }
+}
+
+#global-footer {
+    div.top.without-newsletter .top__left__lower {
+        .title {
+            font-size: 0px;
+
+            &:after {
+                font-size: 14px;
+                content: 'FOLLOW ME';
+            }
+        }
+    }
+}

@@ -1,0 +1,10 @@
+/* START - Adjust the element's padding */
+div.f-properties {
+    padding-top: 96px;
+
+    @media (max-width: 768px) {
+        padding-top: unset;
+    }
+}
+
+/* END */

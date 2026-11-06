@@ -1,0 +1,137 @@
+/* START - Adjust the element layout */
+div.top-block {
+    display: none;
+}
+
+div.bottom-block {
+    div.lp-container {
+        max-width: unset;
+        padding-top: 96px;
+        padding-bottom: 96px;
+        padding-left: unset;
+        padding-right: unset;
+
+        @media (max-width: 768px) {
+            padding-top: 64px;
+            padding-bottom: 64px;
+        }
+
+        div.content-slider__container {
+            position: relative;
+
+            div.content-slider {
+                padding-top: unset;
+                padding-bottom: unset;
+                padding-left: unset !important;
+                padding-right: unset !important;
+
+                @media (max-width: 1025px) {
+                    padding-left: 24px !important;
+                    padding-right: 24px !important;
+                    margin-bottom: 16px;
+                }
+
+                div.slick-list {
+                    div.slick-track {
+                        div.slick-slide {
+                            div.content-slider__item {
+                                flex-direction: row-reverse;
+
+                                @media (max-width: 1024px) {
+                                    flex-direction: column-reverse;
+                                }
+
+                                div.content-slider__text {
+                                    padding-right: 50px;
+                                    padding-left: 50px;
+
+                                    @media (max-width: 1024px) {
+                                        padding: unset;
+                                    }
+                                }
+
+                                div.content-slider__image {
+                                    aspect-ratio: 16/9;
+                                    width: 65%;
+
+                                    &:before {
+                                        padding-top: unset;
+                                    }
+
+                                    @media (max-width: 1024px) {
+                                        width: 100%;
+                                        margin-bottom: 32px;
+                                    }
+
+                                    @media (max-width: 768px) {
+                                        aspect-ratio: 1/1;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            div.content-slider__arrows {
+                @media (max-width: 1024px) {
+                    padding-bottom: unset;
+                    padding-left: 24px;
+                    padding-right: 24px;
+                    position: relative;
+                    display: flex;
+                    gap: 16px;
+                }
+
+                button.content-slider__arrow {
+                    top: unset;
+                    bottom: 0px;
+                    margin: unset;
+
+                    @media (min-width: 1025px) {
+                        &:is(.slick-prev) {
+                            left: unset;
+                            right: calc(48px + 16px + 50px);
+                        }
+
+                        &:is(.slick-next) {
+                            right: 50px;
+                        }
+                    }
+
+                    @media (max-width: 1024px) {
+                        position: relative;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* END */
+
+/* START - Theme the element pagination buttons */
+div.content-slider__arrows {
+    button.content-slider__arrow {
+        border: 1px solid #000000;
+        background: transparent;
+
+        &:before {
+            border-bottom-width: 1px;
+            border-left-width: 1px;
+            border-color: #000;
+            opacity: 1;
+        }
+
+        &:hover {
+            border-color: #000000;
+            background: #000000;
+
+            &:before {
+                border-color: #FFFFFF;
+            }
+        }
+    }
+}
+
+/* END */

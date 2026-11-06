@@ -1,0 +1,12 @@
+/* START - Hide clone press if only has one press content */
+ul.splide__list {
+    &:has(li.press-slider-card.splide__slide--clone:nth-child(3):is(:last-child)) {
+        li.press-slider-card:is(.splide__slide--clone) {
+            &:is(:last-of-type) {
+                display: none;
+            }
+        }
+    }
+}
+
+/* END */

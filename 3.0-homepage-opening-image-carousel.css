@@ -1,0 +1,22 @@
+/* START - Theme the pagination buttons */
+button.lp-arrow {
+    border-color: #FFFFFF;
+    background: transparent !important;
+
+
+    &:before {
+        border-color: #FFFFFF;
+    }
+
+    &:hover {
+        border-color: #FFFFFF;
+        background: #FFFFFF !important;
+
+
+        &:before {
+            border-color: #000000;
+        }
+    }
+}
+
+/* END */

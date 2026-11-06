@@ -1,0 +1,26 @@
+h2.title {
+    text-align: center;
+}
+
+div.section {
+    height: unset !important;
+}
+
+div.content-holder {
+    padding-top: unset;
+    padding-bottom: unset;
+}
+
+div.content-scroll {
+    padding-top: 96px;
+    padding-bottom: 96px;
+
+    @media (max-width: 768px) {
+        padding-top: 64px;
+        padding-bottom: 64px;
+    }
+}
+
+a.item {
+    aspect-ratio: 3/1.5;
+}

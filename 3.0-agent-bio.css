@@ -1,0 +1,64 @@
+/* START - Theme the agent contact links */
+a:not(.lp-socials__link) {
+  color: var(--color-light);
+  font-weight: normal;
+
+  &::before {
+    background-color: var(--color-fallback-2);
+  }
+
+  &::after {
+    width: 0px;
+    background-color: var(--color-light);
+  }
+
+  &:hover {
+    color: var(--color-light) !important;
+
+    &::after {
+      width: 100%;
+    }
+  }
+}
+
+/* END */
+
+/* START - Adjust the read more button */
+a.read-more {
+  margin-left: unset !important;
+  text-transform: var(--text-case);
+
+  @media (max-width: 768px) {
+    margin-left: auto !important;
+    margin-right: auto;
+  }
+}
+
+/* END */
+
+/* START - Theme the agent description border */
+div.agent-detail__description-body {
+  border-color: var(--color-dark);
+}
+
+/* END */
+
+/* START - Center socials on mobile */
+ul.lp-socials {
+  padding-right: unset !important;
+  margin-bottom: unset;
+  gap: 16px;
+
+  @media (max-width: 768px) {
+    justify-content: center;
+    column-gap: 32px;
+  }
+
+  li {
+    margin: unset !important;
+    width: unset !important;
+    padding: unset;
+  }
+}
+
+/* END */

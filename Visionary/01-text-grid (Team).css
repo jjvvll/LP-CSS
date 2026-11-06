@@ -1,0 +1,46 @@
+.text-grid__title {
+    margin-bottom: 48px;
+}
+
+.text-grid-scenes__scene-item {
+    padding: 0px;
+}
+
+.text-grid-scenes__scene-content {
+    height: 100%;
+
+    &:not(:has(img)) {
+        padding: 64px 32px;
+        text-align: center;
+        background: #F6F6F6;
+    }
+}
+
+.text-grid-scenes__scene-description {
+    &:has(img) {
+        height: 100%;
+    }
+
+    & > div {
+        &:has(img) {
+            height: 100%;
+        }
+    }
+}
+
+img {
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    aspect-ratio: 3/3.5;
+}
+
+.text-grid-buttons {
+    padding-top: 48px;
+}
+
+/*Target the first title to have margin at the bottom*/
+
+.text-grid-scenes__scene:nth-child(1) .text-grid-scenes__scene-title {
+    margin-bottom: 60px;
+}

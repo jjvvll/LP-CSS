@@ -1,0 +1,33 @@
+/* START - Adjust the header text width */
+div.lp-title-group {
+    max-width: 1000px;
+
+    h2.lp-h2 {
+        max-width: 100%;
+    }
+
+    div.lp-text--subtitle {
+        max-width: 600px;
+    }
+}
+
+/* END */
+
+div.items:is(.three-columns) {
+    gap: 24px;
+
+    div.item {
+        flex: 1 1 calc((100% / 3) - 24px + (24px / 3));
+        max-width: calc((100% / 3) - 24px + (24px / 3));
+
+        @media (max-width: 768px) {
+            flex: 1 1 100%;
+            max-width: 100%;
+        }
+    }
+}
+
+div.featured-neighborhoods-grid {
+    padding-left: 24px;
+    padding-right: 24px;
+}

@@ -1,0 +1,78 @@
+/* START - Fix home valuation occupying a large height on the dashboard preview */
+.home-valuation {
+    min-height: unset;
+}
+
+/* END */
+
+/* START - Adjust title on small laptop viewport */
+.home-valuation-info__title {
+    @media (min-width: 1025px) and (max-width: 1800px) {
+        font-size: var(--global-h3-font-size);
+        margin-bottom: 16px;
+    }
+}
+
+/* END */
+
+/* START - Adjust the home valuation dimensions */
+.home-valuation:after {
+    width: calc(450px - var(--padding));
+}
+
+.home-valuation-info {
+    max-width: unset;
+}
+
+.home-valuation-form {
+    width: 900px;
+    padding-top: 128px;
+    padding-bottom: 128px;
+    padding-left: 64px;
+    padding-right: 64px;
+
+    @media (max-width: 768px) {
+        padding-top: 64px;
+        padding-bottom: 64px;
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+}
+
+/* END */
+
+/* START - Theme the home valuation tabs */
+.home-valuation-tabs__item {
+    background: transparent;
+    border-color: var(--lp-color-primary-accent-dark);
+    color: var(--lp-color-primary-accent-dark);
+
+    &:is(.home-valuation__tab--active) {
+        background: var(--lp-color-primary-accent-dark);
+        border-color: var(--lp-color-primary-accent-dark);
+        color: var(--lp-color-primary-accent-light);
+    }
+}
+
+/* END */
+
+/* START - Theme input box icon color */
+.lp-icon:after {
+    --iconColor: var(--lp-color-primary-accent-dark);
+}
+
+/* END */
+
+/* START - Theme the home valuation disclaimer */
+.lp-disclaimer {
+    color: var(--lp-color-primary-accent-dark);
+}
+
+/* END */
+
+/* START - Uppercase the home valuation tabs */
+.home-valuation-form__label {
+    text-transform: uppercase;
+}
+
+/* END */

@@ -1,0 +1,88 @@
+/* START - Adjust the blog grid header container */
+div.blog-list {
+    & > div.container:not(.blog-list__container) {
+        max-width: 800px;
+
+        & > * {
+            max-width: unset;
+        }
+
+        h2.blog-list__section-title {
+            margin-bottom: 16px;
+        }
+    }
+
+    &:has(div.blog-list__container:empty) {
+        & > div.container:not(.blog-list__container) {
+            h2.blog-list__section-title {
+                margin-bottom: unset;
+            }
+        }
+    }
+}
+
+/* END */
+
+/* START - Adjust title bottom margin if grid is empty */
+div.container:has(+ .blog-list__container:empty) {
+    h2.blog-list__section-title {
+        margin-bottom: 0px;
+    }
+}
+
+/* END */
+
+/* START - Fix element not using the body font size */
+div.blog-list__item-content {
+    font-size: var(--global-body-font-size);
+}
+
+/* END */
+
+/*Start - blog card theming*/
+div.blog-list__container {
+    a.blog-list__item {
+        background-color: var(--primary-dark) !important;
+        color: var(--typography-light);
+    }
+
+    div.blog-list__item-content {
+        h4 {
+            &:after {
+                background-color: var(--border-dark-inactive);
+            }
+        }
+    }
+}
+
+/*end*/
+
+/* START - blog grid link underline */
+span:not(.date):not(.label):not(.featured-properties__label) {
+    color: var(--typography-dark) !important;
+
+    &:hover {
+        color: var(--accent-dark) !important;
+    }
+}
+
+/* END */
+
+/* Start - Fix dimensions */
+div.blog-list__container {
+    row-gap: 96px;
+    column-gap: 34px;
+
+    a.blog-list__item {
+        margin-bottom: 0px;
+    }
+}
+
+/* End */
+
+/* START - Add top margin to the paginations */
+div.pagination-container {
+    margin-top: 48px;
+}
+
+/* END */

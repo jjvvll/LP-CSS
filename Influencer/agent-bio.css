@@ -1,0 +1,124 @@
+.agent-bio__content {
+    display: flex;
+    padding: 50px;
+    gap: 80px;
+
+    @media screen and (max-width: 768px) {
+        padding: 0px;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    &:after {
+        display: none;
+
+        @media screen and (max-width: 768px) {
+            display: none !important;
+        }
+    }
+
+    .agent-bio__img-block {
+        margin-right: 0px;
+        margin-bottom: 0px;
+
+        max-height: 400px;
+        min-width: 400px;
+        aspect-ratio: 1/1;
+
+        @media screen and (max-width: 768px) {
+            max-height: fit-content;
+            min-width: auto;
+        }
+    }
+
+    .agent-bio__text-block {
+        padding: 0px;
+
+        @media screen and (max-width: 768px) {
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-bottom: 40px;
+        }
+    }
+
+    .lp-socials {
+        gap: 14px;
+        flex-wrap: wrap;
+
+        li {
+            margin-bottom: 0px;
+            max-width: fit-content;
+        }
+
+        @media screen and (max-width: 768px) {
+            justify-content: center;
+        }
+    }
+}
+
+.agent-intro {
+    h2 {
+        color: #FFF;
+    }
+}
+
+.agent-details__content {
+    h3,
+    ul li {
+        color: #FFF;
+    }
+}
+
+/*START - Theme link underline*/
+a {
+    position: relative !important;
+    color: #fff !important;
+    transition: 0.4s;
+    font-weight: 400;
+    text-decoration: none !important;
+
+    &:hover {
+        color: #fff !important;
+    }
+
+    &:before,
+    &:after {
+        transition: 0.4s;
+        text-decoration: none !important;
+        line-height: 1;
+        content: "" "";
+        height: 1px;
+        position: absolute !important;
+        bottom: 0;
+        left: 0;
+    }
+
+    &:before {
+        width: 100% !important;
+        background-color: rgba(255, 255, 255, 0.25) !important;
+    }
+
+    &:after {
+        width: 0% !important;
+        background-color: #fff !important;
+    }
+
+    &:hover:after {
+        width: 100% !important;
+    }
+
+    @media only screen and (max-width: 768px) {
+        text-decoration: underline;
+
+        &:before,
+        &:after {
+            display: none;
+        }
+
+        &:hover {
+            color: #fff;
+        }
+    }
+}
+
+/*END*/

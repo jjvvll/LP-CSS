@@ -1,0 +1,35 @@
+/* START - Add an image overlay to the development intro */
+.development-intro__back-image {
+    &:before {
+        content: '';
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        background: rgba(0, 0, 0, 0.3);
+    }
+}
+
+/* END */
+
+/* START - Fix the arrow button theme */
+.development-intro__scroll-btn {
+    border-color: #fff;
+    background: #fff;
+
+    &:after {
+        background: #000;
+    }
+
+    &:hover {
+        border-color: #fff;
+        background: transparent;
+
+        &:after {
+            background: #fff;
+        }
+    }
+}
+
+/* END */

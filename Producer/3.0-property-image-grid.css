@@ -1,0 +1,34 @@
+/* START - Adjust the element layout */
+.title-wrapper {
+  padding-top: unset !important;
+}
+
+.property-image-grid {
+  margin-bottom: unset !important;
+}
+
+/* END */
+
+/* START - Adjust the title on mobile */
+div.title-wrapper {
+  h2 {
+    @media (max-width: 768px) {
+      font-size: var(--global-h3-font-size);
+    }
+  }
+}
+
+/* END */
+
+/* START - Theme the content box */
+div.dark-item,
+div.quote-holder {
+  background: var(--dark-blocking) !important;
+  color: var(--black) !important;
+}
+
+.author {
+  color: var(--black) !important;
+}
+
+/* END */

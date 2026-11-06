@@ -1,0 +1,55 @@
+/*Launch - fix the hover on mobile*/
+@media (hover:none) and (pointer:coarse) {
+    .el-property-slider__info-btn:hover {
+        background-color: #000 !important;
+    }
+}
+
+/*end*/
+
+/*card property-martin villegas*/
+@media(max-width:768px) {
+    .el-property-slider__info {
+        background-color: #fff !important;
+        color: #000 !important;
+    }
+
+    .el-property-slider__footer {
+        background-color: #fff !important;
+    }
+
+    .el-property-slider__info-btn {
+        border-color: #000;
+        color: #000;
+    }
+
+    .el-property-slider__info-btn:hover {
+        border-color: #000;
+        color: #fff;
+        bacground-color: #000 !important;
+    }
+
+    padding-bottom:0px !important;
+}
+
+/*end*/
+
+/*padding*/
+@media(min-width:768px) {
+    .basic-paddings {
+        padding-top: 96px;
+        padding-bottom: 96px;
+    }
+
+}
+
+/*end*/
+
+/* Start - Fix bottom measurements on mobile */
+.el-property-slider {
+    .el-property-slider__footer {
+        padding-bottom: 0px !important;
+    }
+}
+
+/* End */

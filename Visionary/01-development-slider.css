@@ -1,0 +1,25 @@
+/* ----- DEVELOPMENTS SLIDER ----- */
+/* START - Remove the content box min-height */
+.developments-slider-carousel__box {
+    min-height: unset;
+}
+
+/* END */
+
+/* END */
+
+.lp-btn__content {
+    font-size: 0px;
+    display: flex;
+    align-items: center;
+    
+    &:before {
+        content: 'View All';
+        font-size: 12px;
+        display: inline-block;
+    }
+    
+    &:after {
+        transform: unset;
+    }
+}

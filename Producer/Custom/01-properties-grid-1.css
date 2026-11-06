@@ -1,0 +1,82 @@
+/* START - Adjust the property element header */
+.property-list-section>div {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+
+    &>.container:is(.title-container) {
+        padding-top: 0px !important;
+    }
+}
+
+/* END */
+
+/* START - Style the properties grid element */
+div.container:not(.title-container) {
+    max-width: unset;
+    padding-left: 16px;
+    padding-right: 16px;
+
+    ul.property-list {
+        margin: unset;
+        gap: 16px;
+    }
+
+    div.lp-pagination {
+        margin-top: 48px;
+    }
+}
+
+li.property-list__item {
+    min-height: unset !important;
+
+    a.property-list__item-link {
+        div.property-list__img {
+            height: unset;
+            aspect-ratio: 16/9;
+
+            @media (max-width: 768px) {
+                aspect-ratio: 1/1;
+            }
+        }
+
+        span.property-list__label {
+            font-size: 12px;
+            font-weight: 400;
+            padding: 6px 16px;
+            background: var(--accent-dark);
+        }
+
+        div.property-list__text {
+            position: absolute;
+            bottom: 0px;
+            width: 100%;
+            padding: 16px;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+            background: linear-gradient(180deg, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.2) 50%, rgba(0,0,0,0.4) 75%, rgba(0,0,0,0.6) 100%);
+            background-size: cover;
+            color: var(--typography-light);
+            margin-bottom: 0px;
+
+            & > * {
+                margin: unset;
+                text-align: left;
+                font-weight: normal;
+            }
+        }
+    }
+
+    div.property-list__hover {
+        background-image: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url(https://media-production.lp-cdn.com/cdn-cgi/image/format=auto,quality=85,fit=scale-down,width=960/https://media-production.lp-cdn.com/media/047473d0-7dd3-42db-89be-f01761da0bb9);
+        background-size: cover;
+
+        @media (max-width: 768px) {
+            display: none;
+        }
+    }
+}
+
+/* END */

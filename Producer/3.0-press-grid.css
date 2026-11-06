@@ -1,0 +1,96 @@
+/* START - Adjust the grid dimensions */
+div.container {
+    display: flex;
+    flex-direction: column;
+    padding-left: 50px;
+    padding-right: 50px;
+
+    @media (max-width: 768px) {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    &:has(div.description) {
+        & > h2.press-grid__title {
+            margin-bottom: 16px;
+        }
+    }
+
+    & > h2.press-grid__title {
+        max-width: 100%;
+    }
+
+    & > div.description {
+        max-width: 720px;
+        margin-bottom: 48px;
+    }
+}
+
+div.press-grid__container {
+    margin-left: 0px;
+    margin-right: 0px;
+    column-gap: 30px;
+    row-gap: 40px;
+    justify-content: start !important;
+
+    &:has(> div.press-grid__item:first-child:is(:last-child)) {
+        justify-content: center !important;
+    }
+
+    div.press-grid__item {
+        box-shadow: none;
+        margin: 0px;
+        width: auto;
+        flex: 1 1 calc((100% / 3) - 30px + (30px / 3));
+        max-width: calc((100% / 3) - 30px + (30px / 3));
+
+        @media (max-width: 768px) {
+            flex: 1 1 100%;
+            max-width: 100%;
+        }
+
+        div.press-grid__item-content {
+            padding: 19px 23px;
+
+            p.press-grid__description {
+                font-size: var(--global-body-font-size);
+            }
+        }
+    }
+}
+
+div.pagination-container {
+    margin-top: 48px;
+
+    &:not(:has(ul)) {
+        display: none;
+    }
+}
+
+/* END */
+
+/* START - Theme press grid tiles */
+div.press-grid__item {
+    div.press-grid__image-wrap {
+        div.press-grid__cat {
+            background: var(--accent-dark);
+            text-transform: uppercase;
+            padding: 9px 18px;
+            font-weight: normal;
+        }
+    }
+
+    div.press-grid__item-content {
+        background: var(--accent-dark);
+
+        div.press-grid__heading {
+            color: var(--typography-light);
+        }
+
+        p.press-grid__description {
+            color: var(--typography-light);
+        }
+    }
+}
+
+/* END */

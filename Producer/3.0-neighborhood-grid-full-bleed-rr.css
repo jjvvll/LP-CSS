@@ -1,0 +1,47 @@
+/* START - Convert the grid into flex */
+div.featured-neighborhoods-grid {
+    max-width: 1400px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-left: auto;
+    margin-right: auto;
+
+    @media (max-width: 768px) {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    div.items {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 16px;
+        justify-content: center;
+
+        &:is(.three-columns) {
+            div.grid-item {
+                flex: 1 1 calc((100% / 3) - 16px + (16px /3));
+                max-width: calc((100% / 3) - 16px + (16px /3));
+
+                @media (max-width: 768px) {
+                    flex: 1 1 100%;
+                    max-width: 100%;
+                }
+            }
+        }
+
+        &:not(.three-columns) {
+            div.grid-item {
+                flex: 1 1 calc((100% / 2) - 16px + (16px /2));
+                max-width: calc((100% / 2) - 16px + (16px /2));
+
+                @media (max-width: 768px) {
+                    flex: 1 1 100%;
+                    max-width: 100%;
+                }
+            }
+        }
+    }
+}
+
+/* END */

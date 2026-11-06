@@ -1,0 +1,24 @@
+/* ----- 404 ----- */
+/* START - Fix 404 height in dashboard view */
+.error-page {
+    height: auto;
+    min-height: 100dvh;
+}
+
+/* END */
+
+/* START - Fix element not using the global font size */
+.error-page__description {
+    font-size: var(--global-secondary-font-size);
+}
+
+/* END */
+
+/* START - Reduce CTA button top margin */
+.error-page__text-box+.error-page__btn {
+    margin-top: 32px;
+}
+
+/* END */
+
+/* ----- 404 ----- */

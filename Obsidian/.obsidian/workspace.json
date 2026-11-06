@@ -1,0 +1,243 @@
+{
+  "main": {
+    "id": "ccdb20150cf98c79",
+    "type": "split",
+    "children": [
+      {
+        "id": "632a4e3fe5efae05",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "7dfaa32915ce355e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "References/Website Revision to DPA.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Website Revision to DPA"
+            }
+          },
+          {
+            "id": "8307e869ae11a010",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "References/Website Revision to DPA.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Website Revision to DPA"
+            }
+          },
+          {
+            "id": "715e32aa4e5441fa",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "References/Website Revision to DPA.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Website Revision to DPA"
+            }
+          }
+        ],
+        "currentTab": 2
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "9cb673301a5ef45e",
+    "type": "split",
+    "children": [
+      {
+        "id": "1d13d56c3af02181",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "91ea41a7fce8d8da",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabeticalReverse",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "2ef22a56b847db29",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "remax",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "68a4754b833a63b6",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 295.5
+  },
+  "right": {
+    "id": "5feeca67a472f08b",
+    "type": "split",
+    "children": [
+      {
+        "id": "ff27f245a05f787f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "a6de9d1e6773c019",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Revisions Clients/2025/10/20251016 - Julie Goodkind - Client Revision - RR - 1.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for 20251016 - Julie Goodkind - Client Revision - RR - 1"
+            }
+          },
+          {
+            "id": "8c56862252f4074a",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Revisions Clients/20250626 - Scott Graden - Client Revision - RR - 1.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from 20250626 - Scott Graden - Client Revision - RR - 1"
+            }
+          },
+          {
+            "id": "6d87197fcabcdbb8",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "cd3f5765d02824c5",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Welcome.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Welcome"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "bases:Create new base": false,
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "715e32aa4e5441fa",
+  "lastOpenFiles": [
+    "References/Work With Us.md",
+    "References/Modal References.md",
+    "References/Fonts Reference.md",
+    "References/Website Revision to DPA.md",
+    "References/Website Draft To DPC.md",
+    "References/To Report.md",
+    "References/Notes.md",
+    "References/Projects/Projects.md",
+    "Revisions Clients/2025/11/20251115 - The Shulkin Wilk Group - Client Revision - RR - 1.md",
+    "Website Draft Clients/2025/11/20251114 - Tammy Waters (Leads Pro T14).md",
+    "References/Compliance Backlog.md",
+    "Website Draft Clients/2024/20240103 - Edward Karazin.md",
+    "Website Draft Clients/2024/20240325 - Sophia Maes Kuhn.md",
+    "Website Draft Clients/2024/20240419 - Tiffany Loeffler (Launch+).md",
+    "Website Draft Clients/2024/20240611 - Dayna Patrick (Brand+).md",
+    "Website Draft Clients/2024/20240628 - Haley Larson (SEO Pro).md",
+    "Website Draft Clients/2024/20240704 - Mary Ann Schiralli (Brand+).md",
+    "Website Draft Clients/2025/01/20250118 - Damon Smart (Brand+).md",
+    "Website Draft Clients/2025/01/20250131 - Nevin Raghuveer (Launch+).md",
+    "Website Draft Clients/2025/03/20250311 - Tamera Nelson (Brand+).md",
+    "Website Draft Clients/2025/06/20250607 - Fahad Farhat (Launch+ T14).md",
+    "Website Draft Clients/2025/11/20251111 - Southern District SIR (Leads Pro T14).md",
+    "Website Draft Clients/2025/08/20250816 - Aaron Gaines (All-In T14).md",
+    "Website Draft Clients/2025/10/20251009 - Marshon Morgan (Launch+ T14).md",
+    "Pasted image 20250327015219.png",
+    "Website Draft Clients/2024/20241012 - Lisa Smith E&V (Custom - Leads Pro - Growth+).md",
+    "HOME PAGE Website Wireframe.md",
+    "Website Draft Clients/2025/202511 - November Tracker 1.base",
+    "Revisions Clients/202511 - November Tracker.base",
+    "Website Draft Clients/2025/202511 - November Tracker.base",
+    "Revisions Clients/2025/11/Untitled.base",
+    "Revisions Clients/2025/Untitled.canvas",
+    "Revisions Clients/2025/11",
+    "Website Draft Clients/2025/11",
+    "home-search",
+    "Website Draft Clients/2025/10",
+    "Revisions Clients/2025/10",
+    "Untitled 1.base",
+    "Untitled.canvas"
+  ]
+}

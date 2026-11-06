@@ -1,0 +1,39 @@
+div.contact-section {
+    div.lp-container {
+        padding-top: unset;
+        padding-bottom: unset;
+    }
+}
+
+div.form-inputs-wrap {
+    @media (max-width: 1366px) {
+        gap: 32px;
+    }
+
+    div.lp-input-group {
+        @media (min-width: 769px) and (max-width: 1366px) {
+            width: unset;
+            flex: 1 1 calc((100% / 2) - 32px + (32px / 2));
+            max-width: calc((100% / 2) - 32px + (32px / 2));
+        }
+
+        @media (min-width: 1025px) {
+            margin-bottom: unset;
+        }
+
+        label {
+            text-transform: var(--text-case);
+        }
+    }
+}
+
+div.heading {
+    &:before,
+    &:after {
+        background: var(--accent-light);
+    }
+
+    h2 {
+        margin-bottom: unset;
+    }
+}

@@ -1,0 +1,33 @@
+/* START - Adjust the template column per row */
+div.team-grid__wrapper {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 32px;
+
+    @media (max-width: 768px) {
+        grid-template-columns: 1fr;
+    }
+
+    div.team-member__container {
+        width: 100%;
+
+        a.team-member__link {
+            width: unset;
+
+            div.team-member__image {
+                width: 100%;
+                height: unset;
+                aspect-ratio: 1/1;
+            }
+
+            div.team-member__info {
+                span.team-member__name {
+                    @media (max-width: 1024px) and (min-width: 769px) {
+                        font-size: 24px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* END */

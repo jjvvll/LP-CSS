@@ -1,0 +1,193 @@
+/* START - Theme the featured neighborhood slider */
+div.featured-neighborhoods {
+    margin-left: auto;
+    margin-right: auto;
+
+    div.slick-list {
+        overflow: hidden;
+
+        div.slick-track {
+            display: flex;
+            gap: 16px;
+
+            div.featured-neighborhoods__slide {
+                margin-left: 0px;
+                width: 423.33px;
+            }
+        }
+    }
+}
+
+div.featured-neighborhoods {
+    @media (max-width: 768px) {
+        padding-left: 0px;
+        padding-right: 0px;
+
+        div.slick-track {
+            gap: 0px;
+
+            &:before,
+            &:after {
+                display: none;
+            }
+
+            div.featured-neighborhoods__slide {
+                padding-left: 0px;
+                padding-right: 0px;
+
+                & > a {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+div.featured-neighborhoods {
+    div.featured-neighborhoods__slide {
+        aspect-ratio: 1/1;
+
+        & > a {
+            height: 100%;
+            display: block;
+            position: relative;
+
+            figure {
+                height: 100%;
+
+                img {
+                    height: 100%;
+                }
+
+                span.btn {
+                    z-index: 4;
+                }
+
+                &:after {
+                    background-image: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url(https://media-production.lp-cdn.com/cdn-cgi/image/format=auto,quality=85,fit=scale-down,width=960/https://media-production.lp-cdn.com/media/047473d0-7dd3-42db-89be-f01761da0bb9);
+                    background-size: cover;
+                    z-index: 3;
+                }
+            }
+
+            p.featured-neighborhoods__title {
+                position: absolute;
+                top: 0px;
+                width: 100%;
+                padding: 16px;
+                font-weight: 400;
+                text-align: center;
+                height: 100%;
+                line-height: 1;
+                background: rgba(0, 0, 0, 0.2);
+                display: flex;
+                align-items: center;
+                justify-content: end;
+                color: var(--typography-light);
+                flex-direction: column;
+                gap: 16px;
+
+                &:before {
+                    display: none;
+                }
+
+                &:after {
+                    content: '';
+                    display: block;
+                    height: 32px;
+                    width: 1px;
+                    background: var(--accent-light);
+                }
+            }
+        }
+    }
+}
+
+div.container {
+    max-width: unset;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+/* END */
+
+/* START - Change pagination link style to button style */
+div.featured-neighborhoods-section {
+    div.featured-team-header {
+        justify-content: start;
+
+        h2.serif {
+            display: none;
+        }
+
+        ul.slick-links-nav {
+            display: flex;
+            flex-direction: row;
+            padding-top: 0px;
+            gap: 16px;
+            align-items: center;
+
+            @media (max-width: 768px) {
+                justify-content: center;
+            }
+
+            span.slick-arrow {
+                height: 48px;
+                width: 48px;
+                display: block;
+                border: 1px solid var(--accent-dark);
+                background: transparent;
+                font-size: 0px;
+
+                &:before {
+                    border-bottom: 1px solid;
+                    border-left: 1px solid;
+                    content: '';
+                    display: block;
+                    height: 11px;
+                    width: 11px;
+                    left: 50%;
+                    position: absolute;
+                    top: 50%;
+                    background: transparent;
+                    border-color: var(--accent-dark);
+                    opacity: 1;
+                }
+
+                &:after {
+                    display: none;
+                }
+
+                &:is(.prev) {
+                    &:before {
+                        transform: translate(calc(-50% + 2px), -50%) rotate(45deg) skew(4deg, 4deg);
+                    }
+                }
+
+                &:is(.next) {
+                    &:before {
+                        transform: translate(calc(-50% - 2px), -50%) rotate(-135deg) skew(4deg, 4deg);
+                    }
+                }
+
+                &:hover {
+                    background: var(--accent-dark);
+
+                    &:before {
+                        border-color: var(--accent-light);
+                    }
+                }
+            }
+
+            li:has(.spacer) {
+                margin-left: 0px;
+
+                span.spacer {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+/* END */

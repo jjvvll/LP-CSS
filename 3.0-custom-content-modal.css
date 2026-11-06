@@ -1,0 +1,44 @@
+/* START - Update the modal theme */
+div.modal-content {
+    div.container {
+        background: #ffffff;
+
+        @media (max-width: 768px) {
+            padding-left: 25px;
+            padding-right: 25px;
+        }
+
+        h2 {
+            margin-bottom: 0px;
+
+            @media (max-width: 768px) {
+                font-size: var(--global-h3-font-size);
+                text-align: center;
+            }
+        }
+    }
+}
+
+button.close {
+    top: 32px;
+    right: 32px;
+
+    @media (max-width: 768px) {
+        top: 16px;
+        right: 16px;
+    }
+
+    span.lp-close-icon {
+        &:before,
+        &:after {
+            background: #000000;
+        }
+    }
+}
+
+/* END */
+
+div.container {
+    background: #121212;
+    text-align: center;
+}

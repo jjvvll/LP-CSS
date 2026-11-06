@@ -1,0 +1,93 @@
+/*START - Replace images with custom texts WB JV*/
+.image-marquee {
+  /* adjust width as needed */
+  max-width: 1348px;
+  margin: 0 auto;
+  overflow: hidden;
+  @media (max-width: 768px) {
+    max-width: 348px;
+  }
+}
+
+.image-marquee-slider__item {
+  position: relative;
+  max-width: 100px;
+  .image-marquee-slider__image {
+    display: none !important;
+  }
+
+  &::before {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    font-family: var(--lp-body-font-family);
+    font-size: 18px;
+    font-weight: 500;
+    color: currentColor;
+    white-space: nowrap;
+    pointer-events: none;
+  }
+
+  /* // slide01 pattern: 01, 05, 09, 13, 17, 21, 25, 29, 33, 37 */
+  &#splide01-slide01::before,
+  &#splide01-clone01::before,
+  &#splide01-clone05::before,
+  &#splide01-clone09::before,
+  &#splide01-clone13::before,
+  &#splide01-clone17::before,
+  &#splide01-clone21::before,
+  &#splide01-clone25::before,
+  &#splide01-clone29::before,
+  &#splide01-clone33::before,
+  &#splide01-clone37::before {
+    content: "Luxury Custom Homes";
+  }
+
+  /* // slide02 pattern: 02, 06, 10, 14, 18, 22, 26, 30, 34, 38 */
+  &#splide01-slide02::before,
+  &#splide01-clone02::before,
+  &#splide01-clone06::before,
+  &#splide01-clone10::before,
+  &#splide01-clone14::before,
+  &#splide01-clone18::before,
+  &#splide01-clone22::before,
+  &#splide01-clone26::before,
+  &#splide01-clone30::before,
+  &#splide01-clone34::before,
+  &#splide01-clone38::before {
+    content: "Investment Properties";
+  }
+
+  /* // slide03 pattern: 03, 07, 11, 15, 19, 23, 27, 31, 35, 39 */
+  &#splide01-slide03::before,
+  &#splide01-clone03::before,
+  &#splide01-clone07::before,
+  &#splide01-clone11::before,
+  &#splide01-clone15::before,
+  &#splide01-clone19::before,
+  &#splide01-clone23::before,
+  &#splide01-clone27::before,
+  &#splide01-clone31::before,
+  &#splide01-clone35::before,
+  &#splide01-clone39::before {
+    content: "Ranches and Land";
+  }
+
+  /* // slide04 pattern: 04, 08, 12, 16, 20, 24, 28, 32, 36, 40 */
+  &#splide01-slide04::before,
+  &#splide01-clone04::before,
+  &#splide01-clone08::before,
+  &#splide01-clone12::before,
+  &#splide01-clone16::before,
+  &#splide01-clone20::before,
+  &#splide01-clone24::before,
+  &#splide01-clone28::before,
+  &#splide01-clone32::before,
+  &#splide01-clone36::before,
+  &#splide01-clone40::before {
+    content: "Creative Developments";
+  }
+}
+/*END - Replace images with custom texts WB JV*/

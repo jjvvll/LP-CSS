@@ -1,0 +1,22 @@
+/* START - Adjust opacity of the email signup modal close button */
+div.modal-content {
+    button.popup-modal__close {
+        opacity: 1;
+    }
+}
+
+/* END */
+
+/* START - Theme the close button */
+div.modal-content {
+    button.popup-modal__close {
+        @media (max-width: 768px) {
+            &:before,
+            &:after {
+                background: #FFF;
+            }
+        }
+    }
+}
+
+/* END */

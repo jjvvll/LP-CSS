@@ -1,0 +1,173 @@
+/* ----- FLOATING CONTACT FORM ----- */
+/* START - Fix floating contact form placed behind the header navigation */
+.floating-contact-button {
+    z-index: 101 !important;
+}
+
+/* END */
+
+/* START - Adjust the floating contact form close button position*/
+.floating-contact-button-pop-up {
+    .floating-contact-button-pop-up__close {
+        top: 16px;
+        right: 16px;
+    }
+}
+
+/* END */
+
+/* START - Theme the inner form of the floating contact form */
+.floating-contact-button-pop-up {
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* END */
+
+/* START - Theme the search icon of the floating contact form */
+.floating-contact-button__btn-search {
+    background: var(--color-dark);
+}
+
+.floating-contact-button__btn-search:after {
+    background: var(--color-light);
+}
+
+/* END */
+
+/* START - Theme the submit button of floating contact form */
+.floating-contact-button-pop-up {
+    .lp-btn[type="submit"] {
+        background: var(--color-dark);
+        border: 1px solid var(--color-dark);
+        color: var(--color-light);
+    }
+
+    .lp-btn[type="submit"]:hover:not(:disabled) {
+        background: transparent;
+        border: 1px solid var(--color-dark);
+        color: var(--color-dark);
+    }
+}
+
+/* END */
+
+/* START - Adjust floating contact form on small desktop and mobile */
+div#global-mobile-contact {
+    div.floating-contact-button-pop-up {
+        @media (max-width: 1440px) {
+            padding: 40px;
+        }
+
+        @media (max-width: 768px) {
+            padding: 25px;
+            max-height: 100vh;
+            overflow-y: auto;
+        }
+
+        h3.floating-contact-button-pop-up__title {
+            @media (max-width: 1366px) {
+                font-size: var(--global-h4-font-size);
+            }
+        }
+
+        input,
+        textarea,
+        button.custom-select-toggle {
+            @media (max-width: 1440px) {
+                padding: 12px 16px;
+            }
+        }
+
+        textarea {
+            &::-webkit-scrollbar {
+                display: none;
+            }
+
+            @media (max-width: 1366px) {
+                height: 46px;
+            }
+        }
+
+        span.lp-tcr-message {
+            @media (max-width: 1366px) {
+                font-size: 10px;
+            }
+        }
+
+        button.floating-contact-button-pop-up__close {
+            @media (max-width: 768px) {
+                margin-top: 12px;
+            }
+        }
+    }
+}
+
+/* END */
+
+
+/*START - Theme the pop up form - WB JV*/
+
+.floating-contact-button-pop-up {
+
+    /* Dropdown items */
+    .custom-select-item {
+        font-size: 13px;
+        padding: 8px 12px;
+
+        &:hover {
+            background-color: var(--color-dark) !important;
+            color: var(--color-light) !important;
+        }
+        &.is-selected {
+            color: var(--color-dark) !important;
+            font-weight: 600;
+        }
+        &.is-selected:hover {
+            background-color: var(--color-dark) !important;
+            color: var(--color-light) !important;
+        }
+    }
+
+    /* Input fields and dropdown toggle */
+    .lp-input,
+    .custom-select-toggle {
+        font-size: 15px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+
+           /* After pseudo-element */
+        &::after {
+            content: ""; background-color: var(--color-dark);
+        }
+    }
+
+    /* Textarea */
+    textarea.lp-input {
+        font-size: 20px;
+    }
+
+    /* Form title */
+    // .floating-contact-button-pop-up__title {
+    //     font-size: 16px;
+    // }
+
+    /* Submit button */
+    // .lp-btn {
+    //     font-size: 13px;
+    //     padding: 10px 16px;
+    // }
+
+    /* Disclaimer text */
+    .lp-tcr-message {
+        font-size: 11px;
+    }
+}
+
+.floating-contact-button-pop-up {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+/*END*/
+
+
+/* ----- FLOATING CONTACT FORM ----- */

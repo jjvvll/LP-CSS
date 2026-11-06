@@ -1,0 +1,84 @@
+/* START - Adjust the element's dimensions */
+div.featured-team-header {
+    ul.slick-links-nav {
+        padding-top: 0px;
+        display: flex;
+        align-items: center;
+
+        @media (max-width: 768px) {
+            justify-content: center;
+        }
+    }
+}
+
+div.container {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+
+    div.featured-team-header {
+        margin-bottom: 0px;
+    }
+
+    div.featured-neighborhoods {
+        margin-bottom: 0px;
+
+        @media (max-width: 768px) {
+            padding-left: 0px;
+            padding-right: 0px;
+            max-width: 100%;
+
+            div.featured-neighborhoods__slide {
+                padding-left: 0px;
+                padding-right: 0px;
+            }
+        }
+    }
+
+    &>a.btn {
+        max-width: fit-content;
+        align-self: center;
+
+        @media (max-width: 768px) {
+            max-width: 100%;
+        }
+    }
+}
+
+/* END */
+
+/* START - Theme the previous and next button */
+span.link {
+    color: var(--color-dark) !important;
+
+    &:hover {
+        color: var(--color-dark) !important;
+    }
+
+    &:before {
+        background: var(--color-dark);
+    }
+
+    &:after {
+        background: var(--color-dark);
+    }
+}
+
+span.spacer {
+    background: var(--color-dark) !important;
+}
+
+/* END */
+
+/* START - Theme the neighborhood items border line */
+div.featured-neighborhoods {
+    div.featured-neighborhoods__slide {
+        p.featured-neighborhoods__title {
+            &:before {
+                background: var(--color-dark);
+            }
+        }
+    }
+}
+
+/* END */

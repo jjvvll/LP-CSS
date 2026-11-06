@@ -1,0 +1,20 @@
+/* START - Theme pagination slider arrows globally or per-element */
+.lp-arrow {
+    border-color: var(--accent-light);
+    background: var(--accent-light);
+
+    &:after {
+        background: var(--accent-dark);
+    }
+
+    &:hover:not(:disabled) {
+        border-color: var(--accent-light);
+        background: transparent;
+
+        &:after {
+            background: var(--accent-light);
+        }
+    }
+}
+
+/* END */

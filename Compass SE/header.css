@@ -1,0 +1,60 @@
+/* START - Adjust main header navigation theme */
+nav#global-navbar {
+    div.navigation {
+        div.nav-item {
+            &:hover {
+                a.nav-link {
+                    &:before {
+                        background: #000;
+                    }
+                }
+            }
+        }
+        
+        div.sub-nav-container {
+            &:hover {
+                div.nav-link {
+                    &:before {
+                        background: #000 !important;
+                    }
+                }
+            }
+            
+            div.sub-nav {
+                div.sub-nav-wrapper {
+                    a.sub-nav-link {
+                        background: #000;
+
+                        &:hover {
+                            color: #000;
+                            background-color: #FFF;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    button.hamburger {
+        background: #000;
+    }
+}
+
+/* END */
+
+/* START - Adjust dropdown menu links width */
+nav#global-navbar {
+    div.navigation {
+        div.sub-nav-container {
+            div.sub-nav {
+                div.sub-nav-wrapper {
+                    a.sub-nav-link {
+                        width: auto;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* END */

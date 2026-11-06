@@ -1,0 +1,85 @@
+/*Start - Theme share button*/
+.social-button-dropdown {
+    .link-icon {
+        color: #000 !important;
+
+        &:before {
+            background-color: #185770;
+        }
+
+        &:hover {
+            color: #185770 !important;
+
+            &:before {
+                background-color: #185770;
+            }
+        }
+    }
+
+    .social-button-dropdown__list {
+        a {
+            color: #000 !important;
+
+            i:before {
+                background-color: #000 !important;
+            }
+            
+            &:hover {
+                color: #185770 !important;
+
+                i:before {
+                    background-color: #185770 !important;
+                }
+            }
+        }
+    }
+}
+
+/*End*/
+
+span:has(a) {
+    text-decoration: none !important;
+}
+
+span {
+    color: #185770;
+}
+
+a {
+    position: relative !important;
+    color: #000 !important;
+    transition: 0.4s;
+    opacity: 1 !important;
+    text-underline-offset: 4px !important;
+    text-decoration: none !important;
+
+    &:hover {
+        color: #185770 !important;
+    }
+
+    &:before,
+    &:after {
+        transition: 0.4s;
+        text-decoration: none !important;
+        line-height: 1;
+        content: "" "";
+        height: 1px;
+        position: absolute !important;
+        bottom: 0;
+        left: 0;
+    }
+
+    &:before {
+        width: 100% !important;
+        background-color: rgba(0, 0, 0, 0.1) !important;
+    }
+
+    &:after {
+        width: 0% !important;
+        background-color: #185770 !important;
+    }
+
+    &:hover:after {
+        width: 100% !important;
+    }
+}

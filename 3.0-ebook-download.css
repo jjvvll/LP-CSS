@@ -1,0 +1,80 @@
+/* START - Adjust the element layout */
+div.ebook-download {
+    div.ebook-download__row {
+        margin-left: 0px;
+        margin-right: 0px;
+        gap: 96px;
+
+        @media (max-width: 768px) {
+            gap: 32px;
+        }
+
+        div.ebook-download__col {
+            padding-left: 0px;
+            padding-right: 0px;
+            max-width: 50%;
+            flex: 1 1 calc((100% / 2) - 96px + (96px / 2));
+
+            @media (max-width: 768px) {
+                max-width: 100%;
+                flex: 1 1 calc((100% / 2) - 96px + (96px / 2));
+            }
+
+            div.ebook-download__main-content {
+                max-width: unset;
+
+                div.lp-title-group {
+                    h3.lp-h3 {
+                        @media (max-width: 768px) {
+                            text-align: center;
+                        }
+                    }
+                }
+
+                form.download-form {
+                    margin-bottom: 0px;
+
+                    div.download-form__footer {
+                        button.lp-btn {
+                            @media (max-width: 768px) {
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+
+            div.ebook-download__image-block {
+                height: unset;
+                min-height: unset;
+                aspect-ratio: 3/4;
+
+                img {
+                    display: block;
+                }
+            }
+        }
+    }
+}
+
+/* END */
+
+/* START - Theme the input elements */
+input.lp-input,
+button.custom-select-toggle {
+    color: var(--typography-dark);
+    border-color: var(--border-dark-inactive);
+
+    &::placeholder {
+        color: var(--typography-dark) !important;
+        opacity: 0.5 !important;
+    }
+
+    &:hover,
+    &:focus,
+    &:active {
+        border-color: var(--border-dark-active);
+    }
+}
+
+/* END */

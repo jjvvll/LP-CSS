@@ -1,0 +1,257 @@
+div.full-screen-video-component {
+    div.video-wrapper {
+        &:before {
+            z-index: 2 !important;
+            background: rgba(0, 0, 0, 0.4) !important;
+        }
+
+        iframe {
+            z-index: 1;
+        }
+    }
+}
+
+div.opening-with-search {
+    z-index: 3;
+}
+
+/* START - Add CA DRE at the bottom of the element */
+div.opening-with-search {
+    position: relative;
+
+    &:after {
+        content: "DANIELLE DARIN | CA DRE# 02222700";
+        display: block;
+        position: absolute;
+        bottom: 16px;
+        left: 0px;
+        right: 0px;
+        text-align: center;
+        opacity: 0.75;
+    }
+}
+
+/* END */
+
+/* START - Hide the main title */
+div.lp-title-group {
+    h1.opening-title {
+        display: none;
+    }
+}
+
+/* END */
+
+/* START - Adjust the title font weight */
+h1.opening-title {
+    font-weight: bold;
+}
+
+/* END */
+
+/* START - Show video on mobile */
+div.video-wrapper {
+    div.full-screen-video-component {
+        div.video-wrapper {
+            @media (max-width: 900px) {
+                display: block;
+            }
+        }
+
+        div.poster {
+            display: none;
+        }
+    }
+}
+
+/* END */
+
+/* START - Theme homepage search theme*/
+.search-lease-tabs {
+    .search-lease-tab:not(.active) {
+        background-color: #182238 !important;
+        color: #fff;
+    }
+}
+
+/* END */
+
+/* START - Theme the search input theme */
+div.opening-with-search {
+    div.search-input-container {
+        background: rgba(255, 255, 255, 0.5);
+
+        span.search-icon {
+            color: #fff;
+        }
+
+        input.search-input {
+            color: #fff;
+        }
+    }
+}
+
+/* END */
+
+/* START - Fix the element's aligment */
+div.opening-with-search {
+    padding-top: 96px;
+    padding-bottom: 96px;
+
+    @media (max-width: 768px) {
+        padding-top: 128px;
+        padding-bottom: 64px;
+    }
+
+    div.bottom-spacer {
+        display: none;
+    }
+}
+
+/* END */
+
+/* START - Adjust opening element layout */
+div.lp-container {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    div.lp-title-group {
+        margin-bottom: 0px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 16px;
+
+        h1.opening-title {
+            margin: 0px;
+        }
+
+        div.opening-description {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            margin-bottom: 0px;
+
+            & > * {
+                margin: 0px;
+            }
+        }
+    }
+
+    div.buttons {
+        display: flex;
+        gap: 32px;
+        justify-content: center;
+
+        &:not(:has(*)) {
+            display: none;
+        }
+
+        @media (max-width: 768px) {
+            flex-direction: column;
+        }
+    }
+
+    div.search-form {
+        margin-top: 0px;
+    }
+}
+
+/* END */
+
+/* START - Adjust the description width of the container */
+div.container {
+    div.opening-description {
+        max-width: 720px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/* END */
+
+/* START - Uppercase buttons */
+div.center-block {
+    div.buttons {
+        a {
+            text-transform: uppercase;
+        }
+    }
+}
+
+/* END */
+
+/* START - Turn the links into button */
+div.lp-container {
+    div.buttons {
+        display: flex;
+        flex-direction: row;
+        gap: 16px;
+        justify-content: center;
+
+        @media (max-width: 768px) {
+            flex-direction: column;
+        }
+
+        a.lp-link {
+            border: 2px solid var(--accent-light);
+            background: var(--accent-light);
+            padding: 20px 46px;
+            color: var(--accent-dark) !important;
+            margin: 0px;
+            text-transform: uppercase;
+            font-size: 14px;
+            min-width: 250px;
+
+            &:before,
+            &:after {
+                display: none;
+            }
+
+            &:hover {
+                background: transparent;
+                color: var(--accent-light) !important;
+            }
+        }
+    }
+}
+
+/* END */
+
+/* START RR1 - Adjust the ordering of the predefined neighborhoods links */
+div.predefined-links:not(.not-visible) {
+    div.results-block {
+        display: flex;
+        flex-direction: column;
+
+        div.results-block-title {
+            order: 1;
+        }
+
+        a[href="/home-search/listings?regions=%5B%7B%22regionId%22%3A%22a23c4de6-75cd-447e-a0f1-7a4947921382%22%7D%5D"] {
+            order: 2;
+        }
+
+        a[href="/home-search/listings?regions=%5B%7B%22regionId%22%3A%22d9b399b4-9112-4612-a60b-af320229c9e8%22%7D%5D"] {
+            order: 3;
+        }
+
+        a[href="/home-search/listings?regions=%5B%7B%22regionId%22%3A%22c8443548-7451-42fc-a098-768179df4f4e%22%7D%5D"] {
+            order: 4;
+        }
+
+        a[href="/home-search/listings?regions=%5B%7B%22regionId%22%3A%2215c4be53-e342-49a4-9a5f-f02e9711f9be%22%7D%5D"] {
+            order: 5;
+        }
+
+        a[href="/home-search/listings?regions=%5B%7B%22regionId%22%3A%22bf7c9df7-2dbe-4692-a26b-16eb67b8eb16%22%7D%5D"] {
+            order: 6;
+        }
+
+        a[href="/home-search/listings?regions=%5B%7B%22regionId%22%3A%2260ab186d-8d64-41bc-8b8a-2b69b0ea9e66%22%7D%5D"] {
+            order: 7;
+        }
+    }
+}
+
+/* END */

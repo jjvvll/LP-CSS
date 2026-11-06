@@ -1,0 +1,28 @@
+h2 {
+    padding-top: 0px !important;
+}
+
+.f-neighborhoods {
+    margin-bottom: 0px;
+}
+
+a[role="button"] {
+    display: none;
+}
+
+/*START - mobile view button theme*/
+@media only screen and (max-width: 769px) {
+    div.basic-margins div.f-neighborhoods__item-content span.btn {
+        border-color: #000 !important;
+        background-color: #000 !important;
+        color: #fff !important;
+
+        &:hover {
+            border-color: #000 !important;
+            background-color: transparent !important;
+            color: #000 !important;
+        }
+    }
+}
+
+/*END - mobile view button theme*/

@@ -1,0 +1,20 @@
+/* START - Theme the pagination buttons */
+button.slick-arrow {
+    background: var(--color-dark);
+    border-color: var(--color-dark);
+
+    &:before {
+        color: var(--color-light);
+    }
+
+    &:hover {
+        background: transparent;
+        border-color: var(--color-dark);
+
+        &:before {
+            color: var(--color-dark);
+        }
+    }
+}
+
+/* END */

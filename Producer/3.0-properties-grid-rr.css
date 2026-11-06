@@ -1,0 +1,35 @@
+/* START - Update hover background color */
+li.property-list__item {
+    &:hover {
+        div.property-list__hover {
+            background: rgba(255, 255, 255, 0.85);
+        }
+    }
+}
+
+/* END */
+
+/* START - Add agent photo on the properties card */
+div.property-list__img {
+    position: relative;
+
+    &:after {
+        content: '';
+        display: block;
+        height: 100px;
+        width: 100px;
+        background: url('https://media-production.lp-cdn.com/cdn-cgi/image/format=auto,quality=85,fit=scale-down,width=960/https://media-production.lp-cdn.com/media/262083e2-84b0-457c-94da-6dc5f0360ac9');
+        background-size: contain;
+        bottom: 0px;
+        position: absolute;
+    }
+
+    @media (max-width: 768px) {
+        &:after {
+            height: 80px;
+            width: 80px;
+        }
+    }
+}
+
+/* END */

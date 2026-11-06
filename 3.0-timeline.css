@@ -1,0 +1,79 @@
+/* START - Adjust the header container text width */
+div.lp-title-group {
+  max-width: 1400px;
+}
+
+/* END */
+
+/* START - Fix element not using the body font size */
+p.lp-text--subtitle,
+t div.cell {
+  font-size: var(--global-body-font-size);
+}
+
+/* END */
+
+/* START - Theme timeline sub-titles */
+h4.lp-h4 {
+  color: var(--color-dark);
+}
+
+/* END */
+
+/* START - Theme link underline */
+a {
+  position: relative !important;
+  color: var(--color-dark) !important;
+  transition: 0.4s;
+  font-weight: 400;
+  text-decoration: none !important;
+
+  &:hover {
+    color: var(--color-dark) !important;
+    opacity: 0.5;
+  }
+
+  &:before,
+  &:after {
+    transition: 0.4s;
+    text-decoration: none !important;
+    line-height: 1;
+    content: "" "";
+    height: 1px;
+    position: absolute !important;
+    bottom: 0;
+    left: 0;
+    opacity: 1;
+  }
+
+  &:before {
+    width: 100% !important;
+    background-color: var(
+      --color-dark
+    ) !important; /*!!!!!!! If underline is not visible modify this */
+  }
+
+  &:after {
+    width: 0% !important;
+    background-color: var(--color-dark) !important;
+  }
+
+  &:hover:after {
+    width: 100% !important;
+  }
+
+  @media only screen and (max-width: 768px) {
+    text-decoration: underline !important;
+
+    &:before,
+    &:after {
+      display: none;
+    }
+
+    &:hover {
+      color: var(--color-dark);
+    }
+  }
+}
+
+/* END */

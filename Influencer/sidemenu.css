@@ -1,0 +1,109 @@
+/* START - Theme the sidemenu links */
+div#global-sidemenu {
+    div.sidemenu__nav {
+        li.sidemenu__item {
+            div.title,
+            a.nav-link,
+            a.sidemenu__link {
+                text-transform: var(--text-case);
+            }
+
+            a.sidemenu__link,
+            div.title,
+            a.nav-link {
+                transition: 0.25s;
+
+                &:after {
+                    transition: 0.25s;
+                }
+
+                &:hover {
+                    color: var(--accent-dark);
+
+                    &:after {
+                        color: var(--accent-dark);
+                    }
+                }
+            }
+        }
+
+        div.title {
+            border-color: var(--border-dark-inactive);
+        }
+    }
+}
+
+div#global-sidemenu {
+    ul.lp-socials {
+        @media (max-width: 768px) {
+            justify-content: center;
+        }
+    }
+}
+
+/* END */
+
+/* START - Update side menu logo to dark version */
+div#global-sidemenu {
+    header.sidemenu__header {
+        a.logo {
+            img.logo__img--light {
+                content: url(https://media-production.lp-cdn.com/cdn-cgi/image/format=auto,quality=85/https://media-production.lp-cdn.com/media/7e0eda7e-f4f1-4452-9973-a7fa3393fb7b)
+            }
+        }
+    }
+}
+
+/* END */
+
+/* START - Adjust the side menu logo */
+div#global-sidemenu {
+    header.sidemenu__header {
+        a.logo {
+            img {
+                max-height: unset;
+                max-width: unset;
+                width: 160px;
+
+                @media (max-width: 768px) {
+                    width: 100px;
+                }
+            }
+        }
+    }
+}
+
+/* END */
+
+/* START - Theme the side menu border color */
+div#global-sidemenu {
+    header.sidemenu__header,
+    div.sidemenu__footer  {
+        border-color: var(--border-dark-inactive);
+    }
+}
+
+/* END */
+
+/* START - Remove side menu extra spacings on mobile */
+div#global-sidemenu {
+    div.sidemenu__nav {
+        & > ul {
+            margin-left: 0px;
+        }
+    }
+
+    ul.lp-socials {
+        gap: 16px;
+
+        li {
+            margin: 0px;
+        }
+    }
+
+    button.sidemenu__close {
+        margin-right: 0px;
+    }
+}
+
+/* END */

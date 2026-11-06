@@ -1,0 +1,107 @@
+/* START - Adjust the element text content width */
+div.lp-container {
+  div.lp-title-group {
+    max-width: unset;
+
+    h2.lp-h2 {
+      max-width: unset;
+    }
+
+    div.lp-text--subtitle {
+      max-width: unset;
+    }
+  }
+}
+
+/* END */
+
+/* START - Theme properties card */
+a.item {
+  color: var(--color-dark);
+  text-transform: var(--text-case);
+
+  p.bf1.label {
+    background-color: var(--color-dark);
+    color: var(--color-light);
+    padding: 5px 15px;
+  }
+
+  div.open-house {
+    background-color: var(--color-dark);
+    color: var(--color-light);
+  }
+}
+
+/* END */
+
+/* START - Set paddings */
+.lp-vertical-paddings {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* END */
+
+/* START - Fix dimensions */
+.lp-vertical-paddings {
+  .lp-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+
+    .data-container {
+      column-gap: 20px;
+      row-gap: 48px;
+      justify-content: start;
+      margin-left: 0px;
+      margin-right: 0px;
+
+      .item {
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+      }
+
+      &:is(.collection--3) {
+        .item {
+          flex: 1 1 calc((100% / 3) - 20px + (20px / 3));
+          max-width: calc((100% / 3) - 20px + (20px / 3));
+        }
+      }
+
+      &:not(.collection--3) {
+        .item {
+          flex: 1 1 calc((100% / 2) - 20px + (20px / 2));
+          max-width: calc((100% / 2) - 20px + (20px / 2));
+        }
+      }
+
+      &:is(.collection--3),
+      &:not(.collection--3) {
+        .item {
+          @media (max-width: 768px) {
+            flex: 1 1 100%;
+            max-width: 100%;
+          }
+        }
+      }
+    }
+
+    .lp-pagination {
+      margin-top: 64px;
+    }
+  }
+}
+
+/* END */
+
+/*Add a bit of padding on the left side of the texts - JV*/
+a.item {
+  h5.lp-h5,
+  p.bf1,
+  ul.bf2,
+  div.mls-compliance-container {
+    padding-left: 15px; /* adjust this value to taste */
+  }
+}

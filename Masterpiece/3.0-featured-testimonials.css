@@ -1,0 +1,51 @@
+/* START - Adjust the element layout */
+div.sliders-container {
+  @media (min-width: 769px) {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+}
+
+div.bottom {
+  @media (min-width: 769px) {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+
+  p.num-pages {
+    @media (min-width: 769px) {
+      padding-left: 74px !important;
+    }
+  }
+}
+
+/* END */
+
+/* START - Theme the testimonial icon */
+div.avatar {
+  svg {
+    circle {
+      fill: var(--color-dark);
+    }
+
+    path {
+      fill: var(--color-dark);
+    }
+
+    circle,
+    path {
+      fill-opacity: 1;
+    }
+  }
+}
+
+/* END */
+
+/* START - Theme the pagination numbers */
+div.bottom {
+  p.num-pages {
+    color: var(--color-light);
+  }
+}
+
+/* END */

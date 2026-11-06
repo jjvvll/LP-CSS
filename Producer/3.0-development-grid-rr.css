@@ -1,0 +1,44 @@
+/* START - Transform element to featured developmeents element */
+div.development-list-section {
+    ul.development-list {
+        li {
+            a {
+                position: relative;
+
+                figure {
+                    margin-bottom: 0px;
+                    height: unset;
+                    aspect-ratio: 1/1;
+                    position: relative;
+                    z-index: 1;
+
+                    &:after {
+                        opacity: 1;
+                        background: rgba(0, 0, 0, 0.3);
+                        z-index: 2;
+                    }
+
+                    span {
+                        z-index: 3;
+                    }
+                }
+
+                h3 {
+                    position: absolute;
+                    left: 20px;
+                    bottom: 20px;
+                    z-index: 2;
+                    color: #FFF;
+                    box-sizing: border-box;
+                    width: calc(100% - 40px);
+                }
+
+                p {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+/* END */

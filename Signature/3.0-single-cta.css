@@ -1,0 +1,24 @@
+div.lp-container {
+    padding-left: 64px;
+    padding-right: 64px;
+
+    @media (max-width: 768px) {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+
+    div.single-cta__wrapper {
+        padding-top: 96px;
+        padding-bottom: 96px;
+
+        div.heading-group {
+            h3.title {
+                font-size: var(--global-h2-font-size);
+            }
+
+            div.description {
+                max-width: 600px;
+            }
+        }
+    }
+}

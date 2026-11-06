@@ -1,0 +1,54 @@
+/* START - Fix dimensions of the form */
+div.popup-modal {
+    min-height: unset;
+
+    .form-group {
+
+        .lp-title-group,
+        .form-inputs-wrap {
+            max-width: 100%;
+        }
+
+        .lp-title-group {
+            &>* {
+                text-align: center;
+            }
+
+            h2 {
+                font-size: var(--global-h2-font-size);
+
+                @media (max-width: 768px) {
+                    font-size: var(--global-h3-font-size);
+                }
+            }
+        }
+    }
+}
+
+.popup-modal__form {
+    display: flex;
+    align-items: center;
+}
+
+/* END */
+
+/* START - Fix element not using the body font size */
+div.lp-text--subtitle {
+    font-size: var(--global-body-font-size);
+}
+
+/* END */
+
+/*Start - Theme input*/
+.form-group {
+    .lp-input {
+        color: var(--typography-dark);
+        border-color: var(--border-dark-inactive);
+    }
+
+    .input-icon {
+        filter: invert(0);
+    }
+}
+
+/*End*/

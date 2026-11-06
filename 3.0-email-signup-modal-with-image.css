@@ -1,0 +1,154 @@
+/* START - Fix large spacings and dimensions of the email signup modal */
+div.popup-modal__container {
+    button.popup-modal__close {
+        padding-left: 0px;
+        padding-right: 0px;
+        top: 16px;
+        right: 16px;
+
+        @media only screen and (max-width: 768px) {
+            top: 8px;
+            right: 8px;
+        }
+    }
+
+    div.popup-modal__form-group {
+        @media only screen and (min-width: 768px) {
+            padding-left: 72px;
+            padding-right: 72px;
+        }
+
+        @media only screen and (max-width: 768px) {
+            padding: 64px 32px;
+        }
+
+        div.popup-modal__form-scroll {
+            @media only screen and (max-width: 768px) {
+                padding: 0px;
+            }
+
+            div.popup-modal__title-group {
+                margin-bottom: 32px;
+                width: 100%;
+
+                h2.lp-h2 {
+                    margin-top: 0px;
+                    margin-bottom: 8px;
+                }
+
+                div.lp-text--subtitle {
+                    margin-bottom: 0px;
+                    margin-left: auto;
+                    margin-right: auto;
+                    max-width: unset;
+                }
+
+                & > * {
+                    text-align: center;
+                }
+            }
+
+            div.lp-disclaimer {
+                margin-top: 16px;
+                margin-bottom: 0px;
+            }
+
+            button.lp-btn {
+                margin-top: 32px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+    }
+}
+
+div.modal-content {
+    padding-left: 56px;
+    padding-right: 56px;
+    padding-top: 64px;
+    padding-bottom: 64px;
+
+    div.popup-modal {
+        max-height: 800px;
+        max-width: 1400px;
+    }
+
+    @media (max-width: 768px) {
+        padding-left: 25px;
+        padding-right: 25px;
+        padding-top: 32px;
+        padding-bottom: 32px;
+    }
+}
+
+/* END */
+
+/* START - Fix width of the email input */
+div.popup-modal__form-field {
+    max-width: unset !important;
+}
+
+/* END */
+
+/* START - Fix font size of the title and content description */
+div.popup-modal__title-group {
+    h2.lp-h2 {
+        font-size: var(--global-h2-font-size);
+        
+        @media (max-width: 768px) {
+            font-size: var(--global-h3-font-size);
+        }
+    }
+
+    div.lp-text--subtitle {
+        font-size: var(--global-body-font-size);
+        font-family: var(--global-secondary-font-family);
+    }
+}
+
+/* END */
+
+/* START - Adjust email signup modal close button opacity */
+div.modal-content {
+    button.popup-modal__close {
+        opacity: 1;
+    }
+}
+
+/* END */
+
+/* START - Theme email signup modal close button */
+div.modal-content {
+    button.popup-modal__close {
+        opacity: 1;
+
+        &:before,
+        &:after {
+            background: var(--color-dark);
+        }
+
+        @media (max-width: 768px) {
+            &:before,
+            &:after {
+                background: var(--color-dark);
+            }
+        }
+    }
+}
+
+/* END */
+
+/* START - Adjust layout on mobile */
+div.modal-content {
+    @media (max-width: 768px) {
+        height: unset;
+    }
+}
+
+form.popup-modal__form {
+    @media (max-width: 768px) {
+        width: auto;
+    }
+}
+
+/* END */

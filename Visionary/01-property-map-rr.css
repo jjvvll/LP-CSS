@@ -1,0 +1,6 @@
+/* START - Remove theme of the neighborhood map marker */
+.map-marker {
+    filter: grayscale(100);
+}
+
+/* END */

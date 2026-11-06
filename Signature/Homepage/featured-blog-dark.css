@@ -1,0 +1,74 @@
+/*Start - Theme the read more button*/
+.list__item {
+    .link-icon {
+        color: #fff !important;
+
+        &:before {
+            background-color: #F51010 !important;
+        }
+
+        &:hover:before {
+            background: #ffffff !important;
+        }
+
+        &:hover:after {
+            background: #F51010 !important;
+        }
+    }
+
+    &:hover {
+        .link-icon {
+            color: #F51010 !important;
+
+            &:before {
+                background: #ffffff !important;
+            }
+
+            &:after {
+                background: #F51010 !important;
+            }
+        }
+    }
+}
+
+/*End*/
+
+/*Start - Theme pagination*/
+.paginationjs-next a,
+.paginationjs-prev a {
+    background: #F51010;
+    border-radius: 50%;
+    transition: 0.4s;
+    -webkit-tap-highlight-color: transparent;
+
+    &:before {
+        border: 1px solid transparent;
+    }
+
+    &:after {
+        background-color: #F51010 !important;
+    }
+
+    &:hover {
+        background: transparent;
+
+        &:before {
+            border-color: #fff;
+        }
+
+        &:after {
+            background-color: #fff !important;
+        }
+    }
+}
+
+/*End*/
+
+/*Start - Theme the underline pagination*/
+.J-paginationjs-page.active {
+    a:after {
+        background-color: #F51010 !important;
+    }
+}
+
+/*End*/

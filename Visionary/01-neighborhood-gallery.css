@@ -1,0 +1,11 @@
+/* START - Fix neighborhood gallery dimensions on dashboard view */
+.neighborhood-gallery {
+    min-height: unset;
+}
+
+.gallery__item {
+    height: auto;
+    width: 100%;
+}
+
+/* END */

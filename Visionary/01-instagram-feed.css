@@ -1,0 +1,42 @@
+/* ----- INSTAGRAM FEED ----- */
+/* START - Resize the instagram username */
+.instagram-feed__link {
+    font-size: var(--global-h3-font-size);
+
+    @media (max-width: 768px) {
+        font-size: var(--global-h6-font-size);
+    }
+}
+
+/* END */
+
+/* START - Theme instagram icon */
+.instagram-feed__icon {
+    background: var(--accent-dark) !important;
+}
+
+.instagram-feed__icon:after {
+    background: var(--accent-light) !important;
+}
+
+/* END */
+
+/* START - Fix the instagram images width */
+.splide__list {
+    .instagram-feed__item {
+        max-width: unset;
+    }
+}
+
+/* END */
+
+/* ----- INSTAGRAM FEED ----- */
+
+/* START - Remove instagram feed vertical padding */
+div.instagram-feed {
+    div.instagram-feed__container {
+        padding-bottom: 0px;
+    }
+}
+
+/* END */

@@ -1,0 +1,115 @@
+/* START - Change featured testmonial element layout */
+div.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+
+    &:after {
+        display: none !important;
+    }
+
+    div.featured-testimonials__left {
+        max-width: unset;
+        padding-right: 0px;
+        margin-bottom: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h2.serif {
+            text-align: center;
+        }
+    }
+
+    div.featured-testimonials__right {
+        padding-left: 0px;
+        max-width: 1024px;
+
+        @media (max-width: 1024px) {
+            max-width: 100%;
+        }
+
+        ul.featured-testimonials__slider {
+            padding-left: 0px;
+            border-left: none;
+            margin-bottom: 0px;
+            margin-left: 0px;
+            text-align: center;
+        }
+
+        a.btn {
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+            max-width: fit-content;
+            margin-top: 32px;
+        }
+    }
+}
+
+/* END */
+
+/* START - Change pagination link style to button style */
+div.featured-testimonials {
+    div.featured-testimonials__left {
+        ul.slick-links-nav {
+            display: flex;
+            flex-direction: row;
+            gap: 16px;
+
+            span.slick-arrow {
+                height: 48px;
+                width: 48px;
+                display: block;
+                border: 2px solid #FFF;
+                background: #FFF;
+                font-size: 0px;
+
+                &:before {
+                    border-bottom: 2px solid;
+                    border-left: 2px solid;
+                    content: '';
+                    display: block;
+                    height: 11px;
+                    width: 11px;
+                    left: 50%;
+                    position: absolute;
+                    top: 50%;
+                    background: transparent;
+                    border-color: #000;
+                }
+
+                &:after {
+                    display: none;
+                }
+
+                &:is(.prev) {
+                    &:before {
+                        transform: translate(calc(-50% + 2px), -50%) rotate(45deg) skew(4deg, 4deg);
+                    }
+                }
+
+                &:is(.next) {
+                    &:before {
+                        transform: translate(calc(-50% - 2px), -50%) rotate(-135deg) skew(4deg, 4deg);
+                    }
+                }
+
+                &:hover {
+                    background: transparent;
+
+                    &:before {
+                        border-color: #FFF;
+                    }
+                }
+            }
+
+            li:has(.separator) {
+                display: none;
+            }
+        }
+    }
+}
+
+/* END */

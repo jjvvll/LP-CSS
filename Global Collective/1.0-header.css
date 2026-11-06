@@ -1,0 +1,35 @@
+/* START - Adjust displayed logo */
+nav#global-navbar {
+    a.logo {
+        img.logo-desk {
+            display: block !important;
+        }
+
+        img.logo-tablet,
+        img.logo-mobile {
+            display: none !important;
+        }
+    }
+
+    &:not(.scrolled-down) {
+        a.logo-light {
+            display: block !important;
+        }
+
+        a.logo-dark {
+            display: none !important;
+        }
+    }
+
+    &:is(.scrolled-down) {
+        a.logo-light {
+            display: block !important;
+        }
+
+        a.logo-dark {
+            display: none !important;
+        }
+    }
+}
+
+/* END */

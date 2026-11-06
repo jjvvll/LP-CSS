@@ -1,0 +1,206 @@
+/* START - Theme footer hoverable links */
+footer#global-footer {
+    a:not(.lp-socials__link) {
+        position: relative;
+        transition: 0.4s;
+        color: var(--typography-dark) !important;
+
+        &:before,
+        &:after {
+            transition: 0.4s;
+            text-decoration: none;
+            line-height: 1;
+            content: '';
+            height: 1px;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+
+        &:before {
+            width: 100%;
+            background-color: var(--border-dark-inactive);
+        }
+
+        &:after {
+            width: 0%;
+            background-color: var(--accent-dark);
+        }
+
+        &:hover {
+            color: var(--accent-dark) !important;
+
+            &:after {
+                width: 100%;
+            }
+        }
+    }
+}
+
+/* END */
+
+/* START - Theme footer horizontal border */
+footer#global-footer {
+    div.info-privacy {
+        border-color: var(--accent-dark);
+    }
+}
+
+/* END */
+
+/* START - Adjust the footer max width */
+footer#global-footer {
+    div.footer {
+        padding-top: 0px;
+        
+        div.container {
+            max-width: 1400px;
+            padding-top: 96px;
+
+            @media (max-width: 768px) {
+                padding-top: 64px;
+            }
+        }
+    }
+}
+
+/* END */
+
+/* START - Adjust logo height on footer */
+footer#global-footer {
+    div.img_size {
+        height: 100%;
+        max-height: 80px;
+
+        img {
+            object-position: top;
+            margin-top: 6px;
+        }
+    }
+}
+
+/* END */
+
+/* START - Fix extra spacing on the right side of the copyright text */
+footer#global-footer {
+    div.form-col--copyright {
+        div.copy_zone {
+            @media only screen and (min-width: 768px) {
+                text-align: right;
+            }
+        }
+    }
+    
+    div.form-col--socials {
+        @media only screen and (min-width: 1025px) {
+            max-width: fit-content;
+        }
+    }
+}
+
+/* END */
+
+/* START - Fix extra spacing on the right side of the copyright text */
+footer#global-footer {
+    div.form-col--copyright {
+        div.copy_zone {
+            @media only screen and (min-width: 768px) {
+                text-align: right;
+            }
+        }
+    }
+}
+
+/* END */
+
+/* START - footer lp and privacy policy font weight */
+footer#global-footer {
+    div.footer {
+        div.info-privacy {
+            div.copy_zone,
+            div.powered_zone {
+                a {
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+}
+
+/* END */
+
+/* START - Remove copyright extra paddings */
+footer#global-footer {
+    div.form-col:is(.form-col--copyright) {
+        @media (max-width: 768px) {
+            padding-left: 20px;
+            padding-right: 20px;
+            width: 100%;
+        }
+    }
+}
+
+/* END */
+
+/* START - Adjust footer layout */
+footer#global-footer {
+    div.footer {
+        background-image: linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)), url(https://media-production.lp-cdn.com/cdn-cgi/image/format=auto,quality=85/https://media-production.lp-cdn.com/media/d7a436e1-5d25-41f0-b3d0-d32b6df9dcfb);
+    }
+    
+    div.container {
+        & > h3 {
+            display: none;
+        }
+    }
+    
+    div.info-wrap {
+        &:has(.agent_box) {
+            display: none;
+        }
+    }
+    
+    div.first_text_footer {
+        flex-direction: column;
+        gap: 32px;
+        justify-content: center;
+        align-items: center;
+        
+        div.images_box {
+            margin: unset;
+            
+            div.img_size {
+                max-height: unset;
+            }
+        }
+        
+        div.luxury-text {
+            text-align: center;
+            
+            & > ul {
+                display: flex;
+                flex-direction: row;
+                gap: 48px;
+                margin-left: 0px;
+                width: 100%;
+                justify-content: center;
+                
+                @media (max-width: 768px) {
+                    gap: 16px;
+                    flex-direction: column;
+                }
+                
+                ul {
+                    margin-left: 0px;
+                }
+                
+                li {
+                    list-style-type: none;
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
+}
+
+/* END */

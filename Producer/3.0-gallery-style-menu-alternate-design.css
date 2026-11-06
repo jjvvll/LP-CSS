@@ -1,0 +1,45 @@
+/* START - Adjust the element dimensions */
+& {
+    overflow: hidden;
+}
+
+div.lp-container {
+    max-width: 1400px;
+    padding-left: 50px;
+    padding-right: 50px;
+
+    @media (max-width: 768px) {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+}
+
+div.gallery-component__header {
+    max-width: 100%;
+    margin-bottom: 48px;
+
+    h2.gallery-component__heading {
+        margin-bottom: 8px;
+    }
+
+    p.gallery-component__lead {
+        font-size: var(--global-body-font-size);
+        max-width: 720px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+div.gallery-component__row {
+    & > div.gallery-component__col {
+        @media (max-width: 768px) {
+            margin-bottom: 16px;
+
+            &:last-child {
+                margin-bottom: unset;
+            }
+        }
+    }
+}
+
+/* END */

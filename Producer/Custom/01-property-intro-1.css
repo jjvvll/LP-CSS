@@ -1,0 +1,121 @@
+/* START - Customize the element */
+div.redesign {
+    position: relative;
+
+    div.button-wrapper {
+        display: none;
+    }
+
+    div.property-intro-2-bg-slider {
+        &:before {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            height: 100%;
+            width: 100%;
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8));
+            z-index: 2;
+        }
+    }
+
+    div.property-intro-2-content {
+        height: unset;
+        position: absolute;
+        bottom: 32px;
+        width: 100%;
+        padding-left: 16px;
+        padding-right: 16px;
+
+        &:has(*) {
+            & + div.property-intro-2-info {
+                bottom: calc(102px + 39px + 16px);
+
+                @media (max-width: 768px) {
+                    bottom: calc(102px + 16px);
+                }
+            }
+        }
+
+        &:not(:has(*)) {
+            & + div.property-intro-2-info {
+                bottom: 32px;
+
+                @media (max-width: 768px) {
+                    bottom: 16px;
+                }
+            }
+        }
+
+        div.property-intro-2-nav-slider {
+            display: flex;
+            flex-direction: row;
+            top: unset;
+            align-items: center;
+            gap: 16px;
+
+            button.slick-arrow {
+                position: relative;
+                top: unset;
+                left: unset;
+                right: unset;
+                transform: unset;
+                min-height: 48px;
+                min-width: 48px;
+
+                @media (max-width: 768px) {
+                    order: 2;
+                }
+            }
+
+            div.slick-list {
+                padding-right: 0px;
+
+                @media (max-width: 768px) {
+                    order: 1;
+                }
+            }
+        }
+    }
+
+    div.property-intro-2-info {
+        top: unset;
+        position: absolute;
+
+        div.container {
+            padding-left: calc(48px + 32px);
+            display: flex;
+            flex-direction: column;
+
+            @media (max-width: 768px) {
+                padding-left: 16px;
+                padding-right: 16px;
+            }
+
+            span.label {
+                max-width: fit-content;
+                background: #FFFFFF;
+                color: #000000;
+            }
+
+            h1.lp-h3,
+            p.feature,
+            h5 {
+                color: #FFFFFF;
+            }
+
+            h5 {
+                &:before {
+                    background: rgba(255, 255, 255, 0.25);
+                }
+            }
+
+            div.arrow-down-icon {
+                display: none;
+            }
+        }
+    }
+}
+
+/* END */

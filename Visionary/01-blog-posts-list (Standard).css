@@ -1,0 +1,21 @@
+/* ----- BLOG POSTS LIST ----- */
+/* START - Adjust the blog grid container */
+.blog-posts-list-item__image-container {
+    height: unset;
+    aspect-ratio: 16/9;
+}
+
+.blog-posts-list-item__details {
+    text-transform: var(--text-case);
+}
+
+.blog-posts-list-item__title {
+    white-space: nowrap;
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* END */
+
+/* ----- BLOG POSTS LIST ----- */

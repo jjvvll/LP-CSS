@@ -1,0 +1,10 @@
+/*Start - Fix vertical CTA block 1 line title*/
+div.cta-block .text-block {
+    max-width: 1500px;
+
+    p {
+        margin-bottom: 0px !important;
+    }
+}
+
+/*End*/

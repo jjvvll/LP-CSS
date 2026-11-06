@@ -1,0 +1,70 @@
+/* START - Adjust agent intro content max width */
+.agent-intro__content-box {
+    max-width: fit-content;
+}
+
+.agent-intro__description {
+    max-width: 540px;
+}
+
+/* END */
+
+/* START - Fix arrow button theme */
+.agent-intro__scroll-btn {
+    border-color: var(--accent-light);
+    background: var(--accent-light);
+
+    &:after {
+        background: var(--accent-dark);
+    }
+
+    &:hover {
+        border-color: var(--accent-light);
+        background: transparent;
+
+        &:after {
+            background: var(--accent-light);
+        }
+    }
+}
+
+/* END */
+
+/* START - Add background overlay to neighborhoods intro */
+.agent-intro__back-image:before {
+    content: '';
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+/* END */
+
+/* START - Fix element not using the global font size */
+.agent-intro__title {
+    font-size: var(--global-h1-font-size);
+
+    @media (max-width: 768px) {
+        font-size: var(--global-h3-font-size);
+    }
+}
+
+.agent-intro__description {
+    font-size: var(--global-secondary-font-size);
+}
+
+/* END */
+
+/* START - Theme the agent intro underline */
+div.agent-intro__content-box {
+    h1.agent-intro__title {
+        &:before {
+            border-color: var(--accent-dark);
+        }
+    }
+}
+
+/* END */

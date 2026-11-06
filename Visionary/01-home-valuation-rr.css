@@ -1,0 +1,14 @@
+/* START - Update the hover color of the home valuation dropdown address */
+/* Note: Insert this in the element text editor */
+div.pac-item {
+    &:hover {
+        color: var(--typography-dark);
+        
+        span.pac-item-query,
+        span.pac-matched {
+            color: var(--accent-dark);
+        }
+    }
+}
+
+/* END */

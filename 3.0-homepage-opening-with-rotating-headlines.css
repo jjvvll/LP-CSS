@@ -1,0 +1,25 @@
+/* START - Resize pre-title on mobile */
+p.lp-text--pretitle {
+    @media (max-width: 768px) {
+        font-size: 12px;
+    }
+}
+
+/* END */
+
+/* START - Reduce unnecessary vertical spaces */
+div.item {
+    div.lp-title-group {
+        margin-bottom: 48px;
+
+        div.lp-text--subtitle {
+            margin-bottom: unset;
+        }
+    }
+
+    div.btn-container {
+        margin-top: unset;
+    }
+}
+
+/* END */

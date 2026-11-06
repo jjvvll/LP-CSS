@@ -1,0 +1,272 @@
+/* START - Adjust the element layout */
+.lp-vertical-paddings:not([class*="pb-"]) {
+  @media (max-width: 768px) {
+    padding-top: 64px !important;
+  }
+
+  .property-details-tabs__section-title {
+    @media (max-width: 768px) {
+      font-size: 26px;
+    }
+  }
+
+  .property-details-tabs-description__text-container {
+    flex-direction: column;
+    gap: 8px;
+
+    .property-details-tabs-description__text-block {
+      max-width: 100%;
+
+      .text-block__highlight {
+        text-transform: var(--text-case);
+      }
+    }
+
+    .property-details-tabs-description__collapsible {
+      & > *:is(:last-child) {
+        margin-bottom: unset;
+      }
+    }
+  }
+}
+
+/* END */
+
+/* START - Theme the property description borders */
+.property-details-tabs-nav__item,
+.property-details-tabs__btn-container,
+.property-details-tabs-copy__item {
+  border-color: var(--color-dark);
+}
+
+.property-details-tabs-nav__item {
+  transition: 0.25s;
+
+  .property-details-tabs-nav__link {
+    color: var(--color-dark) !important;
+  }
+
+  &:hover,
+  &:is(.active) {
+    border-color: var(--color-dark);
+  }
+}
+
+/* END */
+
+/* START - Fix the property description accordion when active */
+.property-details-tabs-accordion__header:is(.is-active):not(
+    .property-details-accordion__header--no-accordion
+  ) {
+  padding: 24px;
+}
+
+/* END */
+
+/* START - Fix the property description accordion large extra spacing at the bottom */
+.property-details-tabs__content {
+  display: flex;
+  flex-direction: column;
+  gap: 112px;
+
+  @media (max-width: 768px) {
+    gap: 48px;
+  }
+}
+
+.property-details-tabs__section {
+  margin-bottom: 0px;
+}
+
+/* END */
+
+/* START - Fix schedule a tour padding on mobile */
+.property-details-tabs-schedule-modal__contact-container {
+  @media (max-width: 768px) {
+    padding-top: 96px;
+    padding-bottom: 64px;
+  }
+}
+
+/* END */
+
+/* START - Fix schedule a showing title width to one line title */
+.property-details-tabs-schedule-modal__title-group {
+  max-width: unset;
+
+  .property-details-tabs-schedule-modal__title {
+    @media (min-width: 1366px) and (max-width: 1440px) {
+      font-size: var(--global-h2-font-size);
+    }
+  }
+}
+
+/* END */
+
+/* START - Adjust the schedule a tour label text case */
+.schedule__type-selector-label {
+  text-transform: var(--text-case);
+}
+
+/* END */
+
+/* START - Theme the property description accordion icon */
+.property-details-tabs-accordion__icon {
+  background: var(--color-dark);
+
+  &:after {
+    background: var(--color-light);
+  }
+}
+
+/* END */
+
+/* START - Theme the schedule a show phone number link */
+.property-details-tabs-agent__phone,
+.property-details-tabs-agent__email {
+  transition: 0.4s;
+  text-decoration-color: var(--color-dark);
+
+  &:hover,
+  &:active,
+  &:focus {
+    color: var(--color-dark);
+    text-decoration-color: var(--color-dark);
+    opacity: 0.5;
+  }
+}
+
+/* END */
+
+/* START - Theme for schedule a showing dates */
+.calendar__slide {
+  .calendar__item {
+    background: var(--background-dark-inactive);
+
+    & > * {
+      color: var(--color-dark);
+    }
+  }
+
+  &:hover,
+  &:is(.selected) {
+    .calendar__item {
+      background: var(--color-dark);
+
+      & > * {
+        color: var(--color-light);
+      }
+    }
+  }
+}
+
+/* END */
+
+/* START - Theme the schedule a tour close button */
+.property-details-tabs-schedule-modal__close {
+  background-color: var(--color-light);
+  border-color: var(--color-light);
+
+  &:after {
+    --iconColor: var(--color-dark);
+  }
+
+  &:hover:not(:disabled),
+  &:focus,
+  &:active {
+    background: transparent;
+    border-color: var(--color-light);
+
+    &:after {
+      --iconColor: var(--color-light);
+    }
+  }
+
+  @media (max-width: 768px) {
+    background-color: var(--color-light);
+    border-color: var(--color-light);
+
+    &:after {
+      --iconColor: var(--color-dark);
+    }
+
+    &:hover:not(:disabled),
+    &:focus,
+    &:active {
+      border-color: var(--color-light);
+      background: transparent;
+
+      &:after {
+        --iconColor: var(--color-light);
+      }
+    }
+  }
+}
+
+/* END */
+
+/* START - Adjust the position of the schedule a tour close button */
+.property-details-tabs-schedule-modal__close {
+  top: 32px;
+  right: 32px;
+
+  @media (max-width: 768px) {
+    top: 16px;
+    right: 16px;
+  }
+}
+
+/* END */
+
+/* START - Fix the paddings and scroll height calculation of the schedule a tour container*/
+div[class*="schedule__step schedule__step"]:not(.visible) {
+  display: none;
+}
+
+.property-details-schedule-modal__title-group {
+  align-self: center;
+}
+
+.property-details-schedule {
+  height: fit-content;
+}
+
+/* END */
+
+/* START - Theme the time dropdown */
+.custom-select-item {
+  &:hover {
+    background-color: var(--color-dark) !important;
+    color: var(--color-light) !important;
+  }
+  &.is-selected {
+    color: var(--color-dark) !important;
+    font-weight: 600;
+  }
+  &.is-selected:hover {
+    background-color: var(--color-dark) !important;
+    color: var(--color-light) !important;
+  }
+}
+/* END */
+
+/* START - Color the clock - WB JV */
+.lp-input-icon--clock::after {
+  background-color: var(--color-dark) !important;
+}
+/* END */
+
+/*Change active/inactive state color*/
+.property-details-tabs-accordion__header:is(.is-active):not(
+    .property-details-accordion__header--no-accordion
+  ) {
+  padding: 24px;
+  background-color: var(--background-dark-active);
+}
+
+.property-details-tabs-accordion__header:not(.is-active):not(
+    .property-details-accordion__header--no-accordion
+  ) {
+  padding: 24px;
+  background-color: var(--background-dark-inactive);
+}

@@ -1,0 +1,6 @@
+/* START - Theme agent names */
+span.team-member__name {
+    color: var(--accent-dark);
+}
+
+/* END */

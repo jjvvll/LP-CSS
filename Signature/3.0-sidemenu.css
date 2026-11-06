@@ -1,0 +1,60 @@
+/* START - Theme sidemenu close button */
+div.sidemenu {
+    button.close {
+        background: var(--accent-light) !important;
+        border: solid 1px var(--accent-light) !important;
+
+        &:before,
+        &:after {
+            background: var(--accent-dark) !important;
+        }
+
+        &:hover {
+            background: transparent !important;
+            border: solid 1px var(--accent-light) !important;
+
+            &:before,
+            &:after {
+                background: var(--accent-light) !important;
+            }
+        }
+    }
+}
+
+/* END */
+
+/* START - Theme sidemenu links */
+div.sidemenu {
+    ul.nav {
+        li.nav__item {
+            a.nav__nav-link,
+            button.nav__nav-link {
+                text-transform: var(--text-case);
+
+                &:hover {
+                    color: var(--accent-light);
+                    opacity: 0.5;
+                }
+            }
+        }
+    }
+}
+
+/* END */
+
+/* START - Reduce Side Menu Mobile Hover Font Size */
+/* Note: Only add if needed */
+div.sidemenu {
+    ul.nav {
+        a.nav__nav-link,
+        button.nav__nav-link {
+            &:hover {
+                @media screen and (max-width: 768px) {
+                    font-size: var(--global-h3-font-size) !important;
+                }
+            }
+        }
+    }
+}
+
+/* END */

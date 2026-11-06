@@ -1,0 +1,34 @@
+/* START - Align the contents in the center */
+.fair-housing {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* END */
+
+/* START - Remove the bottom margin of the content container */
+.standard-cta__description {
+    margin-bottom: 0px;
+}
+
+/* END */
+
+/* START - Add anchor links hover effect */
+/* Note: Add the class name fair-housing__link to the links */
+.fair-housing__link {
+    color: var(--primary-dark);
+    text-decoration: underline;
+    text-decoration-color: var(--border-dark-inactive);
+    transition: 0.4s;
+    text-transform: none;
+    
+    &:hover {
+        color: var(--accent-dark);
+        opacity: 0.5;
+        text-decoration-color: var(--border-dark-active);
+    }
+}
+
+/* END */

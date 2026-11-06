@@ -1,0 +1,6 @@
+/* START - Hide blog element if no blog posts is posted */
+&:has(.blog-list__container:empty) {
+    display: none;
+}
+
+/* END */

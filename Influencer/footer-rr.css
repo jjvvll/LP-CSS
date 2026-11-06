@@ -1,0 +1,31 @@
+footer#global-footer {
+    div.footer__info {
+        div.footer__info-column {
+            display: flex;
+
+            &:has(> img) {
+                &:after {
+                    content: '';
+                    display: block;
+                    width: 180px;
+                    height: 50px;
+                    background: url(https://media-production.lp-cdn.com/cdn-cgi/image/format=auto,quality=85/https://media-production.lp-cdn.com/media/bc26b9c5-da27-4844-a589-6d7a04c6df73);
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    margin-bottom: 12px;
+                    margin-left: 48px;
+                }
+
+                @media (max-width: 768px) {
+                    gap: 8px;
+
+                    &:after {
+                        margin-left: unset;
+                        margin-bottom: 32px;
+                    }
+                }
+            }
+        }
+    }
+}

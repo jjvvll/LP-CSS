@@ -1,0 +1,90 @@
+/* ----- NEIGHBORHOOD LIST ----- */
+/* START - Adjust the element layout */
+.neighborhoods-slider {
+    @media (min-width: 769px) {
+        grid-template-columns: 1fr 1fr auto;
+    }
+
+    &:not(:has(.neighborhoods-slider__images--fullwidth)) {
+        &:has(.neighborhoods-slider__card-content:not(.neighborhoods-slider__card-content--centered)) {
+            .neighborhoods-slider__images {
+                @media (min-width: 769px) {
+                    margin-bottom: 48px;
+                }
+            }
+
+            .neighborhoods-slider__card-content {
+                @media (min-width: 769px) {
+                    bottom: -48px;
+                }
+            }
+        }
+    }
+
+    &:has(.neighborhoods-slider__images--fullwidth) {
+        .neighborhoods-slider__images {
+            @media (min-width: 769px) and (max-width: 1024px) {
+                margin-bottom: 48px;
+            }
+        }
+
+        .neighborhoods-slider__card-content {
+            @media (min-width: 1025px) {
+                bottom: -98px;
+            }
+        }
+    }
+}
+
+.neighborhoods-slider__list-slider {
+    &:after {
+        display: none;
+    }
+}
+
+.neighborhoods-slider__title {
+    max-width: unset;
+}
+
+.neighborhoods-slider__subtitle {
+  max-width: 560px;
+}
+
+.neighborhoods-slider__card-content {
+    min-height: unset;
+}
+
+.neighborhoods-slider__list-item-text {
+    text-transform: var(--text-case);
+}
+
+.neighborhoods-slider__card-blur {
+    display: none !important;
+}
+
+/* END */
+
+/* ----- NEIGHBORHOOD SLIDER LAYOUT ----- */
+
+/* ----- NEIGHBORHOOD SLIDER THEME ----- */
+/* START - Theme the neighborhoods slider title border */
+.neighborhoods-slider__pretitle {
+    &:before {
+        border-color: var(--color-dark);
+    }
+}
+
+/* END */
+
+/* START - Theme read more button */
+.neighborhoods-slider__card-link {
+    color: var(--color-dark);
+
+    &:hover {
+        color: var(--color-dark) ;
+    }
+}
+
+/* END */
+
+/* ----- NEIGHBORHOOD SLIDER THEME ----- */

@@ -1,0 +1,60 @@
+/* START - Adjust the custom intro layout */
+div.custom-intro {
+    div.text-group__box {
+        div.description {
+            @media (max-width: 768px) {
+                margin-top: 8px !important;
+            }
+        }
+    }
+
+    div.custom-intro__wrapper {
+        padding-top: 256px;
+
+        @media (max-width: 768px) {
+            padding-top: 128px;
+        }
+
+        div.content-group {
+            min-height: unset;
+            padding-left: 64px;
+
+            @media (max-width: 768px) {
+                padding-left: unset;
+            }
+
+            div.text-group {
+                justify-content: unset;
+                gap: 128px;
+            }
+        }
+    }
+}
+
+/* END */
+
+/* START - Adjust the arrow button theme */
+button.button-down {
+    svg {
+        path {
+            stroke: var(--accent-light);
+        }
+    }
+
+    &:after {
+        background: var(--accent-dark) !important;
+    }
+}
+
+/* END */
+
+/* START - Add border radius to image */
+div.image-box {
+    overflow: hidden;
+
+    @media (min-width: 768px) {
+        border-radius: 16px;
+    }
+}
+
+/* END */

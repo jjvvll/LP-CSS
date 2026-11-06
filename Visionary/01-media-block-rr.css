@@ -1,0 +1,16 @@
+/* START - Display the more text by default instead of the cropped text */
+.media-blocks-grid__description.media-blocks-grid__cropped {
+    .media-blocks-grid__substring {
+        display: none !important;
+    }
+
+    .media-blocks-grid__more-text {
+        display: block !important;
+
+        .media-blocks-grid__btn-more {
+            display: none;
+        }
+    }
+}
+
+/* END */

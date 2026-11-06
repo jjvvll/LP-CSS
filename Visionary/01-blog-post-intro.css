@@ -1,0 +1,60 @@
+/* START - Fix element not using the global body font size */
+.blog-post-intro__description {
+    font-size: var(--global-secondary-font-size);
+}
+
+/* END */
+
+/* START - Fix the arrow button theme */
+.blog-post-intro__scroll-btn {
+    border-color: var(--accent-light);
+    background: var(--accent-light);
+
+    &:after {
+        background: var(--accent-dark);
+    }
+
+    &:hover {
+        border-color: var(--accent-light);
+        background: transparent;
+
+        &:after {
+            background: var(--accent-light);
+        }
+    }
+}
+
+/* END */
+
+/* START - Adjust blog intro max width */
+.blog-post-intro__content-box {
+    max-width: 720px;
+}
+
+.blog-post-intro__description {
+    max-width: 500px;
+}
+
+/* END */
+
+/* START - Adjust the blog intro date text case */
+.blog-post-intro__author-content {
+    text-transform: var(--text-case);
+}
+
+/* END */
+
+/* START - Add image overlay */
+.blog-post-intro__back-image {
+    &:after {
+        content: '';
+        height: 100%;
+        width: 100%;
+        top: 0px;
+        position: absolute;
+        display: block;
+        background: linear-gradient(180deg, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.3) 100%);
+    }
+}
+
+/* END */

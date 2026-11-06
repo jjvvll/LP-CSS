@@ -1,0 +1,30 @@
+/* START - Fix the property map description */
+.property-map__content {
+    padding: 64px;
+    max-width: fit-content;
+    text-transform: var(--text-case);
+
+    @media (max-width: 768px) {
+        max-width: unset;
+    }
+}
+
+/* END */
+
+/* START - Fix element overflow and dimension */
+.property-map {
+    height: auto;
+    max-height: unset;
+}
+
+.property-map__container {
+    position: relative;
+    height: auto;
+    aspect-ratio: 16/7;
+
+    @media (max-width: 768px) {
+        aspect-ratio: 3/4;
+    }
+}
+
+/* END */

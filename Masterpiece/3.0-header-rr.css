@@ -1,0 +1,34 @@
+/* START - Theme the header cta button */
+nav#global-navbar {
+    a.lp-btn {
+        margin-left: unset;
+        padding: 9px 20px;
+        text-transform: var(--text-case);
+        font-size: 14px;
+        border-radius: 0px;
+
+        @media (max-width: 768px) {
+            display: none;
+        }
+    }
+}
+
+body:is(.page-property-details) {
+    nav#global-navbar {
+        &:not(.scroll) {
+            a.lp-btn {
+                background: var(--accent-light) !important;
+                border-color: var(--accent-light) !important;
+                color: var(--accent-dark) !important;
+
+                &:hover {
+                    background: transparent !important;
+                    border-color: var(--accent-light) !important;
+                    color: var(--accent-light) !important;
+                }
+            }
+        }
+    }
+}
+
+/* END */

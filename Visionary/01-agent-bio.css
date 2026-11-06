@@ -1,0 +1,47 @@
+/* ----- AGENT BIO ----- */
+/* START - Fix agent bio container layout */
+.agent-bio__container {
+    @media (min-width: 1025px) {
+        gap: 96px;
+        justify-content: center;
+        padding-bottom: 93px;
+    }
+}
+
+.agent-bio__image {
+    margin-right: 0px;
+}
+
+.agent-bio__text {
+    max-width: unset;
+}
+
+/* END */
+
+/* START - Theme the read more button */
+.read-more {
+    color: var(--typography-dark);
+
+    &:hover {
+        color: var(--accent-dark);
+    }
+}
+
+/* END */
+
+/* START - Center social icons on mobile */
+.agent-bio-socials {
+    .lp-socials {
+        @media (max-width: 768px) {
+            justify-content: center;
+
+            li {
+                margin-bottom: 0px;
+            }
+        }
+    }
+}
+
+/* END */
+
+/* ----- AGENT BIO ----- */

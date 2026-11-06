@@ -1,0 +1,61 @@
+/*START - change status label color*/
+div.properties-list-item-status {
+    background: #DFD6C6;
+    color: #fff;
+}
+
+/*END - change status label color*/
+
+/*START - change pagination color */
+.paginationjs .paginationjs-pages {
+
+    .paginationjs-next a,
+    .paginationjs-prev a {
+        color: #DFD6C6;
+        background-color: transparent !important;
+        border-color: #DFD6C6 !important;
+        transition: 0.1s;
+
+        &:hover {
+            color: #DFD6C6;
+            background-color: #DFD6C6 !important;
+            border-color: #fff !important;
+            transition: 0.1s;
+        }
+    }
+}
+
+/*END - change pagination color*/
+
+/*START - uppercase props title*/
+div.name-address h4 {
+    text-transform: uppercase;
+}
+
+/*END - uppercase props title*/
+
+.properties-list.with-top {
+    padding-top: 96px !important;
+
+    @media (max-width: 768px) {
+        padding-top: 64px !important;
+    }
+}
+
+/*START - fix slick arrow mobile view*/
+@media only screen and (max-width:767px) {
+    .pagination-container a:before {
+        left: 10px !important;
+    }
+
+}
+
+/*END*/
+
+.basic-margins {
+    margin-bottom: 0px !important;
+}
+
+.properties-list-content {
+    border-bottom: none !important;
+}

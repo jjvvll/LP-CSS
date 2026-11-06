@@ -1,0 +1,80 @@
+/* START - Adjust the element dimensions */
+h2.f-properties__title {
+  margin-bottom: 32px;
+  /* margin-bottom: unset; */
+  font-size: var(--global-h2-font-size);
+
+  @media (max-width: 768px) {
+    font-size: var(--global-h3-font-size);
+  }
+}
+
+div.f-properties__description {
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 48px;
+
+  & > *:last-child {
+    margin-bottom: unset;
+  }
+}
+
+div.f-properties__carousel {
+  div.slick-list {
+    padding-left: unset !important;
+    padding-right: unset !important;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1400px;
+    overflow: unset;
+
+    div.slick-slide {
+      padding-left: 48px;
+      padding-right: 48px;
+      height: unset;
+      aspect-ratio: 16/7;
+
+      @media (max-width: 768px) {
+        aspect-ratio: 1/1;
+        padding-left: 25px;
+        padding-right: 25px;
+      }
+    }
+  }
+}
+
+div.f-properties__action {
+  width: 100%;
+  max-width: 1400px;
+  padding-top: 48px;
+  padding-left: 50px;
+  padding-right: 50px;
+
+  @media (max-width: 768px) {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+}
+
+/* END */
+
+/* START - Adjust the properties info font size */
+div.f-properties__item-info {
+  div.f-properties__item-features,
+  div.f-properties__item-price {
+    font-size: var(--global-body-font-size);
+    text-transform: var(--text-case);
+  }
+}
+
+/* END */
+
+/* START - Theme the element property status label */
+div.f-properties__property-status {
+  background: var(--color-dark);
+  color: var(--color-light);
+  text-transform: var(--text-case);
+}
+
+/* END */

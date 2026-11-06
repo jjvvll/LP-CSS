@@ -1,0 +1,43 @@
+/* ----- FULL BLEED CTA ----- */
+/* START - Fix the element layout */
+div.full-bleed-cta {
+    div.full-bleed-cta__container {
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+
+        &:not(:has(div.full-bleed-cta-button-container)) {
+            div.full-bleed-cta__description {
+                margin-bottom: unset;
+            }
+        }
+    }
+
+    &:has(.full-bleed-cta__image) {
+        &:not(.full-bleed-cta--right):not(.full-bleed-cta--full-bleed),
+        &:not(.full-bleed-cta--right) {
+            div.full-bleed-cta__container {
+                @media (min-width: 769px) {
+                    padding-left: 50px;
+                    padding-right: 0px;
+                }
+            }
+        }
+
+        &:not(.full-bleed-cta--full-bleed) {
+            div.full-bleed-cta__container {
+                padding-left: unset;
+            }
+        }
+    }
+
+    &:not(:has(.full-bleed-cta__image)) {
+        .full-bleed-cta__title-group {
+            margin-bottom: 8px;
+        }
+    }
+}
+
+/* END */
+
+/* ----- FULL BLEED CTA ----- */

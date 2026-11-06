@@ -1,0 +1,8 @@
+/* START - Adjust the demographics title on mobile */
+h2.title {
+    @media (max-width: 768px) {
+        font-size: 24px;
+    }
+}
+
+/* END */

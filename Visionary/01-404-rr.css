@@ -1,0 +1,40 @@
+/* START - Adjust the content box max width */
+.error-page__content-wrapper {
+    max-width: fit-content;
+}
+
+.error-page__description {
+    max-width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* END */
+
+/* START - Update the underline theme */
+.error-page__text-box {
+    .error-page__title {
+        &:before {
+            border-color: var(--accent-dark);
+        }
+    }
+}
+
+/* END */
+
+/* START - Adjust paddings of the 404 text container */
+.error-page__content-wrapper {
+    @media (max-width: 768px) {
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+}
+
+/* END */
+
+/* START - Add blur effect to the content background container */
+.error-page__content-wrapper {
+    backdrop-filter: blur(10px);
+}
+
+/* END */

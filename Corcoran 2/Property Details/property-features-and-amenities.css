@@ -1,0 +1,17 @@
+.features-amenities__item-list {
+    li {
+        border-color: rgba(0, 0, 0, 0.1) !important;
+    }
+}
+
+.features-amenities__wrap {
+    row-gap: 90px;
+    
+    @media screen and (max-width: 768px) {
+        row-gap: 55px;
+    }
+    
+    .features-amenities__item {
+        margin-bottom: 0px;
+    }
+}

@@ -1,0 +1,49 @@
+/* START - Customize the development grid */
+div.container {
+    max-width: 1920px;
+
+    ul.development-list {
+        justify-content: space-between;
+        margin: unset;
+        row-gap: 56px;
+        column-gap: 32px;
+
+        @media (max-width: 768px) {
+            gap: 32px;
+        }
+
+        li {
+            margin: 0px;
+            width: unset;
+            flex: 1 1 calc((100% / 2) - 32px + (32px / 2));
+            max-width: calc((100% / 2) - 32px + (32px / 2));
+
+            @media (max-width: 768px) {
+                flex: 1 1 100%;
+                max-width: 100%;
+            }
+
+            figure {
+                aspect-ratio: 16/8;
+                height: unset;
+
+                @media (max-width: 768px) {
+                    aspect-ratio: 1/1;
+                }
+            }
+
+            &:nth-child(even) {
+                h3,
+                p {
+                    text-align: right;
+                }
+            }
+        }
+    }
+
+    div.pagination-container {
+        margin-top: 48px;
+    }
+}
+
+/* END */

@@ -1,0 +1,58 @@
+/*START - change label color*/
+span.property-card__status {
+    color: var(--typography-dark);
+    background: var(--accent-light);
+}
+
+.property-card__amenities {
+    .property-card__pill {
+        color: var(--typography-dark);
+        background: var(--accent-light);
+    }
+}
+
+/*ENd - change label color*/
+
+/*START - theming*/
+.irs-from {
+    color: var(--typography-light) !important;
+}
+
+.irs-to {
+    color: var(--typography-light) !important;
+}
+
+/*END*/
+
+/*START - (prop grid) prop title*/
+.text-color-gray-300 {
+    color: var(--typography-light);
+}
+
+/*END*/
+
+/*START - (prop grid) dropdown color*/
+.custom-select .lp-input--light+.custom-select-menu .custom-select-content {
+    color: var(--typography-dark) !important;
+    background-color: var(--primary-light) !important;
+}
+
+.custom-select-item:hover {
+    color: var(--accent-light) !important;
+}
+
+.custom-select-item.is-selected {
+    color: var(--accent-dark) !important;
+}
+
+/*END - dropdown color*/
+
+/*Start - Theme input border*/
+.lp-input {
+    border-color: var(--border-light-inactive);
+
+    &:focus {
+        border-color: var(--border-light-active);
+    }
+}
+/*End*/

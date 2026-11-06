@@ -1,0 +1,59 @@
+div.lp-text--subtitle {
+  font-size: var(--global-body-font-size);
+}
+
+div.sell-slider__arrows {
+  button.lp-arrow {
+    background: var(--accent-dark);
+    border-color: var(--accent-dark);
+
+    &:before {
+      border-color: var(--accent-light);
+    }
+
+    &:hover {
+      background: transparent;
+      border-color: var(--accent-dark);
+
+      &:before {
+        border-color: var(--accent-dark);
+      }
+    }
+  }
+}
+
+/*Make the image and previews black and white and contain the image in the container*/
+.image-slider__image {
+  filter: grayscale(100%);
+  object-fit: contain;
+}
+
+.image-slider__image,
+.splide__pagination img,
+.splide__slide img {
+  filter: grayscale(100%);
+}
+
+/*END*/
+
+/*START - Remove unnecessary margins for mobile view*/
+
+@media (max-width: 768px) {
+  .image-slider {
+    margin-bottom: 0px;
+  }
+}
+
+@media (max-width: 768px) {
+  .simple-cta__container--Center-aligned .simple-cta__text-block {
+    margin-bottom: 0px;
+  }
+}
+
+/*END - Remove unnecessary margins*/
+
+/*START - Hide the slide nav container - WB JV*/
+.image-slider__nav-container {
+  display: none;
+}
+/*END - Hide the slide nav container - WB JV */

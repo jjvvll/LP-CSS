@@ -1,0 +1,68 @@
+/*START - adjust paddings*/
+div.f-properties .top-bar {
+    padding-top: 0px;
+    margin-bottom: 40px;
+}
+
+div.basic-margins {
+    margin-bottom: 0px;
+}
+
+@media(max-width: 768px) {
+    h2 {
+        text-align: center;
+    }
+}
+
+/*END*/
+
+/*START - change slick arrow theme */
+div.slick-arrow span.arrow-in-circle {
+    border: 2px solid #000;
+    background-color: #000;
+
+    &:after {
+        border: solid #fff;
+        border-width: 0 2px 2px 0;
+    }
+
+    &:hover {
+        border: 2px solid #000;
+        background-color: #000;
+
+        &:after {
+            border: solid #fff;
+            border-width: 0 2px 2px 0;
+        }
+    }
+}
+
+/*END - change slick arrow theme*/
+
+/*START - add card theme */
+a.f-properties__item {
+    background-color: #000;
+    padding-bottom: 15px;
+    padding-right: 0px !important;
+    margin-bottom: 0px;
+
+    h3,
+    h4,
+    h5 {
+        color: #fff;
+    }
+}
+
+/*END- add card theme*/
+
+.f-properties:has(.slick-arrow) {
+    .f-properties__controls {
+        margin-top: 40px;
+    }
+}
+
+.slick-list {
+    .slick-track:is(:last-child:first-child) {
+        margin-left: 0px;
+    }
+}

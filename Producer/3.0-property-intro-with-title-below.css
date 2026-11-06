@@ -1,0 +1,71 @@
+/* START - Fix property image slider occupying large height */
+div.property-intro-2-bg-slider {
+  max-height: 100dvh;
+  overflow: hidden;
+}
+
+/* END */
+
+/* START - Theme the property status label */
+span.label {
+  background: var(--color-dark);
+  color: var(--color-light);
+}
+
+/* END */
+
+/* START - Theme the property price border */
+div.container {
+  & > h5 {
+    &:before {
+      background-color: var(--color-dark);
+    }
+  }
+}
+
+/* END */
+
+/* START - Theme the element scroll down button */
+div.arrow-down-icon {
+  path {
+    fill: var(--color-dark);
+  }
+}
+
+/* END */
+
+/* change background color */
+.modal-1.js.visible {
+  background: var(--color-fallback-2) !important;
+}
+/* END */
+
+/* Theme close button */
+.lp-lightbox__close {
+  color: var(--color-dark);
+  background-color: var(--color-light);
+  border-color: var(--color-light);
+
+  &:hover {
+    color: var(--color-light);
+    background-color: var(--color-dark);
+    border-color: var(--color-dark);
+  }
+}
+/* END */
+/* theme buttons */
+.nav-tab a {
+  color: var(--color-dark);
+  background-color: var(--color-light);
+  border-color: var(--color-light);
+
+  &:hover,
+  &.active {
+    color: var(--color-light);
+    background-color: var(--color-dark);
+    border-color: var(--color-dark);
+  }
+}
+/* END */
+
+/*If colors not working use important*/

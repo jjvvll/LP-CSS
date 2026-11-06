@@ -1,0 +1,10 @@
+/* START - Play video on mobile */
+div.poster {
+    display: none;
+}
+
+div.video-wrapper:is(.hidable) {
+    display: unset;
+}
+
+/* END */

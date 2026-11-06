@@ -1,0 +1,194 @@
+/* START - Fix header navigation centered on mobile */
+nav#global-navbar {
+    div.header {
+        padding: 24px 24px 24px 24px;
+
+        @media (max-width: 768px) {
+            padding-top: 16px;
+            padding-bottom: 16px;
+            padding-left: 16px;
+            padding-right: 16px;
+        }
+    }
+
+    &:is(.scroll) {
+        div.header {
+            margin-top: 0px;
+
+            @media (max-width: 768px) {
+                padding-left: 16px;
+                padding-right: 16px;
+            }
+        }
+    }
+}
+
+/* END */
+
+/* START - Fix centered header navigation dropdown menu */
+nav#global-navbar {
+    div.header {
+        ul.navigation {
+            div.sub-nav {
+                max-width: unset;
+                background: var(--primary-light);
+                transform: translateY(calc(100% + 16px));
+                box-shadow: none;
+
+                ul {
+                    li {
+                        background: transparent;
+
+                        a.nav-link {
+                            white-space: pre;
+                            text-transform: var(--text-case);
+                            padding: 12px 20px;
+
+                            &:hover {
+                                background: var(--accent-dark);
+                                color: var(--typography-light);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* END */
+
+/* START - Resize header navigation centered logo */
+nav#global-navbar {
+    a.header__logo {
+        img {
+            max-height: 60px;
+            max-width: 240px;
+
+            @media (max-width: 768px) {
+                max-height: 56px;
+            }
+        }
+    }
+}
+
+/* END */
+
+/* START - Theme centered navigation link */
+nav#global-navbar {
+    transform: none !important;
+
+    div.header {
+        background: rgba(255, 255, 255, 0) !important;
+        transition: 0.4s;
+    }
+
+    a.navigation__link {
+        color: var(--typography-light);
+
+        &:hover {
+            span {
+                &:after {
+                    background: var(--typography-light);
+                }
+            }
+        }
+    }
+
+    button.hamburger-component {
+        width: 50px;
+
+        span,
+        span:before,
+        span:after {
+            background: var(--typography-light);
+            height: 1px;
+        }
+    }
+
+    a.header__logo {
+        img.dark {
+            display: none !important;
+        }
+
+        img.light {
+            display: block !important;
+        }
+    }
+
+    ul.navigation {
+        gap: 24px;
+
+        li.navigation__item {
+            &:not(:has(.sub-nav)) {
+                a.navigation__link {
+                    padding: 0px;
+                    font-weight: 400;
+
+                    @media (max-width: 1440px) {
+                        font-size: 12px;
+                    }
+                }
+            }
+
+            &:has(.sub-nav) {
+                cursor: pointer;
+
+                a.navigation__link {
+                    padding-top: 0px;
+                    padding-bottom: 0px;
+                    padding-left: 0px;
+                    padding-right: 20px;
+                    font-weight: 400;
+
+                    &:before {
+                        right: 0px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* END */
+
+/* START - Theme centered navigation link on scroll */
+nav#global-navbar[class="scroll"] {
+    div.header {
+        background: var(--primary-dark) !important;
+    }
+
+    a.navigation__link {
+        color: var(--typography-dark) !important;
+
+        &:hover {
+            color: var(--accent-dark) !important;
+
+            span {
+                &:after {
+                    background: var(--accent-dark);
+                }
+            }
+        }
+    }
+
+    button.hamburger-component {
+        span,
+        span:before,
+        span:after {
+            background: var(--typography-dark);
+        }
+    }
+
+    a.header__logo {
+        img.dark {
+            display: block !important;
+        }
+
+        img.light {
+            display: none !important;
+        }
+    }
+}
+
+/* END */

@@ -1,0 +1,47 @@
+
+Week 1
+- For building UI
+	- emphasizes declarative, component-based architecture
+		- composed of multiple components
+			- paragraph
+			- button
+			- inputs
+	- backed and maintained by Facebook (Meta) community
+- Single Page (SPA) VS Multi-Page Apps (MPA)
+	- MPA: Reloads for each route/request
+		- Every navigation, the entire page reloads
+		- built with server-rendered stacks
+			- PHP
+			- Django
+			- etc
+	- SPA: Loads once, client-side routing (React Router)
+		- Pros of SPA: smooth UIX, state persistence
+		- Cons: SEO & initial load
+		- Loads once, then dynamically updates content
+		- Built with stacks
+			- React
+			- Vue
+			- Angular
+		- Faster UX, good for apps, needs client-side routing
+- JSX Syntax
+	- JSX: Javascript + HTML
+		- what: syntax extension, looks like HTML in JS
+		- why: makes ui code easier to read and write
+		- under the hood: transpiled to `React.createElement()` calls
+- Functional Components
+	- Components: Building Blocks
+		- Function that returns JSX
+		- Must be PascalCase
+		- Can accept props argument
+			- `function Header() {`
+				- `return <header><h1>My Site</h1></header>
+			- }`
+- Props
+	- Same as parameters
+	- Props === Function Properties
+- Building Component UI
+	- Promote Separation of Components
+	- Parent & Child Relationship
+- Rendering Lists with map()
+	- Dynamic Lists in React
+		- use javascript `.map()` to render arrays

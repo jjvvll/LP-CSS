@@ -1,0 +1,6 @@
+/* START - Fix the featured testimonials height */
+div.featured-testimonials {
+    height: auto;
+}
+
+/* END */

@@ -1,0 +1,26 @@
+/* ----- CONTACT FORM ----- */
+/* START - Adjust the label text case */
+.contact-form__label {
+    text-transform: var(--text-case);
+}
+
+/* END */
+
+/* START - Fix textarea being off centered vertically */
+.contact-form__input[name="message"] {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+/* END */
+
+/* START - Hide textarea scrollbar */
+.contact-form__input:is(textarea) {
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+/* END */
+
+/* ----- CONTACT FORM ----- */

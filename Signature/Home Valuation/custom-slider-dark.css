@@ -1,0 +1,80 @@
+/*Start - Set paddings*/
+.custom-slider.lp-vertical-paddings {
+    padding-top: 144px;
+    padding-bottom: 144px;
+    
+    @media only screen and (max-width: 768px) {
+        padding-top: 96px;
+        padding-bottom: 96px;
+    }
+}
+/*End*/
+
+/*Start - Fix the title dimensions for mobile*/
+.top-part {
+    @media only screen and (max-width: 768px) {
+        margin-bottom: 0px !important;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+}
+
+/*End*/
+
+.title {
+    &:before,
+    &:after {
+        background: #185770 !important;
+    }
+}
+
+/*Start - Theme the circle on the steps*/
+.scene-top {
+    .scene-count {
+        background: #185770;
+        color: #FFFFFF !important;
+        border: none !important;
+    }
+}
+
+/*End*/
+
+/*Start - Theme pagination*/
+.arrows,
+.mobile-arrows {
+    margin-left: 15px;
+    margin-right: 15px;
+    align-content: center;
+    justify-content: center;
+    gap: 20px;
+    
+    .lp-arrow {
+        margin: 0px;
+        background: #185770 !important;
+        border-radius: 50%;
+        transition: 0.4s;
+        -webkit-tap-highlight-color: transparent;
+        
+        &:before {
+            border: 1px solid transparent !important;
+        }
+        
+        &:after {
+            background-color: #fff !important;
+        }
+        
+        &:hover {
+            background: transparent !important;
+            
+            &:before {
+                border-color: #185770 !important;
+            }
+            
+            &:after {
+                background-color: #185770 !important;
+            }
+        }
+    }
+}
+
+/*End*/

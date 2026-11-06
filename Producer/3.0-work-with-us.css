@@ -1,0 +1,19 @@
+/* START - Adjust the element max width */
+div.work-with-us {
+    div.container {
+        max-width: 840px !important;
+
+        & > p:not([class]) {
+            max-width: 560px;
+        }
+    }
+}
+
+/* END */
+
+/* START - Fix element not using the body font size */
+div.container {
+    font-size: var(--global-body-font-size);
+}
+
+/* END */

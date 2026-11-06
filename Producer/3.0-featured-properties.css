@@ -1,0 +1,98 @@
+/* START - Adjust the element layout */
+div.item {
+    padding-top: calc(32px + 128px);
+    margin: unset;
+    min-height: unset;
+    height: 86vh;
+
+    &:before {
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.3) 50%, rgba(0, 0, 0, 0) 100%);
+    }
+
+    @media (max-width: 768px) {
+        padding-top: calc(32px + 64px);
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    &>*:not(.info-label) {
+        @media (max-width: 768px) {
+            width: 100%;
+            text-align: center;
+        }
+    }
+
+    div.info-label {
+        padding: 9px 18px;
+        font-size: 14px;
+        line-height: 1;
+        top: 0px;
+    }
+
+    div.info-label,
+    div.name,
+    div.address,
+    div.property-features {
+        text-transform: var(--text-case);
+    }
+
+    div.name {
+        margin: unset;
+
+        @media (max-width: 768px) {
+            font-size: var(--global-h4-font-size);
+        }
+    }
+
+    div.address,
+    div.property-features {
+        @media (max-width: 768px) {
+            font-size: 11px;
+        }
+    }
+}
+
+/* END */
+
+/* START - Theme the pagination buttons */
+div.carousel-container {
+    div.info-label {
+        background: var(--accent-dark);
+        color: var(--accent-light);
+    }
+
+    span.slick-arrow {
+        border: 2px solid var(--accent-light);
+        background: var(--accent-light);
+        height: 48px;
+        width: 48px;
+        margin-top: unset;
+
+        &:is(.prev-arrow) {
+            @media (max-width: 768px) {
+                left: 25px;
+            }
+        }
+
+        &:is(.next-arrow) {
+            @media (max-width: 768px) {
+                right: 25px;
+            }
+        }
+
+        i.lp-i {
+            color: var(--accent-dark);
+        }
+
+        &:hover {
+            border: 2px solid var(--accent-light);
+            background: transparent;
+
+            i.lp-i {
+                color: var(--accent-light);
+            }
+        }
+    }
+}
+
+/* END */

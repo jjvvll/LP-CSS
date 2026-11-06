@@ -1,0 +1,12 @@
+/*START - paddings*/
+div.lp-vertical-paddings {
+    padding-top: 81px;
+    padding-bottom: 69px;
+
+    @media (max-width: 768px) {
+        padding-top: 64px;
+        padding-bottom: 45px;
+    }
+}
+
+/*END*/

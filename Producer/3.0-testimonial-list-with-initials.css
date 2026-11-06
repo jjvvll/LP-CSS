@@ -1,0 +1,132 @@
+/* Start - Fix dimensions */
+.container {
+  padding-bottom: 0px !important;
+
+  & > div,
+  .data-container {
+    display: flex;
+    flex-direction: column;
+    gap: 96px;
+
+    @media only screen and (max-width: 768px) {
+      gap: 48px;
+    }
+
+    .testimonials__item {
+      margin-top: 0px;
+      margin-bottom: 0px;
+      padding-top: 0px;
+      padding-bottom: 0px;
+
+      .author__box {
+        margin-bottom: 0px !important;
+      }
+    }
+  }
+
+  .pagination-container {
+    margin-top: 48px;
+  }
+}
+
+/* END */
+
+/* START - Fix element not using the body font size */
+p.testimonials__item-short,
+p.testimonials__item-full,
+div.testimonials-list__item-content {
+  font-size: var(--global-body-font-size);
+}
+
+/* END */
+
+/* START- align initials with desc */
+div.testimonials .author__image {
+  position: relative;
+  right: 14px;
+  margin: 0;
+
+  @media (max-width: 768px) {
+    position: relative;
+    right: 14px;
+    margin: 0;
+  }
+}
+
+.testimonials {
+  .author__image {
+    background: transparent !important;
+  }
+}
+
+/* END */
+
+/* START - Update ‘Read More’ button theme style*/
+div.testimonials {
+  & > div,
+  .data-container {
+    .expand-link-container .btn-more {
+      color: var(--color-dark);
+
+      &:hover {
+        color: var(--color-dark) !important;
+      }
+
+      &:before {
+        background: var(--color-dark) !important;
+      }
+
+      &:hover:before {
+        background: var(--color-dark) !important;
+      }
+    }
+
+    .testimonials__item-outer {
+      &:not(.expanded) {
+        .btn-more.btn-expand {
+          opacity: 1;
+          z-index: 1;
+        }
+      }
+
+      &.expanding {
+        .btn-more.btn-expand {
+          opacity: 0;
+        }
+      }
+
+      &.expanded {
+        .btn-more.btn-collapse {
+          opacity: 1;
+        }
+      }
+
+      &:not(.expanded) {
+        .btn-more.btn-collapse {
+          opacity: 0;
+        }
+      }
+
+      &.expanding {
+        .btn-more.btn-collapse {
+          opacity: 1;
+        }
+      }
+
+      &.collapsing {
+        .btn-more.btn-collapse {
+          opacity: 0;
+        }
+      }
+
+      &.expanded {
+        .btn-more.btn-collapse {
+          opacity: 1;
+          z-index: 1;
+        }
+      }
+    }
+  }
+}
+
+/* END */

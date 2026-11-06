@@ -1,0 +1,46 @@
+/* START - Adjust the element content width */
+div.container {
+    div.lp-title-group {
+        max-width: 100%;
+
+        p.lp-text--pretitle {
+            font-style: unset;
+            max-width: unset;
+        }
+
+        h1.lp-h2 {
+            max-width: 100%;
+        }
+
+        p.lp-text--subtitle {
+            max-width: unset;
+        }
+    }
+}
+
+/* END */
+
+/* START - Adjust agent intro background image */
+div.section {
+    div.image-wrap {
+        @media (min-width: 1025px) {
+            &:before {
+                max-height: 600px;
+                background-position-y: 100%;
+            }
+        }
+    }
+}
+
+/* END */
+
+/* START - Make the title use the h1 global font size */
+div.lp-title-group {
+    h1.lp-h2 {
+        @media (min-width: 1025px) {
+            font-size: var(--global-h1-font-size);
+        }
+    }
+}
+
+/* END */

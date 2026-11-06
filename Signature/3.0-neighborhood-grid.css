@@ -1,0 +1,94 @@
+div.lp-container {
+    padding-left: 64px;
+    padding-right: 64px;
+
+    div.lp-title-group {
+        max-width: unset;
+        margin-bottom: 48px;
+
+        h2.section__title {
+            max-width: unset;
+        }
+
+        p.lp-text--subtitle {
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+}
+
+a.item {
+    &:hover {
+        span.link-icon {
+            &:before {
+                background: var(--accent-dark);
+            }
+
+            &:after {
+                background: var(--accent-light);
+            }
+        }
+    }
+
+    div.item__info {
+        div {
+            text-transform: var(--text-case);
+        }
+    }
+
+    span.link-icon {
+        text-transform: var(--text-case);
+
+        &:before {
+            background: var(--accent-light);
+        }
+    }
+}
+
+/* START - Fix dimensions and gaps of the neighborhood grid */
+div.list__container {
+    column-gap: 48px;
+    row-gap: 42px;
+
+    div.list__item {
+        margin-bottom: 0px;
+        padding-left: 0px;
+        padding-right: 0px;
+        flex-basis: calc((100% / 3) - 48px + (48px / 3));
+        max-width: calc((100% / 3) - 48px + (48px / 3));
+
+        @media (max-width: 768px) {
+            flex-basis: 100%;
+            max-width: 100%;
+        }
+    }
+}
+
+/* END */
+
+/* START - Adjust the pagination theme */
+div.lp-pagination {
+    div.paginationjs {
+        ul {
+            li.paginationjs-prev,
+            li.paginationjs-next {
+                a {
+                    &:after {
+                        background: var(--accent-light) !important;
+                    }
+
+                    &:hover {
+                        background: var(--accent-light);
+
+                        &:after {
+                            background: var(--accent-dark) !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* END */

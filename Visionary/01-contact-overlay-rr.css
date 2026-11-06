@@ -1,0 +1,52 @@
+/* START - Add office number to the contact overlay */
+.contact-with-image-agent__link[href*="tel:"] {
+    &:before {
+        content: 'M: ';
+    }
+    
+    &:after {
+        content: 'O: (404) 856-6390';
+        display: block;
+    }
+}
+
+/* END */
+
+/* START - Theme the contact overlay custom links */
+.contact-form-modal-details__open {
+    a {
+        color: var(--typography-light);
+        text-decoration: underline;
+        text-underline-offset: 4px;
+        text-decoration-color: var(--border-light-inactive);
+        transition: 0.25s;
+        
+        &:hover {
+            color: var(--accent-light);
+            text-decoration-color: var(--accent-light);
+        }
+    }
+}
+
+/* END */
+
+/* START - Adjust contact overlay contact information layout */
+.contact-form-modal-agent {
+    @media (min-width: 1025px) {
+        flex-direction: column;
+        gap: 16px;
+        
+        .contact-form-modal-agent__contact {
+            max-width: unset;
+        }
+    }
+}
+
+/* END */
+
+/* START - Use the high resolution image of the contact overlay */
+.contact-form-modal__bg-image {
+    content: url('https://media-production.lp-cdn.com/cdn-cgi/image/format=auto,quality=85/https://media-production.lp-cdn.com/media/9816b8d9-b940-40f8-9350-448fa0da7300');
+}
+
+/* END */

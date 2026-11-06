@@ -1,0 +1,75 @@
+/* START - Remove the social icons extra border globally */
+ul.lp-socials {
+    li {
+        margin-bottom: unset;
+
+        a.lp-socials__link {
+            transition: 0.4s;
+
+            &:before {
+                display: none;
+            }
+        }
+    }
+}
+
+/* END */
+
+/* START - Adjust the pagination globally */
+div.lp-pagination {
+    div.paginationjs {
+        margin-top: 48px;
+
+        ul {
+            li {
+                a {
+                    transition: 0.4s;
+                }
+            }
+
+            li.paginationjs-prev,
+            li.paginationjs-next {
+                a {
+                    &:before {
+                        display: none !important;
+                    }
+                }
+            }
+
+            li:not(.paginationjs-prev):not(.paginationjs-next) {
+                &:is(.active) {
+                    a {
+                        &:after {
+                            display: none !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* END */
+
+/* START - Globally theme dropdown menu */
+div.custom-select {
+    div.custom-select-menu {
+        div.custom-select-content {
+            padding-top: 0px !important;
+            padding-bottom: 0px !important;
+            background: var(--primary-light) !important;
+
+            button.custom-select-item {
+                color: var(--typography-dark) !important;
+
+                &:hover,
+                &:is(.is-selected) {
+                    color: var(--typography-light) !important;
+                    background: var(--accent-dark) !important;
+                }
+            }
+        }
+    }
+}
+
+/* END */

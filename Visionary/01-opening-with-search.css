@@ -1,0 +1,134 @@
+/* ----- OPENING WITH SEARCH ----- */
+/* START - Adjust the element layout */
+div.opening-search__content {
+    display: flex;
+    flex-direction: column;
+    padding-left: unset;
+
+    @media (max-width: 768px) {
+        padding-top: 180px;
+    }
+}
+
+div.opening-search__text-slider {
+    max-width: unset;
+
+    li.opening-search__item {
+        display: flex;
+        flex-direction: column;
+
+        div.opening-search__pre-title {
+            margin: unset;
+
+            @media (max-width: 1024px) {
+                margin-bottom: 16px;
+            }
+        }
+
+        h1.opening-search__title {
+            transform: unset;
+            margin-bottom: 16px;
+        }
+
+        div.opening-search__description {
+            &>* {
+                font-size: 12px;
+                font-weight: bold;
+
+                &:last-child {
+                    margin-bottom: 0px;
+                }
+            }
+        }
+    }
+}
+
+div.opening-search__search-box {
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-bottom: calc(15.59px + 16px);
+
+    div.opening-search-sound {
+        display: none !important;
+    }
+
+    @media (max-width: 1440px) {
+        padding-top: 0px;
+        padding-bottom: 0px;
+        margin-top: 32px;
+        margin-bottom: 0px;
+        align-self: start;
+        position: relative;
+    }
+
+    @media (max-width: 1024px) {
+        align-self: unset;
+    }
+}
+
+/* END */
+
+/* START - Theme opening element dropdown menu */
+.opening-search__search-results {
+    background: var(--color-light);
+
+    &:is(.show) {
+        border: 1px solid var(--background-dark-inactive);
+    }
+}
+
+.opening-search__predefined-links {
+    background: var(--color-light);
+    border: none;
+    z-index: 10;
+    position: relative;
+    border-radius: 0px;
+}
+
+.opening-search__results-container {
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.opening-search__results-block,
+.opening-search__results-container {
+    .opening-search__results-link {
+        color: var(--color-dark);
+
+        &:hover {
+            color: var(--color-light);
+            background: var(--color-dark);
+        }
+    }
+}
+
+/* END */
+
+/* START - Fix theme input boxes */
+.opening-search__search-input,
+.opening-search__search-input:not(:placeholder-shown),
+.opening-search__search-input:hover,
+.opening-search__search-input:focus {
+    background: var(--color-light);
+    color: var(--color-light);
+    border: 1px solid transparent;
+
+    &::placeholder {
+        color: var(--color-light) !important;
+    }
+
+    &:-webkit-autofill,
+    &:-webkit-autofill:focus,
+    &:-webkit-autofill:hover {
+        color: var(--color-light);
+    }
+}
+
+.opening-search__pin-map:after {
+    --iconColor: var(--color-light);
+    cursor: pointer;
+}
+
+/* END */
+
+/* ----- OPENING WITH SEARCH ----- */

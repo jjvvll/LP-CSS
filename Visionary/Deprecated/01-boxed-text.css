@@ -1,0 +1,21 @@
+/* START - One line the title */
+.boxed-text__title-group {
+    max-width: 100%;
+}
+
+/* END */
+
+/* START - Remove the bottom margin of the content container */
+.boxed-text__description {
+    margin-bottom: 0px;
+}
+
+/* END */
+
+/* START - Remove the bottom margin of the content */
+/* Note: Add the class name boxed-text__description-content to the p element */
+.boxed-text__description-content {
+    margin-bottom: 0px;
+}
+
+/* END */

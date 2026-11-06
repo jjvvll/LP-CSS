@@ -1,0 +1,25 @@
+/* Start - Theme the CTA link with arrow */
+.featured-agent__cta {
+    color: #000;
+    
+    &:after {
+        background-color: #A49B8E;
+    }
+    
+    &:before {
+        background-color: #fff !important;
+    }
+    
+    &:hover {
+        &:after {
+            background-color: transparent;
+            border: 1px solid #A49B8E;
+        }
+        
+        &:before {
+            background-color: #A49B8E !important;
+        }
+    }
+}
+
+/* End */

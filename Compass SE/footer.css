@@ -1,0 +1,96 @@
+/* START - Fix footer links large vertical lines */
+footer#global-footer {
+    div.footer-info {
+        div.columns {
+            div.two-cols:nth-child(2) {
+                div.column {
+                    &:nth-child(2) {
+                        margin-bottom: 0px;
+                    }
+                    
+                    div.column-text {
+                        display: flex;
+                        flex-direction: column;
+                        line-height: 21px;
+                        
+                        p {
+                            margin-top: 0px;
+                            margin-bottom: 8px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* END */
+
+/* START - Increase footer disclaimer opacity */
+footer#global-footer {
+    div.disclaimers {
+        opacity: 1;
+    }
+}
+
+/* END */
+
+/* START - Footer invert luxury presence logo */
+footer#global-footer {
+    div.copyrights {
+        div.image-link {
+            div.img-wrap {
+                img {
+                    filter: invert(1);
+                }
+            }
+        }
+    }
+}
+
+/* END */
+
+/* START - Adjust the footer dimensions */
+footer#global-footer {
+    div.footer-info {
+        div.columns {
+            div.two-cols:nth-child(1) {
+                div.column:nth-child(2) {
+                    p {
+                        line-height: 29px;
+                    }
+                }
+            }
+        }
+    }
+    
+    div.disclaimers,
+    div.disclaimer {
+        @media (max-width: 768px) {
+            margin-top: 0px;
+        }
+    }
+}
+
+/* END */
+
+/* RR# START - Hide the footer sitemap and social links */
+footer#global-footer {
+    div.footer-info {
+        div.columns {
+            div.two-cols:nth-child(1) {
+                div.column:nth-child(1) {
+                    display: none;
+                }
+            }
+            
+            div.two-cols:nth-child(2) {
+                div.column:nth-child(2) {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+/* END */

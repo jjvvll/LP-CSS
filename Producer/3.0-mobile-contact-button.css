@@ -1,0 +1,14 @@
+/*START - mobile contact button theme  */
+body>div.mobile-contact-wrapper i,
+body>div.mobile-contact-wrapper .item {
+    fill: #fff !important;
+    color: #fff !important;
+}
+
+body>div.mobile-contact-wrapper .mobile-contact a,
+body>div.mobile-contact-wrapper .search-button {
+    background-color: #DFD9CD !important;
+    border: 1px solid #DFD9CD !important;
+}
+
+/* END */

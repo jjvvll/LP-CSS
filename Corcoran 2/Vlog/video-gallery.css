@@ -1,0 +1,17 @@
+.lp-play {
+    width: 80px;
+    height: 80px;
+    
+    &:before {
+        background-color: #DFD6C6 !important;
+        mask-size: 20px 20px;
+    }
+    
+    &:hover {
+        &:before {
+            background-color: #fff !important;
+        }
+        
+        background: #DFD6C6;
+    }
+}

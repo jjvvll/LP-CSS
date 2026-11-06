@@ -1,0 +1,138 @@
+/*START - CONTACT OVERLAY WB JV*/
+/* START - Uppercase main titles */
+div#modal-global-contact-us {
+  form.contact-form__form,
+  div.contact-form__details {
+    & > h5 {
+      text-transform: var(--text-case);
+    }
+  }
+}
+
+/* END */
+
+/* START - Adjust social icons dimensions */
+div#modal-global-contact-us {
+  div.socials {
+    margin: 0px;
+
+    @media (max-width: 768px) {
+      margin-bottom: 48px;
+    }
+
+    ul.lp-socials {
+      display: flex;
+      flex-direction: row;
+      gap: 16px;
+
+      li {
+        padding: 0px;
+      }
+    }
+  }
+}
+
+/* END */
+
+/* START - Theme contact overlay */
+div#modal-global-contact-us {
+  div.contact-form {
+    background: var(--color-dark);
+  }
+
+  h5.contact-form__title1 {
+    color: var(--color-dark);
+  }
+
+  h5.contact-form__title2 {
+    color: var(--color-dark);
+  }
+
+  div.company {
+    border-color: var(--color-dark);
+
+    div.company_contact {
+      color: var(--color-dark);
+    }
+  }
+
+  div.input-container {
+    input.lp-input,
+    textarea.lp-input {
+      &:-webkit-autofill {
+        &:focus {
+          color: var(--color-dark);
+        }
+
+        -webkit-text-fill-color: var(--color-dark);
+      }
+
+      color: var(--color-dark);
+      border-color: var(--color-dark);
+
+      &:focus {
+        border-color: var(--color-dark);
+      }
+    }
+
+    span.input-icon {
+      filter: invert(1);
+      /* filter: brightness(0) saturate(100%) invert(29%) sepia(98%) saturate(500%) hue-rotate(200deg); custom color filter*/
+    }
+  }
+}
+
+/* END */
+
+/* START - Theme contact overlay links */
+div#modal-global-contact-us {
+  div.contact-form__details {
+    a:not(.lp-socials__link) {
+      color: var(--color-light);
+
+      &:hover {
+        color: var(--color-dark);
+      }
+    }
+  }
+}
+
+/* END */
+
+/* START - Center contact overlay content and social icons on mobile */
+div#modal-global-contact-us {
+  @media (max-width: 768px) {
+    div.contact-form__details {
+      text-align: center;
+    }
+
+    div.socials {
+      width: 100%;
+
+      ul.lp-socials {
+        justify-content: center;
+      }
+    }
+  }
+}
+
+/* END */
+
+/* START - Theme contact overlay close button */
+div#modal-global-contact-us {
+  div.contact-form__close {
+    opacity: 1;
+
+    &:before,
+    &:after {
+      background: var(--color-light);
+
+      @media (max-width: 768px) {
+        background: var(--color-light);
+      }
+    }
+  }
+}
+
+/* END */
+/*END - CONTACT OVERLAY WB JV*/

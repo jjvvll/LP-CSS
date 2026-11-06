@@ -1,0 +1,268 @@
+/* START - Add hover outline effect to the GSM */
+.gallery-style-menu-grid {
+    .gallery-style-menu-grid__item {
+        &:after {
+            content: '';
+            position: absolute;
+            top: 0px;
+            bottom: 0px;
+            left: 0px;
+            right: 0px;
+            border: 2px solid transparent;
+            transition: 0.25s;
+            margin: 0px;
+            z-index: 3;
+        }
+
+        .gallery-style-menu-grid__title {
+            border-bottom: unset !important;
+        }
+
+        &:hover {
+            &:after {
+                margin: 16px;
+                border-color: var(--accent-alt);
+            }
+        }
+    }
+}
+
+/* END */
+
+/* START - Fix the max width of the title content */
+.gallery-style-menu-title-group {
+    max-width: unset;
+
+    & > * {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.gallery-style-menu-title-group__title {
+    max-width: 1200px;
+}
+
+.gallery-style-menu-title-group__desc {
+    max-width: 720px;
+}
+
+/* END */
+
+/* START - Adjust element to fullbleed */
+.gallery-style-menu {
+    padding-left: 0px;
+    padding-right: 0px;
+
+    .gallery-style-menu-grid {
+        gap: 0px;
+    }
+}
+
+/* END */
+
+/* START - Adjust the GSM paddings */
+.gallery-style-menu {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+/* END */
+
+/* START - Adjust tiles container title */
+.gallery-style-menu-grid__title {
+    font-size: var(--global-h3-font-size);
+}
+
+/* END */
+
+/* START - Center titles horizontally */
+.gallery-style-menu-grid__title {
+    text-align: center;
+
+    &:after {
+        display: none;
+    }
+}
+
+/* END */
+
+/* START - Center titles vertically */
+.gallery-style-menu-grid__title {
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+
+    &:after {
+        display: none;
+    }
+}
+
+/* END */
+
+/* START - Adjust gallery style menu gradient tiles overlay gradient */
+.gallery-style-menu-grid__item:before {
+    background-image: linear-gradient(180deg, transparent 30%, #000);
+}
+
+/* END */
+
+/* START - Change dimensions of tiles to 1 by 1 */
+.gallery-style-menu-grid__item {
+    aspect-ratio: 1/1;
+}
+
+/* END */
+
+/* START - Update the font family of the titles */
+h3.gallery-style-menu-grid__title {
+    font-family: var(--lp-body-font-family);
+}
+
+/* END */
+
+/* START - Adjust the element container max width */
+.gallery-style-menu {
+    max-width: 1000px;
+}
+
+/* END */
+
+/* START - Convert grid to flex */
+.gallery-style-menu-grid {
+    margin-left: 0px;
+    margin-right: 0px;
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+
+    &:is(.gallery-style-menu-grid--2) {
+        a.gallery-style-menu-grid__item {
+            flex: 1 1 calc((100% / 2) - 16px + (16px / 2));
+            max-width: calc((100% / 2) - 16px + (16px / 2));
+        }
+    }
+
+    &:is(.gallery-style-menu-grid--3) {
+        a.gallery-style-menu-grid__item {
+            flex: 1 1 calc((100% / 3) - 16px + (16px / 3));
+            max-width: calc((100% / 3) - 16px + (16px / 3));
+        }
+    }
+
+    &:is(.gallery-style-menu-grid--4) {
+        a.gallery-style-menu-grid__item {
+            flex: 1 1 calc((100% / 4) - 16px + (16px / 4));
+            max-width: calc((100% / 4) - 16px + (16px / 4));
+        }
+    }
+
+    &:is(.gallery-style-menu-grid--2),
+    &:is(.gallery-style-menu-grid--3),
+    &:is(.gallery-style-menu-grid--4) {
+        a.gallery-style-menu-grid__item {
+            @media (max-width: 768px) {
+                flex: 1 1 100%;
+                max-width: 100%;
+            }
+        }
+    }
+
+    a.gallery-style-menu-grid__item {
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        width: auto;
+    }
+}
+
+/* END */
+
+/* START - Add horizontal lines to the titles */
+a.gallery-style-menu-grid__item {
+    h3.gallery-style-menu-grid__title {
+        position: relative;
+        padding-bottom: 20px;
+        border-bottom: none;
+
+        &:after {
+            content: '';
+            height: 4px;
+            width: 100px;
+            display: block;
+            background: #FFF;
+            position: absolute;
+            bottom: 0px;
+            left: 0px;
+            right: 0px;
+            margin: auto;
+            transition: 0.25s;
+            opacity: 1;
+        }
+    }
+
+    &:hover {
+        h3.gallery-style-menu-grid__title {
+            border-bottom: none;
+
+            &:after {
+                transform: translatey(20px);
+                opacity: 0.3;
+            }
+        }
+    }
+}
+
+/* END */
+
+/* START - Add logo upon hover */
+div.gallery-style-menu {
+    div.gallery-style-menu-grid {
+        a.gallery-style-menu-grid__item {
+            &:before {
+                transition: 0.4s;
+            }
+
+            &:after {
+                content: '';
+                position: absolute;
+                left: 0px;
+                right: 0px;
+                top: 0px;
+                bottom: 0px;
+                width: unset;
+                padding-top: unset;
+                background-size: contain;
+                background-image: url('https://media-production.lp-cdn.com/cdn-cgi/image/format=auto,quality=85/https://media-production.lp-cdn.com/media/f4c453d6-057e-40bf-888c-ad7633fd0282');
+                opacity: 0;
+                background-position: center;
+                transition: 0.4s;
+                transform: translatey(64px);
+                z-index: 3;
+            }
+
+            h3.gallery-style-menu-grid__title {
+                opacity: 1;
+                text-align: center;
+            }
+
+            &:hover {
+                &:before {
+                    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgb(0, 0, 0, 1)) !important;
+                }
+
+                &:after {
+                    opacity: 1;
+                    transform: translatey(0px);
+                    filter: blur(0px);
+                }
+
+                h3.gallery-style-menu-grid__title {
+                    opacity: 0;
+                }
+            }
+        }
+    }
+}
+
+/* END */

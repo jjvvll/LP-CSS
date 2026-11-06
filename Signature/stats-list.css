@@ -1,0 +1,14 @@
+.lp-container {
+    padding-left: 4.453125vw !important;
+    padding-right: 4.453125vw !important;
+}
+
+.stats__grid {
+    .stats__grid-item {
+        flex: 1 !important;
+    }
+}
+
+.stat-card__value {
+    font-size: 50px;
+}

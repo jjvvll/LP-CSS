@@ -1,0 +1,15 @@
+/* START - Update aspect ratio of the hoverable image */
+div.hoverable-image--straight,
+div.hoverable-image--reverse {
+    .hoverable-image__img-col {
+        aspect-ratio: 1/1;
+
+        @media only screen and (max-width: 768px) {
+            & > div {
+                min-height: auto !important;
+            }
+        }
+    }
+}
+
+/* END */

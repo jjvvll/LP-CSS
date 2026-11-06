@@ -1,0 +1,6 @@
+/* START - Fix title container taking space if empty */
+.lp-title-group:not(:has(*)) {
+    display: none;
+}
+
+/* END */

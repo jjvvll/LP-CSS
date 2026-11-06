@@ -1,0 +1,12 @@
+/* START - Adjust the width on desktop */
+div.grids {
+    div.grid {
+        @media (min-width: 769px) {
+            width: 50% !important;
+            height: unset !important;
+            aspect-ratio: 4/3;
+        }
+    }
+}
+
+/* END */

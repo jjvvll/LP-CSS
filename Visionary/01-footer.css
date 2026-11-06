@@ -1,0 +1,235 @@
+/* ----- FOOTER ----- WB JV */
+/* START - Fix footer layout */
+.footer-back-top__container {
+    padding-right: unset;
+
+    @media (max-width: 768px) {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.footer-info {
+    @media (min-width: 1025px) {
+        max-width: 100%;
+
+        .footer__col {
+            margin-right: 64px;
+
+            .footer__section-content {
+                gap: 64px;
+
+                .footer__col-content {
+                    min-width: auto;
+                }
+            }
+        }
+    }
+}
+
+.footer-navigation {
+    @media (max-width: 768px) {
+        width: 100%;
+        max-width: 100%;
+        column-gap: 32px;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.footer__section-content {
+    @media (max-width: 768px) {
+        flex-direction: column;
+    }
+}
+
+.footer__col-content {
+    max-width: unset;
+}
+
+.footer__col-description {
+    max-width: unset;
+    width: 100%;
+}
+
+/* END */
+
+/* START - Center contents on mobile */
+footer#global-footer {
+    div.footer {
+        @media (max-width: 768px) {
+            text-align: center;
+
+            div.footer-logos-row {
+                img {
+                    margin: auto;
+                }
+            }
+
+            p.footer__col-title {
+                max-width: unset;
+            }
+
+            ul.lp-socials {
+                justify-content: center;
+            }
+
+            p.footer-navigation-title {
+                max-width: unset;
+                width: 100%;
+            }
+
+            div.footer-bottom-row {
+                align-items: center;
+
+                div.footer-copyright__powered {
+                    justify-content: center;
+                }
+
+                div.footer-copyright__privacy {
+                    justify-content: center;
+                }
+            }
+        }
+    }
+}
+
+/* END */
+
+/* START - Fix gaps to footer quick links (Navigation) on mobile */
+.footer-navigation {
+    @media (max-width: 768px) {
+        row-gap: 16px;
+    }
+}
+
+/* END */
+
+/* START - Theme footer borderlines */
+.footer-info,
+.footer-contact-row,
+.footer-copyright__privacy,
+.footer-copyright__privacy-policy,
+.footer-navigation__item + .footer-navigation__item {
+    border-color: rgba(0,0,0,0.12);
+}
+
+/* END */
+
+/* START - Theme footer links */
+footer#global-footer {
+    a:not(.lp-socials__link) {
+        color: var(--typography-dark);
+        transition: 0.4s;
+        text-decoration: underline;
+        text-underline-offset: 4px;
+        text-decoration-color: rgba(0,0,0,0.12);
+        cursor: pointer;
+
+        &[href="#"] {
+            text-decoration: none;
+            pointer-events: none;
+        }
+    }
+
+    a:not(.lp-socials__link):hover,
+    a:not(.lp-socials__link):focus {
+        color: var(--typography-dark);
+        text-decoration-color: var(--color-dark);
+    }
+}
+
+/* END */
+
+/* START - Adjust footer link text casing */
+footer#global-footer {
+    div.footer__col-description,
+    div.footer-navigation-row {
+        a:not(.lp-socials__link):not([href*="tel"]):not([href*="mailto"]) {
+            text-transform: var(--text-case);
+        }
+    }
+}
+
+.footer-copyright__powered,
+.footer-copyright__privacy {
+    text-transform: var(--text-case);
+}
+
+/* END */
+
+/* START - Adjust the footer row in flex column format on mobile */
+.footer-bottom-row {
+    @media (max-width: 768px) {
+        flex-direction: column;
+        gap: 16px;
+    }
+}
+
+.footer-copyright {
+    @media (max-width: 768px) {
+        width: 100%;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 16px;
+
+        &__powered,
+        &__privacy {
+            flex-basis: calc((100% / 2) - 16px + (16px / 2));
+        }
+    }
+}
+
+.footer-copyright__powered,
+.footer-copyright__privacy {
+    @media (max-width: 768px) {
+        flex-basis: calc((100% / 2) - 16px + (16px / 2));
+        flex-direction: row;
+    }
+}
+
+/* END */
+
+/* START - Adjust the footer brokerage logo margin */
+.footer-logos-row {
+    margin-bottom: 48px;
+}
+
+/* END */
+
+/* START - Adjust the footer brokerage logo size */
+.footer-logo:not(:has(+ .footer-copyright)) {
+    max-width: 240px;
+    max-height: unset;
+
+    @media (max-width: 768px) {
+        max-width: 160px;
+    }
+}
+
+/* END */
+
+/* START - Fix the footer disclaimer links separator on mobile */
+.footer-copyright__powered,
+.footer-copyright__privacy {
+    & > a {
+        @media (max-width: 768px) {
+            padding-left: 16px;
+            position: relative;
+
+            &:before {
+                content: "";
+                display: block;
+                height: 100%;
+                width: 1px;
+                background: rgba(0,0,0,0.12);
+                position: absolute;
+                left: 8px;
+            }
+        }
+    }
+}
+
+/* END */
+
+/* ----- FOOTER ----- WB JV */

@@ -1,0 +1,54 @@
+/*Start - Theme title border*/
+.heading {
+    &:after {
+        background-color: #fff !important;
+    }
+}
+
+/*End*/
+
+/*Start - Theme underline links*/
+.lp-link {
+    color: #fff !important;
+    
+    &:before,
+    &:after {
+        transition: 0.4s;
+        text-decoration: none !important;
+        line-height: 1;
+        content: "" "";
+        height: 1px;
+        position: absolute !important;
+        bottom: 0;
+        left: 0;
+    }
+    
+    &:before {
+        background-color: rgba(255, 255, 255, 0.25) !important;
+        width: 100%;
+    }
+    
+    &:after {
+        width: 0px;
+        background: #fff;
+    }
+    
+    &:hover:after {
+        width: 100%;
+    }
+}
+
+/*End*/
+
+/*Start - Remove extra border in the social icons*/
+.lp-socials__link {
+    transition: 0.4s;
+    &:before {
+        display: none;
+    }
+}
+
+p.image-text {
+    display: none;
+}
+/*End*/

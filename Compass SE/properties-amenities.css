@@ -1,0 +1,6 @@
+/* START - Adjust featured amenities theme */
+div.features-amenities {
+    --striped-bg: repeating-linear-gradient(112.5deg, rgba(79, 76, 77, .9), rgba(79, 76, 77, .9) 1px, rgba(0, 0, 0, .9) 0, rgba(0, 0, 0, .9) 20.5px);
+}
+
+/* END */

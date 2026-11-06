@@ -1,0 +1,7 @@
+/* START - Uppercase agent name and roles */
+span.team-member__name,
+span.team-member__role {
+    text-transform: uppercase;
+}
+
+/* END */

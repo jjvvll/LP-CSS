@@ -1,0 +1,257 @@
+/*START - CONTACT OVERLAY - WB JV*/
+
+/* START - Adjust contact overlay inconsistencies */
+div#modal-global-contact-us {
+  div.modal-content {
+    div.contact-form {
+      div.container {
+        max-width: 1300px;
+        justify-content: center;
+
+        div.section-details,
+        div.section-message {
+          h2 {
+            margin-bottom: 32px;
+
+            @media (max-width: 768px) {
+              font-size: 28px;
+            }
+          }
+        }
+
+        div.section-details {
+          @media (max-width: 768px) {
+            text-align: center;
+            margin-bottom: unset;
+            margin-top: 64px;
+          }
+
+          div.info-zone {
+            div.info-zone_contact:not(:has(*)) {
+              display: none;
+            }
+
+            div.info-zone_contact_cell {
+              margin-bottom: 21px;
+              max-width: 100%;
+            }
+
+            div.info-zone_contact {
+              margin-bottom: 21px;
+
+              p.info-zone_contact_link {
+                font-weight: normal;
+              }
+            }
+          }
+        }
+
+        div.section-message {
+          display: block;
+
+          &:after {
+            display: none;
+          }
+
+          form[data-type="contact-form"] {
+            margin-bottom: 0px;
+            max-width: 100%;
+
+            h2 {
+              @media (max-width: 768px) {
+                text-align: center;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    @media (min-width: 1025px) {
+      min-height: 100%;
+
+      div.contact-form {
+        min-height: 100%;
+        align-self: stretch;
+
+        div.container {
+          padding: 0px 96px;
+
+          div.section-message {
+            padding-left: 96px;
+            gap: 96px;
+            border-left: 1px solid var(--color-light);
+          }
+        }
+      }
+    }
+  }
+}
+
+/* END */
+
+/* START - Theme contact overlay contact form input */
+div#modal-global-contact-us {
+  form[data-type="contact-form"] {
+    label.lp-label {
+      text-transform: uppercase;
+      color: var(--color-light);
+    }
+
+    input.lp-input,
+    textarea.lp-input {
+      border-color: var(--color-light);
+
+      &:focus {
+        border-color: var(--color-light);
+      }
+    }
+  }
+}
+
+/* END */
+
+/* START - Theme contact overlay hoverable links */
+div#modal-global-contact-us {
+  div.info-zone_contact_cell {
+    a:not(.lp-socials__link) {
+      font-weight: normal;
+
+      /* &:hover {
+                color: var(--color-light) !important;
+            }
+
+            &:before {
+                background-color: var(--color-light);
+                width: 100%;
+            }
+
+            &:after {
+                background-color: var(--color-light);
+            } */
+
+      &:before {
+        background-color: var(--color-fallback-2);
+        width: 100%;
+      }
+
+      &:after {
+        width: 0px;
+        background-color: var(--color-dark);
+      }
+
+      &:hover {
+        color: var(--color-light) !important;
+        &:after {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+/* END */
+
+/* START - Adjust contact overlay titles font size */
+div#modal-global-contact-us {
+  div.contact-form {
+    h2 {
+      font-size: var(--global-h3-font-size);
+    }
+  }
+}
+
+/* END */
+
+/* START - Theme contact overlay contact form disclaimer */
+#modal-global-contact-us {
+  div.lp-disclaimer {
+    span.lp-tcr-message {
+      font-weight: 400;
+    }
+
+    a {
+      color: var(--color-light);
+      text-decoration: underline;
+      text-decoration-color: var(--color-light) !important;
+      transition: 0.4s;
+      text-underline-offset: 4px;
+
+      &:hover {
+        text-decoration-color: var(--color-light) !important;
+      }
+    }
+  }
+}
+
+/* END */
+
+/* START - Adjust contact overlay background image position */
+div#modal-global-contact-us {
+  div.contact-form {
+    background-position: center;
+  }
+}
+
+/* END */
+
+/* START - Adjust contact overlay close button position */
+div#modal-global-contact-us {
+  button.close {
+    top: 32px;
+    right: 32px;
+    font-size: 12px;
+
+    @media (max-width: 768px) {
+      top: 16px;
+      right: 16px;
+      font-size: 10px;
+    }
+  }
+}
+
+/* END */
+
+/* START - Adjust the contact overlay social links spacing */
+div#modal-global-contact-us {
+  div.contact-form {
+    ul.lp-socials {
+      gap: 24px;
+
+      li:not(:last-child) {
+        padding-right: 0px;
+      }
+
+      li {
+        margin-bottom: 0px;
+      }
+
+      @media (max-width: 560px) {
+        gap: 16px;
+        justify-content: center;
+      }
+    }
+  }
+}
+
+/* END */
+
+/* START - Center contact overlay content and social icons on mobile */
+div#modal-global-contact-us {
+  @media (max-width: 768px) {
+    div.contact-form__details {
+      text-align: center;
+    }
+
+    div.socials {
+      width: 100%;
+
+      ul.lp-socials {
+        justify-content: center;
+      }
+    }
+  }
+}
+
+/* END */
+/*END - CONTACT OVERLAY - WB JV*/

@@ -1,0 +1,84 @@
+/* START - Center button if no image is provided */
+div.custom-form__row {
+  &:not(:has(img)) {
+    div.custom-form__footer {
+      margin-top: 32px;
+      justify-content: center;
+    }
+  }
+}
+
+/* END */
+
+/* START - Adjust the header max dimensions */
+div.custom-form__header {
+  max-width: unset;
+  margin-bottom: 48px;
+
+  h2.custom-form__heading {
+    margin-bottom: 16px;
+  }
+
+  div.lp-text--subtitle {
+    max-width: 480px;
+  }
+
+  & > *:is(:last-child) {
+    margin-bottom: unset;
+  }
+}
+
+/* END */
+
+/* START - Adjust the element dimensions */
+div.custom-form__row {
+  margin-left: unset;
+  margin-right: unset;
+  gap: 48px;
+  align-items: center;
+
+  @media (max-width: 768px) {
+    gap: 24px;
+  }
+
+  div.custom-form__img-col,
+  div.custom-form__form-col {
+    padding-left: unset;
+    padding-right: unset;
+  }
+
+  div.custom-form__img-col {
+    @media (max-width: 768px) {
+      margin-bottom: unset;
+    }
+
+    div.custom-form__img-block {
+      height: 100%;
+      aspect-ratio: 1/1;
+
+      img {
+        display: block;
+      }
+    }
+  }
+}
+
+/* END */
+
+/* START - Theme the input elements */
+div.custom-form__row {
+  div.custom-form__form-col {
+    .lp-input {
+      border-color: var(--color-dark);
+      color: var(--color-dark);
+    }
+
+    .uf-cus-sel-toggle {
+      &:after {
+        border-color: var(--color-dark);
+      }
+    }
+  }
+}
+
+/* END */

@@ -1,0 +1,16 @@
+/* START - Adjust spacings if the grid has no data */
+div.developments-grid:has(.data-container:empty) {
+    div.developments-grid__header {
+        margin-bottom: 0px;
+
+        h2.developments-grid__title {
+            margin-bottom: 0px;
+        }
+
+        p.developments-grid__lead {
+            display: none;
+        }
+    }
+}
+
+/* END */

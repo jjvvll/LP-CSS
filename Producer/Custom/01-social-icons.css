@@ -1,0 +1,98 @@
+/* START - Style the social media icons individually */
+ul.social_icons-style-1 {
+    li {
+        a {
+            &:hover {
+                color: #FFF !important;
+            }
+        }
+        
+        a[href^="https://www.youtube.com/"] {
+            background: #ff0808 !important;
+            border: none !important;
+        }
+        
+        a[href^="https://www.instagram.com/"] {
+            background: linear-gradient(to bottom, #833ab4,#fd1d1d,#fcb045) !important;
+            border: none !important;
+        }
+        
+        a[href^="https://www.facebook.com/"] {
+            background: #086dff !important;
+            border: none !important;
+        }
+        
+        a[href^="https://www.tiktok.com/"] {
+            background: #000000 !important;
+            border: none !important;
+        }
+        
+        a[href^="https://www.yelp.com/"] {
+            background: #f3403e !important;
+            border: none !important;
+        }
+        
+        a[href^="https://www.linkedin.com/"] {
+            background: #086bca !important;
+            border: none !important;
+        }
+        
+        a[href^="https://www.zillow.com/"] {
+            background: #006aff !important;
+            border: none !important;
+        }
+    }
+}
+
+ul.social_icons-style-2 {
+    li {
+        a {
+            background: #FFF !important;
+
+            &:hover {
+                background: #FFF !important;
+                color: #FFF !important;
+            }
+        }
+        
+        a[href^="https://www.instagram.com/"] {
+            border: none !important;
+            
+            span:before {
+                background: linear-gradient(to bottom, #833ab4,#fd1d1d,#fcb045) !important;
+            }
+        }
+        
+        a[href^="https://www.facebook.com/"] {
+            color: #086dff !important;
+            border: none !important;
+        }
+        
+        a[href^="https://www.youtube.com/"] {
+            color: #ff0808 !important;
+            border: none !important;
+        }
+        
+        a[href^="https://www.tiktok.com/"] {
+            color: #000000 !important;
+            border: none !important;
+        }
+        
+        a[href^="https://www.yelp.com/"] {
+            color: #f3403e !important;
+            border: none !important;
+        }
+        
+        a[href^="https://www.linkedin.com/"] {
+            color: #086bca !important;
+            border: none !important;
+        }
+        
+        a[href^="https://www.zillow.com/"] {
+            color: #006aff !important;
+            border: none !important;
+        }
+    }
+}
+
+/* END */

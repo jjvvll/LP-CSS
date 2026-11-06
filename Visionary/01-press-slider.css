@@ -1,0 +1,30 @@
+/* START - Theme press slider tag */
+.press-slider-card__tag {
+    background: var(--accent-light);
+    color: var(--accent-dark);
+}
+
+/* END */
+
+/* START - Adjust the press slider title container max width */
+.press-slider__top-content {
+    & > * {
+        max-width: 600px;
+    }
+}
+
+/* END */
+
+/* START - Adjust the press title date text casing */
+.press-slider-card__details {
+    text-transform: var(--text-case);
+}
+
+/* END */
+
+/* START - Theme the press tiles underline color */
+.press-slider-card__link {
+    border-color: var(--border-dark-inactive);
+}
+
+/* END */

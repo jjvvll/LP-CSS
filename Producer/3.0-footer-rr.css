@@ -1,0 +1,416 @@
+/* START - Invert luxury presence logo */
+footer#global-footer {
+    div.info-privacy {
+        img {
+            filter: invert(1);
+        }
+    }
+}
+
+/* END */
+
+/* START - Add custom address layout */
+footer#global-footer {
+    div.info-wrap-contact_zone:not(.type_user) {
+        & > div.info-wrap-contact_cell:first-child {
+            padding-left: unset;
+
+            i {
+                display: none;
+            }
+
+            p.info-wrap-contact_title {
+                display: none;
+            }
+
+            ul {
+                list-style-type: none;
+                margin: unset;
+                display: flex;
+                flex-direction: column;
+                gap: 24px;
+
+                & > li {
+                    position: relative;
+                    padding-left: 50px;
+
+                    &:nth-child(1) {
+                        &:before {
+                            content: 'MAINE';
+                        }
+                    }
+
+                    &:nth-child(2) {
+                        &:before {
+                            content: 'NEW HAMPSHIRE';
+                        }
+                    }
+
+                    &:before {
+                        display: block;
+                        font-weight: bold;
+                    }
+
+                    &:after {
+                        content: '';
+                        display: block;
+                        width: 31px;
+                        height: 30px;
+                        position: absolute;
+                        background: url('data:image/svg+xml,<svg width="31" height="30" viewBox="0 0 31 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M29.9821 6.49489C29.7931 6.35756 29.679 6.32046 29.4572 6.39228L20.298 9.41368L16.1952 8.03558L15.8172 9.41525L19.7644 10.7038V28.1462L9.89831 25.7069V22.1034H8.71438V25.7515L1.21616 28.2532V15.3945H0.0322266V29.2729C0.0322266 29.5077 0.130098 29.7279 0.321106 29.8645C0.445418 29.9541 0.585911 29.9999 0.735086 29.9999C0.814804 29.9999 0.890971 29.9868 0.967926 29.96L9.48433 27.029L20.1792 29.7887C20.3224 29.8254 20.4751 29.8171 20.6152 29.7654L29.8104 26.2235C30.0942 26.1177 30.0251 25.8466 30.0251 25.5431V7.08291C30.0251 6.85086 30.17 6.63144 29.9821 6.49489ZM28.8412 25.0388L20.9483 28.0361V10.7065L28.8412 8.08649V25.0388Z" fill="%231A1A1A"></path><path d="M6.57515 19.1142C6.6671 19.422 6.95006 19.6323 7.2713 19.6323C7.59215 19.6323 7.87511 19.422 7.96746 19.1142C8.67742 16.7514 10.0393 15.2447 11.3559 13.788C12.9944 11.9747 14.5422 10.2615 14.5422 7.2717C14.5422 3.39788 11.1451 0 7.2713 0C3.39827 0 0 3.39748 0 7.2717C0 10.2615 1.54819 11.9747 3.18674 13.788C4.50328 15.2447 5.86479 16.7514 6.57515 19.1142ZM7.2713 1.45426C10.316 1.45426 13.0883 4.22663 13.0883 7.2717C13.0883 9.70191 11.7852 11.1435 10.2769 12.8121C9.2461 13.9534 8.10992 15.2096 7.2713 16.9199C6.43229 15.2096 5.29651 13.953 4.2657 12.8121C2.75698 11.1432 1.45426 9.70191 1.45426 7.2717C1.45426 4.22663 4.22663 1.45426 7.2713 1.45426Z" fill="%231A1A1A"></path><path d="M7.26193 10.1616C8.8705 10.1616 10.1795 8.86084 10.1795 7.26175C10.1795 5.66305 8.87089 4.3623 7.26193 4.3623C5.65297 4.3623 4.34473 5.66305 4.34473 7.26175C4.34512 8.86084 5.65336 10.1616 7.26193 10.1616ZM7.26193 5.81657C8.06898 5.81657 8.72527 6.46536 8.72527 7.26175C8.72527 8.05932 8.06898 8.70733 7.26193 8.70733C6.45528 8.70733 5.79899 8.05893 5.79899 7.26175C5.79899 6.46536 6.45528 5.81657 7.26193 5.81657Z" fill="%231A1A1A"></path></svg>');
+                        left: 0px;
+                        top: 0px;
+                        filter: brightness(0) saturate(100%) invert(100%) sepia(4%) saturate(584%) hue-rotate(204deg) brightness(120%) contrast(100%);
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* END */
+
+/* START - Theme the footer accents */
+footer#global-footer {
+    div.container {
+        & > h3 {
+            color: var(--accent-dark);
+        }
+    }
+
+    div.info-wrap-contact_zone {
+        & > h4 {
+            color: var(--accent-dark);
+        }
+
+        div.info-wrap-contact_cell {
+            svg {
+                path {
+                    fill: var(--typography-dark);
+                }
+            }
+
+            p[class$="_title"] {
+                color: var(--typography-dark);
+            }
+        }
+    }
+}
+
+/* END */
+
+/* START - Update footer official logo into white */
+#global-footer {
+    .text_footer.first_text_footer .luxury-text,
+    .info-privacy {
+        img {
+            object-position: top;
+        }
+    }
+}
+
+/* END */
+
+/* START - Theme footer horizontal border */
+footer#global-footer {
+    .info-privacy,
+    .form-col--copyright {
+        border-color: var(--accent-dark) !important;
+    }
+}
+
+/* END */
+
+/* START - Fix extra spacing on the right side of the copyright text */
+footer#global-footer {
+    div.form-col--copyright {
+        div.copy_zone {
+            @media only screen and (min-width: 768px) {
+                text-align: right;
+            }
+        }
+    }
+}
+
+/* END */
+
+/* START - footer lp and privacy policy font weight */
+footer#global-footer {
+    div.footer {
+        div.info-privacy {
+            div.copy_zone,
+            div.powered_zone {
+                a {
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+}
+
+/* END */
+
+/* START - Remove copyright extra paddings */
+footer#global-footer {
+    div.form-col:is(.form-col--copyright) {
+        @media (max-width: 768px) {
+            padding-left: 20px;
+            padding-right: 20px;
+            width: 100%;
+        }
+    }
+}
+
+/* END */
+
+/* START - Fix trec links on mobile */
+footer#global-footer .text_footer.first_text_footer {
+    .link {
+        @media only screen and (max-width: 1280px) {
+            overflow-wrap: anywhere;
+            text-decoration: underline !important;
+            white-space: normal !important;
+
+            &:before {
+                background-color: transparent;
+            }
+
+            &:after {
+                background-color: transparent;
+            }
+        }
+    }
+}
+
+/* END */
+
+/* START - Invert footer luxury presence logo */
+footer#global-footer {
+    div.form-col--powered {
+        img {
+            filter: invert(1);
+        }
+    }
+}
+
+/* END */
+
+/* START - Update footer phone number cell title */
+div.info-wrap-contact_zone {
+    div.info-wrap-contact_cell:has(a[href^="tel:"]) {
+        p.contact_title {
+            font-size: 0px;
+
+            &:after {
+                font-size: 14px;
+                content: "Call/Text";
+                display: block;
+            }
+        }
+    }
+}
+
+/* END */
+
+/* START - Invert footer luxury presence logo */
+footer#global-footer {
+    div.container {
+        & > h3 {
+            &:after {
+                display: block;
+                content: "Licensed Associate RE Broker";
+                font-size: 12px;
+            }
+        }
+    }
+}
+
+/* END */
+
+/* START - Adjust address position */
+footer#global-footer {
+    div.info-wrap-contact {
+        div.info-wrap-contact_zone {
+            &:not(:last-child) {
+                margin-bottom: 24px;
+            }
+
+            &:last-child {
+                @media (min-width: 769px) {
+                    margin-top: -69.39px;
+                    justify-content: end;
+                }
+            }
+        }
+    }
+}
+
+/* END */
+
+/* START - Change open hours to address */
+footer#global-footer {
+    div.info-wrap-contact {
+        & > .info-wrap-contact_zone:not(.type_user) {
+
+            & > .info-wrap-contact_cell:last-child {
+                i {
+                    svg {
+                        display: none;
+                    }
+
+                    &:before {
+                        content: '';
+                        height: 37px;
+                        width: 31px;
+                        display: block;
+                        background: url('data:image/svg+xml,<svg width="31" height="30" viewBox="0 0 31 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M29.9821 6.49489C29.7931 6.35756 29.679 6.32046 29.4572 6.39228L20.298 9.41368L16.1952 8.03558L15.8172 9.41525L19.7644 10.7038V28.1462L9.89831 25.7069V22.1034H8.71438V25.7515L1.21616 28.2532V15.3945H0.0322266V29.2729C0.0322266 29.5077 0.130098 29.7279 0.321106 29.8645C0.445418 29.9541 0.585911 29.9999 0.735086 29.9999C0.814804 29.9999 0.890971 29.9868 0.967926 29.96L9.48433 27.029L20.1792 29.7887C20.3224 29.8254 20.4751 29.8171 20.6152 29.7654L29.8104 26.2235C30.0942 26.1177 30.0251 25.8466 30.0251 25.5431V7.08291C30.0251 6.85086 30.17 6.63144 29.9821 6.49489ZM28.8412 25.0388L20.9483 28.0361V10.7065L28.8412 8.08649V25.0388Z" fill="%231A1A1A"></path><path d="M6.57515 19.1142C6.6671 19.422 6.95006 19.6323 7.2713 19.6323C7.59215 19.6323 7.87511 19.422 7.96746 19.1142C8.67742 16.7514 10.0393 15.2447 11.3559 13.788C12.9944 11.9747 14.5422 10.2615 14.5422 7.2717C14.5422 3.39788 11.1451 0 7.2713 0C3.39827 0 0 3.39748 0 7.2717C0 10.2615 1.54819 11.9747 3.18674 13.788C4.50328 15.2447 5.86479 16.7514 6.57515 19.1142ZM7.2713 1.45426C10.316 1.45426 13.0883 4.22663 13.0883 7.2717C13.0883 9.70191 11.7852 11.1435 10.2769 12.8121C9.2461 13.9534 8.10992 15.2096 7.2713 16.9199C6.43229 15.2096 5.29651 13.953 4.2657 12.8121C2.75698 11.1432 1.45426 9.70191 1.45426 7.2717C1.45426 4.22663 4.22663 1.45426 7.2713 1.45426Z" fill="%231A1A1A"></path><path d="M7.26193 10.1616C8.8705 10.1616 10.1795 8.86084 10.1795 7.26175C10.1795 5.66305 8.87089 4.3623 7.26193 4.3623C5.65297 4.3623 4.34473 5.66305 4.34473 7.26175C4.34512 8.86084 5.65336 10.1616 7.26193 10.1616ZM7.26193 5.81657C8.06898 5.81657 8.72527 6.46536 8.72527 7.26175C8.72527 8.05932 8.06898 8.70733 7.26193 8.70733C6.45528 8.70733 5.79899 8.05893 5.79899 7.26175C5.79899 6.46536 6.45528 5.81657 7.26193 5.81657Z" fill="%231A1A1A"></path></svg>');
+                        background-repeat: no-repeat;
+                        background-position: center;
+                    }
+                }
+
+                p.info-wrap-contact_title {
+                    font-size: 0px;
+
+                    &:before {
+                        content: 'ADDRESS';
+                        font-size: 14px;
+                    }
+                }
+
+                p.pre-line {
+                    font-weight: normal;
+                }
+            }
+        }
+    }
+}
+
+/* END */
+
+/* START - Add headshot on footer */
+footer#global-footer {
+    div.container {
+        & > h3 {
+            @media (max-width: 768px) {
+                text-align: center;
+            }
+        }
+    }
+    div.info-wrap {
+        & > div.info-wrap-contact:first-child {
+            & > div.info-wrap-contact_zone:first-child {
+                h4.serif {
+                    font-size: 0px;
+                    margin-top: unset;
+
+                    &:after {
+                        content: '';
+                        display: block;
+                        height: 130px;
+                        background: url('https://media-production.lp-cdn.com/cdn-cgi/image/format=auto,quality=85,fit=scale-down,width=960/https://media-production.lp-cdn.com/media/262083e2-84b0-457c-94da-6dc5f0360ac9');
+                        background-size: contain;
+                        background-position: center;
+                        background-repeat: no-repeat;
+                    }
+
+                    @media (max-width: 768px) {
+                        &:after {
+                            height: unset;
+                            aspect-ratio: 1/1;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* END */
+
+/* START - Align the 2nd phone number in right side and update title to office number*/
+footer#global-footer {
+    div.info-wrap-contact {
+        div.info-wrap-contact_zone {
+            &:nth-child(2) {
+                justify-content: flex-end;
+                margin-bottom: 0px;
+
+                div.info-wrap-contact_cell {
+                    width: 400px !important;
+                    margin-bottom: 0px;
+
+                    p.contact_title {
+                        font-size: 0px;
+
+                        &:before {
+                            content: "Office Number";
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+
+            &:nth-child(3) {
+                margin-top: -65.39px;
+            }
+
+            @media only screen and (max-width: 768px) {
+                &:nth-child(3) {
+                    margin-top: 0;
+                }
+            }
+        }
+    }
+}
+
+/* END */
+
+/*START Change Phone Number Footer with Office number*/
+#global-footer .type_user {
+    .info-wrap-contact_cell:nth-child(3):last-child .contact_title {
+        font-size: 0px;
+
+        @media (max-width: 768px) {
+            width: 140px;
+        }
+
+        &::before {
+            font-size: 14px;
+            content: "Phone Number" !important;
+            height: auto;
+            background: 0;
+            width: 100%;
+            padding-bottom: 1px;
+            bottom: -3px;
+        }
+
+        &::after {
+            bottom: -3px;
+        }
+    }
+
+    .info-wrap-contact_cell:nth-child(1):first-child .contact_title {
+        font-size: 0px;
+
+        @media (max-width: 768px) {
+            width: 140px;
+        }
+
+        &::before {
+            font-size: 14px;
+            content: "Office Number" !important;
+            height: auto;
+            background: 0;
+            width: 100%;
+            padding-bottom: 1px;
+            bottom: -3px;
+        }
+
+        &::after {
+            bottom: -3px;
+        }
+    }
+}
+
+/*END*/

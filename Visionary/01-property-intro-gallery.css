@@ -1,0 +1,39 @@
+/* START - Adjust the property intro gallery top padding */
+.property-intro-gallery__container:is(.lp-vertical-paddings) {
+    padding-top: 92px;
+
+    @media (max-width: 768px) {
+        padding-top: calc(80px + 20px);
+    }
+}
+
+/* END */
+
+/* START - Adjust the element text case */
+.property-intro-gallery__address,
+.property-intro-gallery__feature-name {
+    text-transform: var(--text-case);
+}
+
+/* END */
+
+/* START - Theme the property intro gallery modal buttons */
+.rich-lightbox__nav-link,
+.rich-lightbox__close {
+    background: transparent;
+    border-color: var(--color-light);
+    color: var(--color-light);
+
+    &:is(.active),
+    &:hover:not(:disabled) {
+        background: var(--color-light);
+        border-color: var(--color-light);
+        color: var(--color-dark);
+
+        &:not(:disabled):after {
+            color: var(--color-dark);
+        }
+    }
+}
+
+/* END */

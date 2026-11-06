@@ -1,0 +1,44 @@
+/* START - Fix image orientation and size on mobile */
+.featured-agent__photo {
+    @media (max-width: 768px) {
+        margin: 0px;
+        padding: 0px;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.featured-agent__heading {
+    @media (max-width: 768px) {
+        bottom: 0px;
+        left: 0px;
+        right: 0px;
+        margin-left: auto;
+        margin-right: auto;
+        order: 2;
+    }
+}
+
+.featured-agent__image-wrapper {
+    @media (max-width: 768px) {
+        position: relative;
+        height: auto;
+        order: 1;
+    }
+}
+
+.featured-agent__image {
+    @media (max-width: 768px) {
+        display: block;
+        aspect-ratio: 3/4;
+    }
+}
+
+/* END */
+
+/* START - Maximize spacing of content description */
+.featured-agent__description {
+    max-width: unset;
+}
+
+/* END */

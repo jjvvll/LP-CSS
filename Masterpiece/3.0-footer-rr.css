@@ -1,0 +1,116 @@
+/* START - Invert footer LP Logo */
+footer#global-footer {
+    div.site-footer__copy {
+        div.site-footer__logo-container {
+            img {
+                filter: invert(1);
+            }
+        }
+    }
+}
+
+/* END */
+
+/* START - Adjust the list <ul> of agents in the footer */
+footer#global-footer {
+    div.site-footer__info {
+        div.site-footer__col {
+            div.site-footer__col-content {
+                ul {
+                    display: flex;
+                    flex-direction: row;
+                    gap: 32px;
+                    list-style-type: none;
+                    margin: unset;
+                    
+                    @media (max-width: 768px) {
+                        flex-direction: column;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* END */
+
+/* Start - Theme the footer subscribe disclaimer link */
+footer#global-footer {
+    .footer-subscribe {
+        .lp-disclaimer {
+            a {
+                position: relative !important;
+                color: #fff !important;
+                transition: 0.4s;
+                font-weight: 400;
+                text-decoration: none !important;
+
+                &:hover {
+                    color: #fff !important;
+                }
+
+                &:before,
+                &:after {
+                    transition: 0.4s;
+                    text-decoration: none !important;
+                    line-height: 1;
+                    content: "" "";
+                    height: 1px;
+                    position: absolute !important;
+                    bottom: 0;
+                    left: 0;
+                }
+
+                &:before {
+                    width: 100% !important;
+                    background-color: rgba(255, 255, 255, 0.25) !important;
+                }
+
+                &:after {
+                    width: 0% !important;
+                    background-color: #fff !important;
+                }
+
+                &:hover:after {
+                    width: 100% !important;
+                }
+            }
+        }
+    }
+}
+
+/* End */
+
+/* START - Add QR Code to footer */
+footer#global-footer {
+    div.site-footer__info {
+        position: relative;
+        
+        &:after {
+            content: '';
+            display: block;
+            width: 100px;
+            height: 100px;
+            background: url(https://media-production.lp-cdn.com/cdn-cgi/image/format=auto,quality=85,fit=scale-down,width=960/https://media-production.lp-cdn.com/media/fab4590f-0c17-462d-9045-81eaad39c911);
+            background-size: contain;
+            top: 0px;
+            right: 0px;
+            position: absolute;
+        }
+        
+        @media (max-width: 768px) {
+            &:after {
+                position: relative;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 25px;
+                margin-bottom: 7px;
+                width: 200px;
+                height: auto;
+                aspect-ratio: 1/1;
+            }
+        }
+    }
+}
+
+/* END */

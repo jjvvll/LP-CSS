@@ -1,0 +1,13 @@
+/* START - Glassmorphism Button Theme */
+a.btn {
+    background: rgba(255, 255, 255, 0.125) !important;
+    color: #FFF !important;
+    font-weight: normal !important;
+    backdrop-filter: blur(5px);
+    border-width: 2px !important;
+    border-style: solid;
+    border-image: linear-gradient(170deg,rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 1) 100%) !important;
+    border-image-slice: 1 !important;
+}
+
+/* END */

@@ -1,0 +1,32 @@
+/* START - Adjust custom form image into square */
+div.custom-form {
+    div.custom-form__container {
+        div.custom-form__row {
+            div.custom-form__img-col {
+                div.custom-form__img-block {
+                    aspect-ratio: 1/1;
+                    height: auto;
+                }
+            }
+        }
+    }
+}
+
+/* END */
+
+/* START - Adjust custom form image position */
+div.custom-form {
+    div.custom-form__container {
+        div.custom-form__row {
+            div.custom-form__img-col {
+                div.custom-form__img-block {
+                    img {
+                        object-position: top;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* END */

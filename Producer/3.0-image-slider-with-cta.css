@@ -1,0 +1,22 @@
+/* START - Theme the pagination buttons */
+div.sell-slider__arrows {
+    button.lp-arrow {
+        border-color: var(--accent-dark);
+        background-color: var(--accent-dark);
+
+        &:before {
+            border-color: var(--accent-light);
+        }
+
+        &:hover {
+            border-color: var(--accent-dark);
+            background-color: transparent;
+
+            &:before {
+                border-color: var(--accent-dark);
+            }
+        }
+    }
+}
+
+/* END */

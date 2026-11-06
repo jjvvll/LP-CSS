@@ -1,0 +1,68 @@
+/* START - Fix element large spacings and dimensions */
+div.media-blocks {
+    div.row {
+        column-gap: 16px;
+        row-gap: 32px;
+        margin-left: 0px;
+        margin-right: 0px;
+
+        div.col {
+            padding-left: 0px;
+            padding-right: 0px;
+            max-width: calc((100% / 4) - 16px + (16px / 4));
+            flex: 1 1 calc((100% / 4) - 16px + (16px / 4));
+
+            @media (max-width: 768px) {
+                max-width: 100%;
+                flex: 1 1 100%;
+            }
+
+            div.media-card {
+                margin-bottom: 0px;
+
+                div.media-card__image {
+                    margin-bottom: 0px;
+                }
+
+                h4.media-card__title {
+                    max-width: unset;
+
+                    &:empty {
+                        display: none;
+                    }
+                }
+
+                div.media-card__description {
+                    width: 100%;
+                    max-width: unset;
+
+                    & > * {
+                        margin-bottom: 0px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* END */
+
+div.media-blocks {
+    div.row {
+        div.col {
+            padding: unset;
+
+            div.media-card {
+                div.media-card__description {
+                    margin: 0px;
+                }
+            }
+        }
+    }
+}
+
+.lp-container {
+    & > .lp-btn {
+        margin-top: 48px;
+    }
+}

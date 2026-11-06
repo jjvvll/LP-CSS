@@ -1,0 +1,44 @@
+/* START - Adjust dimensions if non-fullbleed */
+div.home-valuation:not(.home-valuation--fullbleed) {
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 96px;
+    padding-left: 50px;
+    padding-right: 50px;
+
+    @media (max-width: 768px) {
+        padding-top: 64px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+}
+
+/* END */
+
+/* Start - Adjust width of the search bar (Masterpiece) */
+.home-valuation .content {
+    @media only screen and (min-width: 768px) {
+        max-width: 1348px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-right: 24px !important;
+        padding-left: 24px !important;
+    }
+}
+
+/* End */
+
+/* START - Center the text contents of the home valuation */
+div.opening-wrapper {
+    h2.title {
+        text-align: center;
+    }
+
+    ul.benefits {
+        font-size: 12px;
+        justify-content: center;
+    }
+}
+
+/* END */

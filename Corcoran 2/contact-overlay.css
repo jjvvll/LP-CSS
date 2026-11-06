@@ -1,0 +1,72 @@
+/*START - contact overlay theming*/
+#modal-global-contact-us .contact-form__wrap {
+    background-image: none !important;
+    background-color: #fff !important;
+}
+
+/*END*/
+
+#modal-global-contact-us {
+    .contact-form__form-group {
+        input,
+        textarea {
+            border-color: rgba(0, 0, 0, 0.1) !important;
+        }
+    }
+
+    .contact-form__footer {
+        .block {
+            max-width: 100% !important;
+        }
+
+        .link {
+            position: relative !important;
+            color: #fff !important;
+            transition: 0.4s;
+            color: #000 !important;
+
+            &:hover {
+                color: #DFD6C6 !important;
+            }
+
+            &:before,
+            &:after {
+                transition: 0.4s;
+                text-decoration: none !important;
+                line-height: 1;
+                content: "" "";
+                height: 1px;
+                position: absolute !important;
+                bottom: 0;
+                left: 0;
+            }
+
+            &:before {
+                width: 100% !important;
+                background-color: rgba(0, 0, 0, 0.1) !important;
+            }
+
+            &:after {
+                width: 0% !important;
+                background-color: #DFD6C6 !important;
+            }
+
+            &:hover:after {
+                width: 100% !important;
+            }
+        }
+    }
+}
+
+/*START - contact overlay close button position*/
+div#modal-global-contact-us div.contact-form__header button.contact-form__close.close {
+    right: 0vw;
+    top: -5vh;
+
+    &:before,
+    &:after {
+        background-color: #000;
+    }
+}
+
+/*END - contact overlay close button position*/

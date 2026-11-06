@@ -1,0 +1,41 @@
+/* START - Adjust the element background position */
+& {
+    background-position: 50% 50%;
+}
+
+/* END */
+
+/* START - Adjust custom intro title max width */
+div.simple-opening__content {
+    max-width: 100%;
+
+    &:has(.pre-line) {
+        h1.hero-heading {
+            margin-bottom: 8px;
+        }
+
+        p.pre-line {
+            margin-bottom: 48px;
+        }
+    }
+
+    p.pre-line {
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/* END */
+
+/* START - Fix social icons spacings */
+ul.lp-socials {
+    gap: 16px;
+
+    li {
+        max-width: fit-content;
+        margin-bottom: 0px;
+    }
+}
+
+/* END */

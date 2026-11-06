@@ -1,0 +1,8 @@
+/* START RR2 - Adjust the displayed image aspect ratio */
+.hoverable-section-image__img-container {
+    min-height: unset !important;
+    padding-bottom: 0px;
+    aspect-ratio: 3/4;
+}
+
+/* END */

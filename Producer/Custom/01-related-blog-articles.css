@@ -1,0 +1,32 @@
+div.related-blog-articles_slider {
+    div.slick-list {
+        max-width: unset;
+
+        div.slick-track {
+            width: 100% !important;
+
+            .slick-slide {
+                width: 50%  !important;
+
+                @media (max-width: 768px) {
+                    width: 100% !important;
+                }
+
+                & > div {
+                    div.articles_slide {
+                        margin: unset;
+                        padding: unset;
+                        height: unset;
+                        aspect-ratio: 4/3;
+
+                        h5 {
+                            font-weight: 400;
+                            font-size: var(--global-h4-font-size);
+                            font-family: var(--global-primary-font-family);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

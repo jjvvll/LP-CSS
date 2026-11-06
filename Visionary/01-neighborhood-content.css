@@ -1,0 +1,9 @@
+/* START - Add gaps between the neighborhood content and social icons */
+.neighborhood-content__container {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+
+/* END */
+

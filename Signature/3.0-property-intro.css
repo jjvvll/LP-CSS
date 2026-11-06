@@ -1,0 +1,43 @@
+/* START - Remove extra padding */
+div.lp-vertical-paddings {
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+/* END */
+
+/* START - Adjust property intro padding */
+div.section {
+    div.lp-container {
+        @media (min-width: 1025px) {
+            padding-top: 268px;
+        }
+
+        @media (max-width: 768px) {
+            padding-top: 188px;
+        }
+    }
+}
+
+/* END */
+
+a.link-icon {
+    text-transform: var(--text-case);
+    display: flex;
+    white-space: pre;
+    color: var(--accent-light);
+    transition: 0.4s;
+
+    &:before {
+        background: var(--accent-light);
+    }
+
+    &:hover {
+        color: var(--accent-light);
+        opacity: 0.5;
+
+        &:before {
+            background: var(--accent-light);
+        }
+    }
+}

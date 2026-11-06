@@ -1,0 +1,46 @@
+/* ----- NEWSLETTER + CONTACT CTA ----- */
+/* START - Adjust description opacity */
+.newsletter-contact-cta__description {
+  opacity: 1 !important;
+}
+
+/* END */
+
+/* START - Adust the newsletter container max width */
+.newsletter-contact-cta__block {
+  @media (min-width: 701px) {
+    width: unset;
+    max-width: 800px;
+  }
+
+  .newsletter-contact-cta__heading {
+    max-width: 100%;
+
+    .newsletter-contact-cta__description {
+      max-width: 600px;
+      margin: auto;
+    }
+  }
+}
+
+/* END */
+
+/* ----- NEWSLETTER + CONTACT CTA ----- */
+
+/*Centers the container*/
+.newsletter-contact-cta__container {
+  display: flex;
+  justify-content: center;
+}
+
+.newsletter-contact-cta__wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.newsletter-contact-cta__block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}

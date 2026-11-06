@@ -1,0 +1,72 @@
+/* START - Globally theme dropdown menu */
+div.uf-cus-sel,
+div.custom-select,
+div.uf-cus-sel-menu {
+  div.uf-cus-sel-menu,
+  div.custom-select-menu,
+  div.uf-cus-sel-content {
+    div.uf-cus-sel-content,
+    div.custom-select-content {
+      background: var(--color-light) !important;
+      border-color: var(--color-dark) !important;
+
+      .uf-cus-sel-item,
+      button.uf-cus-sel-item,
+      button.custom-select-item {
+        background: var(--color-light) !important;
+        color: var(--color-dark) !important;
+
+        &:hover,
+        &:is(.is-selected) {
+          background: var(--color-dark) !important;
+          color: var(--color-light) !important;
+        }
+      }
+    }
+  }
+}
+
+/* END */
+
+/* START - Theme the pagination prev and next globally */
+.lp-pagination.pagination-container {
+  .paginationjs {
+    .paginationjs-pages {
+      li.paginationjs-next,
+      li.paginationjs-prev {
+        a {
+          width: 40px;
+          background: transparent !important;
+          border: 2px solid transparent !important;
+          color: var(--color-dark) !important;
+
+          &:focus,
+          &:active,
+          &:hover {
+            background: var(--color-dark) !important;
+            border: 2px solid var(--color-dark) !important;
+            color: var(--color-light) !important;
+          }
+        }
+
+        &:is(.paginationjs-next) {
+          a {
+            &:after {
+              left: 45%;
+            }
+          }
+        }
+
+        &:is(.paginationjs-prev) {
+          a {
+            &:after {
+              left: 50%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* END */

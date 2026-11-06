@@ -1,0 +1,107 @@
+/* START - Center titles vertically */
+a.gallery-card {
+    h3.gallery-card__title {
+        text-align: center;
+        margin-top: auto;
+        margin-bottom: auto;
+
+        &:after {
+            display: none;
+        }
+    }
+}
+
+/* END */
+
+/* START - Remove large bottom margin on title */
+div.gallery-component__header {
+    max-width: 1200px;
+    margin-bottom: 48px;
+
+    div.gallery-component__lead {
+        display: flex;
+        flex-direction: column;
+    }
+
+    h2 {
+        margin-bottom: 8px;
+    }
+
+    p, div {
+        font-size: var(--global-body-font-size);
+    }
+}
+
+/* END */
+
+/* START - Adjust container width and padding */
+div.gallery-component__container {
+    max-width: unset;
+    padding-left: 0px;
+    padding-right: 0px;
+
+    @media (max-width: 768px) {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+}
+
+/* END */
+
+/* START - Remove and fix dimensions */
+div.gallery-component__row {
+    margin-left: 0px;
+    margin-right: 0px;
+    gap: 0px;
+
+    & > div.gallery-component__col {
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        padding-left: 0px;
+        padding-right: 0px;
+        width: auto;
+        flex: 1 1 calc((100% / 3) - 16px + (16px / 3));
+        max-width: calc((100% / 3) - 16px + (16px / 3));
+
+        &:not(:last-child) {
+            border-right: 1px solid rgba(255, 255, 255, 0.75);
+
+            @media (max-width: 768px) {
+                border-right: none;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.75);
+            }
+        }
+
+        @media (max-width: 768px) {
+            flex: 1 1 100%;
+            max-width: 100%;
+        }
+
+        h3.gallery-card__title {
+            font-family: var(--global-secondary-font-family);
+            font-size: var(--global-h4-font-size);
+        }
+
+        &:hover {
+            backdrop-filter: blur(3px);
+        }
+
+        a.gallery-card {
+            @media (max-width: 768px) {
+                &:before {
+                    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4));
+                }
+            }
+        }
+    }
+}
+
+/* END */
+
+/* Start - Remove specified height */
+a.gallery-card {
+    height: auto;
+}
+
+/* END */

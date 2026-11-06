@@ -1,0 +1,83 @@
+/* ----- TEXT GRID ----- */
+/* START - Adjust text grid title bottom margin */
+.text-grid__title {
+    margin-bottom: 48px;
+}
+
+/* END */
+
+/* START - Remove the large bottom spacing if CTA button is hidden */
+div.text-grid-buttons:not(:has(*)) {
+    display: none;
+}
+
+div.text-grid-buttons {
+    padding-top: 48px;
+}
+
+/* END */
+
+/* START - Max two-line the text grid title */
+.text-grid-scenes__scene-title {
+    font-size: 25px;
+    max-width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+/* END */
+
+/* START - Theme the text grid boxes */
+.text-grid-scenes {
+    gap: 16px;
+}
+
+.text-grid-scenes__scene {
+    border: 2px solid var(--color-dark);
+    background: var(--color-dark);
+}
+
+.text-grid-scenes__scene--columns-3 {
+    --flexBasis: calc((100% / 3) - 16px + (16px / 3));
+
+    @media (max-width: 768px) {
+        --flexBasis: 100%;
+    }
+}
+
+/* END */
+
+/* ----- TEXT GRID ----- */
+
+
+/*Center Everything, Add margin at the bottom of the frist child title, Add background colors for each li container - WB JV */
+.text-grid-scenes__scene-item {
+    padding: 0px;
+}
+
+.text-grid-scenes__scene-content {
+    height: 100%;
+
+    &:not(:has(img)) {
+        padding: 64px 32px;
+        text-align: center;
+        background: #F6F6F6;
+    }
+}
+
+.text-grid-scenes__scene:nth-child(1) .text-grid-scenes__scene-title {
+    margin-bottom: 60px;
+}
+
+.text-grid-scenes__scene:nth-child(1) .text-grid-scenes__scene-content {
+    background: rgba(0,0,0,.12);
+}
+
+.text-grid-scenes__scene:nth-child(2) .text-grid-scenes__scene-content {
+    background: rgba(0, 0, 0, .12);
+}
+
+.text-grid-scenes__scene:nth-child(3) .text-grid-scenes__scene-content {
+    background: rgba(0, 0, 0, .12);
+}

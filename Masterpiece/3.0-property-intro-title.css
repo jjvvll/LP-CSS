@@ -1,0 +1,25 @@
+/* START - Adjust the element layout */
+div.lp-container {
+    max-width: unset;
+
+    & > * {
+        text-transform: var(--text-case);
+
+        &:is(:last-child) {
+            margin-bottom: unset;
+        }
+    }
+}
+
+/* END */
+
+/* START - Theme the property status */
+div.lp-container {
+    div.property-status {
+        background: var(--accent-dark);
+        color: var(--accent-light);
+        text-transform: var(--text-case);
+    }
+}
+
+/* END */

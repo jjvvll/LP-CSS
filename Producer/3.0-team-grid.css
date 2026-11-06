@@ -1,0 +1,92 @@
+/* START - Adjust the team grid header width and spacings */
+div.team-grid {
+    div.lp-title-group {
+        max-width: 1000px;
+        margin-bottom: 0px;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+
+        h2.lp-h2 {
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+
+        p.lp-text--subtitle:empty {
+            display: none;
+        }
+
+        p.lp-text--subtitle + p {
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+}
+
+/* END */
+
+/*START - border color when hover*/
+.team-member__hover {
+    border-color: var(--accent-dark);
+}
+
+/*END - border color*/
+
+/* Start - Uppercase agent names */
+span.team-member__name {
+    text-transform: var(--text-case);
+    font-size: var(--global-h3-font-size);
+}
+
+/* End */
+
+/* Start - Remove unnecessary dimensions */
+div.lp-container {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+
+.team-grid {
+    .team-grid__wrapper {
+        margin: 0px;
+        gap: 50px;
+        justify-content: center;
+        margin: auto;
+        width: 100%;
+        max-width: unset;
+
+        &:not(.two-col) {
+            .team-member__container {
+                @media (min-width: 768px) {
+                    flex: 1 1 calc((100% / 3) - 50px + (50px / 3));
+                    max-width: calc((100% / 3) - 50px + (50px / 3));
+                }
+            }
+        }
+
+        &:is(.two-col) {
+            .team-member__container {
+                @media (min-width: 768px) {
+                    flex: 1 1 calc((100% / 2) - 50px + (50px / 2));
+                    max-width: calc((100% / 2) - 50px + (50px / 2));
+                }
+            }
+        }
+
+        .team-member__container {
+            margin: 0px;
+            padding: 0px;
+            width: auto;
+
+            @media (max-width: 768px) {
+                max-width: 100%;
+                flex: 1 1 100%;
+                width: 100%;
+            }
+        }
+    }
+}
+
+/* End */

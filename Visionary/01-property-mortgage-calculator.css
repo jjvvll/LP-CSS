@@ -1,0 +1,91 @@
+/* ----- PROPERTY MORTGAGE CALCULATOR ----- */
+/* START - Fix element spacings and dimensions */
+.mortgage-calculator__row {
+    gap: 64px;
+    margin-left: 0px;
+    margin-right: 0px;
+
+    @media (max-width: 768px) {
+        gap: 0px;
+    }
+}
+
+.mortgage-calculator__col {
+    padding-left: 0px;
+    padding-right: 0px;
+    flex: 1 1 calc(50% - 64px);
+}
+
+/* END */
+
+/* START - Fix the two line title of the mortgage calculator */
+.mortgage-calculator__title {
+    font-size: var(--global-h2-font-size);
+
+    @media (max-width: 768px) {
+        font-size: var(--global-h3-font-size);
+    }
+}
+
+/* END */
+
+/* START - Add hover effect to the reset and get pre-approved buttons */
+.mortgage-form__footer {
+    .mortgage-form__reset:hover,
+    .mortgage-form__reset + .lp-link:hover {
+        opacity: 0.5;
+    }
+}
+
+/* END */
+
+/* START - Adjust the title and description alignment on mobile */
+.mortgage-calculator__title,
+.mortgage-calculator__description {
+    @media (max-width: 768px) {
+        text-align: center;
+    }
+}
+
+/* END */
+
+/* START - Theme the chart horizontal border */
+.mortgage-results__footer:before {
+    background: var(--color-dark);
+    opacity: 1;
+}
+
+/* END */
+
+/* START - Theme the arrow icon on mobile view */
+.mortgage-results__expand {
+    background: var(--color-dark);
+    color: var(--color-light);
+}
+
+/* END */
+
+/*START - Theme the dropdown in mortgate calcualtor - WB JV*/
+.custom-select-item {
+    &:hover {
+        background-color: var(--color-dark) !important;
+        color: var(--color-light) !important;
+    }
+    &.is-selected {
+        color: var(--color-dark) !important;
+        font-weight: 600;
+    }
+    &.is-selected:hover {
+        background-color: var(--color-dark) !important;
+        color: var(--color-light) !important;
+    }
+}
+/*END*/
+
+/*START - Change underline text color on hover - WB JV*/
+.property-agent__phone:hover{
+    text-decoration-color:  var(--color-dark) !important;
+}
+/*END*/
+
+/* ----- PROPERTY MORTGAGE CALCULATOR ----- */

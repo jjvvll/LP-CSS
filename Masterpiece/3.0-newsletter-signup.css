@@ -1,0 +1,31 @@
+div.lp-title-group {
+    div.lp-text--subtitle {
+        max-width: 560px;
+    }
+}
+
+/* START - Theme the input elements */
+div.newsletter-signup__inputs-container {
+    input.lp-input {
+        color: var(--color-light);
+        border-color: var(--color-light);
+
+        &::placeholder {
+            color: var(--color-light);
+            opacity: 0.75;
+        }
+
+        &:focus,
+        &:active,
+        &:hover {
+            border-color: var(--color-light);
+        }
+    }
+}
+
+.newsletter-signup__form-item::placeholder {
+    color: var(--color-dark);
+    opacity: 1;
+}
+
+/* END */

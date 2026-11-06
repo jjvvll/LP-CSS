@@ -1,0 +1,92 @@
+/* START - Theme the neighborhood schools borders */
+.neighborhood-schools-table,
+.neighborhood-schools-table__row {
+    border-color: var(--color-dark);
+}
+
+/* END */
+
+/* START - Uppercase pill buttons */
+.neighborhood-schools-nav {
+    .neighborhood-schools-nav__item {
+        text-transform: var(--text-case);
+    }
+}
+
+/* END */
+
+/* START - Theme the neighborhood sdchools pill buttons */
+.neighborhood-schools-nav__item {
+    background: transparent;
+    border-color: var(--color-dark);
+    color: var(--color-dark);
+
+    &:hover,
+    &:is(.neighborhood-schools-nav__item--active) {
+        background: var(--color-dark);
+        border-color: var(--color-dark);
+        color: var(--color-light);
+    }
+}
+
+/* END */
+
+/* START - Theme the neighborhood schools table header */
+.neighborhood-schools-table__row--filters {
+    color: var(--color-dark);
+}
+
+.neighborhood-schools-table__filter-tool path {
+    fill: var(--color-dark);
+}
+
+/* END */
+
+/* START - Theme the neighborhood schools school icon */
+.neighborhood-schools-table__type-icon {
+    --primarySchoolBack: var(--color-dark);
+}
+
+.neighborhood-schools-table__type-icon path {
+    fill: var(--color-light);
+}
+
+/* END */
+
+/* START - Theme the neighborhood schools school arrow icon */
+.neighborhood-schools-table__name {
+    path {
+        fill: var(--color-dark);
+    }
+}
+
+/* END */
+
+/* START - Theme the neighborhood schools tags */
+.neighborhood-schools-table__category {
+    background: var(--color-dark);
+    color: var(--color-light);
+    font-size: 12px;
+}
+
+/* END */
+
+/* START - Theme the neighborhood schools star rating */
+.neighborhood-schools-rating:before {
+    background: linear-gradient(90deg, var(--color-dark) var(--percent), var( --color-light-bg) var(--percent));
+    background-clip: text;
+}
+
+/* END */
+
+/* START - Theme the neighborhood schools links */
+.neighborhood-schools-table__description {
+    color: var(--color-dark);
+
+    &:hover {
+        color: var(--color-dark);
+        opacity: 0.5;
+    }
+}
+
+/* END */

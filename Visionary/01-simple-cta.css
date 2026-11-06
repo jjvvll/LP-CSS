@@ -1,0 +1,40 @@
+/* ----- SIMPLE CTA ----- */
+/* START - Adjust title max width */
+.simple-cta__text-block {
+    max-width: 100%;
+    margin-bottom: unset;
+
+    & > *:not(.simple-cta__title) {
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/* END */
+
+/* START - Adjust the element layout */
+div.simple-cta__text-block {
+    & > * {
+        margin-bottom: unset;
+
+        @media (max-width: 768px) {
+            text-align: center;
+        }
+    }
+}
+
+/* END */
+
+/* START - Adjust title bottom margin */
+.simple-cta__text-block {
+    margin-bottom: 0px;
+
+    @media (max-width: 768px) {
+        margin-bottom: 16px;
+    }
+}
+
+/* END */
+
+/* ----- SIMPLE CTA ----- */

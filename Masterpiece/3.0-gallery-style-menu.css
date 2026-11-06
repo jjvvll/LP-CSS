@@ -1,0 +1,46 @@
+/* START - Fix element dimensions on desktop */
+div.gallery-component {
+    div.lp-container {
+        div.gallery-component__header {
+            @media (min-width: 993px) {
+                transform: translateY(64px);
+            }
+        }
+
+        div.gallery-component__row {
+            margin-left: unset;
+            margin-right: unset;
+
+            @media (min-width: 993px) {
+                margin-top: calc(-33px - 74px);
+            }
+
+            & > div.gallery-component__col:not(:nth-child(3n + 2)) {
+                @media (min-width: 993px) {
+                    transform: unset;
+                }
+            }
+
+            & > div.gallery-component__col:nth-child(2) {
+                @media (min-width: 993px) {
+                    transform: translateY(50%);
+                }
+            }
+
+            & > div.gallery-component__col:nth-child(4) {
+                @media (min-width: 993px) {
+                    margin-bottom: unset;
+                }
+            }
+
+            & > div.gallery-component__col:nth-child(5) {
+                @media (min-width: 993px) {
+                    transform: translate(100%, 0%);
+                    margin-bottom: unset;
+                }
+            }
+        }
+    }
+}
+
+/* END */

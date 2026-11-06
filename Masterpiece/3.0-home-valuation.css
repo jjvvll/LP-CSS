@@ -1,0 +1,21 @@
+/* START - Theme the element active step numbers */
+ol.steps-nav {
+    &>li {
+        background: var(--accent-light);
+        color: var(--accent-dark);
+
+        &:is(.active) {
+            background: var(--accent-dark);
+            color: var(--accent-light);
+        }
+    }
+}
+
+/* END */
+
+/* START - Center the form vertically on the element */
+div.box {
+    justify-content: center;
+}
+
+/* END */

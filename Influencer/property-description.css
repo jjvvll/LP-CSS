@@ -1,0 +1,50 @@
+/* START - Adjust the element contents */
+div.property-description__content {
+    display: grid;
+    column-gap: 64px;
+    grid-template-areas: 'image title' 'image price' 'image description' 'image agent';
+    grid-template-columns: 1fr 1fr;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin: auto;
+    max-width: 1130px !important;
+
+    @media (max-width: 768px) {
+        grid-template-areas: 'image' 'title' 'price' 'description' 'agent';
+        text-align: center;
+        grid-template-columns: 1fr;
+    }
+
+    & > img {
+        grid-area: image;
+        width: 100% !important;
+        height: 100%;
+        object-fit: cover;
+        padding-right: 0px !important;
+        padding-bottom: 0px !important;
+
+        @media (max-width: 768px) {
+            padding-bottom: 32px !important;
+        }
+    }
+
+    h3.property-description__title {
+        grid-area: title;
+        margin-top: 0px;
+    }
+
+    p.property-description__price {
+        grid-area: price;
+    }
+
+    div.property-description__text {
+        grid-area: description;
+    }
+
+    div.property-description__agent {
+        grid-area: agent;
+        margin-bottom: 0px;
+    }
+}
+
+/* END */

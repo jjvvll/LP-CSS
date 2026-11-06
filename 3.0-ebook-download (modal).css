@@ -1,0 +1,94 @@
+/* START - Fix the modal layout version */
+div.modal-content {
+    @media (max-width: 768px) {
+        min-height: unset;
+        max-height: 100%;
+        align-items: unset;
+    }
+
+    div.ebook-download {
+        max-width: 1400px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+
+        @media (max-width: 768px) {
+            overflow-y: scroll;
+        }
+
+        div.lp-container {
+            padding-left: 0px;
+            padding-right: 0px;
+
+            div.ebook-download__row {
+                margin-left: 0px;
+                margin-right: 0px;
+
+                @media (max-width: 768px) {
+                    flex-direction: column-reverse;
+                }
+
+                & > div.ebook-download__col {
+                    max-width: 50%;
+                    padding-left: 0px;
+                    padding-right: 0px;
+
+                    @media (max-width: 768px) {
+                        margin: 0px;
+                        max-width: 100%;
+                    }
+
+                    &:is(:first-child) {
+                        div.ebook-download__main-content {
+                            max-width: unset;
+                            padding-left: 64px;
+                            padding-right: 64px;
+                            padding-top: 96px;
+                            padding-bottom: 96px;
+
+                            @media (max-width: 768px) {
+                                padding-left: 25px;
+                                padding-right: 25px;
+                                padding-top: 48px;
+                                padding-bottom: 48px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* END */
+
+/* START - Reposition close button */
+button.close {
+    top: 16px;
+    right: 16px;
+
+    span.lp-close-icon {
+        filter: unset;
+    }
+}
+
+/* END */
+
+/* START - Theme the input elements */
+input.lp-input,
+button.custom-select-toggle {
+    color: var(--typography-dark);
+    border-color: var(--border-dark-inactive);
+
+    &::placeholder {
+        color: var(--typography-dark) !important;
+        opacity: 0.5 !important;
+    }
+
+    &:hover,
+    &:focus,
+    &:active {
+        border-color: var(--border-dark-active);
+    }
+}
+
+/* END */

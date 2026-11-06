@@ -1,0 +1,67 @@
+/* START - Theme properties grid */
+.gallery-grid {
+    .gallery-grid__container {
+        .gallery-grid__item {
+            .gallery-grid__status {
+                background: var(--accent-dark);
+                color: var(--typography-light);
+                padding: 8px 16px;
+            }
+        }
+    }
+}
+
+/* END */
+
+/* START - Fix properties grid dimensions */
+div.gallery-grid {
+    div.lp-title-group {
+        margin-bottom: 48px;
+
+        h2.gallery-grid__title {
+            margin-top: 0px;
+        }
+
+        div.gallery-grid__subtitle {
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
+    div.gallery-grid__container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 80px 102px;
+
+        &:after {
+            display: none;
+        }
+
+        @media (min-width: 769px) {
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+
+        @media (max-width: 768px) {
+            grid-template-columns: 1fr;
+        }
+
+        .gallery-grid__item {
+            width: 100%;
+            max-width: unset;
+            margin-bottom: 0px;
+            min-width: unset;
+        }
+    }
+}
+
+/* END */
+
+div.pagination-container {
+    margin-top: 48px;
+}
+
+& {
+    overflow: hidden;
+}

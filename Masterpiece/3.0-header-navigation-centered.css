@@ -1,0 +1,230 @@
+/* START - Adjust the displayed header navigation logo */
+nav#global-navbar {
+    a.header__logo {
+        img {
+            max-height: 96px;
+            max-width: unset;
+
+            @media (max-width: 768px) {
+                max-height: 72px;
+            }
+        }
+    }
+
+    &:not(.scroll) {
+        a.header__logo {
+            img.dark {
+                display: none;
+            }
+
+            img.light {
+                display: block;
+            }
+        }
+    }
+
+    &:is(.scroll) {
+        a.header__logo {
+            img.dark {
+                display: none;
+            }
+
+            img.light {
+                display: block;
+            }
+        }
+    }
+}
+
+/* END */
+
+/* START - Adjust the header navigation layout */
+nav#global-navbar {
+    div.header {
+        @media (max-width: 768px) {
+            padding-top: 24px;
+            padding-bottom: 24px;
+        }
+    }
+
+    div.header__left,
+    div.header__right {
+        ul.navigation {
+            &>li.navigation__item {
+                a.navigation__link {
+                    padding-left: unset;
+                    padding-right: unset;
+                    padding-top: unset;
+                    padding-bottom: 8px;
+                    text-transform: var(--text-case);
+                    font-size: var(--global-body-font-size);
+                }
+
+                &:not(:first-child) {
+                    padding-left: 32px;
+                }
+
+                &:after {
+                    transition: 0.4s;
+                    transform: translate(0, calc(-50% - 6px)) rotate(45deg);
+                }
+
+                a.sub-nav__link {
+                    text-transform: var(--text-case);
+                }
+            }
+        }
+    }
+
+    button.hamburger-component {
+        margin-left: 32px;
+    }
+}
+
+/* END */
+
+/* START - Adjust the header navigation theme */
+nav#global-navbar {
+    transform: unset !important;
+
+    a.sub-nav__link {
+        background: var(--primary-light);
+        color: var(--typography-dark);
+        font-weight: normal;
+        transition: 0.4s;
+        max-width: unset;
+
+        &:hover {
+            background: var(--accent-dark);
+            color: var(--typography-light);
+        }
+    }
+
+    &:not(.scroll) {
+        li.navigation__item {
+            a.navigation__link {
+                color: var(--accent-light);
+
+                &:after {
+                    background: var(--accent-light);
+                }
+
+                &:hover {
+                    color: var(--accent-light);
+                }
+            }
+
+            &:after {
+                border-color: var(--accent-light);
+            }
+
+            &:hover {
+                &:after {
+                    border-color: var(--accent-light);
+                }
+            }
+        }
+
+        button.hamburger-component {
+            circle {
+                fill: var(--accent-dark);
+            }
+
+            rect {
+                fill: var(--accent-light);
+            }
+        }
+    }
+
+    &:is(.scroll) {
+        background: var(--accent-dark) !important;
+
+        li.navigation__item {
+            a.navigation__link {
+                color: var(--typography-light);
+
+                &:after {
+                    background: var(--accent-light);
+                }
+
+                &:hover {
+                    color: var(--accent-light);
+                }
+            }
+
+            &:after {
+                border-color: var(--typography-light);
+            }
+
+            &:hover {
+                &:after {
+                    border-color: var(--accent-light);
+                }
+            }
+        }
+
+        button.hamburger-component {
+            circle {
+                fill: var(--accent-light);
+            }
+
+            rect {
+                fill: var(--accent-dark);
+            }
+        }
+    }
+}
+
+body.page-property-details {
+    nav#global-navbar {
+        transform: unset !important;
+
+        &:not(.scroll) {
+            .header__logo {
+                img.dark {
+                    display: block;
+                }
+
+                img.light {
+                    display: none;
+                }
+            }
+
+            li.navigation__item {
+                a.navigation__link {
+                    color: var(--accent-dark);
+
+                    &:after {
+                        background: var(--accent-dark);
+                    }
+
+                    &:hover {
+                        color: var(--accent-dark);
+                    }
+                }
+
+                &:after {
+                    border-color: var(--accent-dark);
+                }
+
+                &:hover {
+                    &:after {
+                        border-color: var(--accent-dark);
+                    }
+                }
+            }
+
+            button.hamburger-component {
+                circle {
+                    fill: var(--accent-dark);
+                }
+
+                rect {
+                    fill: var(--accent-light);
+                }
+            }
+        }
+    }
+}
+
+/* END */

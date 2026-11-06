@@ -1,0 +1,82 @@
+/* ----- PRESS LIST ----- */
+/* START - Adjust the element layout */
+.press-list__title-group {
+    max-width: unset;
+}
+
+.press-list__description {
+    margin-top: 16px;
+}
+
+.press-list-item__image-container {
+    background: var(--background-dark-inactive);
+    height: unset !important;
+    aspect-ratio: 16/10;
+}
+
+.press-list__pagination {
+    margin-top: 48px;
+}
+
+/* END */
+
+/* START - Adjust the element date text case */
+.press-list-item__details {
+    text-transform: var(--text-case);
+}
+
+/* END */
+
+/* START - Adjust thet press tile description opacity */
+.press-list-item__description {
+    opacity: 1;
+}
+
+/* END */
+
+/* START - Theme the element pre-title underline */
+.press-list__with-pretitle {
+    &:before {
+        border-color: var(--accent-dark)
+    }
+}
+
+/* END */
+
+/* START - Theme press tiles with content backgrounds */
+.press-list-item:not(:nth-child(3n+1)) {
+    .press-list-item__text {
+        border-color: var(--border-dark-inactive);
+    }
+    
+    .press-list-item__more {
+        color: var(--typography-dark);
+        
+        &:hover {
+            color: var(--accent-dark);
+            opacity: 0.5;
+        }
+    }
+}
+
+/* END */
+
+/* START - Theme press tiles with content backgrounds */
+.press-list-item:nth-child(3n+1) {
+    .press-list-item__text {
+        border-color: var(--border-light-inactive);
+    }
+    
+    .press-list-item__more {
+        color: var(--typography-light);
+        
+        &:hover {
+            color: var(--accent-light);
+            opacity: 0.5;
+        }
+    }
+}
+
+/* END */
+
+/* ----- PRESS LIST ----- */

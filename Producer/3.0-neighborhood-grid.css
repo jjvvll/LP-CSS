@@ -1,0 +1,100 @@
+/* START - Adjust the element layout */
+div.neighborhood-list {
+    &:is(.three-grid) {
+        div.neighborhood-list-container {
+            a.neighborhood-list-item {
+                flex-basis: calc((100% / 3) - 40px + (40px / 3));
+                max-width: calc((100% / 3) - 40px + (40px / 3));
+            }
+        }
+    }
+
+    &:not(.three-grid) {
+        div.neighborhood-list-container {
+            a.neighborhood-list-item {
+                flex-basis: calc((100% / 2) - 40px + (40px / 2));
+                max-width: calc((100% / 2) - 40px + (40px / 2));
+            }
+        }
+    }
+
+    &:is(.three-grid),
+    &:not(.three-grid) {
+        div.neighborhood-list-container {
+            a.neighborhood-list-item {
+                @media (max-width: 768px) {
+                    flex-basis: 100%;
+                    max-width: 100%;
+                }
+            }
+        }
+    }
+}
+
+div.container {
+    display: flex;
+    flex-direction: column;
+
+    &:not(:has(div.description)) {
+        h2.title {
+            margin-bottom: 48px;
+        }
+
+        div.description {
+            margin-bottom: unset;
+        }
+    }
+
+    &:has(div.description) {
+        h2.title {
+            margin-bottom: 16px;
+        }
+
+        div.description {
+            margin-bottom: 48px;
+        }
+    }
+
+    div.neighborhood-list-container {
+        column-gap: 40px;
+        row-gap: 70px;
+
+        a.neighborhood-list-item {
+            margin-right: 0px;
+            margin-bottom: 0px;
+            width: auto;
+            flex: 1;
+
+            div.neighborhood-list-item-image {
+                background: var(--border-dark-inactive);
+            }
+
+            p.feature {
+                padding-bottom: 0px;
+            }
+        }
+    }
+
+    div.pagination-container {
+        margin-top: 48px;
+    }
+}
+
+div.neighborhood-list {
+    div.container {
+        max-width: 1400px;
+    }
+}
+
+/* END */
+
+/* START - Theme the neighborhood title border */
+a.neighborhood-list-item {
+    p.feature {
+        &:before {
+            background: var(--accent-dark);
+        }
+    }
+}
+
+/* END */

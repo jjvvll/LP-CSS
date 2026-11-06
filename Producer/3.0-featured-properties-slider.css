@@ -1,0 +1,140 @@
+/* START - Adjust the header container bottom margin */
+div.featured-properties-header {
+  margin-bottom: 48px;
+}
+
+/* END */
+
+/* START - Theme the featured properties slider pagination buttons */
+div.featured-properties-section {
+  ul.slick-links-nav {
+    padding-top: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:has(.slick-hidden) {
+      display: none;
+    }
+
+    li {
+      span.spacer {
+        background-color: var(--color-dark);
+      }
+
+      span.link {
+        color: var(--color-dark);
+        user-select: none;
+
+        &:is(.slick-disabled) {
+          opacity: 0.25;
+        }
+
+        &:before {
+          background-color: var(--color-fallback-2);
+        }
+
+        &:after {
+          width: 0px;
+          background-color: var(--color-light);
+        }
+
+        &:hover:not(.slick-disabled) {
+          color: var(--color-light);
+
+          &:after {
+            width: 100%;
+          }
+        }
+
+        /* &:before {
+          background-color: var(--color-dark);
+        }
+
+        &:after {
+          background-color: var(--color-dark);
+        }
+
+        &:hover:not(.slick-disabled) {
+          color: var(--color-dark);
+
+          &:after {
+            width: 100%;
+          }
+        } */
+      }
+    }
+  }
+}
+
+/* END */
+
+/* START - Theme the featured properties slider properties card */
+div.redesign.featured-properties-section {
+  &:is(.three-slides) {
+    ul.featured-properties {
+      margin: 0px -16px;
+
+      li.featured-properties__item-cover {
+        padding: 0px 16px;
+      }
+    }
+  }
+
+  ul.featured-properties {
+    div.slick-track {
+      &:before,
+      &:after {
+        display: none;
+      }
+
+      li.featured-properties__item-cover {
+        div.featured-properties__item {
+          background-color: var(--color-light);
+
+          span.featured-properties__label {
+            background: var(--color-dark);
+            color: var(--color-light);
+          }
+
+          div.featured-properties__text {
+            padding-top: 35px;
+            padding-bottom: 35px;
+            background-color: transparent;
+
+            p,
+            h4,
+            h5 {
+              color: var(--color-dark);
+            }
+          }
+
+          &:has(.mls-compliance-container) {
+            div.featured-properties__text {
+              @media (max-width: 768px) {
+                padding-bottom: unset;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* END */
+
+/* START - Adjust the button container layout */
+div.featured-properties-button-holder {
+  margin-top: 48px;
+  display: flex;
+  justify-content: center;
+
+  a.btn {
+    @media (max-width: 768px) {
+      width: 100%;
+    }
+  }
+}
+
+/* END */

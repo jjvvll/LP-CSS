@@ -1,0 +1,50 @@
+/* START - Fix featured blog on Front End not showing when only have 1 blog post */
+.splide {
+    visibility: unset;
+}
+
+.splide__list {
+    .blog-posts-slider-item:nth-child(1) {
+        &:is(:last-child) {
+            flex: 1;
+        }
+    }
+}
+
+/* END */
+
+/* START - Fix featured blog on Front End not showing when only have 1 blog post */
+.splide {
+    visibility: unset;
+}
+
+.blog-posts-slider-item__image-container {
+    aspect-ratio: 16/7;
+    margin-bottom: 16px;
+    height: auto;
+}
+
+/* END */
+
+/* START - Fix the blog slider layout on mobile */
+div.blog-posts-slider__collection {
+    @media (max-width: 768px) {
+        margin-bottom: unset;
+    }
+
+    a.splide__slide {
+        @media (max-width: 768px) {
+            &:has(> div.splide__slide__row:first-child:is(:last-child)) {
+                grid-template-rows: auto auto auto auto;
+                gap: unset;
+            }
+        }
+    }
+}
+
+/* END */
+
+.blog-posts-slider__description {
+    opacity: 1;
+    max-width: 560px;
+}

@@ -1,0 +1,66 @@
+/* START - Theme pre-title underline */
+.stats-list-title-group {
+    .stats-list-title-group__title {
+        &:before {
+            border-color: var(--accent-dark);
+        }
+    }
+
+    .stats-list-title-group__description {
+        & > *:last-child {
+            margin-bottom: unset;
+        }
+    }
+}
+
+/* END */
+
+/* START - Remove title container if empty */
+.stats-list-title-group:not(:has(*)) {
+    display: none;
+}
+
+/* END */
+
+/* START - Remove the stats title max width */
+.stats-list-title-group {
+  max-width: 1000px;
+}
+
+.stats-list-title-group__description {
+  max-width: 640px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* END */
+
+/* START - Adjust element layout */
+.stats-list {
+    @media (min-width: 1025px) {
+        max-width: unset;
+
+        .splide__list {
+            gap: 16px;
+
+            .stats-list__item {
+                width: auto !important;
+                margin-right: 0px !important;
+                flex: 1;
+            }
+        }
+    }
+}
+
+/* END */
+
+/* START - Resize stats value font size */
+.stats-list__title {
+    font-size: var(--global-h2-font-size);
+
+    @media (max-width: 768px) {
+        font-size: var(--global-h3-font-size);
+    }
+}
+
+/* END */   

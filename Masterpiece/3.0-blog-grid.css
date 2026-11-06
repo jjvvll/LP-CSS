@@ -1,0 +1,65 @@
+/* START - Adjust the element layout */
+.data-container {
+    width: 100%;
+    margin: 0px !important;
+
+    .item {
+        margin: 0px;
+    }
+}
+
+.collection {
+    display: grid !important;
+    column-gap: 20px;
+    row-gap: 40px;
+
+    .item {
+        width: 100% !important;
+    }
+
+    &:not(.collection--3) {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    &:is(.collection--3) {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    @media screen and (max-width: 768px) {
+        grid-template-columns: 1fr !important;
+    }
+}
+
+.lp-pagination {
+    margin-top: 48px;
+}
+
+/* END */
+
+/* START - Removed unnecessary spacings if no blog data */
+.lp-container:not(.collection:has(div)) {
+    .lp-title-group {
+        margin-bottom: 0px;
+
+        h2 {
+            margin-bottom: 0px;
+        }
+    }
+}
+
+/* END */
+
+/* START - Theme the blog tiles title on hover */
+a.item {
+    h5.lp-h5 {
+        transition: 0.4s;
+    }
+    
+    &:hover {
+        h5.lp-h5 {
+            color: var(--accent-dark);
+        }
+    }
+}
+
+/* END */

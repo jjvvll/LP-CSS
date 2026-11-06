@@ -1,0 +1,29 @@
+div.community-grid-item {
+    height: unset !important;
+    aspect-ratio: 3/3.5;
+}
+
+h4 {
+    font-family: var(--global-primary-font-family);
+    font-weight: normal !important;
+    font-size: var(--global-h3-font-size) !important;
+}
+
+.button-tile {
+    padding-left: 16px;
+    padding-right: 16px;
+
+    h4.title {
+        text-align: center;
+
+        &:after {
+            content: 'Lorem Ipsum dolor...';
+            display: block;
+            font-family: var(--global-secondary-font-family);
+            font-size: var(--global-body-font-size);
+            text-align: center;
+            margin-top: 8px;
+            text-transform: unset !important;
+        }
+    }
+}

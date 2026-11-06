@@ -1,0 +1,15 @@
+/* START - Adjust the element header max-width */
+div.lp-container--l {
+    div.lp-title-group {
+        max-width: unset;
+        margin-bottom: 48px;
+
+        p.lp-text--subtitle {
+            max-width: 560px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+}
+
+/* END */

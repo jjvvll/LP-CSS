@@ -1,0 +1,42 @@
+/* START - Adjust neighborhood text content font size */
+div.text-container {
+    h1.title {
+        font-size: var(--global-h1-font-size);
+
+        @media (max-width: 768px) {
+            font-size: var(--global-h3-font-size);
+        }
+    }
+
+    div.short-description {
+        font-size: var(--global-body-font-size) !important;
+        text-transform: var(--text-case);
+        max-width: 800px;
+    }
+}
+
+/* END */
+
+/* START - Increase opening opacity */
+div.overlay-component {
+    opacity: 0.5 !important;
+}
+
+/* END */
+
+div.image-page-introduction-container {
+    div.text-container {
+        align-self: end;
+        margin-bottom: 32px;
+        width: 100%;
+        max-width: 1400px;
+        text-align: left;
+        padding-left: 50px;
+        padding-right: 50px;
+
+        @media (max-width: 768px) {
+            padding-left: 25px;
+            padding-right: 25px;
+        }
+    }
+}

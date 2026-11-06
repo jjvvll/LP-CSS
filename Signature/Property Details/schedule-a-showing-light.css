@@ -1,0 +1,267 @@
+/*START - schedule showing change theme color*/
+div.redesign {
+    div.type-selector__group label.type-selector__label.lp-btn.lp-btn--outline.lp-btn--dark {
+        border-color: #fff;
+        background-color: #fff;
+        color: #F51010;
+
+        &:hover {
+            border-color: #fff;
+            background-color: transparent;
+            color: #fff;
+        }
+    }
+
+    /*Start - Theme dropdown*/
+    .custom-select {
+
+        /* Theme dropdown toggle */
+        .custom-select-toggle {
+            color: #fff !important;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.25) !important;
+
+            &:after {
+                background-color: #F51010;
+            }
+        }
+
+        /* Theme dropdown background */
+        .custom-select-content {
+            background-color: #fff !important;
+            color: #000;
+
+            /* Do not display ugly scrollbar */
+            &::-webkit-scrollbar {
+                display: none;
+            }
+
+            /* Theme selected option */
+            .custom-select-item:hover,
+            .custom-select-item.is-selected {
+                color: #F51010;
+            }
+        }
+    }
+
+    /*Theme pagination*/
+    .lp-arrow {
+        background: #fff;
+        border-radius: 50%;
+        transition: 0.4s;
+        -webkit-tap-highlight-color: transparent;
+
+        &:before {
+            border: 1px solid transparent;
+        }
+
+        &:after {
+            background-color: #F51010 !important;
+        }
+
+        &:hover {
+            background: transparent;
+
+            &:before {
+                border-color: #fff;
+            }
+
+            &:after {
+                background-color: #fff !important;
+            }
+        }
+    }
+
+    /*End*/
+
+    /*Theme selected date*/
+    .calendar__slide .calendar__item {
+        border-color: rgba(255, 255, 255, 0.25) !important;
+    }
+
+    .calendar__slide.selected .calendar__item {
+        border-color: #fff;
+        background-color: #fff;
+        color: #F51010;
+    }
+
+    button.lp-btn {
+        text-transform: uppercase;
+    }
+}
+
+/*END- schedule showing change theme color*/
+
+/*START - center title and description */
+div.lp-title-group {
+    text-align: center;
+}
+
+/*END*/
+
+/*START - choose a time capslock */
+div.redesign div.custom-select button.custom-select-toggle.is-placeholder {
+    text-transform: uppercase;
+}
+
+/*END*/
+
+/*START - change time link*/
+.lp-a a {
+    font-weight: 400;
+    position: relative !important;
+    color: #fff !important;
+    transition: 0.4s;
+    opacity: 1 !important;
+    text-decoration: none !important;
+    text-transform: uppercase !important;
+
+    &:hover {
+        color: #fff !important;
+    }
+
+    &:before,
+    &:after {
+        transition: 0.4s;
+        text-decoration: none !important;
+        line-height: 1;
+        content: "" "";
+        height: 1px;
+        position: absolute !important;
+        bottom: 0;
+        left: 0;
+    }
+
+    &:before {
+        width: 100% !important;
+        background-color: rgba(255, 255, 255, 0.25) !important;
+    }
+
+    &:after {
+        width: 0% !important;
+        background-color: #fff !important;
+    }
+
+    &:hover:after {
+        width: 100% !important;
+    }
+}
+
+/*END*/
+
+/*START - padding*/
+div.step {
+    padding-left: 55px;
+    padding-right: 55px;
+
+    @media (max-width: 768px) {
+        padding-left: unset;
+        padding-right: unset;
+    }
+}
+
+/*END*/
+
+/*START - change time link*/
+a.hyperlink-style-1 {
+    font-weight: 400;
+    position: relative !important;
+    color: #fff !important;
+    transition: 0.4s;
+    opacity: 1 !important;
+    text-transform: uppercase !important;
+
+    &:hover {
+        color: #fff !important;
+    }
+
+    &:before,
+    &:after {
+        transition: 0.4s;
+        text-decoration: none !important;
+        line-height: 1;
+        content: "" "";
+        height: 1px;
+        position: absolute !important;
+        bottom: 0;
+        left: 0;
+    }
+
+    &:before {
+        width: 100% !important;
+        background-color: rgba(255, 255, 255, 0.25) !important;
+    }
+
+    &:after {
+        width: 0% !important;
+        background-color: #fff !important;
+    }
+
+    &:hover:after {
+        width: 100% !important;
+    }
+}
+
+/*END*/
+
+/*Start - Fix padding on mobile*/
+.redesign .schedule__content {
+    @media only screen and (max-width: 768px) {
+        padding-top: 64px !important;
+        padding-bottom: 64px !important;
+    }
+}
+
+/*End*/
+
+/*Start - Theme form inputs*/
+.lp-input {
+    color: #fff;
+    border-color: rgba(255, 255, 255, 0.1);
+
+    &:focus {
+        border-color: #fff;
+    }
+}
+
+/*End*/
+
+/*Start - Theme disclaimer link*/
+.lp-disclaimer a {
+    position: relative !important;
+    color: #fff !important;
+    transition: 0.4s;
+    opacity: 1 !important;
+    text-decoration: none !important;
+
+    &:hover {
+        color: #fff !important;
+    }
+
+    &:before,
+    &:after {
+        transition: 0.4s;
+        text-decoration: none !important;
+        line-height: 1;
+        content: "" "";
+        height: 1px;
+        position: absolute !important;
+        bottom: 0;
+        left: 0;
+    }
+
+    &:before {
+        width: 100% !important;
+        background-color: rgba(255, 255, 255, 0.25) !important;
+    }
+
+    &:after {
+        width: 0% !important;
+        background-color: #fff !important;
+    }
+
+    &:hover:after {
+        width: 100% !important;
+    }
+}
+
+/*End*/

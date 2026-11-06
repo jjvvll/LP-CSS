@@ -1,0 +1,17 @@
+/* START - Remove unnecessary spacings */
+.redesign {
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+}
+
+/* END */
+
+
+/* START - Uppercase and theme pre-title */
+.pre-title {
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #A49B8E !important;
+}
+
+/* END */

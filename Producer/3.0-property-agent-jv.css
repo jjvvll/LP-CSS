@@ -1,0 +1,85 @@
+/* START - Fix element not using the body font size */
+div.property-agent-cta-info {
+    font-size: var(--global-body-font-size);
+}
+
+/* END */
+
+/* START - Adjust the element layout */
+div.property-agent-cta-container {
+    &:is(:first-child) {
+        div.property-agent-cta-item {
+            padding-top: unset;
+        }
+    }
+
+    &:is(:last-child) {
+        div.property-agent-cta-item {
+            padding-bottom: unset;
+        }
+    }
+
+    a.property-agent-cta-avatar {
+        @media (min-width: 1025px) {
+            width: unset;
+            aspect-ratio: 1/1;
+        }
+
+        @media (max-width: 768px) {
+            width: 100%;
+            height: unset;
+            aspect-ratio: 1/1;
+        }
+    }
+
+    div.property-agent-cta-info {
+        ul.details {
+            @media (max-width: 768px) {
+                text-align: center;
+            }
+
+            li.row-item:not(:has(a)) {
+                span.data {
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
+}
+
+div.btn-container {
+    margin-top: 48px;
+}
+
+/* END */
+
+/* START - Theme the hoverable links */
+a {
+    color: var(--color-light);
+
+                   &::before{
+            background-color:  var(--color-light);
+        }
+        
+        &::after{
+            width: 0px;
+             background-color:  var(--color-fallback-2);
+        }
+        
+        &:hover {
+            color: var(--color-light) !important;
+            
+            &::after{
+                width: 100%;
+            }
+        }
+}
+
+/* END */
+
+/* START - Theme the element agent separator border */
+div.property-agent-cta-container:not(:last-child) {
+    border-bottom: 1px solid var(--color-light);
+}
+
+/* END */

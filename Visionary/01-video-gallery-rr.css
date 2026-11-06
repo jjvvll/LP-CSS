@@ -1,0 +1,29 @@
+/* START - Hide the header title container */
+.video-gallery__header {
+    display: none;
+}
+
+/* END */
+
+/* START - Adjust the video tiles preview image aspect ratio */
+div.video-gallery-card__preview {
+    height: unset;
+    aspect-ratio: 1/1;
+}
+
+/* END */
+
+/* START - Show the video if only 1 content */
+.video-gallery__carousel {
+    visibility: unset;
+}
+
+/* END */
+
+/* START - Adjust the position of the play button */
+.video-gallery-card__preview {
+    justify-content: end;
+    align-items: end;
+}
+
+/* END */

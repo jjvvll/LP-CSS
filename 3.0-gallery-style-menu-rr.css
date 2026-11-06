@@ -1,0 +1,195 @@
+/* START - Add client logo */
+a.gallery-card {
+    &:hover {
+        &:before {
+            background-image: url('https://media-production.lp-cdn.com/cdn-cgi/image/format=auto,quality=85,fit=scale-down,width=960/https://media-production.lp-cdn.com/media/cm3m4yi94bnimregdsxz');
+            background-color: #000000;
+            background-size: 70%;
+            opacity: 0.5;
+        }
+    }
+
+    &:before {
+        background-repeat: no-repeat;
+        background-position: center;
+        transition: 0.25s;
+    }
+}
+
+/* END */
+
+/* START - Add logo upon hover */
+div.gallery-component__row {
+    div.gallery-component__col {
+        a.gallery-card {
+            &:before {
+                transition: 0.4s;
+            }
+
+            &:after {
+                position: absolute;
+                left: 0px;
+                right: 0px;
+                top: 0px;
+                bottom: 0px;
+                width: unset;
+                padding-top: unset;
+                background-size: contain;
+                background-image: url('https://media-production.lp-cdn.com/cdn-cgi/image/format=auto,quality=85/https://media-production.lp-cdn.com/media/f4c453d6-057e-40bf-888c-ad7633fd0282');
+                opacity: 0;
+                background-position: center;
+                transition: 0.4s;
+                transform: translatey(64px);
+                z-index: 2;
+            }
+
+            h3.gallery-card__title {
+                opacity: 1;
+            }
+        }
+
+        &:hover {
+            a.gallery-card {
+                &:before {
+                    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgb(0, 0, 0, 1)) !important;
+                }
+
+                &:after {
+                    opacity: 1;
+                    transform: translatey(0px);
+                    filter: blur(0px);
+                }
+
+                h3.gallery-card__title {
+                    opacity: 0;
+                }
+            }
+        }
+    }
+}
+
+/* END */
+
+/* START - Fullbleed GSM */
+div.lp-container {
+    max-width: unset;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+/* END */
+
+/* START - Reduce title font size */
+div.gallery-component__row {
+    & > div.gallery-component__col:nth-child(3) {
+        h3.gallery-card__title {
+            @media (min-width: 1025px) {
+                font-size: var(--global-h3-font-size);
+            }
+        }
+    }
+}
+
+/* END */
+
+/* START - Uppercase titles */
+a.gallery-card {
+    h3.gallery-card__title {
+        text-transform: uppercase;
+    }
+}
+
+/* END */
+
+/* START - Center titles horizontally */
+a.gallery-card {
+    h3.gallery-card__title {
+        text-align: center;
+
+        &:after {
+            display: none;
+        }
+    }
+}
+
+/* END */
+
+/* START - Center titles vertically */
+a.gallery-card {
+    h3.gallery-card__title {
+        text-align: center;
+        margin-top: auto;
+        margin-bottom: auto;
+
+        &:after {
+            display: none;
+        }
+    }
+}
+
+/* END */
+
+/* START - Adjust gallery style menu tiles gradient overlay */
+a.gallery-card {
+    &:before {
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 25%, #000000);
+    }
+}
+
+/* END */
+
+/* Start - Change dimensions of tiles to 1 by 1 */
+a.gallery-card {
+    aspect-ratio: 1/1;
+}
+
+/* End */
+
+/* START - Adjust the element layout */
+div.gallery-component__row {
+    & > div.gallery-component__col {
+        &:nth-child(2) {
+            @media (min-width: 768px) {
+                transform: translatey(50%);
+            }
+        }
+
+        &:nth-child(5) {
+            visibility: hidden;
+
+            @media (max-width: 768px) {
+                display: none;
+            }
+        }
+
+        a.gallery-card {
+            pointer-events: none;
+
+            h3.gallery-card__title {
+                display: none;
+            }
+        }
+    }
+}
+
+/* END */
+
+/* START - Upscale image only on hover */
+a.gallery-card {
+    &:before {
+        transition: 0.4s;
+    }
+
+    &:hover {
+        &:before {
+            background-color: unset;
+            background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 25%, #000000);
+        }
+
+        h3.gallery-card__title {
+            transform: unset;
+        }
+    }
+}
+
+/* END */

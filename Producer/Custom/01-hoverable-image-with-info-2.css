@@ -1,0 +1,29 @@
+/* START - Overlayed Image Hoverable Layout */
+div.hoverable-section {
+    div.lp-container {
+        div.hoverable-image {
+            position: relative;
+
+            div.hoverable-image__img-col {
+                div.hoverable-image__img-col--on-hover  {
+                    & > img {
+                        @media (min-width: 769px) {
+                            width: 85%;
+                            height: 65%;
+                            visibility: visible;
+                            opacity: 1 !important;
+
+                            &:last-child {
+                                position: absolute;
+                                right: 0px;
+                                bottom: 0px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* END */

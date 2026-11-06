@@ -1,0 +1,10 @@
+.company-stats-list {
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+}
+
+.company-stats-list-items {
+    li {
+        border-color: rgba(0, 0, 0, 0.1) !important;
+    }
+}

@@ -1,0 +1,31 @@
+/* Start - Reduce padding of sibling element if no content display */
+&:not(:has(div)) + section {
+    .lp-vertical-paddings {
+        padding-top: 0px;
+    }
+}
+
+/* End */
+
+/* START - Theme pagination buttons*/
+button.slick-arrow {
+    background-color: var(--accent-light);
+    border-color: var(--accent-light);
+    color: var(--accent-dark) !important;
+
+    &:before {
+        border-color: var(--accent-dark);
+    }
+
+    &:hover {
+        background-color: transparent;
+        border-color: var(--accent-light);
+        color: var(--accent-light) !important;
+
+        &:before {
+            border-color: var(--accent-light);
+        }
+    }
+}
+
+/* END */

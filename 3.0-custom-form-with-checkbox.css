@@ -1,0 +1,24 @@
+/* START - Reposition close button */
+button.close {
+    top: 32px;
+    right: 32px;
+
+    @media (max-width: 768px) {
+        top: 16px;
+        right: 16px;
+    }
+}
+
+/* END */
+
+/* START - Adjust padding on mobile */
+div.modal-content {
+    div.custom-form {
+        @media (max-width: 768px) {
+            padding-top: 64px;
+            padding-bottom: 64px;
+        }
+    }
+}
+
+/* END */

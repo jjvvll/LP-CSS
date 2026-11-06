@@ -1,0 +1,9 @@
+.btn-play {
+    color: #E84639;
+    
+    &:hover {
+        background: transparent;
+        color: #fff;
+        border: 1px solid #fff;
+    }
+}

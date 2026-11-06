@@ -1,0 +1,29 @@
+/* START - Fix the grid dimensions and remove extra spacings */
+div.data-container {
+    margin: 0px;
+    gap: 20px;
+
+    a.item {
+        margin: 0px;
+        flex-basis: calc((100% / 3) - 20px + (20px / 3));
+        max-width: calc((100% / 3) - 20px + (20px / 3));
+
+        @media (max-width: 768px) {
+            flex-basis: 100%;
+            max-width: 100%;
+        }
+    }
+}
+
+div.pagination-container:not([style="display: none;"]) {
+    margin-top: 48px;
+}
+
+/* END */
+
+a.item {
+    h5.lp-h5,
+    p.bf1 {
+        text-transform: var(--text-case);
+    }
+}

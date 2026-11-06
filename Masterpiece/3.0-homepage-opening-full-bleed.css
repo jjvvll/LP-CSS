@@ -1,0 +1,36 @@
+/* START - Adjust the element content width  - header image position fix*/
+div.lp-container {
+  div.lp-title-group {
+    max-width: 100%;
+
+    p.opening-pretitle {
+      font-style: unset;
+      max-width: unset;
+    }
+
+    h1.opening-title {
+      max-width: 100%;
+    }
+
+    p.opening-description {
+      max-width: 560px;
+    }
+  }
+}
+
+/* END */
+
+/* START - Adjust opening element vertical position */
+/* Note: Adjust the y percentage if needed */
+&:is(.parallax-enabled) {
+  div.opening-with-search {
+    @media (min-width: 768px) {
+      &:before {
+        max-height: 600px;
+        background-position-y: 50%;
+      }
+    }
+  }
+}
+
+/* END */

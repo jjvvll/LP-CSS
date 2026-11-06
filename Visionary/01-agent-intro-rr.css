@@ -1,0 +1,21 @@
+/* START - Theme the custom intro underline */
+div.agent-intro__content-box {
+    h1.agent-intro__title {
+        &:before {
+            border-color: var(--accent-dark);
+        }
+    }
+}
+
+/* END */
+
+/* START - Adjust the background image position vertically */
+& {
+    background-position-y: 100%;
+}
+
+/* END */
+
+.agent-intro__content-box {
+    backdrop-filter: blur(6px);
+}

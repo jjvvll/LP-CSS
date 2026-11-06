@@ -1,0 +1,91 @@
+/* START - Theme the pagination buttons */
+div.arrows {
+    button.slick-arrow {
+        border-color: var(--accent-dark);
+        background: var(--accent-dark);
+
+        &:before {
+            color: var(--accent-light);
+        }
+
+        &:hover {
+            border-color: var(--accent-dark);
+            background: transparent;
+
+            &:before {
+                color: var(--accent-dark);
+            }
+        }
+    }
+}
+
+/* END */
+
+/* START - Adjust the element's layout */
+div.slider-container {
+    display: flex;
+    flex-direction: column;
+
+    div.arrows {
+        order: 1;
+    }
+
+    div.items-slider {
+        order: 2;
+
+        div.item {
+            &:is(.slick-active) {
+                opacity: 1;
+            }
+
+            &:not(.slick-active) {
+                opacity: 0;
+            }
+
+            div.card {
+                div.top-block {
+                    max-width: 700px;
+                    gap: 0px;
+
+                    div.userpic {
+                        display: none;
+                    }
+
+                    h4.author {
+                        order: 2;
+                        margin-bottom: 48px;
+                    }
+
+                    div.testimonial-text {
+                        order: 1;
+                    }
+                }
+            }
+        }
+    }
+}
+
+div.arrows {
+    button.slick-arrow {
+        border: none;
+
+        &:before {
+            width: 20px;
+            height: 20px;
+            border-width: 1px;
+            opacity: 0.5;
+            transition: 0.25s;
+        }
+
+        &:hover {
+            background: transparent !important;
+
+            &:before {
+                opacity: 1;
+                border-color: #fff;
+            }
+        }
+    }
+}
+
+/* END */

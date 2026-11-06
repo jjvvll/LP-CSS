@@ -1,0 +1,70 @@
+/* START - Adjust the element layout and dimension */
+div.lp-container {
+    max-width: 1400px;
+    padding: 0px 50px;
+
+    @media (max-width: 768px) {
+        padding: 0px 25px;
+    }
+
+    div.collection {
+        flex-direction: column;
+        margin: unset;
+    }
+}
+
+/* END */
+
+/* START - Adjust the table text case */
+div.table-list__heading {
+    text-transform: uppercase;
+}
+
+div.item-name {
+    text-transform: uppercase;
+}
+
+div.item-space {
+    text-transform: uppercase;
+}
+
+/* END */
+
+/* START - Theme the property status label */
+div.table-list__heading,
+a.table-list__item {
+    border-bottom-color: var(--border-dark-inactive);
+}
+
+/* END */
+
+/* START - Theme the property status label */
+span.item-wrapper__value:is(.lp-tag) {
+    padding: 4px 16px;
+    font-size: 12px;
+    line-height: unset;
+    text-transform: uppercase;
+    display: inline-block;
+    background: var(--accent-dark);
+    color: var(--accent-light);
+    border-radius: 0px;
+
+    span.status-content {
+        line-height: unset;
+    }
+
+    &:is(.lp-tag--inactive) {
+        opacity: 0.5;
+    }
+}
+
+/* END */
+
+/* START - Theme the table link arrow */
+div.item-link {
+    &:after {
+        background: var(--accent-dark);
+    }
+}
+
+/* END */

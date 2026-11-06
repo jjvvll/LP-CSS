@@ -1,0 +1,15 @@
+/* START - Adjust tag paddings on mobile */
+ul.collection {
+    & > li.item:nth-child(3) {
+        div.cell:has(.tag) {
+            p.tag {
+                @media (max-width: 768px) {
+                    padding-left: 28px;
+                    padding-right: 28px;
+                }
+            }
+        }
+    }
+}
+
+/* END */

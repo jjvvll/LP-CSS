@@ -1,0 +1,36 @@
+/* START - Adjust the element layout */
+div.lp-container {
+    padding-left: 50px;
+    padding-right: 50px;
+    max-width: 1400px;
+
+    @media (max-width: 768px) {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+
+    div.lp-title-group {
+        margin-bottom: 48px;
+        max-width: unset;
+
+        h2.lp-h2 {
+            max-width: 100%;
+        }
+
+        p.lp-text--subtitle {
+            max-width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: unset;
+        }
+    }
+}
+
+/* END */
+
+/* START - Hide read more button if hidden */
+div.btn-holder:has(button.lp-btn[style="display: none;"]) {
+    display: none;
+}
+
+/* END */

@@ -1,0 +1,17 @@
+/* START - Theme agent properties cards */
+a.item {
+    color: var(--typography-dark);
+
+    p.bf1.label {
+        background-color: var(--accent-dark);
+        color: var(--typography-light);
+        padding: 10px 15px;
+    }
+
+    div.open-house {
+        background-color: var(--accent-dark);
+        color: var(--typography-light);
+    }
+}
+
+/* END */

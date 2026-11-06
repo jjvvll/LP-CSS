@@ -1,0 +1,94 @@
+/* START - Adjust element layout */
+div.lp-container {
+  padding-top: 0;
+  padding-bottom: 0;
+
+  a.item {
+    div.item__text {
+      padding: 16px;
+
+      ul.item__info {
+        margin-bottom: unset;
+      }
+    }
+  }
+}
+
+/* END */
+
+/* START - Adjust the element header max-width */
+div.lp-container {
+  div.lp-title-group {
+    max-width: unset;
+
+    h2.lp-h2 {
+      max-width: unset;
+    }
+
+    div.lp-text--subtitle {
+      max-width: unset;
+      margin-bottom: unset;
+    }
+
+    &:not(:has(h2.lp-h2)) {
+      h2.lp-h2 {
+        margin-bottom: unset;
+      }
+    }
+  }
+}
+
+/* END */
+
+/* START - Theme the property cards */
+div.lp-container {
+  a.item {
+    background: var(--color-dark);
+
+    p.status {
+      color: var(--color-light);
+      background: var(--color-dark);
+    }
+
+    div.item__picture {
+      div.open-house {
+        color: var(--color-light);
+        background: rgb(from var(--color-dark) r g b / 75%);
+      }
+    }
+
+    div.item__text {
+      h5.lp-h5,
+      p.bf1,
+      ul.bf2 {
+        color: var(--color-dark);
+        text-transform: var(--text-case);
+      }
+    }
+  }
+}
+
+/* END */
+
+/* START - Theme the pagination arrow */
+div.arrows {
+  button.lp-arrow {
+    background: var(--color-dark);
+    border-color: var(--color-dark);
+
+    &:before {
+      border-color: var(--accent-light);
+    }
+
+    &:hover {
+      background: transparent;
+      border-color: var(--color-dark);
+
+      &:before {
+        border-color: var(--color-dark);
+      }
+    }
+  }
+}
+
+/* END */

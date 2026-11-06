@@ -1,0 +1,136 @@
+/*START - change hyperlink icon color*/
+div.lp-container div.mg-calc__wrap span.link-icon {
+    &:hover {
+        &:after {
+            background-color: #5F8DB5;
+        }
+
+        &:before {
+            background-color: #fff !important;
+        }
+    }
+
+    &:before {
+        background-color: #5F8DB5 !important;
+    }
+}
+
+/*END - change hyperlink icon color*/
+
+/*START - Mortgage link underline */
+a.lp-link {
+    position: relative !important;
+    color: #000;
+
+    &:before,
+    &:after {
+        transition: 0.4s;
+        text-decoration: none;
+        content: "" "";
+        height: 1px;
+        position: absolute !important;
+        bottom: 0px;
+        left: 0;
+    }
+
+    &:before {
+        width: 100% !important;
+        background-color: rgba(0, 0, 0, 0.1) !important;
+    }
+
+    &:after {
+        background-color: #5F8DB5 !important;
+        width: 0% !important;
+    }
+    
+    &:hover:after {
+        width: 100% !important;
+    }
+}
+
+/*END - Mortgage link underline*/
+
+/*START - dropdown color*/
+.custom-select {
+    .custom-select-toggle {
+        &:after {
+            background-color: #5F8DB5;
+        }
+
+        &:hover:after {
+            background-color: #5F8DB5 !important;
+        }
+    }
+
+    .custom-select-content {
+        color: #000;
+        background-color: #fff;
+
+        button.custom-select-item:hover,
+        button.custom-select-item:focus,
+        button.custom-select-item.is-selected {
+            color: #5F8DB5 !important;
+        }
+    }
+}
+
+/*END - dropdown color*/
+
+/*START - mortgage change input text color and dropdown*/
+.lp-input {
+    color: #000;
+    border-color: rgba(0, 0, 0, 0.1) !important;
+
+    &:after {
+        background-color: #5F8DB5;
+    }
+
+    &:hover {
+        color: #000;
+
+        &:after {
+            background-color: #5F8DB5;
+        }
+    }
+
+    &:focus {
+        border-color: rgba(0, 0, 0, 0.75);
+    }
+}
+
+/*end*/
+
+/*use when your chart background is white*/
+li.legend__item.is-hovered {
+    a.legend__name {
+        opacity: 1;
+    }
+
+    span.legend__val {
+        opacity: 1;
+    }
+}
+
+/*END - mortgage change input text color and dropdown*/
+
+/* Start - Theme Reset and Share Arrow Icon */
+.calc-footer__links-wrap {
+    .link-icon {
+        color: #000;
+        
+        &:before {
+            background: #5F8DB5;
+        }
+    }
+}
+
+/* End */
+
+/* Start - Resize Chart Text Value */
+.chart.jsResultChart {
+    svg .chart-amount {
+        font-size: 28px;
+    }
+}
+
+/* End */

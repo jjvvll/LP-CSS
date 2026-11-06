@@ -1,0 +1,95 @@
+/* START - Theme the element pagination buttons */
+.related-blog-articles_slider {
+    .slick-arrow {
+        background: var(--accent-dark);
+        border: 2px solid var(--accent-dark) !important;
+        
+        &:before {
+            opacity: 1;
+            color: var(--accent-light);
+        }
+        
+        &:hover {
+            background: transparent !important;
+            border-color: var(--accent-dark);
+            
+            &:before {
+                color: var(--accent-dark);
+            }
+        }
+    }
+}
+
+/* END */
+
+/* Start - Theme the pagination buttons (dark theme border) */
+.related-blog-articles_slider {
+    .slick-arrow {
+        background: transparent;
+        border: 2px solid var(--accent-dark) !important;
+        
+        &:before {
+            opacity: 1;
+            color: var(--accent-dark);
+        }
+        
+        &:hover {
+            background: var(--accent-dark) !important;
+            border-color: var(--accent-dark);
+            
+            &:before {
+                color: var(--primary-light);
+            }
+        }
+    }
+}
+
+/* End */
+
+/* Start - Theme the pagination buttons (light theme solid) */
+.related-blog-articles_slider {
+    .slick-arrow {
+        background: var(--accent-light);
+        border: 2px solid var(--accent-light) !important;
+        
+        &:before {
+            opacity: 1;
+            color: var(--accent-dark);
+        }
+        
+        &:hover {
+            background: transparent !important;
+            border-color: var(--accent-light);
+            
+            &:before {
+                color: var(--accent-light);
+            }
+        }
+    }
+}
+
+/* End */
+
+/* Start - Theme the pagination buttons (light theme border) */
+.related-blog-articles_slider {
+    .slick-arrow {
+        background: transparent !important;
+        border-color: var(--primary-light);
+
+        &:before {
+            color: var(--primary-light);
+        }
+
+        &:hover {
+            background: var(--primary-light);
+            border: 2px solid var(--primary-light) !important;
+
+            &:before {
+                opacity: 1;
+                color: var(--accent-dark);
+            }
+        }
+    }
+}
+
+/* End */

@@ -1,0 +1,60 @@
+/* START - Adjust element automatically on center */
+div.agent-properties-headline {
+    & > h2:is(:last-child) {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+div.agent-properties-slider {
+    & > a.agent-properties-item:is(:last-child) {
+        margin-right: 0px;
+    }
+}
+
+/* END */
+
+/* START - Remove extra paddings on the element */
+div.agent-properties {
+    div.container {
+        padding-bottom: 0px;
+    }
+}
+
+/* END */
+
+/*START - agent properties change card theme color*/
+.redesign {
+    span.label {
+        background: var(--accent-dark);
+        color: var(--typography-light);
+    }
+
+    a.agent-properties-item {
+        background-color: var(--primary-light);
+
+        .agent-properties-item-text {
+            background-color: transparent;
+
+            p,
+            h4,
+            h5 {
+                color: var(--typography-dark);
+            }
+        }
+    }
+}
+
+/*END - Change Card Theme Color*/
+
+.agent-properties-headline {
+    margin-bottom: 48px !important;
+}
+
+.agent-properties-slider:has(a:last-child:is(:first-child)) {
+    margin-bottom: 0px;
+
+    a {
+        margin-bottom: 0px;
+    }
+}

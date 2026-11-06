@@ -1,0 +1,25 @@
+/* START - Add background image to contact overlay */
+div#modal-global-contact-us {
+    div.modal-content {
+        &:after {
+            content: '';
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            background: url('https://media-production.lp-cdn.com/cdn-cgi/image/format=auto,quality=85/https://media-production.lp-cdn.com/media/6c0651a0-6607-4deb-a353-0dc36815b6b2');
+            background-size: cover;
+        }
+        
+        div.contact-form {
+            height: auto;
+            max-height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            align-self: stretch;
+            z-index: 2;
+        }
+    }
+}
+
+/* END */

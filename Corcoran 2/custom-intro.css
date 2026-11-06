@@ -1,0 +1,5 @@
+.pre-line {
+    @media screen and (max-width: 768px) {
+        font-size: 34px;
+    }
+}

@@ -1,0 +1,71 @@
+/* Hide the Filter by Region */
+div.filter-area {
+    justify-content: center;
+        .group.select-container{
+            display: none;
+    }
+}
+/* End */
+
+/* START - Remove filter dimensions if hidden */
+form.filter-form:not(:has(div.filter-area)) {
+    display: none;
+}
+
+/* END */
+
+/* START - Adjust properties card hover theme */
+ul.data-container {
+    li.item {
+        &:hover {
+            div.img-card--overlay {
+                --striped-bg: repeating-linear-gradient(112.5deg, rgba(79, 76, 77, .9), rgba(79, 76, 77, .9) 1px, rgba(0, 0, 0, .9) 0, rgba(0, 0, 0, .9) 20.5px);
+            }
+        }
+    }
+}
+
+/* END */
+
+/* START - Adjust properties status tag theme */
+ul.data-container {
+    li.item {
+        span.status-tag {
+            color: #FFF;
+            
+            &:before {
+                background: #000;
+            }
+        }
+    }
+}
+
+/* END */
+
+/* START - Adjust properties grid dimensions */
+ul.data-container {
+    column-gap: 20px;
+    row-gap: 48px;
+
+    li.item {
+        width: auto;
+        flex: 1 1 calc(50% - 20px);
+        max-width: calc(50% - 20px);
+        margin: 0px;
+
+        @media (max-width: 768px) {
+            flex: 1 1 100%;
+            max-width: 100%;
+        }
+    }
+}
+
+/* END */
+
+/* START - Add top margin to the pagination */
+div.pagination-container {
+    margin-top: 48px;
+    margin-bottom: 0px;
+}
+
+/* END */

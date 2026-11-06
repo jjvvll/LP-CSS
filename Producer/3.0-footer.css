@@ -1,0 +1,156 @@
+/* START - Theme footer hoverable links - WB JV */
+footer#global-footer {
+    a:not(.lp-socials__link) {
+        color: var(--color-dark) !important;
+        font-weight: normal;
+
+               &::before{
+            background-color:  var(--color-fallback-2);
+        }
+        
+        &::after{
+            width: 0px;
+             background-color:  var(--color-dark);
+        }
+        
+        &:hover {
+            color: var(--color-dark) !important;
+            
+            &::after{
+                width: 100%;
+            }
+        }
+        
+        /* &:hover {
+            color: var(--color-dark) !important;
+        } */
+    }
+
+    div.info-wrap-contact_cell {
+        *:not(.info-wrap-contact_title):not(.contact_title) {
+            font-weight: normal;
+        }
+    }
+}
+
+/* END */
+
+/* START - Theme footer horizontal border */
+footer#global-footer {
+    div.info-privacy {
+        border-color: var(--color-extra);
+    }
+}
+
+/* END */
+
+/* START - Adjust padding between phone and address */
+footer#global-footer {
+    div.footer {
+        div.info-wrap {
+            div.type_user {
+                margin-bottom: 24px;
+            }
+        }
+    }
+}
+
+/* END */
+
+/* START - Adjust the footer layout */
+footer#global-footer {
+    div.footer {
+        padding-top: 0px;
+
+        & > div.container {
+            max-width: 1400px;
+            padding-top: 96px;
+
+            @media (max-width: 768px) {
+                padding-top: 64px;
+            }
+        }
+
+        &:has(.footer__disclaimers) {
+            & > div.container {
+                padding-bottom: unset;
+            }
+
+            div.footer__disclaimers {
+                & > div.container {
+                    padding-top: 32px;
+                    padding-bottom: 32px;
+                }
+            }
+        }
+    }
+}
+
+/* END */
+
+/* START - Adjust logo height on footer */
+footer#global-footer {
+    div.img_size {
+        height: 100%;
+        max-height: 80px;
+
+        img {
+            object-position: top;
+            margin-top: 6px;
+        }
+    }
+}
+
+/* END */
+
+/* START - Fix extra spacing on the right side of the copyright text */
+footer#global-footer {
+    div.form-col--copyright {
+        div.copy_zone {
+            @media only screen and (min-width: 768px) {
+                text-align: right;
+            }
+        }
+    }
+
+    div.form-col--socials {
+        &:not(:has(.lp-socials__link)) {
+            display: none;
+        }
+
+        @media only screen and (min-width: 1025px) {
+            max-width: fit-content;
+        }
+    }
+}
+
+/* END */
+
+/* START - footer lp and privacy policy font weight */
+footer#global-footer {
+    div.footer {
+        div.info-privacy {
+            div.copy_zone,
+            div.powered_zone {
+                a {
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+}
+
+/* END */
+
+/* START - Remove copyright extra paddings */
+footer#global-footer {
+    div.form-col:is(.form-col--copyright) {
+        @media (max-width: 768px) {
+            padding-left: 20px;
+            padding-right: 20px;
+            width: 100%;
+        }
+    }
+}
+
+/* END - WB JV */

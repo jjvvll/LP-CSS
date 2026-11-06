@@ -1,0 +1,33 @@
+/* START - Fix element not using the body font size */
+blockquote {
+  font-size: var(--global-body-font-size);
+}
+
+/* END */
+
+/* START - Theme the hoverable pagination */
+.redesign {
+  .link {
+    &:before {
+      background-color: var(--color-fallback-2);
+    }
+
+    &:after {
+      background-color: var(--color-light);
+    }
+
+    &:hover {
+      color: var(--color-light) !important;
+    }
+  }
+}
+
+/* END */
+
+/* START - Remove scrolling on the element */
+.redesign.featured-testimonials {
+  overflow: hidden;
+  max-height: fit-content;
+}
+
+/* END */

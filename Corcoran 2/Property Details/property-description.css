@@ -1,0 +1,10 @@
+.property-description__features-list {
+    .property-description__feature {
+        border-color: rgba(0, 0, 0, 0.1) !important;
+    }
+}
+
+.property-description__wrap {
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+}

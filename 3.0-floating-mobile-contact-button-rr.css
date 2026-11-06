@@ -1,0 +1,10 @@
+/* START - Theme floating mobile contact form title */
+div#global-mobile-contact {
+    div.contact-form__container {
+        & > h3 {
+            color: #D5A62F;
+        }
+    }
+}
+
+/* END */

@@ -1,0 +1,139 @@
+*:not(h2) {
+    font-size: var(--global-body-font-size);
+}
+
+/* START - Adjust the element layout */
+div.agent-info {
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+
+    div.container {
+        max-width: 1400px !important;
+    }
+}
+
+/* END */
+
+/* START - Adjust the font weight of the contact information */
+ul.contact {
+    li {
+        font-weight: bold;
+
+        p.contact-title {
+            font-weight: normal;
+        }
+    }
+}
+
+/* END */
+
+/* START - Adjust social media icons ordering */
+.lp-socials {
+    & > li > a {
+        animation: unset !important;
+    }
+
+    & > li:has(a[href*="https://www.facebook.com"]) {
+        order: 1;
+    }
+
+    & > li:has(a[href*="https://www.instagram.com"]) {
+        order: 2;
+    }
+
+    & > li:has(a[href*="https://www.linkedin.com"]) {
+        order: 3;
+    }
+
+    & > li:has(a[href*="https://www.tiktok.com"]) {
+        order: 4;
+    }
+
+    & > li:has(a[href*="https://www.yelp.com"]) {
+        order: 5;
+    }
+
+    & > li:has(a[href*="https://www.tiktok.com"]) {
+        order: 6;
+    }
+
+    & > li:has(a[href*="https://www.x.com"]) {
+        order: 7;
+    }
+
+    & > li:has(a[href*="https://www.youtube.com"]) {
+        order: 8;
+    }
+
+    & > li:has(a[href*="https://www.open.spotify.com"]) {
+        order: 9;
+    }
+
+    & > li:has(a[href*="https://www.google.com"]) {
+        order: 10;
+    }
+
+    & > li:has(a[href*="https://www.zillow.com"]) {
+        order: 11;
+    }
+
+    & > li:has(a[href*="mailto:"]) {
+        order: 12;
+    }
+}
+
+/* END */
+
+/* START - Update display titles for phone and office number */
+div.agent-detail-section {
+    div.agent-detail__info {
+        ul.contact {
+            & > li {
+                &:nth-child(1),
+                &:nth-child(2) {
+                    p.contact-title {
+                        font-size: 0px;
+
+                        &:before {
+                            font-size: 16px;
+                        }
+                    }
+                }
+
+                &:nth-child(1) {
+                    p.contact-title {
+                        &:before {
+                            content: "Phone Number";
+                        }
+                    }
+                }
+
+                &:nth-child(2) {
+                    p.contact-title {
+                        &:before {
+                            content: "Office Number";
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* END */
+
+ul.contact {
+    li:has(br) {
+        font-size: 0px;
+
+        p {
+            font-size: 16px;
+        }
+
+        &:after {
+            content: 'First Line\ASecond Line';
+            white-space: pre;
+            font-size: 16px;
+        }
+    }
+}

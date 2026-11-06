@@ -1,0 +1,67 @@
+/* ----- AGENT CARD ----- */
+/* START - Fix the client info position for large screen */
+.agent-card__wrapper {
+    justify-content: center;
+}
+
+/* END */
+
+/* START - Adjust agent card content z-index */
+.agent-card__content {
+    z-index: 1;
+}
+
+/* END */
+
+/* START - Fix agent card description max width */
+.agent-card__description {
+    max-width: unset;
+    text-overflow: unset;
+    line-clamp: unset;
+    -webkit-line-clamp: unset;
+}
+
+/* END */
+
+/* START - Adjust the agent card info overlay on mobile */
+.agent-card__photo {
+    @media (max-width: 768px) {
+        padding-top: 400px;
+    }
+}
+
+/* END */
+
+/* START - Adjust agent headshot */
+.agent-card__image-wrapper {
+    @media (min-width: 769px) {
+        height: 900px;
+    }
+
+    @media (max-width: 768px) {
+        height: auto;
+    }
+}
+
+/* END */
+
+/* START - Theme agent card underline */
+.agent-card__pre-title {
+    &:before {
+        border-color: var(--accent-dark);
+    }
+}
+
+/* END */
+
+/* START - Adjust the agent card info container on desktop */
+.agent-card__heading {
+    @media (min-width: 1025px) {
+        margin-top: unset;
+        bottom: 10%;
+    }
+}
+
+/* END */
+
+/* ----- AGENT CARD ----- */

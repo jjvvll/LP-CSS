@@ -1,0 +1,39 @@
+.property-gallery {
+    padding-top: 96px !important;
+    padding-bottom: 96px !important;
+
+    @media (max-width: 768px) {
+        padding-top: 64px !important;
+        padding-bottom: 64px !important;
+    }
+}
+
+span.property-gallery__label {
+    background: var(--accent-dark);
+    color: var(--typography-light);
+    padding: 8px 16px;
+}
+
+/* START - Theme the pagination buttons */
+div.property-gallery__arrows {
+    gap: 8px;
+
+    .slick-arrow {
+        background: var(--accent-light);
+        border: 2px solid var(--accent-light);
+
+        &:before {
+            color: var(--accent-dark);
+        }
+
+        &:hover {
+            background: transparent;
+
+            &:before {
+                color: var(--accent-light);
+            }
+        }
+    }
+}
+
+/* END */

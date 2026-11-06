@@ -1,0 +1,10 @@
+/* START - Adjust the title font size */
+div.mg-calc__col {
+    h2.mg-calc__title {
+        @media (min-width: 1025px) {
+            font-size: var(--global-h3-font-size);
+        }
+    }
+}
+
+/* END */

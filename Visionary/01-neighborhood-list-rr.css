@@ -1,0 +1,36 @@
+/* START - Fix unecessary padding or margins */
+.neighborhoods-list__item {
+    padding-bottom: 0px;
+}
+
+/* END */
+
+/* OUTDATED */
+
+/* START - Fix extra spacing of the neighborhood grid content if description is empty */
+.neighborhood-grid__text:has(.neighborhood-grid__desc:empty) {
+    min-height: auto;
+}
+
+/* END */
+
+/* START - One-line neighorhood grid card description text */
+.neighborhoods-list__desc {
+    width: 100%;
+    line-clamp: 1;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+}
+
+/* END */
+
+/* START - Theme the title underline */
+.neighborhoods-list-title {
+    &:before {
+        border-color: var(--accent-dark) !important;
+    }
+}
+
+/* END */

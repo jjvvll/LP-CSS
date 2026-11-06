@@ -1,0 +1,31 @@
+/* START - Theme the contact overlay */
+div#modal-global-contact-us {
+    background: #000;
+    
+    div.form-part {
+        div.form-container {
+            div.contact-form-container {
+                &::-webkit-scrollbar {
+                    display: none;
+                }
+            }
+        }
+    }
+    
+    div.se-dropdown {
+        div.se-dropdown-menu {
+            div.se-dropdown-wrapper {
+                div.se-dropdown-content {
+                    button.se-dropdown-item {
+                        &:hover {
+                            background: #000;
+                            color: #FFF;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* END */

@@ -1,0 +1,95 @@
+div.community-grid-item {
+    height: unset !important;
+    aspect-ratio: 3/3.5;
+
+    &:not(.button-tile) {
+        &:not(:has(a[href])) {
+            pointer-events: none;
+        }
+    }
+}
+
+h4 {
+    font-family: var(--global-primary-font-family);
+    font-weight: normal !important;
+    font-size: var(--global-h3-font-size) !important;
+}
+
+.button-tile {
+    padding-left: 16px;
+    padding-right: 16px;
+
+    h4.title {
+        text-align: center;
+
+        &:after {
+            content: 'Lorem Ipsum dolor...';
+            display: block;
+            font-family: var(--global-secondary-font-family);
+            font-size: var(--global-body-font-size);
+            text-align: center;
+            margin-top: 8px;
+            text-transform: unset !important;
+        }
+    }
+}
+
+/* START - Transform the element into a default gallery style menu */
+div.clickable-image-grid {
+    div.grids {
+        gap: 16px;
+        justify-content: center;
+        max-width: 1400px;
+        padding-left: 50px;
+        padding-right: 50px;
+        margin-left: auto;
+        margin-right: auto;
+
+        @media (max-width: 768px) {
+            padding-left: 25px;
+            padding-right: 25px;
+        }
+
+        div.grid {
+            height: unset;
+            float: unset;
+            width: unset;
+            flex: 1 1 calc((100% / 2) - 16px + (16px / 2));
+            max-width: calc((100% / 2) - 16px + (16px / 2));
+
+            @media (max-width: 768px) {
+                flex: 1 1 100%;
+                max-width: 100%;
+                aspect-ratio: 1/1;
+            }
+
+            &:hover {
+                span.btn {
+                    transform: translateY(0px) !important;
+                }
+            }
+        }
+    }
+}
+
+div.grid-text {
+    h4 {
+        font-size: var(--global-h3-font-size) !important;
+        font-weight: normal !important;
+    }
+
+    span.btn {
+        border: 2px solid var(--white);
+        background: var(--white);
+        color: var(--accent) !important;
+        max-width: fit-content;
+
+        &:hover {
+            border: 2px solid var(--white);
+            background: transparent;
+            color: var(--white) !important;
+        }
+    }
+}
+
+/* END */

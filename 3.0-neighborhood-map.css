@@ -1,0 +1,29 @@
+/* START - Adjust the top padding of the next element if section is empty */
+&:not(:has(div))+section>.redesign,
+&:not(:has(div))+section>.section {
+    padding-top: 0px !important;
+
+    @media (max-width: 768px) {
+        padding-top: 0px !important;
+    }
+}
+
+/* END */
+
+/* START - Hide next element if mls properties no content */
+&:not(div.properties-grid__container:has(div))+section {
+    display: none;
+}
+
+/* END */
+
+/* START - Add padding around the map */
+div.neighborhood-map {
+    padding: 96px 50px 96px 50px;
+
+    @media (max-width: 768px) {
+        padding: 64px 25px 64px 25px;
+    }
+}
+
+/* END */

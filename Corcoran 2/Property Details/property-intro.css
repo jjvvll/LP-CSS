@@ -1,0 +1,14 @@
+.slick-arrow {
+    span {
+        border-color: #DFD6C6 !important;
+        background-color: #DFD6C6;
+        
+        &:after {
+            border-color: #fff !important;
+        }
+    }
+}
+
+.slick-disabled {
+    opacity: 0.5;
+}

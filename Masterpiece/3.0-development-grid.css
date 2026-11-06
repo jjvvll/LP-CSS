@@ -1,0 +1,64 @@
+/* START - Adjust header container margin if no developments data */
+div.lp-container:has(.collection:empty) {
+    div.lp-title-group {
+        margin-bottom: 0px;
+
+        h2 {
+            margin-bottom: 0px;
+        }
+    }
+}
+
+/* END */
+
+/* START - Fix the grid dimensions and remove extra spacings */
+div.data-container {
+    column-gap: 20px;
+    row-gap: 48px;
+    margin: 0px;
+
+    @media (max-width: 768px) {
+        gap: 25px;
+    }
+
+    &:not(.collection--3) {
+        a.item {
+            margin: 0px;
+            width: auto;
+            flex-basis: calc((100% / 2) - 20px + (20px / 2));
+            max-width: calc((100% / 2) - 20px + (20px / 2));
+
+            @media (max-width: 768px) {
+                flex-basis: 100%;
+                max-width: 100%;
+            }
+        }
+    }
+
+    &:is(.collection--3) {
+        a.item {
+            margin: 0px;
+            width: auto;
+            flex-basis: calc((100% / 3) - 20px + (20px / 3));
+            max-width: calc((100% / 3) - 20px + (20px / 3));
+
+            @media (max-width: 768px) {
+                flex-basis: 100%;
+                max-width: 100%;
+            }
+        }
+    }
+}
+
+div.pagination-container:not([style="display: none;"]) {
+    margin-top: 48px;
+}
+
+/* END */
+
+/* START - Adjust the Read More text case */
+span.link {
+    text-transform: var(--text-case);
+}
+
+/* END */

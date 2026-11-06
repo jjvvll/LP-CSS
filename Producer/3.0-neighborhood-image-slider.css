@@ -1,0 +1,23 @@
+/* START - Theme the element pagination buttons */
+div.neighborhood-image-slider {
+    button.slick-arrow {
+        border: 2px solid #FFF;
+        background: transparent;
+
+        &:before {
+            border-color: #FFF;
+            opacity: 1;
+        }
+
+        &:hover {
+            border: 2px solid #FFF;
+            background: #FFF;
+
+            &:before {
+                border-color: #000;
+            }
+        }
+    }
+}
+
+/* END */

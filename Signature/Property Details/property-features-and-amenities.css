@@ -1,0 +1,159 @@
+/*Start - Change the gray text theme*/
+.main-info__status,
+.copy-block__title {
+    color: rgba(255, 255, 255, 0.25);
+}
+
+/*End*/
+
+/*Start - Theme the schedule a showing form*/
+.schedule-showing {
+    /*Theme the text color*/
+    .schedule__title,
+    .type-selector__label {
+        color: #000;
+    }
+    
+    .calendar__slide {
+        .calendar__item {
+            border: 1px solid rgba(0, 0, 0, 0.1);
+        }
+        
+        .calendar__date,
+        .calendar__day {
+            color: #000 !important;
+        }
+        
+        hr {
+            background: #000 !important;
+        }
+        
+        &.selected {
+            .calendar__date,
+            .calendar__day {
+                color: #fff !important;
+            }
+            
+            hr {
+                background: #fff !important;
+            }
+        }
+    }
+    
+    .custom-select {
+        /* Theme dropdown toggle */
+        .custom-select-toggle {
+            color: #000 !important;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1) !important;
+        }
+        /* Theme dropdown background */
+        .custom-select-content {
+            background-color: #fff !important;
+            color: #000;
+            /* Do not display ugly scrollbar */
+            &::-webkit-scrollbar {
+                display: none;
+            }
+            /* Theme selected option */
+            .custom-select-item.is-selected {
+                color: #F51010;
+            }
+        }
+    }
+    
+    .info-form {
+        .lp-label {
+            color: #000 !important;
+        }
+        .lp-input {
+            color: #000 !important;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1) !important;
+        }
+        
+        .lp-disclaimer {
+            color: #000 !important;
+        }
+    }
+}
+
+/*End*/
+
+/*START - change time link*/
+a.bf-s {
+    position: relative !important;
+    color: #000 !important;
+    transition: 0.4s;
+    opacity: 1 !important;
+    text-decoration: none !important;
+
+    &:hover {
+        color: #F51010 !important;
+    }
+
+    &:before,
+    &:after {
+        transition: 0.4s;
+        text-decoration: none !important;
+        line-height: 1;
+        content: "" "";
+        height: 1px;
+        position: absolute !important;
+        bottom: 0;
+        left: 0;
+    }
+
+    &:before {
+        width: 100% !important;
+        background-color: rgba(0, 0, 0, 0.25) !important;
+    }
+
+    &:after {
+        width: 0% !important;
+        background-color: #F51010 !important;
+    }
+
+    &:hover:after {
+        width: 100% !important;
+    }
+}
+
+/*END*/
+
+.main-info__price {
+    .lp-link {
+        position: relative !important;
+        color: #fff !important;
+        transition: 0.4s;
+        opacity: 1 !important;
+    
+        &:hover {
+            color: #fff !important;
+        }
+    
+        &:before,
+        &:after {
+            transition: 0.4s;
+            text-decoration: none !important;
+            line-height: 1;
+            content: "" "";
+            height: 1px;
+            position: absolute !important;
+            bottom: 0;
+            left: 0;
+        }
+    
+        &:before {
+            width: 100% !important;
+            background-color: rgba(255, 255, 255, 0.25) !important;
+        }
+    
+        &:after {
+            width: 0% !important;
+            background-color: #fff !important;
+        }
+    
+        &:hover:after {
+            width: 100% !important;
+        }
+    }
+}

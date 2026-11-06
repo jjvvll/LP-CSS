@@ -1,0 +1,42 @@
+div.lp-title-group {
+    max-width: unset;
+
+    p.lp-text--subtitle {
+        max-width: 720px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+featured-neighborhoods__footer {
+    &:before {
+        border-top: 1px solid var(--border-dark-inactive) !important;
+        opacity: 1 !important;
+    }
+}
+
+.featured-neighborhoods__arrows {
+    gap: 8px;
+
+    .slick-arrow {
+        background: var(--accent-dark);
+        border: 2px solid var(--accent-dark);
+
+        &:before {
+            color: var(--accent-light);
+        }
+
+        &:hover {
+            background: transparent;
+
+            &:before {
+                color: var(--accent-dark);
+            }
+        }
+    }
+}
+
+.block-strikethrough__item {
+    background-color: transparent !important;
+    box-shadow: unset !important;
+}

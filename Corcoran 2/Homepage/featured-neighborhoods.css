@@ -1,0 +1,40 @@
+/*START - adjust paddings*/
+div.f-neighborhoods .top-bar {
+    padding-top: 0px;
+    margin-bottom: 40px;
+}
+
+div.basic-margins {
+    margin-bottom: 0px;
+}
+
+@media (max-width: 769px) {
+    div.f-neighborhoods__item-content {
+        padding: 24px 24px 64px;
+    }
+}
+
+@media(max-width: 768px) {
+    h2 {
+        text-align: center;
+    }
+}
+
+/*END*/
+
+/*START - mobile view button theme*/
+@media only screen and (max-width: 769px) {
+    div.basic-margins div.f-neighborhoods__item-content span.btn {
+        border-color: #000 !important;
+        background-color: #000 !important;
+        color: #fff !important;
+
+        &:hover {
+            border-color: #000 !important;
+            background-color: #000 !important;
+            color: #fff !important;
+        }
+    }
+}
+
+/*END - mobile view button theme*/

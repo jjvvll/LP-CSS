@@ -1,0 +1,41 @@
+/* START - Theme the neighborhood map properties card */
+div.property-card {
+    div.card-arrow {
+        background: #FFF;
+    }
+
+    div.card-content {
+        background: #FFF;
+
+        div.card-status-icon {
+            &:is(.status-FOR_SALE) {
+                background: #F00;
+                border-color: #F00;
+            }
+        }
+
+        div.card-top {
+            div.card-img-container {
+                img {}
+            }
+
+            div.card-details {
+                color: #F00;
+            }
+        }
+
+        a.btn {
+            border-color: #F00;
+            background: transparent;
+            color: #F00;
+
+            &:hover {
+                border-color: #F00;
+                background: #F00;
+                color: #FFF;
+            }
+        }
+    }
+}
+
+/* END */

@@ -1,0 +1,8 @@
+/* START - Fix the element description not using the global body font size */
+div.lp-text--subtitle {
+    * {
+        font-size: var(--global-body-font-size);
+    }
+}
+
+/* END */

@@ -1,0 +1,131 @@
+/* START - Adjust the element dimensions */
+div.f-press__container {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    max-width: 1400px;
+    padding-left: 34px;
+    padding-right: 34px;
+
+    @media (max-width: 768px) {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    div.f-press__title-wrap {
+        max-width: unset;
+        margin-left: auto;
+        margin-right: auto;
+
+        @media (min-width: 769px) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h2.f-press__title {
+            padding-left: unset;
+            padding-right: unset;
+        }
+
+        div.f-press__arrows {
+            top: unset;
+            transform: unset;
+            margin-top: 16px;
+            position: relative;
+            max-width: fit-content;
+        }
+    }
+
+    div.f-press__description {
+        max-width: 640px;
+    }
+
+    div.f-press__carousel-container {
+        margin: 0px 0px;
+
+        @media (max-width: 768px) {
+            display: flex;
+            flex-direction: column;
+            gap: 32px;
+        }
+
+        a.f-press__item {
+            h4.f-press__item-title {
+                white-space: nowrap;
+                max-width: 100%;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+
+            div.f-press__item-description {
+                font-size: var(--global-body-font-size);
+                line-clamp: 2;
+                -webkit-line-clamp: 2;
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+            }
+
+            @media (max-width: 768px) {
+                margin-bottom: unset;
+            }
+        }
+
+        div.slick-track {
+            a.f-press__item {
+                margin-bottom: 0px;
+                padding-left: 16px;
+                padding-right: 16px;
+            }
+        }
+    }
+
+    div.f-press__btn-wrap {
+        &:not(:has(*)) {
+            display: none;
+        }
+
+        margin-top: 48px;
+    }
+}
+
+/* END */
+
+/* START - Theme the press tiles */
+a.f-press__item {
+    div.f-press__image-wrapper {
+        background: #CCC;
+
+        div.f-press__item-category {
+            text-transform: uppercase;
+            padding: 9px 18px;
+            background: var(--accent-dark);
+            color: var(--typography-light);
+        }
+    }
+}
+
+/* END */
+
+/* START - Theme the previous and next button */
+button.f-press__arrow {
+    color: var(--typography-dark) !important;
+
+    &:hover {
+        color: var(--accent-dark) !important;
+    }
+
+    &:before {
+        background: var(--accent-dark);
+    }
+
+    &:after {
+        background: var(--accent-dark);
+    }
+}
+
+span.slick-arrow__separator {
+    color: var(--border-dark-inactive);
+}
+
+/* END */

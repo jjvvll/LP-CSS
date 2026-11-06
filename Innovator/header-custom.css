@@ -1,0 +1,9 @@
+/* Start - Increase Header Navigation Font Size */
+nav .header-centered {
+    .hamburger-component a,
+    .navigation__link {
+        font-size: 18px;
+    }
+}
+
+/* End */

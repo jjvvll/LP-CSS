@@ -1,0 +1,55 @@
+/*START - SIDE MENU WB JV*/
+
+/* START - Add hover effect to the sidemenu */
+div.sidemenu {
+  button.sidemenu__toggle {
+    text-transform: var(--text-case);
+    transition: 0.4s;
+
+    &:hover {
+      opacity: 0.25;
+    }
+  }
+
+  a.navigation__link,
+  a.sub-nav__link {
+    text-transform: var(--text-case);
+    transition: 0.25s;
+
+    &:hover {
+      color: var(--color-light);
+      opacity: 0.25;
+    }
+
+    svg.arrow {
+      transition: 0.2s;
+    }
+  }
+}
+
+/* END */
+
+/* START - Center sidemenu contents on mobile */
+div#global-sidemenu {
+  div.sidemenu__socials {
+    @media (max-width: 768px) {
+      width: 100%;
+    }
+
+    ul.lp-socials {
+      @media (max-width: 768px) {
+        justify-content: center;
+        gap: 16px;
+      }
+
+      li {
+        @media (max-width: 768px) {
+          margin: 0px;
+        }
+      }
+    }
+  }
+}
+
+/* END */
+/*END - SIDE MENU WB JV*/

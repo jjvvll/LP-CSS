@@ -1,0 +1,78 @@
+/* START - Adjust top padding for the header navigation */
+& {
+  padding-top: 136px !important;
+
+  @media (max-width: 768px) {
+    padding-top: 126px !important;
+  }
+}
+
+/* END */
+
+/* START - Fit image on mobile */
+div.holder {
+  @media (max-width: 768px) {
+    max-height: fit-content;
+  }
+}
+
+/* END */
+
+/* START - Theme the pagination buttons */
+div.arrows {
+  button.lp-arrow.slick-arrow {
+    @media (max-width: 768px) {
+      border: solid 2px var(--color-dark) !important;
+      background-color: var(--color-dark) !important;
+
+      &:before {
+        border-color: var(--color-light) !important;
+      }
+
+      &:hover {
+        background-color: transparent !important;
+        border: solid 2px var(--color-dark) !important;
+
+        &:before {
+          border-color: var(--color-dark) !important;
+        }
+      }
+    }
+  }
+}
+
+/* END */
+
+/* change background color */
+.modal-1.js.visible {
+  background: var(--secondary-dark) !important;
+}
+/* END */
+
+/* Theme close button */
+.lp-lightbox__close {
+  color: var(--color-dark);
+  background-color: var(--color-light);
+  border-color: var(--color-light);
+
+  &:hover {
+    color: var(--color-light);
+    background-color: var(--color-dark);
+    border-color: var(--color-dark);
+  }
+}
+/* END */
+/* theme buttons */
+.nav-tab a {
+  color: var(--color-dark);
+  background-color: var(--color-light);
+  border-color: var(--color-light);
+
+  &:hover,
+  &.active {
+    color: var(--color-light);
+    background-color: var(--color-dark);
+    border-color: var(--color-dark);
+  }
+}
+/* END */

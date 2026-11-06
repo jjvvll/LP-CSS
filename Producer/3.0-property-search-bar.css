@@ -1,0 +1,82 @@
+/* START - Adjust the element dimensions */
+div.search-bar {
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+
+    div.search-bar-wrapper {
+        div.search-input-container {
+            max-width: 1400px;
+            flex-basis: 100%;
+            padding: 0px 50px;
+
+            @media only screen and (max-width: 768px) {
+                padding: 0px 25px;
+            }
+        }
+    }
+}
+
+div.search-bar {
+    a.contact-section {
+        padding-right: 50px;
+        padding-left: 0px;
+
+        div.link-content {
+            opacity: 1;
+            padding-left: 0px;
+            padding-right: 0px;
+            font-family: var(--global-secondary-font-family);
+            display: flex;
+            align-items: center;
+        }
+    }
+}
+
+div.search-result-container {
+    width: 100%;
+
+    div.container {
+        max-width: calc(1400px - 100px);
+
+        @media (max-width: 768px) {
+            max-width: 100%;
+        }
+
+        div.solid-subsection {
+            margin-left: unset;
+
+            &:is(.address-results) {
+                & > div.result-container:last-child {
+                    @media (max-width: 768px) {
+                        padding-bottom: 30px;
+                    }
+                }
+            }
+
+            a.link-container {
+                text-transform: uppercase;
+            }
+        }
+    }
+}
+
+/* END */
+
+/* START - Theme the results link */
+div.search-result-container {
+    a.link-container,
+    span.result a,
+    a.result {
+        text-transform: uppercase;
+        color: var(--accent-light);
+        transition: 0.4s;
+
+        &:hover {
+            color: var(--accent-light);
+            opacity: 0.5;
+        }
+    }
+}
+
+/* END */

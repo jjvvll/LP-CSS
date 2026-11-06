@@ -1,0 +1,21 @@
+/* START - Add image overlay to background image */
+div.item {
+    height: 600px;
+
+    @media (max-width: 768px) {
+        height: 75vh;
+    }
+
+    &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0px;
+        left: 0px;
+        background: rgba(0, 0, 0, 0.3);
+    }
+}
+
+/* END */

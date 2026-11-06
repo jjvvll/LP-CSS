@@ -1,0 +1,14 @@
+/* START - Remove bottom margin of title content to center vertically */
+/* Note: Add the class name cta-block__title-value to the p element */
+.cta-block__title-value {
+    margin-bottom: 0px;
+}
+
+/* END */
+
+/* START - Remove the max width */
+.cta-block__text-block {
+    max-width: unset;
+}
+
+/* END */

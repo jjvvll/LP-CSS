@@ -1,0 +1,97 @@
+/* START - Global variable theme */
+:root {
+    --primary-dark: #000000;
+    --primary-light: #FFFFFF;
+    --accent-dark: #000000;
+    --accent-light: #FFFFFF;
+    --background-dark-inactive: rgba(0, 0, 0, 0.05);
+    --background-light-inactive: rgba(255, 255, 255, 0.1);
+    --border-dark-inactive: rgba(0, 0, 0, 0.125);
+    --border-dark-active: rgba(0, 0, 0, 0.75);
+    --border-light-inactive: rgba(255, 255, 255, 0.125);
+    --border-light-active: rgba(255, 255, 255, 0.75);
+    --typography-dark: #000000;
+    --typography-light: #FFFFFF;
+    --text-case: uppercase;
+}
+
+/* END */
+
+/* START - Adjust headings text case */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-transform: var(--text-case) !important;
+}
+
+/* END */
+
+/* START - Fix the hoverable link effect globally */
+a.lp-link,
+span.lp-link,
+a.link:not(.sidebar__nav-link):not(.sub-nav-heading):not(.sub-nav-link):not(.main-nav),
+span.link,
+a[href="/terms-and-conditions"],
+footer li.footer-navigation__item > *,
+footer a:not(.lp-socials__link) {
+    position: relative;
+    transition: 0.4s;
+    opacity: 1;
+    text-decoration: none !important;
+    border-bottom: unset;
+
+    &:before,
+    &:after {
+        opacity: 1;
+        transition: 0.4s;
+        text-decoration: none;
+        line-height: 1;
+        content: "";
+        height: 1px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+
+    &:before {
+        width: 100%;
+        background: rgb(from currentColor r g b / 15%) !important;
+    }
+
+    &:after {
+        width: 0%;
+        background: rgb(from currentColor r g b / 100%) !important;
+    }
+
+    &:hover {
+        text-decoration: none !important;
+        opacity: 1;
+
+        &:after {
+            width: 100%;
+        }
+    }
+
+    @media (max-width: 768px) {
+        text-decoration: underline !important;
+        text-decoration-color: currentColor !important;
+
+        &:before,
+        &:after {
+            display: none;
+        }
+
+        &:hover {
+            color: var(--accent-dark);
+        }
+    }
+}
+
+a[href="/terms-and-conditions"] {
+    display: inline-block;
+}
+
+/* END */

@@ -1,0 +1,183 @@
+div.f-press__container {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    max-width: unset;
+    padding-left: 50px;
+    padding-right: 50px;
+
+    @media (max-width: 768px) {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    div.f-press__title-wrap {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        h2.f-press__title {
+            font-size: var(--global-h2-font-size);
+            margin-bottom: 16px;
+
+            @media (max-width: 768px) {
+                font-size: 32px;
+                margin-bottom: unset;
+            }
+        }
+
+        div.f-press__arrows {
+            position: unset;
+            transform: unset;
+
+            span.slick-arrow__separator {
+                display: none !important;
+            }
+        }
+    }
+
+    div.f-press__carousel-container {
+        margin-left: 0px;
+        margin-right: 0px;
+
+        div.slick-track {
+            display: flex;
+            flex-direction: row;
+            gap: 16px;
+            width: 100% !important;
+
+            &:before,
+            &:after {
+                display: none;
+            }
+
+            a.f-press__item {
+                padding-left: 0px;
+                padding-right: 0px;
+                width: auto !important;
+                min-width: calc((100% / 3) - 16px + (16px / 3));
+                flex: 1 1 calc((100% / 3) - 16px + (16px / 3));
+                max-width: calc((100% / 3) - 16px + (16px / 3));
+
+                @media (max-width: 768px) {
+                    flex-basis: 100%;
+                    max-width: 100%;
+                }
+            }
+        }
+    }
+
+    div.f-press__btn-wrap {
+        a {
+            border-width: 1px;
+            font-weight: 400;
+
+            @media (max-width: 768px) {
+                width: 100%;
+            }
+        }
+    }
+}
+
+div.f-press__arrows {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+
+    button.slick-arrow {
+        height: 48px;
+        width: 48px;
+        display: block;
+        border: 1px solid var(--blue);
+        background: transparent;
+        font-size: 0px;
+
+        &:before {
+            border-bottom: 1px solid;
+            border-left: 1px solid;
+            content: '';
+            display: block;
+            height: 11px;
+            width: 11px;
+            left: 50%;
+            position: absolute;
+            top: 50%;
+            background: transparent;
+            border-color: var(--blue);
+        }
+
+        &:after {
+            display: none;
+        }
+
+        &:is(:first-child) {
+            &:before {
+                transform: translate(calc(-50% + 2px), -50%) rotate(45deg) skew(4deg, 4deg);
+            }
+        }
+
+        &:is(:last-child) {
+            &:before {
+                transform: translate(calc(-50% - 2px), -50%) rotate(-135deg) skew(4deg, 4deg);
+            }
+        }
+
+        &:hover {
+            background: var(--blue);
+
+            &:before {
+                border-color: var(--white);
+            }
+        }
+    }
+}
+
+div.f-press__container {
+    div.f-press__carousel-container {
+        a.f-press__item {
+            @media (max-width: 768px) {
+                margin-bottom: 32px;
+            }
+
+            &:hover {
+                h4.f-press__item-title {
+                    text-decoration: none;
+                }
+            }
+
+            div.f-press__image-wrapper {
+                aspect-ratio: 4/3;
+                height: auto;
+
+                .f-press__item-category {
+                    display: none;
+                }
+            }
+
+            h4.f-press__item-title {
+                line-clamp: 2;
+                -webkit-line-clamp: 2;
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+                color: var(--blue);
+            }
+
+            div.f-press__item-description {
+                font-size: 14px;
+                line-clamp: 2;
+                -webkit-line-clamp: 2;
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+                opacity: 0.7;
+            }
+
+            div.f-press__item-info {
+                font-weight: 400;
+                font-size: 12px;
+                opacity: 0.7;
+            }
+        }
+    }
+}

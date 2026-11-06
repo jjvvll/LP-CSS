@@ -1,0 +1,6 @@
+/* START - Hide pagination container if hidden */
+div.lp-pagination:has(div.carousel-controls[style="display: none;"]) {
+    display: none;
+}
+
+/* END */

@@ -1,0 +1,26 @@
+/* ----- BLOG POST SLIDER ----- */
+
+/* START - Adjust blog card text case */
+.blog-posts-slider-item__tag {
+    margin-top: 16px;
+    text-transform: var(--text-case);
+}
+
+.blog-posts-slider-item__name {
+    text-transform: var(--text-case);
+}
+
+/* END */
+
+/* START - Theme pre-title underline */
+.blog-posts-slider__title-group {
+    .blog-posts-slider__pretitle {
+        &:before {
+            border-color: var(--accent-dark);
+        }
+    }
+}
+
+/* END */
+
+/* ----- BLOG POST SLIDER ----- */

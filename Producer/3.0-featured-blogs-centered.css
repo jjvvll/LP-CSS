@@ -1,0 +1,62 @@
+/* START - Fix extra spacings and margins */
+div.blog-posts__section {
+    div.container {
+        max-width: 1400px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 32px;
+
+        h2.serif {
+            margin-bottom: 0px;
+        }
+
+        div.blog-posts {
+            margin-bottom: 0px;
+            margin-left: 0px;
+            margin-right: 0px;
+            width: 100%;
+            gap: 12px;
+
+            a.blog-posts__block {
+                margin: 0px;
+                aspect-ratio: 16/9;
+
+                &:is(.blog-posts__block--full-width) {
+                    @media (min-width: 769px) {
+                        aspect-ratio: 16/7;
+                    }
+                }
+
+                @media (max-width: 768px) {
+                    width: 100%;
+                    max-width: 100%;
+                }
+            }
+        }
+
+        a.btn {
+            @media (min-width: 769px) {
+                max-width: fit-content;
+            }
+        }
+    }
+}
+
+/* END */
+
+/* START - Theme the blog tiles */
+div.blog-posts {
+    a.blog-posts__block {
+        & > * {
+            color: var(--typography-light);
+
+            span.label {
+                background: var(--accent-dark);
+                color: var(--typography-light);
+            }
+        }
+    }
+}
+
+/* END */

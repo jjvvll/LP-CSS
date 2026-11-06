@@ -1,0 +1,37 @@
+/* START - Fix the neighborhood map description */
+.neighborhood-map__content {
+    padding: 64px;
+    max-width: fit-content;
+
+    @media (max-width: 768px) {
+        max-width: unset;
+    }
+}
+
+/* END */
+
+/* START - Fix element overflow and dimension */
+.neighborhood-map {
+    height: auto;
+    max-height: unset;
+}
+
+.neighborhood-map__container {
+    position: relative;
+    height: auto;
+    aspect-ratio: 16/7;
+    margin-bottom: 100px; /*space at the bottom*/
+
+    @media (max-width: 768px) {
+        aspect-ratio: 3/4;
+    }
+}
+
+/* END */
+
+/* START - Adjust the text case of the neighborhood map title */
+.neighborhood-map__name {
+    text-transform: var(--text-case);
+}
+
+/* END */

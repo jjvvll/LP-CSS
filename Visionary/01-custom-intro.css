@@ -1,0 +1,63 @@
+/* ----- CUSTOM INTRO ----- */
+/* START - Adjust the element layout */
+.custom-intro {
+    &:is(.custom-intro__horizon-left) {
+        .custom-intro__pre-title {
+            margin: unset;
+        }
+    }
+}
+
+.custom-intro__description {
+    margin-top: 8px;
+}
+
+.custom-intro__scroll-btn {
+    margin-top: 48px;
+}
+
+.custom-intro__content-box {
+    @media (min-width: 1025px) {
+        padding: 56px;
+    }
+}
+
+/* END */
+
+/* START - Fix element not using the global font size */
+.custom-intro__title {
+    font-size: var(--global-h1-font-size);
+
+    @media (max-width: 768px) {
+        font-size: var(--global-h3-font-size);
+    }
+}
+
+.custom-intro__description {
+    font-size: var(--global-secondary-font-size);
+}
+
+/* END */
+
+/* START - Fix the arrow button theme */
+.custom-intro__scroll-btn {
+    border-color: var(----color-light);
+    background: var(----color-light);
+
+    &:after {
+        background: var(----color-light);
+    }
+
+    &:hover {
+        border-color: var(----color-light);
+        background: transparent;
+
+        &:after {
+            background: var(----color-light);
+        }
+    }
+}
+
+/* END */
+
+/* ----- CUSTOM INTRO ----- */

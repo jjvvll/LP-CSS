@@ -1,0 +1,24 @@
+/* START - Remove the unnecessary padding */
+div.blog-details-intro {
+    padding: unset;
+}
+
+/* END */
+
+/* START - Blog Intro Image Opacity */
+div.blog-details-intro__img {
+    &:after {
+        background: rgb(from #000 r g b / 40%);
+    }
+}
+
+/* END */
+
+/* START - Adjust the blog intro title width */
+div.blog-details-intro {
+    div.intro-box {
+        max-width: 1400px;
+    }
+}
+
+/* END */

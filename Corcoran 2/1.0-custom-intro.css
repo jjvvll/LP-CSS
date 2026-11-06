@@ -1,0 +1,6 @@
+/* START - Adjust the custom intro max width */
+div.custom-intro__content {
+    max-width: unset;
+}
+
+/* END */

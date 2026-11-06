@@ -1,0 +1,66 @@
+/* START - Update the displayed Licenses and position */
+div.collection {
+    div.item {
+        &:has(a[href="/agents/ken-boyd"]) {
+            p.bf2 {
+                font-size: 0px;
+
+                &:after {
+                    content: 'CA DRE# 00323505 | NMLS# 320641';
+                    font-size: 12px;
+                }
+            }
+
+            p.bf1 {
+                font-size: 0px;
+
+                &:after {
+                    content: 'Since 1967';
+                    font-size: 14px;
+                }
+            }
+        }
+
+        &:has(a[href="/agents/cherie-smith"]) {
+            p.bf2 {
+                font-size: 0px;
+
+                &:after {
+                    content: 'CA DRE# 01442806 | NMLS# 1629844';
+                    font-size: 12px;
+                }
+            }
+
+            p.bf1 {
+                font-size: 0px;
+
+                &:after {
+                    content: 'Since 2006';
+                    font-size: 14px;
+                }
+            }
+        }
+
+        &:has(a[href="/agents/brian-ellsworth"]) {
+            p.bf2 {
+                font-size: 0px;
+
+                &:after {
+                    content: 'CA DRE# 01230440 | NMLS# 316056';
+                    font-size: 12px;
+                }
+            }
+
+            p.bf1 {
+                font-size: 0px;
+
+                &:after {
+                    content: 'Since 1997';
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+
+/* END */

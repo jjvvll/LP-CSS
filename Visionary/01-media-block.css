@@ -1,0 +1,35 @@
+/* START - Adjust the header text width */
+.lp-title-group {
+    max-width: 1120px;
+
+    h2 {
+        margin-bottom: unset;
+    }
+}
+
+/* END */
+
+/* START - Reduce unnecessary spacings for media block element */
+.media-blocks-grid {
+    margin-bottom: 0px;
+}
+
+.media-blocks-grid__item {
+    display: block;
+}
+
+.media-blocks-grid__description {
+    margin-bottom: 0px;
+}
+
+/* Note: Add class name media-blocks-grid__description-value to the p/div element  */
+.media-blocks-grid__description-value {
+    margin-bottom: 0px;
+}
+
+/* END */
+
+.media-blocks-grid__image {
+    padding-bottom: unset !important;
+    aspect-ratio: 16/9;
+}

@@ -1,0 +1,101 @@
+/* START - Center text content */
+div.schedule__content {
+    div.step-1 {
+        div.lp-title-group {
+            text-align: center;
+        }
+    }
+}
+
+/* END */
+
+/* START - Theme the pagination arrows */
+div.schedule__content {
+    div.step-1 {
+        div.calendar {
+            button.lp-arrow {
+                border-color: #000;
+                color: #000;
+
+                &:hover {
+                    color: #FFF;
+
+                    &:before {
+                        background: #000;
+                    }  
+                }
+            }
+        }
+    }
+}
+
+/* END */
+
+/* START - Theme selected calendar date */
+div.schedule__content {
+    div.step-1 {
+        div.calendar {
+            div.calendar__slide.selected {
+                div.calendar__item {
+                    border-color: #000;
+                    background: #000;
+                    color: #FFF;
+                }
+            }
+        }
+    }
+}
+
+/* END */
+
+/* START - Theme the dropdown menu */
+div.custom-select {
+    button.custom-select-toggle {
+        border-color: #000;
+
+        &:after {
+            color: #000;
+        }
+    }
+
+    div.custom-select-menu {
+        div.custom-select-content {
+            background: #FFF;
+            color: #000;
+            border-color: #000;
+
+            button.custom-select-item {
+                &:hover {
+                    background: #000;
+                    color: #FFF;
+                }
+            }
+        }
+    }
+}
+
+/* END */
+
+/* START - Theme the in person and via video button */
+div.schedule__content {
+    div.step-1 {
+        div.type-selector {
+            div.type-selector__group {
+                label.type-selector__label {
+                    color: #000;
+                    border-color: #000;
+
+                    &:hover {
+                        color: #FFF;
+
+                        &:before {
+                            background: #000;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* END */

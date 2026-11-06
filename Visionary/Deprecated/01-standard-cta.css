@@ -1,0 +1,48 @@
+/* START - Fix the element layout */
+div.standard-cta {
+    div.standard-cta__container {
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+
+        div.standard-cta__title-group {
+            max-width: 100%;
+
+            h4.standard-cta__subtitle {
+                margin-bottom: unset;
+            }
+        }
+
+        div.standard-cta__description {
+            max-width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+
+            & > * {
+                &:last-child {
+                    margin-bottom: 0px;
+                }
+            }
+        }
+
+        &:not(:has(div.standard-cta-button-container)) {
+            div.standard-cta__description {
+                margin-bottom: unset;
+            }
+        }
+    }
+}
+
+/* END */
+
+/* START - Theme pre-title underline */
+div.standard-cta__title-group {
+    h2.standard-cta__title,
+    p.standard-cta__pre-title {
+        &:before {
+            border-color: var(--accent-dark);
+        }
+    }
+}
+
+/* END */

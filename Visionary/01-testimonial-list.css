@@ -1,0 +1,34 @@
+/* ----- TESTIMONIAL LIST ----- */
+/* START - Adjust testimonial cards top padding */
+.testimonials-list__item {
+    padding-top: 3rem;
+}
+
+/* END */
+
+/* START - Theme the testimonial cards */
+.testimonials-list__item {
+    &:before {
+        --iconColor: var(--accent-dark);
+    }
+
+    border-bottom: 1px solid var(--border-dark-inactive);
+}
+
+/* END */
+
+/* START - Adjust the element paddings */
+.testimonials-list {
+    padding: unset;
+}
+
+/* END */
+
+/* START - Adjust the element author name text case */
+.testimonials-list__author {
+    text-transform: var(--text-case);
+}
+
+/* END */
+
+/* ----- TESTIMONIAL LIST ----- */

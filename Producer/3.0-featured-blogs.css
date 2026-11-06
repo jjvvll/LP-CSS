@@ -1,0 +1,142 @@
+/* START - Fix element not using the body font size */
+ul.featured-press  {
+    font-size: var(--global-body-font-size);
+}
+
+/* END */
+
+/* START - Adjust the element header container */
+div.container {
+    header {
+        display: flex;
+        flex-direction: column;
+        max-width: unset;
+
+        h2.serif {
+            margin-bottom: 0px;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        & > p {
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+}
+
+/* END */
+
+/* START - Adjust container dimensions */
+div.container {
+    ul.featured-press {
+        gap: 20px;
+        max-width: 100%;
+        margin-bottom: 32px;
+
+        & > li {
+            margin-left: 0px;
+            margin-right: 0px;
+            margin-top: 0px;
+            margin-bottom: 0px;
+            width: auto;
+        }
+
+        &:is(.three-columns) {
+            & > li {
+                flex: 1 1 calc((100% / 3) - 20px + (20px / 3));
+                max-width: calc((100% / 3) - 20px + (20px / 3));
+            }
+        }
+
+        &:not(.three-columns) {
+            & > li {
+                flex: 1 1 calc((100% / 2) - 20px + (20px / 2));
+                max-width: calc((100% / 2) - 20px + (20px / 2));
+            }
+        }
+
+        &:is(.three-columns),
+        &:not(.three-columns) {
+            & > li {
+                @media (max-width: 768px) {
+                    flex: 1 1 100%;
+                    max-width: 100%;
+                }
+            }
+        }
+    }
+}
+
+/* END */
+
+/* START - Adjust cards text clamp */
+div.container {
+    ul.featured-press {
+        & > li {
+            figure {
+                height: unset;
+                aspect-ratio: 4/2.5;
+            }
+
+            h4 {
+                white-space: nowrap;
+                max-width: 100%;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                order: 2;
+
+                span {
+                    white-space: pre;
+                    text-decoration: none;
+                }
+            }
+
+            p {
+                order: 4;
+                line-clamp: 2;
+                -webkit-line-clamp: 2;
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+            }
+        }
+    }
+}
+
+/* END */
+
+/* START - Fix the hover effect of the featured blog */
+h4.serif {
+    span.link {
+        &:hover {
+            color: unset !important;
+        }
+    }
+}
+
+ul.featured-press {
+    & > li {
+        &:hover {
+            h4.serif {
+                span.link {
+                    color: var(--accent-dark) !important;
+                }
+            }
+        }
+    }
+}
+
+/* END */
+
+/* START - Theme the featured blog tags */
+ul.featured-press {
+    span.label {
+        background: rgb(from var(--accent-dark) r g b / 75%);
+        color: var(--typography-light);
+    }
+}
+
+/* END */

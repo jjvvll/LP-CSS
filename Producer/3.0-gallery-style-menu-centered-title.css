@@ -1,0 +1,20 @@
+/* START - Make the titles consistent */
+div.clickable-image-grid {
+    div.grids {
+        div.grid-text {
+            h4 {
+                font-family: var(--global-primary-font-family);
+                font-weight: normal;
+                font-size: var(--global-h3-font-size);
+            }
+        }
+    }
+}
+
+/* END */
+
+/* START - remove margin bottom */
+.gallery-component__col{
+  margin-bottom: 0px !important;
+}
+/* END */

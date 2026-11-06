@@ -1,0 +1,34 @@
+/* START - Retheme side menu */
+div#global-sidemenu {
+    button.sidemenu-close {
+        top: 32px;
+        right: 32px;
+        
+        @media (max-width: 768px) {
+            top: 16px;
+            right: 16px;
+        }
+    }
+}
+
+div#global-sidemenu {
+    div.wrapper {
+        transition: 0.4s;
+    }
+    
+    &:not(.visible) {
+        div.wrapper {
+            background: rgba(255, 255, 255, 0.75);
+            backdrop-filter: blur(10px);
+        }
+    }
+    
+    &:is(.visible) {
+        div.wrapper {
+            background: rgba(255, 255, 255, 0.75);
+            backdrop-filter: blur(10px);
+        }
+    }
+}
+
+/* END */

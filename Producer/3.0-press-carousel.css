@@ -1,0 +1,22 @@
+/* START - Adjust the press carousel max width */
+div.carousel-container {
+    max-width: 100%;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+/* END */
+
+.carousel-entity {
+    height: 250px;
+}
+
+.press-item-inner {
+    border-left: 0px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.press-item-inner img {
+    width: 100%;
+}

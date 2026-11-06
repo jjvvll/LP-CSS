@@ -1,0 +1,6 @@
+/* START - Adjust the text case of the mls properties slider address */
+.mls-properties-slider-collection__info {
+    text-transform: uppercase;
+}
+
+/* END */

@@ -1,0 +1,31 @@
+/* START - Adjust title max width */
+.timeline__title-group {
+    max-width: 100%;
+}
+
+/* END */
+
+/* START - Theme timeline tag text color */
+.timeline__tag {
+    color: var(--color-light);
+}
+
+/* END */
+
+/* START - Add anchor links hover effect */
+/* Note: Add the class name timeline__link to the links */
+.timeline__link {
+    color: var( --color-dark);
+    text-decoration: underline;
+    text-decoration-color: var(--color-dark);
+    transition: 0.4s;
+    text-transform: none;
+
+    &:hover {
+        color: var(--color-dark);
+        opacity: 0.5;
+        text-decoration-color: var(--color-dark);
+    }
+}
+
+/* END */

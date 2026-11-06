@@ -1,0 +1,18 @@
+/* START - Make the buttons thinner */
+.btn,
+.lp-btn,
+.lp-arrow,
+.slick-arrow,
+.paginationjs-page a,
+.paginationjs-next a,
+.paginationjs-prev a {
+    border-width: 1px !important;
+    font-weight: normal !important;
+
+    &:before,
+    &:after {
+        border-width: 1px !important;
+    }
+}
+
+/* END */

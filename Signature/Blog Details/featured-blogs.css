@@ -1,0 +1,44 @@
+.watermark {
+    &:before {
+        color: rgba(0, 0, 0, 0.5) !important;
+    }
+}
+
+/*Start - Theme the read more button*/
+.list__item {
+    .item__info {
+        .item__author,
+        .item__title {
+            color: #fff;
+        }
+    }
+    
+    .link-icon {
+        color: #000;
+
+        &:before {
+            background-color: #fff !important;
+        }
+
+        &:after {
+            background-color: #185770 !important;
+        }
+    }
+
+    &:hover {
+        .link-icon {
+            color: #000;
+            
+            &:before {
+                background-color: #185770 !important;
+            }
+
+            &:after {
+                background-color: transparent !important;
+                border: 1px solid #185770;
+            }
+        }
+    }
+}
+
+/*End*/

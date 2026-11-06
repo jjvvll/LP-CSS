@@ -1,0 +1,15 @@
+div.lp-container {
+    div.wrapper {
+        h2.title {
+            max-width: 600px;
+        }
+
+        p.desc {
+            margin-top: 24px;
+        }
+
+        div.buttons {
+            margin-top: 48px;
+        }
+    }
+}

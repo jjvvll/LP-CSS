@@ -1,0 +1,172 @@
+/* START - Right-aligned text + < cursor + underline on hover only - WB JV*/
+div#global-sidemenu {
+  box-shadow:
+    0 8px 32px rgba(0, 0, 0, 0),
+    0 2px 8px rgba(0, 0, 0, 0),
+    0 0 0 1px rgba(255, 255, 255, 0);
+  transition: box-shadow 0.6s ease;
+
+  &.visible {
+    box-shadow:
+      0 8px 32px rgba(0, 0, 0, 0.45),
+      0 2px 8px rgba(0, 0, 0, 0.3),
+      0 0 0 1px rgba(255, 255, 255, 0.04);
+    transition: box-shadow 0.6s ease 0.3s;
+
+    /* Each nav item reveals after slide, staggered top to bottom */
+    li.sidebar__nav-item {
+      &:nth-child(1) a.sidebar__nav-link,
+      &:nth-child(1) button.sidebar__nav-link {
+        animation: revealText 0s ease 0.3s forwards;
+        color: transparent;
+      }
+      &:nth-child(2) a.sidebar__nav-link,
+      &:nth-child(2) button.sidebar__nav-link {
+        animation: revealText 0s ease 0.38s forwards;
+        color: transparent;
+      }
+      &:nth-child(3) a.sidebar__nav-link,
+      &:nth-child(3) button.sidebar__nav-link {
+        animation: revealText 0s ease 0.46s forwards;
+        color: transparent;
+      }
+      &:nth-child(4) a.sidebar__nav-link,
+      &:nth-child(4) button.sidebar__nav-link {
+        animation: revealText 0s ease 0.54s forwards;
+        color: transparent;
+      }
+      &:nth-child(5) a.sidebar__nav-link,
+      &:nth-child(5) button.sidebar__nav-link {
+        animation: revealText 0s ease 0.62s forwards;
+        color: transparent;
+      }
+      &:nth-child(6) a.sidebar__nav-link,
+      &:nth-child(6) button.sidebar__nav-link {
+        animation: revealText 0s ease 0.7s forwards;
+        color: transparent;
+      }
+      &:nth-child(7) a.sidebar__nav-link,
+      &:nth-child(7) button.sidebar__nav-link {
+        animation: revealText 0s ease 0.78s forwards;
+        color: transparent;
+      }
+      &:nth-child(8) a.sidebar__nav-link,
+      &:nth-child(8) button.sidebar__nav-link {
+        animation: revealText 0s ease 0.86s forwards;
+        color: transparent;
+      }
+      &:nth-child(9) a.sidebar__nav-link,
+      &:nth-child(9) button.sidebar__nav-link {
+        animation: revealText 0s ease 0.94s forwards;
+        color: transparent;
+      }
+      &:nth-child(10) a.sidebar__nav-link,
+      &:nth-child(10) button.sidebar__nav-link {
+        animation: revealText 0s ease 1.02s forwards;
+        color: transparent;
+      }
+    }
+  }
+
+  li.sidebar__nav-item {
+    position: relative;
+    border-bottom: 1.5px solid transparent;
+    transition: border-color 0.2s ease;
+    &:hover {
+      border-bottom-color: var(--color-light);
+    }
+    a.sidebar__nav-link,
+    button.sidebar__nav-link,
+    a.sidebar__subnav-link {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      padding-right: 28px;
+      opacity: 1;
+      text-transform: var(--text-case);
+      width: 100%;
+      text-decoration: none;
+      color: var(--color-light);
+      position: relative;
+      transition:
+        color 0.2s ease,
+        padding-right 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+      /* top arm of < */
+      &::before {
+        content: "";
+        position: absolute;
+        right: 10px;
+        top: calc(50% - 5px);
+        width: 9px;
+        height: 1.5px;
+        background: var(--color-light);
+        transform-origin: right center;
+        transform: rotate(-35deg) translateX(6px);
+        opacity: 0;
+        transition:
+          opacity 0.15s ease,
+          transform 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+      }
+      /* bottom arm of < */
+      &::after {
+        content: "";
+        position: absolute;
+        right: 10px;
+        top: calc(50% + 4px);
+        width: 9px;
+        height: 1.5px;
+        background: var(--color-light);
+        transform-origin: right center;
+        transform: rotate(35deg) translateX(6px);
+        opacity: 0;
+        transition:
+          opacity 0.15s ease,
+          transform 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+      }
+      &:hover {
+        color: var(--color-light);
+        padding-right: 38px;
+        -webkit-text-stroke: 0.5px #c0d7ea;
+        &::before {
+          opacity: 1;
+          transform: rotate(-35deg) translateX(0);
+          background: var(--color-light);
+        }
+        &::after {
+          opacity: 1;
+          transform: rotate(35deg) translateX(0);
+          background: var(--color-light);
+        }
+      }
+    }
+    a.sidebar__subnav-link {
+      padding-left: 10px;
+    }
+    /* Active/selected state */
+    &:has(.visible) {
+      border-bottom-color: var(--color-light);
+      a.sidebar__nav-link {
+        color: var(--color-light);
+        opacity: 0.5;
+        padding-right: 38px;
+        &::before {
+          opacity: 1;
+          transform: rotate(-35deg) translateX(0);
+          background: var(--color-light);
+        }
+        &::after {
+          opacity: 1;
+          transform: rotate(35deg) translateX(0);
+          background: var(--color-light);
+        }
+      }
+    }
+  }
+}
+
+@keyframes revealText {
+  to {
+    color: var(--color-light);
+  }
+}
+/* END - Right-aligned text + < cursor + underline on hover only - WB JV*/

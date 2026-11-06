@@ -1,0 +1,17 @@
+div.marketing-header-container {
+    margin-bottom: unset;
+}
+
+.tab-content {
+    @media (min-width: 1025px) {
+        padding: 48px 48px 0px 32px !important;
+    }
+}
+
+.tabs-container {
+    @media (min-width: 1025px) {
+        padding-left: 50px;
+        padding-right: 50px;
+        max-width: 1400px !important;
+    }
+}

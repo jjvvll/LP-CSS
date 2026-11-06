@@ -1,0 +1,80 @@
+/* START - Theme the side menu dropshadow */
+.sidemenu {
+    box-shadow: 0 0 20px 0 rgb(from var(--primary-dark) r g b / 80%);
+}
+
+/* END */
+
+/* START - Add background blur to sidemenu */
+.sidemenu {
+    backdrop-filter: blur(10px);
+}
+
+/* END */
+
+/* START - Reduce side menu font size on the desktop view */
+.sidemenu-navigation__link {
+    @media (min-width: 1025px) {
+        font-size: 18px;
+    }
+}
+
+/* END */
+
+/* START - Style the custom side menu contact information */
+div.sidemenu {
+    div.sidemenu__col-description {
+        ul {
+            display: flex;
+            flex-direction: row;
+            margin: unset;
+            gap: 48px;
+            font-size: 12px;
+
+            @media (max-width: 768px) {
+                flex-direction: column;
+                gap: 24px;
+            }
+
+            & > li {
+                margin-bottom: unset;
+                list-style-type: none;
+                display: flex;
+                flex-direction: column;
+                gap: 16px;
+
+                & > strong {
+                    white-space: pre;
+                    font-weight: 600;
+                }
+
+                & > ul {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 0px;
+
+                    & > li {
+                        white-space: pre;
+                    }
+                }
+            }
+
+            a {
+                color: var(--typography-dark);
+                transition: 0.4s;
+                text-decoration: underline;
+                text-underline-offset: 4px;
+                text-decoration-color: var(--border-dark-inactive);
+                cursor: pointer;
+            }
+
+            a:hover,
+            a:focus {
+                color: var(--accent-dark);
+                text-decoration-color: var(--accent-dark);
+            }
+        }
+    }
+}
+
+/* END */

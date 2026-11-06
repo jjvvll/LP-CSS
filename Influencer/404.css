@@ -1,0 +1,6 @@
+/*Start - Fix width for buttons*/
+.btn {
+    min-width: 250px !important;
+}
+
+/*End*/

@@ -1,0 +1,6 @@
+/* START - Fix element not using the body font size */
+div.neighborhood-content {
+    font-size: var(--global-body-font-size);
+}
+
+/* END */

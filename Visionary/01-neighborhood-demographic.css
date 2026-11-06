@@ -1,0 +1,90 @@
+/* START - Fix title max width to one line title */
+.neighborhood-demographics__title {
+    max-width: 100%;
+}
+
+/* END */
+
+/* START - Uppercase pill buttons */
+.neighborhood-demographics-nav {
+    .neighborhood-demographics-nav__tab {
+        text-transform: var(--text-case);
+    }
+}
+
+/* END */
+
+/* START - Fix element extra bottom padding */
+.neighborhood-demographics-tabs__population {
+    padding-bottom: 0px;
+}
+
+/* END */
+
+/* START - Theme the neighborhbood demographics border color */
+.neighborhood-demographics-description,
+.neighborhood-demographics-tabs__overview-item,
+.neighborhood-demographics-tabs__item-section-overview:not(:last-child),
+.neighborhood-demographics-education__symbol {
+    border-color: var(--color-dark);
+}
+
+/* END */
+
+/* START - Theme the neighborhood demographics pill button */
+.neighborhood-demographics-nav__tab {
+    background-color: transparent;
+    border-color: var(--color-dark);
+    color: var(--color-dark);
+
+    &:hover,
+    &:is(.neighborhood-demographics-nav__tab--active) {
+        background-color: var(--color-dark);
+        border-color: var(--color-dark);
+        color: var(--color-light);
+    }
+}
+
+/* END */
+
+/* START - Theme the popup dialog */
+.neighborhood-demographics-tabs__overview-name--hint:after {
+    background: var(--color-dark);
+}
+
+.neighborhood-demographics-tabs__overview-hint,
+.neighborhood-demographics-tabs__overview-hint:after {
+    background: var(--color-dark);
+    color: var(--color-light);
+
+    & > * {
+        color: var(--color-light);
+    }
+}
+
+.neighborhood-demographics-tabs__overview-hint-title {
+    text-transform: var(--text-case);
+    font-weight: 700;
+}
+
+/* END */
+
+/* START - Theme the population bar */
+.neighborhood-demographics-tabs__population-age-bar {
+    background: var(--color-dark);
+}
+
+.neighborhood-demographics-tabs__age-hint {
+    p {
+        color: var(--color-light);
+    }
+}
+
+/* END */
+
+/* START - Uppercase the stats values */
+.neighborhood-demographics-tabs__overview-value {
+    text-transform: var(--text-case);
+}
+
+/* END */

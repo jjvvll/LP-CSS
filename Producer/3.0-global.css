@@ -1,0 +1,77 @@
+/* START - To make the button's padding consistent */
+.redesign {
+    .btn--small {
+        padding: 20px 46px;
+    }
+}
+
+.lp-btn {
+    padding: 20px 46px !important;
+}
+
+button.newsletter-signup__form-item {
+    line-height: 1;
+    font-weight: 700;
+}
+
+#modal-global-contact-us {
+    .contact-form {
+        .section-message {
+            form {
+                .submitButton {
+                    padding: 14px 20px;
+                }
+            }
+        }
+    }
+}
+
+/* END */
+
+/* START - Globally theme dropdown menu */
+div.custom-select {
+    div.custom-select-menu {
+        div.custom-select-content {
+            padding-top: 0px !important;
+            padding-bottom: 0px !important;
+            background: var(--color-light) !important;
+
+            button.custom-select-item {
+                color: var(--color-dark) !important;
+
+                &:hover,
+                &:is(.is-selected) {
+                    color: var(--color-light) !important;
+                    background: var(--color-dark) !important;
+                }
+            }
+        }
+    }
+}
+
+/* END */
+
+/* START - Globally fix gaps for the pagination numbers */
+div.pagination-container {
+    div.paginationjs {
+        div.paginationjs-pages {
+            ul {
+                gap: 16px;
+
+                li.paginationjs-prev,
+                li.paginationjs-next {
+                    margin-left: 0px;
+                    margin-right: 0px;
+                }
+
+                li.J-paginationjs-page {
+                    a {
+                        margin: 0px !important;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* END */

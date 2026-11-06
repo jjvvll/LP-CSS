@@ -1,0 +1,65 @@
+/* START - Add extra image to the element */
+.full-bleed-cta__container {
+    &:after {
+        content: "";
+        display: block;
+        width: 100%;
+        aspect-ratio: 4/3;
+        margin-top: 64px;
+        background: url("https://media-production.lp-cdn.com/cdn-cgi/image/format=auto,quality=85/https://media-production.lp-cdn.com/media/700157de-60e7-4da1-822f-354af87eb39a");
+        background-size: cover;
+    }
+}
+
+/* END */
+
+/* START - Theme pre-title underline */
+div.full-bleed-cta__title-group {
+    h2.full-bleed-cta__title,
+    p.full-bleed-cta__pre-title {
+        &:before {
+            border-color: var(--accent-dark);
+        }
+    }
+}
+
+/* END */
+
+/* START - Adjust the header and description width */
+div.full-bleed-cta__title-group {
+    max-width: 100%;
+
+    h4.full-bleed-cta__subtitle {
+        margin-bottom: unset;
+    }
+}
+
+div.full-bleed-cta__description {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+
+    & > * {
+        &:last-child {
+            margin-bottom: 0px;
+        }
+    }
+}
+
+/* END */
+
+/* START - Adjust the title font size on mobile */
+.full-bleed-cta__title {
+    @media (max-width: 768px) {
+        font-size: var(--lp-h3-font-size);
+    }
+}
+
+/* END */
+
+/* START - Adjust the element image aspect ratio */
+.full-bleed-cta__image {
+    aspect-ratio: 1/1;
+}
+
+/* END */

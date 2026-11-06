@@ -1,0 +1,55 @@
+/*START - adjust padding*/
+@media (max-width: 768px) {
+    .pagination-container li {
+        margin: 30px 12px 0 !important;
+    }
+}
+
+.pagination-container {
+    margin-top: 26px !important;
+}
+
+div.testimonials-block {
+    padding-top: 96px;
+
+    @media (max-width: 768px) {
+        padding-top: 64px;
+    }
+}
+
+.basic-margins {
+    margin-bottom: 96px;
+
+    @media (max-width: 768px) {
+        margin-bottom: 64px;
+    }
+}
+
+/*END*/
+
+/*START - change pagination color */
+.paginationjs .paginationjs-pages {
+
+    .paginationjs-next a,
+    .paginationjs-prev a {
+        color: #DFD6C6;
+        background-color: transparent !important;
+        border-color: #DFD6C6 !important;
+        transition: 0.1s;
+
+        &:hover {
+            color: #DFD6C6;
+            background-color: #DFD6C6 !important;
+            border-color: #fff !important;
+            transition: 0.1s;
+        }
+    }
+}
+
+/*END - change pagination color*/
+
+.btn-more {
+    &:hover {
+        color: #DFD6C6;
+    }
+}

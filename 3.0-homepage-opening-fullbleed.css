@@ -1,0 +1,28 @@
+/* START - Adjust the element content width */
+div.lp-container {
+    div.lp-title-group {
+        max-width: 100%;
+
+        p.opening-pretitle {
+            font-style: unset;
+            max-width: unset;
+        }
+
+        h1.opening-title {
+            max-width: 100%;
+        }
+
+        p.opening-description {
+            max-width: unset;
+        }
+    }
+}
+
+/* END */
+
+/* START - Adjust the element pre-title color */
+p.lp-text--pretitle {
+    color: var(--typography-light) !important;
+}
+
+/* END */

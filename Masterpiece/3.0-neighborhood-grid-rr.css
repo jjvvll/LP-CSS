@@ -1,0 +1,74 @@
+/* START - Fullbleed neighborhood grid if only 1 neighborhood */
+div.collection {
+    & > a:nth-child(1):is(:last-child) {
+        @media (min-width: 769px) {
+            width: 100%;
+
+            div.img-wrap {
+                height: auto;
+                aspect-ratio: 16/7;
+            }
+        }
+    }
+}
+
+/* END */
+
+/* START - Add watermark */
+a.item {
+    &:hover {
+        div.img-wrap {
+            &:before {
+                opacity: 0.4;
+            }
+
+            &:after {
+                opacity: 0.75;
+            }
+        }
+    }
+
+    div.img-wrap {
+        position: relative;
+
+        &:before {
+            content: '';
+            background: #000000;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            height: 100%;
+            transition: 0.25s;
+            opacity: 0;
+            z-index: 1;
+        }
+
+        &:after {
+            content: '';
+            background: url(https://media-production.lp-cdn.com/cdn-cgi/image/format=auto,quality=85,fit=scale-down,width=960/https://media-production.lp-cdn.com/media/cm3m4yi94bnimregdsxz);
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            height: 100%;
+            transition: 0.25s;
+            opacity: 0;
+            z-index: 2;
+            background-size: 80%;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+    }
+
+    h5.lp-h5,
+    div:has(span) {
+        text-align: center;
+    }
+
+    div:has(span) {
+        font-family: var(--global-primary-font-family);
+    }
+}
+
+/* END */

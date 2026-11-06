@@ -1,0 +1,15 @@
+/* Start - Theme icons background */
+.services__item {
+    .services__item-icon {
+        background-color: #fff !important;
+    }
+}
+
+/* End */
+
+/* Start - Adjust description width */
+.services__description {
+    max-width: 800px;
+}
+
+/* End */

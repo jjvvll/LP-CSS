@@ -1,0 +1,5 @@
+.video-icon {
+    &:before {
+        border-color: transparent transparent transparent #E97A2B !important;
+    }
+}

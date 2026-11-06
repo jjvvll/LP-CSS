@@ -1,0 +1,85 @@
+/* Start - Fix modal dimensions */
+.modal {
+    .content {
+        .text {
+            width: 100%;
+        }
+
+        .form {
+            width: 80%;
+            margin-bottom: 0px;
+        }
+        
+        @media only screen and (max-width: 768px) {
+            .text {
+                width: 100%;
+            }
+
+            .form {
+                width: 100%;
+            }
+        }
+    }
+}
+
+/* End */
+
+/* Start - Fix mobile button theme for subscribe */
+.subscribe {
+    .lp-btn {
+        &:before {
+            background-color: #fff;
+        }
+        
+        &:focus,
+        &:hover {
+            &:before {
+                background-color: #185770;
+            }
+        }
+    }
+}
+
+/* End */
+
+/* Start - Theme disclaimer link underline */
+.lp-disclaimer a {
+    position: relative !important;
+    color: #000 !important;
+    transition: 0.4s;
+    opacity: 1 !important;
+    text-underline-offset: 4px !important;
+    text-decoration: none !important;
+
+    &:hover {
+        color: #185770 !important;
+    }
+
+    &:before,
+    &:after {
+        transition: 0.4s;
+        text-decoration: none !important;
+        line-height: 1;
+        content: "" "";
+        height: 1px;
+        position: absolute !important;
+        bottom: 0;
+        left: 0;
+    }
+
+    &:before {
+        width: 100% !important;
+        background-color: rgba(0, 0, 0, 0.1) !important;
+    }
+
+    &:after {
+        width: 0% !important;
+        background-color: #185770 !important;
+    }
+
+    &:hover:after {
+        width: 100% !important;
+    }
+}
+
+/* End */

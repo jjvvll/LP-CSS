@@ -1,0 +1,47 @@
+/* START - Add watermark */
+div.item {
+    &:hover {
+        a.item-wrapper {
+            &:before {
+                opacity: 0.75;
+            }
+        }
+    }
+
+    a.item-wrapper {
+        position: relative;
+
+        &:before {
+            display: block;
+            content: '';
+            height: 100%;
+            width: 100%;
+            background: url(https://media-production.lp-cdn.com/cdn-cgi/image/format=auto,quality=85,fit=scale-down,width=960/https://media-production.lp-cdn.com/media/cm3m4yi94bnimregdsxz);
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            background-position: center;
+            z-index: 2;
+            background-repeat: no-repeat;
+            background-size: 60%;
+            opacity: 0;
+            transition: 0.25s;
+        }
+    }
+
+    div.content-container {
+        bottom: 16px;
+        top: unset !important;
+        max-height: fit-content;
+
+        h3.neighborhood-name {
+            margin-bottom: 0px;
+        }
+
+        div.button-wrapper {
+            display: none;
+        }
+    }
+}
+
+/* END */

@@ -1,0 +1,93 @@
+ul.developments-image-slider {
+    max-width: 1400px;
+    padding-left: 80px;
+    padding-right: 80px;
+    margin: auto;
+    background: transparent;
+
+    @media (max-width: 768px) {
+        padding-left: unset;
+        padding-right: unset;
+    }
+
+    div.slick-list {
+        li.slick-slide {
+            img {
+                height: unset;
+                aspect-ratio: 16/9;
+
+                @media (max-width: 768px) {
+                    aspect-ratio: 4/3;
+                }
+            }
+        }
+    }
+}
+
+button.slick-arrow {
+    border-color: #000;
+    border-radius: 50%;
+    border-width: 1px;
+    background: transparent;
+
+    &:hover {
+        background: #000;
+
+        &:before {
+            filter: brightness(0) saturate(100%) invert(100%) sepia(6%) saturate(5868%) hue-rotate(261deg) brightness(125%) contrast(105%);
+        }
+    }
+
+    &:is(.slick-prev) {
+        transform: rotate(180deg);
+        left: 0px;
+
+        @media (max-width: 1025px) {
+            left: 14px;
+        }
+    }
+
+    &:is(.slick-next) {
+        right: 0px;
+
+        @media (max-width: 1025px) {
+            right: 14px;
+        }
+    }
+
+    &:before {
+        content: '';
+        border: none;
+        position: absolute !important;
+        top: 0%;
+        left: 50%;
+        width: 17px;
+        height: 100%;
+        transform: translate(-50%, 0%);
+        background-image: url(https://res.cloudinary.com/luxuryp/images/f_auto,q_auto/cqqjubnjsdfukejwsn16/arrow-right);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        background-color: transparent;
+        filter: brightness(0) saturate(100%) invert(0%) sepia(2%) saturate(0%) hue-rotate(188deg) brightness(104%) contrast(104%);
+        opacity: 1;
+    }
+
+    @media (max-width: 768px) {
+        border-color: #FFF;
+        background: transparent;
+
+        &:before {
+            filter: brightness(0) saturate(100%) invert(100%) sepia(6%) saturate(5868%) hue-rotate(261deg) brightness(125%) contrast(105%);
+        }
+
+        &:hover {
+            border-color: #FFF;
+            background: #FFF;
+
+            &:before {
+                filter: brightness(0) saturate(100%) invert(0%) sepia(2%) saturate(0%) hue-rotate(188deg) brightness(104%) contrast(104%);
+            }
+        }
+    }
+}

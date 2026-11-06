@@ -1,0 +1,60 @@
+/* START - Adjust element layout */
+div.custom-slider {
+    div.custom-slider__top-part {
+        margin-bottom: 48px;
+
+        @media (max-width: 768px) {
+            margin-bottom: unset;
+        }
+
+        div.custom-slider__arrows {
+            gap: 16px;
+        }
+    }
+
+    div.custom-slider__slider {
+        margin-left: auto;
+        margin-right: auto;
+
+        @media (max-width: 768px) {
+            width: 100%;
+        }
+
+        div.custom-slider__list {
+            height: fit-content !important;
+        }
+    }
+}
+
+div.custom-slider__mobile-arrows {
+    width: 100%;
+    justify-content: center;
+    margin-top: 48px;
+    gap: 16px;
+
+    button.lp-arrow {
+        margin-right: 0px;
+    }
+}
+
+/* END */
+
+/* START - Update element theme */
+h2.custom-slider__title {
+    &:after {
+        background-color: var(--border-light-inactive);
+    }
+}
+
+div.custom-slider__slide-top {
+    div.custom-slider__slide-count,
+    span.custom-slider__slide-title {
+        color: var(--typography-dark);
+    }
+}
+
+div.custom-slider__slide-body {
+    color: var(--typography-dark);
+}
+
+/* END */

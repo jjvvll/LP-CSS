@@ -1,0 +1,42 @@
+/* START - Adjust dimensions of background image */
+.property-agent__bg-container {
+    width: 100%;
+    height: 100%;
+}
+
+.property-agent__bg-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* END */
+
+/* START - Theme the property agent title underline */
+h2.property-agent__title {
+    &:before {
+        border-color: var(--accent-dark);
+    }
+}
+
+/* END */
+
+/* START - Adjust the property agent name text case */
+.property-agent__name {
+    text-transform: var(--text-case);
+}
+
+/* END */
+
+/* START - Theme the phone number link */
+.property-agent__phone {
+    transition: 0.4s;
+    --lp-color-secondary-gray-600: var(--border-dark-inactive);
+
+    &:hover {
+        --lp-color-primary-accent: var(--accent-dark);
+        opacity: 0.5;
+    }
+}
+
+/* END */

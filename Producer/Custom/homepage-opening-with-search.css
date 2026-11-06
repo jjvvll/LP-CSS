@@ -1,0 +1,108 @@
+/* START RR1 - Customize opening element with search */
+div.opening-with-search {
+  @media (max-width: 768px) {
+    padding-top: 96px;
+  }
+}
+
+div.container {
+  max-width: 1480px;
+}
+
+div.lp-title-group {
+  &:after {
+    content: "New York & New Jersey Real Estate Experts";
+    font-family: var(--global-secondary-font-family);
+    font-weight: 300;
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-top: 97px;
+    display: block;
+    text-align: left;
+  }
+
+  @media (max-width: 768px) {
+    &:after {
+      margin-top: 40px;
+    }
+  }
+}
+
+div.opening__carousel {
+  position: relative;
+
+  &:after {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.25);
+    position: absolute;
+    right: calc(100% - 10em);
+    top: calc(100% + 42px);
+  }
+
+  @media (max-width: 768px) {
+    &:after {
+      top: calc(100% + 16px);
+    }
+  }
+
+  div.slick-track {
+    div.title-item {
+      display: flex;
+      flex-direction: column-reverse;
+
+      h1.opening-title {
+        margin: 0px;
+        text-align: left;
+      }
+
+      div.opening-description {
+        font-family: var(--global-secondary-font-family);
+        font-weight: 300;
+        font-size: 18px;
+        margin-bottom: 32px;
+        text-align: left;
+
+        @media (max-width: 768px) {
+          margin-bottom: 0px;
+        }
+      }
+    }
+  }
+}
+
+div.opening-with-search {
+  div.search-form {
+    width: 100%;
+    justify-content: start;
+    align-items: center;
+    gap: 16px;
+
+    div.search-wrapper {
+      margin: 0px;
+
+      div.search-input-container {
+        background: transparent;
+        border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+        padding-left: 0px;
+        padding-right: 0px;
+
+        input {
+          color: #ffffff;
+
+          &::placeholder {
+            color: #ffffff;
+          }
+        }
+      }
+    }
+
+    button.search-button {
+      margin: 0px;
+    }
+  }
+}
+
+/* END */

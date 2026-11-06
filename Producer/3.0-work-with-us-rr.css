@@ -1,0 +1,58 @@
+/* START - Align the WWU text contents */
+div.work-with-us {
+    div.container {
+        max-width: 1400px !important;
+        align-items: start !important;
+
+        & > h2 {
+            &:after {
+                left: 0px;
+                margin-left: 0px;
+            }
+        }
+
+        & > p {
+            max-width: 560px;
+            text-align: left;
+        }
+    }
+}
+
+/* END */
+
+/* START - Adjust minimum width of buttons */
+div.btn-container {
+    a.btn {
+        min-width: 200px;
+    }
+}
+
+/* END */
+
+/* START - Center client image on mobile */
+/* Note: Manually adjust the values */
+div.work-with-us {
+    @media (max-width: 768px) {
+        &:before {
+            background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("https://res.cloudinary.com/luxuryp/images/w_1920,c_limit,f_auto,q_auto/ke5qwljurlvtpvwew7ad/wwu") !important;
+            background-position-x: 75% !important;
+        }
+    }
+}
+
+/* END */
+
+
+/* START - Add parallax effect to the background image */
+& {
+    background-attachment: fixed;
+}
+
+/* END */
+
+/* START - Adjust background image vertical position */
+& {
+    background-position-y: 75%;
+}
+
+/* END */

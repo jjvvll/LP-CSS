@@ -1,0 +1,43 @@
+/* START - Customize the gallery style menu */
+div.gallery-component {
+    div.gallery-component__row {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 16px;
+
+        @media (max-width: 768px) {
+            display: flex;
+        }
+
+        & > div.gallery-component__col {
+            margin: 0px;
+            padding: 0px;
+            max-width: unset;
+
+            a.gallery-card {
+                min-height: 480px;
+
+                @media (max-width: 768px) {
+                    min-height: unset;
+                    aspect-ratio: 1/1;
+                }
+
+                &:before {
+                    display: none;
+                }
+
+                &:after {
+                    padding-top: unset;
+                }
+            }
+            
+            &:nth-child(5n) {
+                @media (min-width: 769px) {
+                    grid-column: span 2;
+                }
+            }
+        }
+    }
+}
+
+/* END */

@@ -1,0 +1,70 @@
+/* START - Theme the fair housing link elements */
+div.fair-housing {
+  div.icon {
+    svg {
+      path {
+        stroke: var(--color-dark);
+      }
+    }
+  }
+
+  div.content {
+    line-height: 1;
+    align-content: center;
+
+    a {
+      position: relative !important;
+      color: var(--color-light) !important;
+      transition: 0.4s;
+      font-weight: 400;
+      text-decoration: none !important;
+
+      &:hover {
+        color: var(--color-light) !important;
+      }
+
+      &:before,
+      &:after {
+        transition: 0.4s;
+        text-decoration: none !important;
+        line-height: 1;
+        content: "" "";
+        height: 1px;
+        position: absolute !important;
+        bottom: 0;
+        left: 0;
+        opacity: 1;
+      }
+
+      &:before {
+        width: 100% !important;
+        background-color: var(--color-dark) !important;
+        opacity: 0.5;
+      }
+
+      &:after {
+        width: 0% !important;
+        background-color: var(--color-dark) !important;
+      }
+
+      &:hover:after {
+        width: 100% !important;
+      }
+
+      @media only screen and (max-width: 768px) {
+        text-decoration: underline !important;
+
+        &:before,
+        &:after {
+          display: none;
+        }
+
+        &:hover {
+          color: var(--color-dark);
+        }
+      }
+    }
+  }
+}
+
+/* END */

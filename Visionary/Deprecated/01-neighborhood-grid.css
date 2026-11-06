@@ -1,0 +1,43 @@
+/* START - Fix unecessary padding or margins */
+.neighborhood-grid__item {
+    padding-bottom: 0px;
+}
+
+/* END */
+
+/* START - Fix extra spacing of the neighborhood grid content if description is empty */
+.neighborhood-grid__text:has(.neighborhood-grid__desc:empty) {
+    min-height: auto;
+}
+
+/* END */
+
+/* START - One-line neighorhood grid card description text */
+.neighborhood-grid__desc {
+    width: 100%;
+    line-clamp: 1;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+}
+
+/* END */
+
+/* START - Theme neighorhood grid card horizontal border */
+.neighborhood-grid__text {
+    border-bottom: 1px solid #F00;
+}
+
+/* END */
+
+/* START - Theme neighorhood grid read more button */
+.neighborhood-grid__link {
+    color: #F00 !important;
+}
+
+.neighborhood-grid__link:hover {
+    color: #0F0 !important;
+}
+
+/* END */

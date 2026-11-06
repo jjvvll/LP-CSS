@@ -1,0 +1,31 @@
+properties:
+  file.name:
+    displayName: Name
+  note.Status:
+    displayName: Completed
+views:
+  - type: table
+    name: 202511 - November
+    filters:
+      and:
+        - file.inFolder("Revisions Clients/2025/11")
+    order:
+      - file.name
+      - Round
+      - Status
+      - Date
+      - Salesforce
+    sort:
+      - property: file.name
+        direction: DESC
+      - property: Date
+        direction: DESC
+      - property: file.links
+        direction: DESC
+    columnSize:
+      file.name: 145
+      note.Status: 105
+      note.Date: 116
+    cardSize: 220
+  - type: table
+    name: View

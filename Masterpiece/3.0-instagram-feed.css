@@ -1,0 +1,44 @@
+/*START - fix IG padding when active*/
+div.lp-container {
+    padding-bottom: 296px;
+}
+
+@media only screen and (max-width: 768px) {
+    .lp-vertical-paddings {
+        padding-top: 51px !important;
+        padding-bottom: 31px !important;
+    }
+}
+
+h3,
+.lp-h3 {
+    font-size: 25px !important;
+}
+
+/*END*/
+
+/* Start - Reduced username size */
+.username-group {
+    align-items: center;
+    max-height: 20px;
+    
+    h5 {
+        font-size: 16px;
+        margin-bottom: 0px;
+        margin-top: 6px;
+    }
+    
+    svg {
+        height: 20px;
+    }
+}
+
+/* End */
+
+div.lp-container {
+    svg:not(:root) {
+        path {
+            fill: #fff !important;
+        }
+    }
+}

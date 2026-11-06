@@ -1,0 +1,51 @@
+/* START - Fix the element's grid dimension */
+.neighborhoods-slider {
+    @media (min-width: 769px) {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+/* END */
+
+/* START - Fix fullbleed neighborhood slider on mobile */
+.neighborhoods-slider {
+    background: #000;
+}
+
+.neighborhoods-slider__images:is(.neighborhoods-slider__images--fullwidth) {
+    @media (max-width: 768px) {
+        .neighborhoods-slider__card {
+            width: 100% !important;
+        }
+    }
+}
+
+/* END */
+
+/* START - Center pagination arrow */
+div.neighborhoods-slider {
+    grid-template-areas:
+    "title title title"
+    "arrows arrows arrows"
+    "cats cats cats"
+    "images images images"
+    "cta cta cta";
+
+    div.neighborhoods-slider__title-group {
+        h2.neighborhoods-slider__title {
+            width: 100%;
+            max-width: unset;
+            text-align: center;
+        }
+    }
+
+    div.neighborhoods-slider__arrows {
+        justify-content: center;
+
+        @media (max-width: 768px) {
+            margin-bottom: 32px;
+        }
+    }
+}
+
+/* END */

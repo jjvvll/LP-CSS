@@ -1,0 +1,14 @@
+/* Start - Adjust team grid tile to portrait */
+.data-container {
+    .item {
+        aspect-ratio: 337/464;
+        height: auto;
+        
+        .lp-text--label,
+        .bf-s {
+            color: #fff;
+        }
+    }
+}
+
+/* End */

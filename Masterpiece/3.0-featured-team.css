@@ -1,0 +1,52 @@
+/* START - Adjust the header width */
+div.lp-title-group {
+    max-width: unset;
+
+    h2.lp-title-group {
+        max-width: unset;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    p.lp-text--subtitle {
+        max-width: unset;
+    }
+}
+
+/* END */
+
+/* START - Theme the pagination arrow */
+div.arrows {
+    button.lp-arrow {
+        background: var(--accent-dark);
+        border-color: var(--accent-dark);
+
+        &:before {
+            border-color: var(--accent-light);
+        }
+
+        &:hover {
+            background: transparent;
+            border-color: var(--accent-dark);
+
+            &:before {
+                border-color: var(--accent-dark);
+            }
+        }
+    }
+}
+
+/* END */
+
+/* START - Center the cta button if no arrows displayed */
+div.arrows-box {
+    &:has(.arrows:empty) {
+        justify-content: center;
+    }
+}
+
+/* END */
+
+div.team-slide-info {
+    text-align: center;
+}

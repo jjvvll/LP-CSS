@@ -1,0 +1,122 @@
+/* START - Adjust element padding */
+div.lp-container {
+    @media (min-width: 1025px) {
+        padding-top: 268px;
+    }
+
+    @media (max-width: 768px) {
+        padding-top: 188px;
+    }
+}
+
+/* END */
+
+/* START - Fix portrait image creating extra bottom margin */
+div.img-wrapper {
+    img.portrait {
+        display: block;
+    }
+}
+
+/* END */
+
+/* Start - Theme license pill container */
+.license-wrapper {
+    border-color: #A49B8E;
+    color: #A49B8E;
+}
+
+/* End */
+
+/* Start - Theme the CTA link with arrow */
+.learn-more {
+    color: #000;
+
+    &:after {
+        background-color: #A49B8E;
+    }
+
+    &:before {
+        background-color: #fff;
+    }
+
+    &:hover {
+        &:after {
+            background-color: transparent;
+            border: 1px solid #A49B8E;
+        }
+
+        &:before {
+            background-color: #A49B8E;
+        }
+    }
+}
+
+/* End */
+
+/* Start - Theme contact info links */
+.contact-details {
+    a.info.bf-s {
+        color: #000 !important;
+
+        &:before {
+            background-color: rgba(0, 0, 0, 0.1) !important;
+        }
+
+        &:after {
+            background-color: #A49B8E !important;
+        }
+
+        &:hover {
+            color: #A49B8E !important;
+        }
+    }
+}
+
+/* End */
+
+/* Start - Remove unusual social icons border */
+.contact-group.socials {
+    .lp-socials {
+        li a {
+            &:before {
+                display: none;
+            }
+        }
+    }
+}
+
+/* End */
+
+/* Start - Fix image position issue */
+.agent-info {
+    .img-wrapper {
+        overflow: hidden;
+        min-height: unset;
+    
+        img {
+            position: relative;
+            bottom: unset;
+        }
+        
+        &:after {
+            display: none;
+            bottom: unset;
+            top: 0px;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
+        }
+    }
+}
+
+/* End */
+
+/* START - Remove bottom margin on mobile */
+.contact-details {
+    @media (max-width: 768px) {
+        margin-bottom: 0px !important;
+    }
+}
+
+/* END */

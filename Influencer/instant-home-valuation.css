@@ -1,0 +1,83 @@
+/*add padding bottom to see the loading*/
+@media only screen and (max-width: 768px) {
+    div.home-valuation .content {
+        padding-bottom: 45px;
+    }
+}
+
+div.loader {
+    bottom: -32px !important;
+    
+    .line {
+        background: #2A505D;
+    }
+}
+
+/*End*/
+
+/*START - fix button theme on mobile view*/
+div.home-valuation {
+    .search-wrapper {
+        .lp-btn {
+            &[disabled] {
+                opacity: .3;
+            }
+
+            @media (max-width: 768px) {
+                border: 2px solid #fff !important;
+                color: #2A505D !important;
+                background-color: #fff !important;
+
+                &:hover {
+                    background-color: transparent !important;
+                    color: #fff !important;
+                    border: 2px solid #fff !important;
+                }
+            }
+        }
+    }
+}
+
+/*bg image opacity*/
+div.home-valuation .background:after {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.3) 0%, #000 100%);
+}
+
+/*1st page checklist*/
+.home-valuation .benefits .benefit {
+    text-transform: uppercase;
+}
+
+/*button font size*/
+.lp-btn,
+.redesign .lp-btn {
+    font-size: 12px !important;
+}
+
+/*enter home address*/
+@media (max-width: 768px) {
+
+    input,
+    select:focus,
+    textarea {
+        font-size: 13px !important;
+    }
+}
+
+/*2nd page title*/
+.hv-modal__title {
+    font-size: 25px !important;
+}
+
+/*2nd page checklist*/
+.hv-checklist--small {
+    text-transform: uppercase;
+}
+
+/*2nd page form label*/
+.lp-input-group .lp-label {
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+/*END*/

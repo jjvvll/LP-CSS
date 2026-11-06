@@ -1,0 +1,8 @@
+/* START - Adjust the element's padding */
+div.lp-vertical-paddings {
+    @media (max-width: 768px) {
+        padding-top: unset;
+    }
+}
+
+/* END */

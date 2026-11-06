@@ -1,0 +1,11 @@
+{
+  "types": {
+    "aliases": "aliases",
+    "cssclasses": "multitext",
+    "tags": "tags",
+    "Round": "number",
+    "Status": "checkbox",
+    "MLS": "datetime",
+    "Date": "date"
+  }
+}

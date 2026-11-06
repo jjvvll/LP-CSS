@@ -1,0 +1,27 @@
+/* START - Adjust the element layout */
+div.lp-container {
+  max-width: 1348px;
+
+  div.detail-block {
+    & > * {
+      text-transform: var(--text-case);
+    }
+  }
+}
+
+/* END */
+
+/* START - Theme the social icons */
+a.lp-socials__link {
+  background: var(--color-dark);
+  border-color: var(--color-dark);
+  color: var(--color-light);
+
+  &:hover {
+    background: transparent;
+    border-color: var(--color-dark);
+    color: var(--color-dark);
+  }
+}
+
+/* END */

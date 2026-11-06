@@ -1,0 +1,23 @@
+/* START - Adjust the property card size */
+a.f-properties__item {
+    div.f-properties__item-info {
+        @media (min-width: 769px) {
+            width: 670px;
+        }
+    }
+
+    &:hover {
+        div.f-properties__item-info {
+            @media (min-width: 769px) {
+                width: 700px;
+            }
+        }
+    }
+}
+
+/* END */
+
+div.f-properties__item-features {
+    text-transform: uppercase;
+    font-family: var(--global-primary-font-family);
+}

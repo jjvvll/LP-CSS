@@ -1,0 +1,39 @@
+/* START - Adjust the element dimensions */
+div.container {
+    max-width: 1400px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-left: auto;
+    margin-right: auto;
+
+    @media (max-width: 768px) {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+}
+
+/* END */
+
+/* START - Adjust the element header title on mobile */
+h2.stats__title {
+    @media (max-width: 768px) {
+        font-size: var(--global-h3-font-size);
+    }
+}
+
+/* END */
+
+/* START - Adjust the element background overlay */
+div.stats__container.black-bg {
+    background: rgb(from var(--primary-dark) r g b / 60%);
+
+    div.stats__item {
+        &:after {
+            bottom: 30px;
+        }
+    }
+}
+
+/* END */

@@ -1,0 +1,95 @@
+/* START - Theme testimonials border */
+ul.collection {
+  li {
+    border-bottom: 1px solid var(--color-dark);
+  }
+}
+
+/* END */
+
+/* START - Theme testimonials icon */
+h6,
+h6.content {
+  text-transform: unset !important;
+}
+
+div.testimonials {
+  ul.collection {
+    .avatar {
+      background-color: var(--color-dark);
+      height: 154px;
+      width: 154px;
+
+      circle {
+        fill-opacity: 0;
+      }
+
+      path {
+        fill: var(--color-light);
+        fill-opacity: 1;
+      }
+    }
+  }
+}
+
+/* END */
+
+/* START - Theme read more button */
+div.read-more {
+  position: relative;
+  max-width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+
+  &:before,
+  &:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    bottom: 0px;
+    position: absolute;
+    transition: 0.4s;
+  }
+
+  &:before {
+    background: var(--color-dark);
+    width: 100%;
+  }
+
+  &:after {
+    background: var(--color-dark);
+    width: 0%;
+  }
+
+  span.link {
+    color: var(--color-dark);
+
+    &:before,
+    &:after {
+      display: none;
+    }
+  }
+
+  svg {
+    stroke: var(--color-dark);
+    margin-left: 8px;
+    margin-bottom: 4px;
+  }
+
+  &:hover {
+    &:after {
+      width: 100%;
+    }
+
+    span.link {
+      color: var(--color-dark);
+    }
+
+    svg {
+      stroke: var(--color-dark);
+    }
+  }
+}
+
+/* END */

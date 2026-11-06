@@ -1,0 +1,14 @@
+/* START - Adjust background image position */
+& {
+    background-position-y: 80%;
+}
+
+/* END */
+
+/* START - Fix the element height */
+& {
+    min-height: unset;
+    height: unset;
+}
+
+/* END */

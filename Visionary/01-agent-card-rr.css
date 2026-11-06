@@ -1,0 +1,50 @@
+/* START - Adjust agent card information position */
+.agent-card__heading {
+    @media (min-width: 1025px) {
+        margin-top: unset;
+        top: 65%;
+    }
+}
+
+/* END */
+
+/* START - Add client's logo */
+.agent-card__content {
+    &:after {
+        display: block;
+        content: '';
+        background: url(https://media-production.lp-cdn.com/cdn-cgi/image/format=auto,quality=85,fit=scale-down,width=320/https://media-production.lp-cdn.com/media/5fd90dd9-336b-4a95-b10e-8a52ea5f6bcb);
+        height: 300px;
+        width: 100%;
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        margin-top: 64px;
+        opacity: 0.25;
+    }
+
+    @media (max-width: 768px) {
+        &:after {
+            height: 150px;
+            opacity: 0.5;
+        }
+    }
+}
+
+/* END */
+
+/* START - Adjust agent headshot height */
+.agent-card__image-wrapper {
+    @media (min-width: 1025px) {
+        height: 800px;
+    }
+}
+
+/* END */
+
+/* START - Adjust the title font size */
+.agent-card__title {
+    font-size: var(--global-h3-font-size);
+}
+
+/* END */

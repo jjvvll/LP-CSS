@@ -1,0 +1,115 @@
+div.development-details-tabs {
+    padding-left: 50px;
+    padding-right: 50px;
+
+    @media (max-width: 768px) {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    ul.development-details-tabs-nav__list {
+        li.development-details-tabs-nav__item[data-section="description"] {
+            display: none;
+        }
+    }
+
+    div.development-details-tabs__wrapper {
+        div.development-details-tabs__content {
+            div.development-details-tabs__section {
+                div.development-details-tabs-description {
+                    div.development-details-tabs-description__text-container {
+                        display: flex;
+                        flex-direction: column;
+
+                        div.development-details-tabs-description__text-block {
+                            max-width: unset;
+                        }
+                    }
+                }
+            }
+
+            div.development-details-tabs__section[data-section="overview"] {
+                div.development-details-tabs-table {
+                    div.development-details-tabs-table__content {
+                        div.development-details-tabs-copy {
+                            div.development-details-tabs-copy__item {
+                                padding-left: unset;
+                                padding-right: unset;
+
+                                & * {
+                                    font-weight: normal;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            div.development-details-tabs__section[data-section="amenities"] {
+                div.development-details-tabs-table {
+                    div.development-details-tabs-table__content {
+                        div.development-details-tabs-copy {
+                            div.development-details-tabs-copy__item {
+                                padding-left: unset;
+
+                                div.development-details-tabs-copy__title {
+                                    width: 100%;
+                                    font-weight: normal;
+
+                                    &:before {
+                                        display: none;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            div.development-details-tabs__section[data-section="downloads"] {
+                div.development-details-tabs-files {
+                    div.development-details-tabs-files__items {
+                        ul.development-details-tabs-files__list {
+                            li.development-details-tabs-files__file {
+                                padding-left: unset;
+                                padding-right: unset;
+
+                                span.development-details-tabs-files__file-name {
+                                    font-weight: normal;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    div.development-details-tabs__social-share {
+        span.development-details-tabs__social-share-label {
+            display: none;
+        }
+
+        ul.development-details-tabs__socials {
+            gap: 16px;
+
+            li {
+                padding: unset;
+            }
+        }
+    }
+}
+
+aside.development-details-tabs-schedule-tour {
+    &:not(:has(div.development-details-tabs-schedule-tour__contact > *)) {
+        div.development-details-tabs-schedule-tour__title-group {
+            margin-bottom: unset;
+        }
+    }
+
+    div.development-details-tabs-schedule-tour__title-group {
+        p.lp-text--pretitle {
+            text-transform: uppercase;
+        }
+    }
+}

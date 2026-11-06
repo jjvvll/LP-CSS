@@ -1,0 +1,335 @@
+/*START - HEADER STYLE WB JV*/
+
+/* START - Resize the header navigation logo */
+nav#global-navbar {
+    a.logo {
+        height: auto;
+        width: 100%;
+        max-width: 300px;
+
+        @media (max-width: 768px) {
+            max-width: 240px;
+            width: auto;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+/* END */
+
+/* START - Adjust the header navigation displayed logo */
+nav#global-navbar {
+    &:not(.scroll) {
+        div.header__logo {
+            a.logo {
+                img.logo__img:is(.dark) {
+                    display: none;
+                }
+
+                img.logo__img:is(.light) {
+                    display: block;
+                }
+            }
+        }
+    }
+
+    &:is(.scroll) {
+        div.header__logo {
+            a.logo {
+                img.logo__img:is(.dark) {
+                    display: block;
+                }
+
+                img.logo__img:is(.light) {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+/* END */
+
+/* START - Adjust the header navigation layout */
+nav#global-navbar {
+    transform: unset !important;
+
+    div.header {
+        transition: 0.4s;
+    }
+
+    div.header__left,
+    div.header__right {
+        gap: 24px;
+
+        ul.navigation {
+            gap: 24px;
+
+            @media (max-width: 1366px) {
+                gap: 32px;
+            }
+
+            li.navigation__item {
+                padding-left: 0px;
+                text-transform: uppercase;
+
+                &:is(.sub-nav-container) {
+                    a.navigation__link {
+                        padding-left: 0px;
+                    }
+                }
+
+                &:not(.sub-nav-container) {
+                    a.navigation__link {
+                        padding-left: 0px;
+                        padding-right: 0px;
+                    }
+                }
+
+                a.navigation__link {
+                    font-size: var(--global-body-font-size);
+                    padding-bottom: 8px;
+                    padding-top: 8px;
+
+                    @media (max-width: 1366px) {
+                        font-size: 14px;
+                    }
+                }
+
+                ul.sub-nav {
+                    li.sub-nav__item {
+                        a.sub-nav__link {
+                            max-width: unset;
+                        }
+                    }
+                }
+            }
+        }
+
+        button.hamburger-component {
+            margin-left: 0px;
+        }
+    }
+}
+
+/* END */
+
+/* START - Adjust the header navigation theme */
+nav#global-navbar {
+    ul.sub-nav {
+        li.sub-nav__item {
+            a.sub-nav__link {
+                color: var(--color-dark);
+                background: var(--color-light);
+                transition: 0.25s;
+                font-size: var(--global-body-font-size);
+
+                &:hover {
+                    color: var(--color-light);
+                    background: var(--color-dark);
+                }
+            }
+        }
+    }
+
+    div.header {
+        div.header__container {
+            @media (max-width: 769px) {
+                padding-left: unset;
+                padding-right: unset;
+            }
+        }
+    }
+
+    &:not(.scroll) {
+        background: transparent !important;
+
+        div.header {
+            padding: 16px;
+
+            li.navigation__item {
+                &:after {
+                    border-color: var(--color-light);
+                }
+            }
+
+            a.navigation__link {
+                color: var(--color-light);
+
+                &:after {
+                    background: var(--color-light);
+                }
+
+                &:hover {
+                    color: var(--color-light);
+
+                    &:after {
+                        background: var(--color-light);
+                    }
+                }
+            }
+
+            button.hamburger-component {
+                circle {
+                    fill: var(--color-light);
+                }
+
+                rect {
+                    fill: var(--color-dark); //The element inside circle
+                }
+
+                &:hover {
+                    circle {
+                        fill: var(--color-light);
+                    }
+
+                    rect {
+                        fill: var(--color-dark);
+                    }
+                }
+            }
+        }
+    }
+
+    &:is(.scroll) {
+        background: var(--color-dark) !important;
+
+        div.header {
+            @media (min-width: 769px) {
+                padding: 24px 24px;
+            }
+
+            @media (max-width: 768px) {
+                padding: 16px;
+            }
+
+            li.navigation__item {
+                &:after {
+                    border-color: var(--color-light);
+                }
+
+                &:hover {
+                    &:after {
+                        border-color: var(--color-light);
+                    }
+                }
+            }
+
+            a.navigation__link {
+                color: var(--color-light);
+
+                &:after {
+                    background: var(--color-light);
+                }
+
+                &:hover {
+                    color: var(--color-light);
+
+                    &:after {
+                        background: var(--color-light);
+                    }
+                }
+            }
+
+            button.hamburger-component {
+                circle {
+                    fill: var(--color-light);
+                    transition: 0.4s;
+                }
+
+                rect {
+                    fill: var(--color-dark); //element inside circle
+                }
+
+                &:hover {
+                    circle {
+                        fill: var(--color-light);
+                    }
+
+                    rect {
+                        fill: var(--color-dark);
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* END */
+
+/* START - Adjust the property details default header navigation */
+body:is(.page-property-details) {
+    nav#global-navbar {
+        &:not(.scroll) {
+            div.header__logo {
+                a.logo {
+                    img.logo__img:is(.dark) {
+                        display: block;
+                    }
+
+                    img.logo__img:is(.light) {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+
+    nav#global-navbar {
+        &:not(.scroll) {
+            background: transparent !important;
+
+            div.header {
+                li.navigation__item {
+                    &:after {
+                        border-color: var(--color-dark);
+                    }
+                }
+
+                a.navigation__link {
+                    color: var(--color-dark);
+
+                    &:after {
+                        background: var(--color-dark);
+                    }
+
+                    &:hover {
+                        color: var(--color-dark);
+
+                        &:after {
+                            background: var(--color-dark);
+                        }
+                    }
+                }
+
+                button.hamburger-component {
+                    circle {
+                        fill: var(--color-light);
+                        transition: 0.4s;
+                    }
+
+                    rect {
+                        fill: var(--color-dark);
+                    }
+
+                    &:hover {
+                        circle {
+                            fill: var(--color-light);
+                        }
+
+                        rect {
+                            fill: var(--color-dark);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* END */
+/*END - HEADER STYLE WB JV*/

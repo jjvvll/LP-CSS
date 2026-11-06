@@ -1,0 +1,165 @@
+/* START - Hide slick arrows if listings is less than 3 */
+ul.slick-links-nav:has(.slick-hidden) {
+    opacity: 0.25;
+    pointer-events: none; 
+}
+
+/* END */
+
+/* START - Customize the properties card */
+li.featured-properties__item-cover {
+    div.featured-properties__item {
+        & > a {
+            div.featured-properties__img {
+                aspect-ratio: 1/1;
+                height: unset;
+            }
+
+            span.featured-properties__label {
+                max-width: fit-content;
+                padding: 0px;
+                background: transparent;
+                color: #000000;
+                font-weight: normal;
+                font-size: 12px;
+                opacity: 0.75;
+                left: unset;
+                top: unset;
+                bottom: 146px;
+                width: 100%;
+                max-width: unset;
+                text-align: left;
+
+                @media (max-width: 768px) {
+                    bottom: 142px;
+                }
+            }
+
+            div.featured-properties__text {
+                padding: 0px;
+                display: flex;
+                flex-direction: column;
+                gap: 8px;
+
+                @media (max-width: 768px) {
+                    gap: 4px;
+                }
+
+                & > * {
+                    text-align: left;
+                    margin: 0px;
+                }
+
+                h4.serif {
+                    font-size: var(--global-h3-font-size);
+                    line-height: 1;
+                    padding-top: 40px;
+                    padding-bottom: 8px;
+                    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+                    max-height: unset;
+
+                    @media (max-width: 768px) {
+                        margin-bottom: 4px;
+                    }
+                }
+
+                p {
+                    font-weight: normal;
+                    opacity: 0.75;
+
+                    @media (max-width: 768px) {
+                        font-size: 12px;
+                    }
+                }
+
+                h5 {
+                    font-size: var(--global-h4-font-size);
+                    font-family: var(--global-primary-font-family);
+                    font-weight: normal;
+                }
+            }
+        }
+    }
+}
+
+/* END */
+
+/* START - Change pagination link style to button style */
+div.featured-properties-section {
+    div.featured-properties-header {
+        ul.slick-links-nav {
+            display: flex;
+            flex-direction: row;
+            gap: 16px;
+            padding-top: 0px;
+            align-items: center;
+
+            &:has(.slick-hidden) {
+                display: none;
+            }
+
+            span.slick-arrow {
+                height: 48px;
+                width: 48px;
+                display: block;
+                border: 2px solid #1f1d18;
+                background: #1f1d18;
+                font-size: 0px;
+
+                &:before {
+                    border-bottom: 2px solid;
+                    border-left: 2px solid;
+                    content: '';
+                    display: block;
+                    height: 11px;
+                    width: 11px;
+                    left: 50%;
+                    position: absolute;
+                    top: 50%;
+                    background: transparent;
+                    border-color: #fff;
+                    opacity: 1;
+                }
+
+                &:after {
+                    display: none;
+                }
+
+                &:is(.prev) {
+                    &:before {
+                        transform: translate(calc(-50% + 2px), -50%) rotate(45deg) skew(4deg, 4deg);
+                    }
+                }
+
+                &:is(.next) {
+                    &:before {
+                        transform: translate(calc(-50% - 2px), -50%) rotate(-135deg) skew(4deg, 4deg);
+                    }
+                }
+
+                &:is(.slick-disabled) {
+                    opacity: 0.5;
+                }
+
+                &:not(.slick-disabled):hover {
+                    background: #454135;
+                    border-color: #454135;
+
+                    &:before {
+                        border-color: #FFF;
+                    }
+                }
+            }
+
+            li:has(.spacer) {
+                margin-left: 0px;
+
+                span.spacer {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+/* END */

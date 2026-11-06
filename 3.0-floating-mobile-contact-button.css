@@ -1,0 +1,181 @@
+/*START - Floating Button WB JV*/
+
+/* START - Fix z index of the container */
+div#global-mobile-contact {
+    z-index: 102;
+}
+
+/* END */
+
+/* START - Theme floating mobile contact buttons */
+.contact-form__content {
+    .lp-btn {
+        background: var(--color-dark) !important;
+        color: var(--color-light) !important;
+        border-color: var(--color-dark) !important;
+
+        &:hover {
+            background: transparent !important;
+            color: var(--color-dark) !important;
+        }
+    }
+}
+
+/* END */
+
+/* START - Theme the floating search button */
+div#global-mobile-contact {
+    a.search-btn {
+        background: var(--color-dark);
+
+        &:before {
+            color: var(--color-light);
+        }
+    }
+}
+
+/* END */
+
+/* Start - Theme disclaimer link */
+#global-mobile-contact {
+    .pop-up {
+        .lp-disclaimer a {
+            color: var(--color-dark) !important;
+
+            &:hover {
+                color: var(--color-dark) !important;
+            }
+        }
+    }
+}
+
+/* End */
+
+/* START - Theme the mobile contact form title */
+div#global-mobile-contact {
+    div.contact-form__container {
+        h3.lp-h3 {
+            color: var(--color-dark);
+        }
+    }
+}
+
+/* END */
+
+/* STAR - Floating Buton Theme input elements */
+div#global-mobile-contact {
+    .pop-up {
+        input,
+        textarea,
+        button.custom-select-toggle {
+            border-color: var(--color-dark);
+
+            &:focus {
+                border-color: var(--border-dark-active);
+            }
+
+            &:after {
+                border-color: var(--color-dark);
+            }
+        }
+
+        input,
+        textarea {
+            color: var(--color-dark);
+            -webkit-text-fill-color: var(--color-dark);
+
+            &::placeholder {
+                color: var(--color-dark) !important;
+                opacity: 0.5;
+                text-transform: var(--text-case);
+            }
+        }
+
+        button.custom-select-toggle {
+            text-transform: var(--text-case) !important;
+
+            &:is(.is-placeholder) {
+                /* color: rgb(from var(--color-dark) r g b / 50%); */
+                color: color-mix(in srgb, var(--color-dark) 50%, transparent);
+
+            }
+
+            &:not(.is-placeholder) {
+                color: var(--color-dark);
+            }
+        }
+
+        button.custom-select-item {
+            text-transform: var(--text-case) !important;
+        }
+    }
+}
+
+/* END */
+
+/* Start - Theme close button */
+#global-mobile-contact {
+    .pop-up {
+        .close-btn {
+            color: var(--color-dark);
+        }
+    }
+}
+
+/* End */
+
+/* Start - Floating Button Adjust form padding */
+div#global-mobile-contact {
+    div.pop-up {
+        @media (max-width: 768px) {
+            height: 100%;
+            border-radius: 0px;
+        }
+
+        div.lp-container {
+            padding: 64px;
+
+            @media only screen and (max-width: 768px) {
+                padding: 24px 24px;
+            }
+        }
+    }
+}
+
+/* End */
+
+/* Start - Add drop-shadow to the floating contact form */
+#global-mobile-contact {
+    .pop-up {
+        box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.15);
+    }
+}
+
+/* End */
+
+/* START - Fix the floating contact modal on mobile */
+div#global-mobile-contact {
+    div.pop-up {
+        @media (max-width: 768px) {
+            max-height: 100vh;
+            overflow-y: auto;
+        }
+
+        div.lp-container {
+            @media (max-width: 1440px) {
+                padding: 40px;
+            }
+
+            textarea {
+                @media (max-width: 1440px) and (min-width: 769px) {
+                    min-height: unset;
+                    height: 46px;
+                }
+            }
+        }
+    }
+}
+
+/* END */
+
+/*START - Floating Button WB JV*/

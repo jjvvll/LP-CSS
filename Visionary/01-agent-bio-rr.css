@@ -1,0 +1,73 @@
+/* START - Add image under the socials */
+div.agent-card__content {
+    &:after {
+        content: '';
+        display: block;
+        height: 200px;
+        width: 100%;
+        background: url('https://media-production.lp-cdn.com/cdn-cgi/image/format=auto,quality=85/https://media-production.lp-cdn.com/media/55d02f42-94ea-4eda-b88e-2045ea90f9c1');
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        margin-top: 32px;
+    }
+
+    @media (max-width: 768px) {
+        &:after {
+            height: 100px;
+        }
+    }
+}
+
+/* END */
+
+/* START - Adjust social media icons ordering */
+.socials {
+    .lp-socials {
+        & > li:has(a[href*="https://www.facebook.com"]) {
+            order: 1;
+        }
+        
+        & > li:has(a[href*="https://www.instagram.com"]) {
+            order: 2;
+        }
+        
+        & > li:has(a[href*="https://www.linkedin.com"]) {
+            order: 3;
+        }
+        
+        & > li:has(a[href*="https://www.tiktok.com"]) {
+            order: 4;
+        }
+        
+        & > li:has(a[href*="https://www.yelp.com"]) {
+            order: 5;
+        }
+        
+        & > li:has(a[href*="https://www.tiktok.com"]) {
+            order: 6;
+        }
+        
+        & > li:has(a[href*="https://www.x.com"]) {
+            order: 7;
+        }
+        
+        & > li:has(a[href*="https://www.youtube.com"]) {
+            order: 8;
+        }
+        
+        & > li:has(a[href*="https://www.open.spotify.com"]) {
+            order: 9;
+        }
+        
+        & > li:has(a[href*="https://www.google.com"]) {
+            order: 10;
+        }
+        
+        & > li:has(a[href*="https://www.zillow.com"]) {
+            order: 11;
+        }
+    }
+}
+
+/* END */

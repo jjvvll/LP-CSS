@@ -1,0 +1,56 @@
+/* START - Adjust property intro padding */
+div.section {
+    div.lp-container {
+        @media (min-width: 1025px) {
+            padding-top: 268px;
+        }
+
+        @media (max-width: 768px) {
+            padding-top: 188px;
+        }
+    }
+}
+
+/* END */
+
+/*Start - Theme the navigation icons*/
+.link-icon {
+    cursor: pointer;
+    
+    &:before {
+        background-color: #A49B8E !important;
+    }
+    
+    &:hover {
+        color: #A49B8E !important;
+        
+        &:before {
+            background-color: #A49B8E !important;
+        }
+    }
+}
+
+/*End*/
+
+/*Start - Theme share button*/
+.box-share {
+    .box-share--list {
+        a {
+            color: #000 !important;
+
+            i:before {
+                background-color: #000 !important;
+            }
+            
+            &:hover {
+                color: #A49B8E !important;
+
+                i:before {
+                    background-color: #A49B8E !important;
+                }
+            }
+        }
+    }
+}
+
+/*End*/

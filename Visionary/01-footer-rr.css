@@ -1,0 +1,30 @@
+/* START - Center footer content on mobile */
+.footer {
+    @media (max-width: 768px) {
+        text-align: center;
+        
+        .footer__col-title,
+        .footer-navigation-title,
+        .footer-logo {
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .footer-socials {
+            justify-content: center;
+        }
+        
+        .footer-copyright {
+            flex-direction: column;
+        }
+    }
+}
+
+/* END */
+
+/* START - Invert luxury presence footer logo on dark background */
+.footer-logo:has(+ .footer-copyright) {
+    filter: invert(1);
+}
+
+/* END */

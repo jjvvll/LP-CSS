@@ -1,0 +1,12 @@
+/* START - Theme the blog content borders */
+div.blog-content {
+    div.holder {
+        div.wrapper {
+            div.info {
+                border-color: var(--border-dark-inactive);
+            }
+        }
+    }
+}
+
+/* END */

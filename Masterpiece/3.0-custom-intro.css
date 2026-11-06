@@ -1,0 +1,26 @@
+/* START - Adjust the element text contents */
+div.lp-title-group {
+    max-width: unset;
+
+    p.lp-text--pretitle {
+        font-style: unset;
+        font-weight: unset;
+        text-transform: initial;
+        font-size: var(--global-body-font-size);
+    }
+
+    h1.lp-h2 {
+        font-size: var(--global-h1-font-size);
+
+        @media (max-width: 768px) {
+            font-size: 32px;
+        }
+    }
+
+    p.lp-text--subtitle {
+        font-size: var(--global-body-font-size);
+        max-width: 480px;
+    }
+}
+
+/* END */

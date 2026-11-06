@@ -1,0 +1,89 @@
+/* ----- AGENT DETAILS ----- */
+/* START - Fix element unidentified border bottom */
+.agent-details__item {
+    position: relative;
+
+    &:is(.agent-details__item--address),
+    &:is(.agent-details__item--license) {
+        &:before {
+            display: none;
+        }
+    }
+}
+
+/* END */
+
+/* START - Adjust contact details paddings */
+div.agent-details__cell {
+    padding-left: 0px;
+    padding-right: 0px;
+    align-items: center;
+}
+
+/* END */
+
+/* START - Adjust the agent details address text case */
+.agent-details__item--address {
+    text-transform: uppercase;
+}
+
+/* END */
+
+/* START - Theme contact details icons */
+span.lp-icon {
+    --lp-color-primary-accent: var(--color-dark);
+}
+
+/* END */
+
+/* START - Theme contact details labels */
+span.agent-details__label {
+    color: var(--color-dark);
+    opacity: 1;
+    max-height: fit-content;
+}
+
+/* END */
+
+/* START - Theme the agent details border */
+div.agent-details__cell {
+    border-bottom: 1px solid var(--color-dark);
+}
+
+/* END */
+
+/* START - Theme links hover effect */
+a.agent-details__item:before {
+    background: var(--color-dark);
+}
+
+a.agent-details__item:hover:before {
+    background: var(--color-dark);
+}
+
+.agent-details__item--address,
+.agent-details__item--license {
+    color: var(--color-dark);
+}
+
+/* END */
+
+/* START - Adjust the element padding */
+.agent-details__container {
+    padding-left: unset;
+    padding-right: unset;
+
+    @media (max-width: 1440px) {
+        padding-left: 62px;
+        padding-right: 62px;
+    }
+
+    @media (max-width: 768px) {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+}
+
+/* END */
+
+/* ----- AGENT DETAILS ----- */

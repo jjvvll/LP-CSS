@@ -1,0 +1,13 @@
+/* START - Fix element not using the body font size */
+*:not(h2):not(h3) {
+    font-size: var(--global-body-font-size) !important;
+}
+
+/* END */
+
+/* START - Theme the title borders */
+h3.features-amenities-title {
+    border-color: var(--color-dark);
+}
+
+/* END */

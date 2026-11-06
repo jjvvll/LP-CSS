@@ -1,0 +1,49 @@
+/* START - Adjust the element padding */
+.lp-container {
+    padding-top: 96px;
+    padding-bottom: 96px;
+
+    @media (max-width: 768px) {
+        padding-top: 64px;
+        padding-bottom: 64px;
+    }
+}
+
+/* END */
+
+/* START - Theme the items */
+ul.collection {
+    li {
+        padding-left: unset;
+        padding-right: unset;
+
+        &:not(:last-child) {
+            border-bottom: 1px solid var(--border-dark-inactive);
+        }
+
+        &:last-child {
+            padding-bottom: 0px;
+            border-bottom: 0px;
+        }
+    }
+}
+
+/* END */
+
+/* START - Resize H4 title into H3 */
+h4 {
+    font-size: var(--global-h3-font-size);
+
+    @media (max-width: 768px) {
+        font-size: var(--global-h5-font-size);
+    }
+}
+
+/* END */
+
+/* START - Fix element not using the body font size */
+ul.collection {
+    font-size: var(--global-body-font-size);
+}
+
+/* END */

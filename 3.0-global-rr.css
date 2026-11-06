@@ -1,0 +1,114 @@
+/* START - Make the first letter of title uppercase only */
+h1,
+.lp-h1,
+h2,
+.lp-h2,
+h3,
+.lp-h3,
+h4,
+.lp-h4,
+h5,
+.lp-h5 {
+    display: block;
+    text-transform: lowercase !important;
+
+    &::first-letter {
+        text-transform: uppercase !important;
+    }
+}
+
+/* END */
+
+/* START - Add a new logo to the social icons globally */
+ul.lp-socials {
+    a.socials__link,
+    a.lp-socials__link {
+        &[href*="https://www.sothebysrealty.com/"] {
+            span {
+                display: none;
+            }
+
+            &:before {
+                content: "";
+                height: 18px;
+                width: 18px;
+            }
+        }
+
+        &[href*="https://www.sothebysrealty.com/"] {
+            &:before {
+                mask-image: url("https://media-production.lp-cdn.com/media/1921cd06-ba15-407e-bb7b-9bfa65ff3bd5");
+                mask-position: center;
+                mask-size: contain;
+                mask-repeat: no-repeat;
+            }
+        }
+    }
+
+    /* Dark Theme Button */
+    &:is(.social_icons-style-1) {
+        a.socials__link,
+        a.lp-socials__link {
+            &[href*="https://www.sothebysrealty.com/"] {
+                &:before {
+                    background: var(--accent-light);
+                }
+
+                &:hover {
+                    &:before {
+                        background: var(--accent-dark);
+                    }
+                }
+            }
+        }
+    }
+
+    /* Light Theme Button */
+    &:is(.social_icons-style-2) {
+        a.socials__link,
+        a.lp-socials__link {
+            &[href*="https://www.sothebysrealty.com/"] {
+                &:before {
+                    background: var(--accent-dark);
+                }
+
+                &:hover {
+                    &:before {
+                        background: var(--accent-light);
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* END */
+
+/* START - Adjust the button style globally */
+.btn,
+.lp-btn,
+.lp-arrow {
+    font-weight: normal !important;
+    border-width: 1px !important;
+
+    &:before,
+    &:after {
+        border-right-width: 1px !important;
+        border-top-width: 1px !important;
+    }
+}
+
+div.pagination-container {
+    ul > li {
+        a {
+            border-width: 1px !important;
+            font-weight: normal !important;
+
+            &:before {
+                border-width: 1px !important;
+            }
+        }
+    }
+}
+
+/* END */

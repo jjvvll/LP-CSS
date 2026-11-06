@@ -1,0 +1,15 @@
+/* START - Sample edit */
+body {
+    div.uwy {
+        div.userway_buttons_wrapper[style="left: calc(-25px + 100vw) !important;"] {
+            left: unset !important;
+            top: unset !important;
+            width: 44px !important;
+            bottom: 16px;
+            right: 16px !important;
+            transform: translate(-32px, -0%) !important;
+        }
+    }
+}
+
+/* END */

@@ -1,0 +1,14 @@
+/* START - Remove extra vertical spacings */
+div.property-map {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+/* END */
+    
+/* START - Theme color of property map address */
+div.property-map__address {
+    color: #000;
+}
+
+/* END */

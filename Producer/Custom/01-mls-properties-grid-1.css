@@ -1,0 +1,63 @@
+div.lp-container {
+    max-width: unset;
+    padding-left: unset;
+    padding-right: unset;
+}
+
+div.properties-grid {
+    div.data-container {
+        .properties-grid__item {
+            padding: unset;
+
+            .lp-listing-card {
+                margin-bottom: unset;
+                position: relative;
+
+                .listing-card__img-wrap {
+                    padding: unset;
+                    aspect-ratio: 1/1;
+                }
+
+                .listing-card__info {
+                    background: linear-gradient(0deg,rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 50%, rgba(0, 0, 0, 0) 100%);;
+                    position: absolute;
+                    bottom: 0px;
+                    z-index: 2;
+                    height: 100%;
+                    color: #FFFFFF;
+                    align-content: end;
+
+                    .listing-card__price--sales {
+                        font-size: var(--global-h3-font-size);
+                    }
+
+                    .listing-card__logo {
+                        margin-bottom: 10px;
+
+                        img {
+                            filter: brightness(0) saturate(100%) invert(99%) sepia(77%) saturate(5762%) hue-rotate(184deg) brightness(125%) contrast(100%);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.properties-grid__footer {
+    padding-top: 48px;
+}
+
+div.listing-card__status {
+    div.listing-card__label,
+    div.listing-card__mls-key {
+        background-color:#998543;
+        color: #FFFFFF;
+        text-transform: uppercase;
+        font-weight: 400;
+    }
+}
+
+div.listing-card__attribution {
+    background-color: rgb(from #998543 r g b / 75%);
+}

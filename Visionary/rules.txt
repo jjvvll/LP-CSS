@@ -1,0 +1,50 @@
+Visionary Do's
+
+Note: For Magic CSS, use SASS settings
+
+Global CSS
+1. Use the 'lp-' prefix
+
+Per Elements CSS
+1.  Use BEM CSS Classes class-name class-name__child
+    Example: 
+    1.  text-grid text-grid__title
+        ex: 
+        .text-grid {
+            &__title {
+                properties...
+            }
+        }
+
+    2.  text-grid-scenes text-grid-scenes__scene
+        ex: 
+        .text-grid-scenes {
+            &__scene {
+                properties...
+            }
+        }
+
+2.  For added contents with need of CSS customization,
+    always add a class name but in the format of BEM
+
+Visionary Dont's
+1.  Do not use JS classes 'js-'
+
+2.  Do not use nested selectors
+    ex:
+    1. Child Selector '>' or ' '
+    2. Sibling Selector '+'
+    3. Adjacent Selector '~'
+
+3.  Do not use naked HTML selectors
+    ex: p, h1, h2, input, etc.
+
+4.  Do not use '!important' keyword
+
+Visionary Exceptions
+
+1.  Usage of !important keyword
+    Elements that inject inline css using
+    javascript are allowed or included as
+    an exception to use the !important to
+    overwrite the injected CSS

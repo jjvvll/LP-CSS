@@ -1,0 +1,33 @@
+/* START - Remove the element extra dimensions and spacings */
+div.feed {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    
+    div.lp-container {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        
+        span.pre-title {
+            margin-bottom: 0px;
+        }
+
+        a.instagram-link {
+            h3.lp-h3 {
+                margin-top: 0px;
+                margin-bottom: 0px;
+            }
+        }
+    }
+}
+
+/* END */
+
+/* START - Theme the follow us/client text */
+div.feed {
+    span.pre-title {
+        color: var(--typography-light);
+    }
+}
+
+/* END */

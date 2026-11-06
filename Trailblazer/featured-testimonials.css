@@ -1,0 +1,14 @@
+/* START - Theme the pagination arrows */
+div.featured-testimonials {
+    button.slick-arrow {
+        &:before {
+            background: var(--accent-light);
+        }
+
+        &:after {
+            border-color: var(--accent-light);
+        }
+    }
+}
+
+/* END */

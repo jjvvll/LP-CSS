@@ -1,0 +1,96 @@
+/* ----- AGENTS SLIDER ----- */
+
+/* START - Adjust element title for small laptop screen */
+.agents-slider__title {
+    @media (min-width: 1025px) and (max-width: 1440px) {
+        font-size: var(--global-h2-font-size);
+    }
+}
+
+/* END */
+
+/* START - Adjust the element layout */
+.agents-slider__wrapper {
+    @media (min-width: 1025px) {
+        gap: 64px;
+    }
+}
+
+.agents-slider__heading {
+    max-width: 440px;
+}
+
+.agents-slider__description {
+    opacity: 1;
+}
+
+.agents-slider__first-name,
+.agents-slider__last-name {
+    text-transform: var(--text-case);
+}
+
+.agents-slider__position {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    max-width: 100%;
+
+    span.agents-slider__icon {
+        width: 14px;
+        display: block;
+    }
+}
+
+/* END */
+
+/* START - Theme the agent's position */
+.agents-slider__position {
+    border: 1px solid var(--accent-dark);
+    color: var(--typography-light);
+    background: var(--accent-dark);
+}
+
+.agents-slider__item {
+    &:hover {
+        .agents-slider__position {
+            border: 1px solid var(--accent-dark);
+            color: var(--accent-dark);
+            background: transparent;
+        }
+    }
+}
+
+/* END */
+
+/* START - Adjust the element pagination position */
+.agents-slider__slider-arrows {
+    top: unset;
+    bottom: 0px;
+}
+
+/* END */
+
+/* START - Fix the agent card image height in the dashboard preview */
+.agents-slider__image-wrapper {
+    height: auto;
+    aspect-ratio: 3/4;
+
+    @media (max-width: 768px) {
+        margin-left: unset;
+        margin-right: unset;
+        width: 100%;
+    }
+}
+
+/* END */
+
+/* START - Theme the element pre title underline */
+.agents-slider__pre-title {
+    &:before {
+        border-color: var(--primary-dark);
+    }
+}
+
+/* END */
+
+/* ----- AGENTS SLIDER ----- */

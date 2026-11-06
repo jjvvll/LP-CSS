@@ -1,0 +1,10 @@
+/* START - Resize title on mobile */
+div.lp-title-group {
+    h2.lp-h2 {
+        @media (max-width: 768px) {
+            font-size: 26px;
+        }
+    }
+}
+
+/* END */

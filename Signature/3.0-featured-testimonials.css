@@ -1,0 +1,44 @@
+div.top-row {
+    border-bottom-color: var(--border-light-inactive);
+}
+
+span.link-icon {
+    text-transform: var(--text-case);
+
+    &:before {
+        background: var(--accent-light);
+    }
+
+    &:hover {
+        &:before {
+            background: var(--accent-dark);
+        }
+
+        &:after {
+            background: var(--accent-light);
+        }
+    }
+}
+
+button.lp-arrow {
+    &:before {
+        background: var(--accent-light);
+        border-color: var(--accent-light);
+        transition: 0.4s;
+    }
+
+    &:after {
+        background: var(--accent-dark) !important;
+    }
+
+    &:hover {
+        &:before {
+            background: transparent;
+            border-color: var(--accent-light);
+        }
+
+        &:after {
+            background: var(--accent-light) !important;
+        }
+    }
+}

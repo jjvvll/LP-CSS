@@ -1,0 +1,86 @@
+/* START - Adjust the element layout */
+div.schedule__content {
+    @media (max-width: 1024px) {
+        padding-top: 96px;
+        padding-bottom: 96px;
+    }
+
+    @media (max-width: 768px) {
+        padding-top: 64px;
+        padding-bottom: 64px;
+    }
+}
+
+/* END */
+
+/* START - Center title and description */
+div.lp-title-group {
+    text-align: center;
+}
+
+/* END */
+
+/* START - Fix element not using the body font size */
+div.lp-text--subtitle  {
+    font-size: var(--global-body-font-size);
+}
+
+/* END */
+
+/* START - Theme the calendar date button */
+div.calendar__slide {
+    div.calendar__item {
+        transition: 0.4s;
+        border-color: var(--color-dark);
+        background: transparent;
+        color: var(--color-dark);
+
+        &:hover {
+            border-color: var(--color-dark);
+            background: var(--color-dark);
+            color: var(--color-light);
+        }
+    }
+
+    &:is(.selected) {
+        div.calendar__item {
+            border-color: var(--color-dark);
+            background: var(--color-dark);
+            color: var(--color-light);
+        }
+    }
+}
+
+/* END */
+
+/* START - Theme the calendar dropdown toggle */
+button.custom-select-toggle {
+    text-transform: var(--text-case);
+    color: var(--color-dark);
+    border-color: var(--color-dark);
+
+    &:after {
+        border-color: var(--color-dark);
+    }
+}
+
+/* END */
+
+/* START - Theme the button meeting options */
+label.type-selector__label {
+    border-color: var(--color-dark);
+    background: var(--color-dark);
+    color: var(--color-light);
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+
+/* END */
+
+/*START - Change the color of selector*/
+.type-selector__label {
+    color: var(--color-light);
+    background: var(--color-dark) !important;
+    border-color: var(--color-dark) !important;
+}
+/*END - Change the color of selector*/

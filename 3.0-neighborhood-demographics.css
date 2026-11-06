@@ -1,0 +1,130 @@
+/* START - Fix element not using the body font size */
+div.description {
+  font-size: var(--global-body-font-size);
+}
+
+/* END */
+
+/* START - Adjust the pill button text case */
+div.nav-tab {
+  span.nav-tab__tab {
+    text-transform: var(--text-case);
+  }
+}
+
+/* END */
+
+/* START - Decrease bottom padding */
+div.tab-section__content {
+  padding-bottom: 0px;
+}
+
+/* END */
+
+/* START - Adjust title max width*/
+div.lp-container {
+  h2.title {
+    max-width: 100%;
+  }
+}
+
+/* END */
+
+/* START - Theme subtitle name */
+div.tab {
+  p.overview-item__name {
+    color: var(--color-dark);
+  }
+}
+
+/* END */
+
+/* START - Theme pill buttons */
+div.lp-container {
+  div.nav-tab {
+    span.nav-tab__tab {
+      color: var(--color-dark);
+      background-color: transparent;
+      border-color: var(--color-dark);
+
+      &:hover,
+      &:is(.active) {
+        color: var(--color-light);
+        background-color: var(--color-dark);
+        border-color: var(--color-dark);
+      }
+    }
+  }
+}
+
+/* END */
+
+/* START - Theme element borders */
+div.lp-container {
+  div.description {
+    border-bottom: 1px solid rgba(from var(--color-dark) r g b / 0.5);
+  }
+
+  div.tabs-content {
+    div.tab-section__overview {
+      border-bottom: 1px solid rgba(from var(--color-dark) r g b / 0.5);
+
+      div.overview-item {
+        border-right: 1px solid rgba(from var(--color-dark) r g b / 0.5);
+
+        @media (max-width: 768px) {
+          border-right: 0px solid rgba(from var(--color-dark) r g b / 0.5);
+        }
+      }
+    }
+  }
+}
+
+/* END */
+
+/* START - Theme popup modal information */
+div.overview-item {
+  p.overview-item__name {
+    &:after {
+      background-color: var(--color-dark);
+    }
+
+    span.overview-item__hint {
+      background-color: var(--color-dark);
+      color: var(--color-light);
+
+      &:after {
+        background-color: var(--color-dark);
+      }
+    }
+  }
+}
+
+/* END */
+
+/* START - Theme age population bar */
+div.population-age__bar {
+  /* background-color: var(--color-dark); */
+  background-color: rgba(from var(--color-dark) r g b / 0.5);
+
+  div.population-age__hint {
+    P {
+      color: var(--color-light);
+    }
+  }
+}
+
+/* END */
+
+/* START - Adjust the element titles text case */
+h5.overview-item__value {
+  text-transform: var(--text-case);
+}
+
+span.overview-item__hint {
+  span.weight-bold {
+    text-transform: var(--text-case);
+  }
+}
+
+/* END */

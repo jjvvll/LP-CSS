@@ -1,0 +1,110 @@
+/* START - Fix element not using the body font size */
+h3.stat-card__value {
+    font-size: var(--global-h3-font-size);
+
+    @media (max-width: 768px) {
+        font-size: var(--global-h4-font-size);
+    }
+}
+
+div.stats__item__text {
+    font-size: var(--global-body-font-size);
+}
+
+/* END */
+
+/* START - Adjust the stats list header dimensions */
+div.lp-title-group {
+    max-width: 1100px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+
+    p.lp-text--subtitle {
+        max-width: 700px;
+    }
+}
+
+/* END */
+
+/* START - Fix element large dimensions and spacings */
+div.lp-container {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    height: fit-content;
+
+    div.lp-title-group {
+        margin-bottom: 0px;
+
+        & > * {
+            margin: 0px;
+        }
+
+        @media (max-width: 768px) {
+            h2 {
+                margin-bottom: 16px;
+            }
+        }
+    }
+
+    div.company-stats__row {
+        padding-top: 0px;
+        margin-bottom: 0px;
+    }
+}
+
+div.company-stats__row {
+    gap: 32px;
+
+    div.company-stats__col {
+        padding-left: 0px;
+        padding-right: 0px;
+        flex-basis: calc(33.33% - 32px);
+        max-width: calc(33.33% - 32px);
+
+        @media (max-width: 768px) {
+            flex-basis: 100%;
+            max-width: 100%;
+        }
+
+        div.stat-card {
+            margin-left: 0px;
+            margin-right: 0px;
+            padding-bottom: 0px;
+            width: 100%;
+            max-width: unset;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+
+            h3.stat-card__value {
+                margin-bottom: 0px;
+            }
+
+            p.stat-card__title {
+                font-size: var(--global-body-font-size);
+            }
+        }
+    }
+}
+
+/* END */
+
+/* Start - Theme Element */
+div.lp-container {
+    div.company-stats__row {
+        margin-bottom: unset;
+        padding-top: 32px;
+        padding-bottom: 32px;
+        border-top: 1px solid var(--border-dark-inactive);
+        border-bottom: 1px solid var(--border-dark-inactive);
+    }
+}
+
+/* End */
+
+.company-stats__cta-wrap {
+    padding-top: unset !important;
+}

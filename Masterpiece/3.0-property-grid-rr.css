@@ -1,0 +1,28 @@
+/* START - Theme the property card info */
+a.item {
+    background: var(--primary-dark);
+
+    figure {
+        margin-bottom: unset;
+    }
+
+    h5.lp-h5,
+    p.bf1,
+    ul.bf2 {
+        padding-left: 24px;
+        padding-right: 24px;
+        margin-bottom: unset;
+        color: var(--typography-light);
+    }
+
+    h5.lp-h5 {
+        padding-top: 24px;
+        color: var(--accent-dark);
+    }
+
+    ul.bf2 {
+        padding-bottom: 24px;
+    }
+}
+
+/* END */

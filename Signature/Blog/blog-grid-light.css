@@ -1,0 +1,47 @@
+/*Start - Theme the pill button*/
+.list__category {
+    .category-cell {
+        background-color: transparent;
+        color: #fff !important;
+        border: 1px solid rgba(255, 255, 255, 0.25) !important;
+        
+        &:hover,
+        &.active {
+            background-color: #fff !important;
+            color: #F51010 !important;
+            border-color: #fff;
+        }
+    }
+}
+/*End*/
+
+/*Start - Theme the read more button*/
+.list__item {
+    .link-icon {
+        color: #fff !important;
+        
+        &:before {
+            background-color: #fff !important;
+        }
+        
+        &:after {
+            background-color: #F51010 !important;
+            border: 1px solid #F51010 !important;
+        }
+    }
+    
+    &:hover {
+        .link-icon {
+            color: #F51010 !important;
+            
+            &:before {
+                background: #F51010 !important;
+            }
+            
+            &:after {
+                background: transparent !important;
+            }
+        }
+    }
+}
+/*End*/

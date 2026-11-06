@@ -1,0 +1,90 @@
+/* START - Fix the dimensions and spacings */
+div.custom-form__container {
+    max-width: 1200px;
+
+    div.custom-form__header {
+        max-width: 100%;
+
+        & > h2 {
+            margin-bottom: unset;
+        }
+
+        div.custom-form__lead {
+            max-width: 540px;
+        }
+
+        &:has(.custom-form__lead) {
+            h2 {
+                margin-bottom: 8px;
+            }
+        }
+    }
+
+    div.custom-form__row {
+        gap: 64px;
+        margin-left: 0px;
+        margin-right: 0px;
+
+        @media (max-width: 768px) {
+            gap: 32px;
+        }
+
+        div.elem-col {
+            padding-left: 0px;
+            padding-right: 0px;
+            flex: 1 1 50%;
+
+            &:is(.custom-form__img-col) {
+                margin-bottom: 0px;
+
+                div.custom-form__img-block {
+                    aspect-ratio: 514/618.47;
+                    height: auto;
+                }
+            }
+        }
+    }
+}
+
+/* END */
+
+/* START - Fix element not using the body font size */
+div.custom-form__lead {
+    font-size: var(--global-body-font-size);
+}
+
+/* END */
+
+/* START - Center the submit button if no photo added */
+div.custom-form__row:not(:has(.custom-form__img-col)) {
+    div.custom-form__footer {
+        margin-top: 32px;
+        justify-content: center;
+    }
+}
+
+/* END */
+
+/* START - Make the textarea full width */
+div.form-col:has(textarea) {
+    flex: 1 1 100%;
+}
+
+/* END */
+
+/* START - Theme the contact form input */
+label.lp-label {
+    text-transform: uppercase;
+}
+
+input.lp-input,
+textarea.lp-input,
+button.uf-cus-sel-toggle {
+    border-color: var(--border-dark-inactive);
+
+    &:focus {
+        border-color: var(--border-dark-active);
+    }
+}
+
+/* END */

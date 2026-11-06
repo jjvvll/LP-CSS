@@ -1,0 +1,25 @@
+/* START - Remove header border bottom on mobile */
+nav#global-navbar {
+    header.header {
+        div.header__container {
+            @media (max-width: 768px) {
+                border-bottom: none;
+            }
+        }
+    }
+}
+
+/* END */
+
+/* START - Theme header border on mobile */
+div#global-sidemenu {
+    header.sidemenu__header {
+        border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+    }
+    
+    div.sidemenu__footer  {
+        border-top: 2px solid rgba(0, 0, 0, 0.1);
+    }
+}
+
+/* END */

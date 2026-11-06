@@ -1,0 +1,10 @@
+/* START - Adjust elements watermark opacity */
+/* NOTE: Add per element if needed */
+.watermark {
+    &:before {
+        color: rgb(from var(--typography-dark) r g b / 10%) !important;
+        opacity: 1;
+    }
+}
+
+/* END */

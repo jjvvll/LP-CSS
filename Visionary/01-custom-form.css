@@ -1,0 +1,11 @@
+.custom-form__header {
+    max-width: unset;
+}
+
+.custom-form__form-col:has(textarea) {
+    flex-basis: 100%;
+}
+
+.custom-form__footer {
+    justify-content: center;
+}

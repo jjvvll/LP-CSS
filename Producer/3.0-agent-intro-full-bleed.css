@@ -1,0 +1,23 @@
+/* START - Adjust container to give spacing for title */
+div.container {
+    max-width: 1440px !important;
+
+    @media (min-width: 768px) {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    @media (max-width: 768px) {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    h4 {
+        max-width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+        text-transform: none !important;
+    }
+}
+
+/* END */

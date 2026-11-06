@@ -1,0 +1,53 @@
+/* START - Adjust the element dimensions */
+div.popup-modal__form-group {
+    @media (min-width: 769px) {
+        padding-left: 96px !important;
+        padding-right: 96px !important;
+    }
+
+    @media (max-width: 768px) {
+        padding: 64px 25px !important;
+    }
+
+    @media only screen and (max-width: 768px) {
+        padding: 64px 32px;
+    }
+
+    div.popup-modal__form-scroll {
+        @media (max-width: 768px) {
+            padding: 0px;
+        }
+
+        div.popup-modal__title-group {
+            margin-bottom: 32px;
+            width: 100%;
+
+            h2.lp-h2 {
+                margin-top: 0px;
+                margin-bottom: 8px;
+                text-align: center;
+            }
+
+            div.lp-text--subtitle {
+                margin-bottom: 0px;
+                margin-left: auto;
+                margin-right: auto;
+                max-width: 500px;
+                text-align: center;
+            }
+        }
+
+        div.lp-disclaimer {
+            margin-top: 16px;
+            margin-bottom: 0px;
+        }
+
+        button.lp-btn {
+            margin-top: 32px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+}
+
+/* END */

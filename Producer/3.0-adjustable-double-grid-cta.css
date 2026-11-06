@@ -1,0 +1,48 @@
+/* START - Adjust the max width of the content container */
+div.double-image-grid {
+    & > div.cta-section {
+        div.cta-section__text-block {
+            @media (min-width: 769px) {
+                max-width: 600px;
+            }
+        }
+    }
+}
+
+/* END */
+
+/* START - Fix adjustable CTA ellipsis overflow */
+div.cta-section__content {
+    div.cta-section__lead {
+        -webkit-line-clamp: unset;
+        line-clamp: unset;
+        overflow: unset;
+        text-overflow: unset;
+        display: block;
+        white-space: initial;
+    }
+}
+
+/* END */
+
+/* START - Adjust empty grid cell */
+div.double-image-grid {
+    div.cta-section {
+        &:has(h2.lp-h2:empty):not(:has(.cta-section__lead)) {
+            aspect-ratio: 9/10;
+        }
+    }
+}
+
+/* END */
+
+/* START - Adjust grid cell font size */
+div.double-image-grid {
+    div.cta-section {
+        div.cta-section__lead {
+            font-size: var(--global-body-font-size);
+        }
+    }
+}
+
+/* END */

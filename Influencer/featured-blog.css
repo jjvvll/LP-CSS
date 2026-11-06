@@ -1,0 +1,17 @@
+div.featured-blog__container {
+    div.lp-title-group {
+        max-width: unset;
+
+        h2.lp-h2 {
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        p.lp-text--subtitle {
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+}

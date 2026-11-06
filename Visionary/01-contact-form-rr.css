@@ -1,0 +1,26 @@
+/* START - Adjust position of submit button */
+.custom-form__footer {
+    justify-content: center;
+}
+
+/* END */
+
+/* START - Adjust title and description max width */
+.custom-form__header {
+    max-width: 100%;
+}
+
+.contact-form__subtitle {
+    max-width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* END */
+
+/* START - Theme the contact form border line */
+.contact-form__container {
+    border: 1px solid var(--border-dark-inactive);
+}
+
+/* END */

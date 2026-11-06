@@ -1,0 +1,96 @@
+/* ----- INSTANT HOME VALUATION ----- */
+/* START - Theme home valuation */
+div.instant-home-valuation {
+    @media (min-width: 769px) {
+        min-height: 65vh !important;
+    }
+
+    &:after {
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 1));
+    }
+
+    div.instant-home-valuation__content {
+        padding-left: 62px;
+        padding-right: 62px;
+
+        @media (max-width: 768px) {
+            padding-left: 16px;
+            padding-right: 16px;
+            padding-bottom: 64px;
+        }
+
+        h2.title {
+            text-transform: var(--text-case);
+        }
+
+        ul.instant-home-valuation-benefits {
+            text-transform: var(--text-case);
+        }
+
+        div.instant-home-valuation-search {
+            &:after {
+                background: var(--color-dark);
+            }
+
+            input.instant-home-valuation-search__input {
+                @media (max-width: 768px) {
+                    border-radius: 50px;
+                }
+            }
+
+            div.instant-home-valuation-search__icon {
+                path {
+                    fill: var(--color-dark);
+                }
+            }
+
+            button.instant-home-valuation-search__btn {
+                @media (max-width: 768px) {
+                    color: var(--color-dark) !important;
+                    background: var(--color-light) !important;
+                    border-color: var(--color-light) !important;
+                }
+            }
+        }
+    }
+}
+
+/* END */
+
+/* START - Theme home valuation second form */
+div.instant-home-valuation-modal:is(.js-modal) {
+    .instant-home-valuation-modal__close {
+        text-transform: uppercase;
+    }
+
+    .lp-input,
+    .lp-input:not(:placeholder-shown),
+    .lp-input:hover,
+    .lp-input:focus {
+        background: var(--background-dark-inactive);
+        color: var(--typography-dark);
+        border: 1px solid transparent;
+
+        &::placeholder {
+            color: var(--typography-dark);
+            opacity: 0.25;
+        }
+
+        &:-webkit-autofill,
+        &:-webkit-autofill:focus,
+        &:-webkit-autofill:hover {
+            color: var(--typography-dark);
+        }
+    }
+}
+
+/* END */
+
+/*Modify hyperlink color*/
+.instant-home-valuation-modal__col{
+    .lp-link{
+      color: #21201f;  
+    }
+}
+
+/* ----- INSTANT HOME VALUATION ----- */

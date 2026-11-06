@@ -1,0 +1,194 @@
+    /* ----- MLS PROPERTIES WITH MAP ----- */
+    /* START - Adjust the element's layout */
+    .mls-properties-with-map__title-group {
+        margin-bottom: 32px;
+    }
+
+    .mls-properties-with-map__filters {
+        margin-bottom: 0px;
+    }
+
+    .mls-properties-with-map-filters__grid-switcher-tab:hover {
+        color: var(--color-dark);
+    }
+
+    /* END */
+
+    /* START - Theme the mls properties modal buttons */
+    .mls-properties-with-map-modal__reset-button,
+    .mls-properties-with-map-modal__close-modal {
+        border-color: var(--color-dark);
+        background: var(--color-dark);
+        color: var(--color-light);
+
+        &:hover:not(:disabled) {
+            background: transparent;
+            border-color: var(--color-dark);
+            color: var(--color-dark);
+        }
+    }
+
+    /* END */
+
+    /* START - Fix search input inconsistent dimensions */
+    .mls-properties-with-map__footer {
+        padding-bottom: 0px;
+    }
+
+    .mls-properties-with-map__filters-content {
+        align-items: center;
+    }
+
+    .mls-properties-with-map__input-group {
+        margin-bottom: unset;
+    }
+
+    .mls-properties-with-map__input {
+        background: var(--color-light-bg) !important;
+        border: 1px solid transparent !important;
+        padding-top: 16px !important;
+        padding-left: 54px !important;
+        margin-bottom: unset;
+    }
+
+    .mls-properties-with-map__input-reset {
+        right: 18px;
+    }
+
+    .mls-properties-with-map__input-group--search:before {
+        left: 18px;
+    }
+
+    /* END */
+
+    /* START - Uppercase property address */
+    .mls-properties-with-map-card__address {
+        text-transform: uppercase;
+    }
+
+    /* END */
+
+    /* START - Theme the MLS with map input fields */
+    .mls-properties-with-map {
+        .mls-properties-with-map__input-group--search {
+            &:before {
+                background: var(--color-dark);;
+                mask-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%2724%27 height=%2724%27 fill=%27none%27%3E%3Cpath fill=%27%23000%27 fill-rule=%27evenodd%27 d=%27M8 11a5 5 0 1 0 10 0 5 5 0 0 0-10 0m12 0a7 7 0 0 1-10.594 6.008l-3.699 3.7a1 1 0 0 1-1.414-1.415l3.554-3.555A7 7 0 1 1 20 11%27 clip-rule=%27evenodd%27/%3E%3C/svg%3E");
+            }
+        }
+
+        .lp-input,
+        .lp-input:not(:placeholder-shown),
+        .lp-input:hover,
+        .lp-input:focus {
+           background: var(--color-light);
+            color: var(--color-dark) !important;
+            border: 1px solid transparent;
+
+            &::placeholder {
+                color: var(--color-dark);
+                opacity: 0.25;
+            }
+
+            &:-webkit-autofill,
+            &:-webkit-autofill:focus,
+            &:-webkit-autofill:hover {
+                color: var(--color-dark);
+            }
+
+            &:after {
+                border-color: var(--color-dark);
+            }
+        }
+
+        /*remove this in case there are anomalies with other dropdowns*/
+        .custom-select {
+            .custom-select-toggle {
+                &:is(.is-placeholder) {
+                    color: var(--color-dark);
+                    opacity: 0.5;
+                }
+
+                &:not(:placeholder-shown) {
+                    color: var(--color-dark);
+                    border-color: transparent;
+                    background: var(--color-light-bg);
+                }
+
+                &:not(:placeholder-shown):after {
+                    background-color: var(--color-dark);
+                }
+            }
+        }
+
+        .custom-select-toggle:after {
+            background: transparent !important;
+        }
+
+        .mls-properties-with-map-filters__grid-switcher {
+            background: var(--color-light-bg);
+        }
+
+        .mls-properties-with-map-filters__grid-switcher-tab {
+            color: var(--color-dark);
+
+            &:hover,
+            &:is(.active) {
+                background: var(--color-dark);
+                color: var(--color-light);
+            }
+        }
+
+        .mls-properties-with-map-filters__grid-price-range-popup {
+            .mls-properties-with-map-filters__grid-price-range-label {
+                color: var(--color-dark);
+            }
+
+            .custom-select {
+                .custom-select-toggle {
+                    &:is(.is-placeholder) {
+                        color: var(--color-dark);
+                        opacity: 0.5;
+                    }
+
+                    &:not(:placeholder-shown) {
+                        color: var(--color-dark);
+                        border-color: transparent;
+                        background: var(--color-light-bg);
+                    }
+
+                    &:not(:placeholder-shown):after {
+                        background-color: var(--color-dark);
+                    }
+
+                    &:after {
+                        border-color: var(--color-dark);
+                    }
+                }
+            }
+        }
+    }
+
+    /* END */
+
+    /* START - Theme the dropdown (hover and is-selected) */
+    .custom-select-item:hover,
+    .custom-select-item.is-selected:hover {
+        background-color: var(--color-dark) !important;
+        color: var(--color-light) !important;
+    }
+
+    .custom-select-item.is-selected {
+        color: var(--color-dark) !important;
+    }
+
+    /* END */
+
+    /* ----- MLS PROPERTIES WITH MAP ----- */
+
+/*Style More Filters Button*/
+button.mls-properties-with-map-filters__grid-item {
+    background-color: var(--color-dark);
+    color: var(--color-light);
+}
+/* END */

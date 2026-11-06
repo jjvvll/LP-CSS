@@ -1,0 +1,7 @@
+/* START - Fix loading line overflowing from view */
+div.subscribe {
+    max-width: 100%;
+    overflow: hidden;
+}
+
+/* END */

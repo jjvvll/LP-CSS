@@ -1,0 +1,126 @@
+/* START - Fix points and interest max width title */
+.neighborhood-poi__title-container {
+    max-width: unset;
+}
+
+/* END */
+
+/* START - Uppercase pill buttons */
+.neighborhood-poi-table__filters {
+    .neighborhood-poi-table__button {
+        text-transform: var(--text-case);
+    }
+}
+
+/* END */
+
+/* START - Fix cursor pointer for the popup */
+button[data-tippy-content] {
+    cursor: pointer;
+}
+
+/* END */
+
+/* START - Theme the neighborhood overview border colors */
+.neighborhood-scores__divider,
+.neighborhood-scores:not(:empty),
+.neighborhood-poi thead,
+.neighborhood-poi-table__label,
+.item-point td{
+    border-color: var(--color-dark);
+    
+}
+
+/* END */
+
+/* START - Theme circular graph background */
+.neighborhood-score__chart {
+    &:after {
+        background-image: conic-gradient(var(--color) var(--percentage), rgba(0, 0, 0, 0.05) var(--percentage));
+    }
+}
+
+/* END */
+
+/* START - Theme the neighborhood overview arrow */
+.neighborhood-poi-table__card-title:after {
+    background: var(--color-dark);
+}
+
+/* END */
+
+/* START - Remove the max width of the POI names */
+.neighborhood-poi-table__card-details {
+    max-width: unset;
+}
+
+/* END */
+
+/* START - Theme the neighborhood overview links */
+.neighborhood-poi-table__card-link {
+    opacity: 1;
+    color: var(--color-dark);
+
+    &:hover {
+        color: var(--color-dark);
+        opacity: 0.5;
+    }
+}
+
+/* END */
+
+/* START - Theme the neighborhood overview tag */
+.neighborhood-poi-table__tag {
+    background: var(--color-dark);
+    color: var(--color-light);
+    font-weight: 400;
+    text-transform: var(--text-case);
+}
+
+/* END */
+
+/* START - Theme the neighborhood overview star ratings */
+.neighborhood-poi-table__star:is(.is-filled) {
+    --color: var(--color-dark);
+}
+
+.neighborhood-poi-table__star:not(.is-filled) {
+    background-color: var(--background-dark-inactive);
+}
+
+/* END */
+
+/* START - Theme the neighborhood overview popup dialog */
+.neighborhood-score__help path {
+    fill: var(--color-dark);
+}
+
+.neighborhood-score__help .tippy-content {
+    background: var(--color-dark);
+
+    & * {
+        color: var(--color-light);
+    }
+}
+
+.neighborhood-score__help .tippy-arrow {
+    color: var(--color-dark);
+}
+
+.neighborhood-score__help-content a {
+    color: var(--color-light);
+
+    &:hover {
+        color: var(--color-light);
+        opacity: 0.5;
+    }
+}
+
+/* END */
+
+/* START - Uppercase neighborhood overview popup dialog */
+.neighborhood-score__help-content span {
+    text-transform: var(--text-case);
+}
+
+/* END */

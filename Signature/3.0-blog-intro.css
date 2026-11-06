@@ -1,0 +1,18 @@
+h1.title {
+    font-size: 52px;
+}
+
+/* START - Adjust element padding */
+div.blog-intro {
+    @media (min-width: 1025px) {
+        padding-top: 268px;
+        padding-bottom: 96px;
+    }
+
+    @media (max-width: 768px) {
+        padding-top: 178px;
+        padding-bottom: 64px;
+    }
+}
+
+/* END */

@@ -1,0 +1,51 @@
+/* START - Theme testimonial pagination button */
+div.arrows-container {
+    button.lp-arrow {
+        border: solid 2px var(--accent-light);
+        background-color: var(--accent-light);
+
+        &:before {
+            border-color: var(--accent-dark);
+        }
+
+        &:hover {
+            border: solid 2px var(--accent-light);
+            background-color: transparent;
+
+            &::before {
+                border-color: var(--accent-light);
+            }
+        }
+    }
+}
+
+/* END */
+
+/* START - Display logo instead of quotation */
+div.avatar {
+    background: #FFF;
+    position: relative;
+
+    &:before {
+        content: '';
+        display: block;
+        height: 50%;
+        width: 50%;
+        top: 0px;
+        bottom: 0px;
+        left: 0px;
+        right: 0px;
+        margin: auto;
+        position: absolute;
+        background: url('https://media-production.lp-cdn.com/cdn-cgi/image/format=auto,quality=85,fit=scale-down,width=960/https://media-production.lp-cdn.com/media/668f5ef0-1269-4fe1-9210-1a9ad519a869');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    svg {
+        display: none;
+    }
+}
+
+/* END */

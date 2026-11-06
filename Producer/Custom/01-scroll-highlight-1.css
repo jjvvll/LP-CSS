@@ -1,0 +1,85 @@
+@keyframes scroll-highlight {
+    0% {
+        height: 0px;
+    }
+
+    50% {
+        top: 0px;
+        height: 80px;
+    }
+
+    75% {
+        top: 0px;
+        height: 80px;
+    }
+
+    100% {
+        top: 100%;
+    }
+}
+
+div.opening-with-search {
+    div.lp-text--subtitle {
+        div.custom-scroll {
+            position: absolute;
+            bottom: -80px;
+            display: flex;
+            flex-direction: column;
+            margin-left: auto;
+            margin-right: auto;
+            left: 0px;
+            right: 0px;
+            max-width: fit-content;
+            pointer-events: none;
+
+            & > * {
+                margin: unset;
+            }
+
+            div.scroll-highlight {
+                position: relative;
+                font-size: 0px;
+                overflow: hidden;
+                height: 80px;
+                width: 100%;
+
+                @media (max-width: 768px) {
+                    height: 50px;
+                }
+
+                &:before,
+                &:after {
+                    content: '';
+                    height: 100%;
+                    width: 1px;
+                    display: block;
+                    position: absolute;
+                    top: 0px;
+                    margin: auto;
+                    left: 0px;
+                    right: 0px;
+                }
+
+                &:before {
+                    background: rgba(255, 255, 255, 0.25);
+                }
+
+                &:after {
+                    height: 80px;
+                    transition: 0.4s;
+                    animation-name: scroll-highlight;
+                    animation-iteration-count: infinite;
+                    animation-duration: 1s;
+                    animation-timing-function: ease-in;
+                    background: rgba(255, 255, 255, 1);
+                }
+            }
+
+            div.scroll-text {
+                margin-top: 16px;
+                text-transform: uppercase;
+                font-size: 12px;
+            }
+        }
+    }
+}

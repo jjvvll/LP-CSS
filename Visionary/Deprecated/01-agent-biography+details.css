@@ -1,0 +1,52 @@
+/* START - Fix contact details label being off-centered */
+span.contact-label {
+    line-height: unset;
+    align-self: center;
+}
+
+/* END */
+
+/* START - Adjust contact details paddings */
+div.contact-details__cell {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+/* END */
+
+/* START - Adjust the agent name text case */
+.title,
+.contact-details__cell {
+    text-transform: uppercase;
+}
+
+/* END */
+
+/* START - Theme contact details icons */
+span.lp-icon {
+    --lp-color-primary-accent: #4C4C4E;
+}
+
+/* END */
+
+/* START - Theme contact details labels */
+span.contact-label {
+    color: #4C4C4E;
+    opacity: 1;
+}
+
+/* END */
+
+/* START - Theme the agent details border */
+div.contact-details__cell {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* END */
+
+/* START - Theme links hover effect */
+.paragraph--16:is(a):hover {
+    color: #FCBA65 !important;
+}
+
+/* END */

@@ -1,0 +1,90 @@
+/* START - Adjust the element dimensions */
+div.lp-container {
+    max-width: 1400px;
+    padding-left: 50px;
+    padding-right: 50px;
+
+    @media (max-width: 768px) {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+}
+
+ul.featured-team {
+    li.slick-slide {
+        div.featured-team__holder {
+            div.featured-team__hover {
+                align-items: center;
+                gap: 8px;
+
+                a.lp-link {
+                    line-height: 1.5;
+                    height: unset;
+                }
+
+                a.lp-btn {
+                    margin-top: 8px;
+                }
+
+                & > * {
+                    width: 100%;
+                    margin: unset;
+                    max-width: fit-content;
+                }
+            }
+        }
+    }
+}
+
+div.featured-team-header {
+    margin-bottom: 48px;
+
+    h2.serif {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+div.button-container {
+    margin-top: 48px;
+}
+
+/* END */
+
+/* START - Theme the team info tiles */
+ul.featured-team {
+    div.featured-team__info {
+        background: var(--primary-dark);
+
+        & > * {
+            color: var(--typography-light);
+            opacity: 1;
+            text-transform: uppercase;
+        }
+    }
+}
+
+/* END */
+
+/* START - Theme the pagination arrows */
+ul.featured-team {
+    button.lp-arrow {
+        border-color: var(--accent-dark);
+        background: var(--accent-dark);
+
+        &:before {
+            color: var(--accent-light);
+        }
+
+        &:hover {
+            border-color: var(--accent-dark);
+            background: transparent;
+
+            &:before {
+                color: var(--accent-dark);
+            }
+        }
+    }
+}
+
+/* END */

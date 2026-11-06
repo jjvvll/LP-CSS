@@ -1,0 +1,241 @@
+/*Start - Theme the schedule a showing form*/
+.schedule-showing {
+    .schedule__header {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    }
+
+    /*Theme the text color*/
+    .schedule__title,
+    .type-selector__label {
+        color: #000;
+    }
+
+    .calendar__slide {
+        .calendar__item {
+            border: 1px solid rgba(0, 0, 0, 0.1);
+        }
+
+        .calendar__date,
+        .calendar__day {
+            color: #000 !important;
+        }
+
+        hr {
+            background: #000 !important;
+        }
+
+        &.selected {
+            .calendar__item {
+                border: 1px solid #A49B8E;
+            }
+
+            .calendar__date,
+            .calendar__day {
+                color: #A49B8E !important;
+            }
+
+            hr {
+                background: #A49B8E !important;
+            }
+        }
+    }
+
+    .custom-select {
+
+        /* Theme dropdown toggle */
+        .custom-select-toggle {
+            color: #000 !important;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1) !important;
+        }
+
+        /* Theme dropdown background */
+        .custom-select-content {
+            background-color: #fff !important;
+            color: #000;
+
+            /* Do not display ugly scrollbar */
+            &::-webkit-scrollbar {
+                display: none;
+            }
+
+            /* Theme selected option */
+            .custom-select-item.is-selected {
+                color: #A49B8E;
+            }
+        }
+    }
+
+    .info-form {
+        .lp-label {
+            color: #000 !important;
+        }
+
+        .lp-input {
+            color: #000 !important;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1) !important;
+        }
+
+        .lp-disclaimer {
+            color: #000 !important;
+        }
+    }
+}
+
+/*End*/
+
+/*START - change time link*/
+a.bf-s,
+.schedule-reset,
+.lp-disclaimer a,
+.main-info__price a {
+    position: relative !important;
+    color: #000 !important;
+    transition: 0.4s;
+    opacity: 1 !important;
+    text-decoration: none !important;
+
+    &:hover {
+        color: #A49B8E !important;
+    }
+
+    &:before,
+    &:after {
+        transition: 0.4s;
+        text-decoration: none !important;
+        line-height: 1;
+        content: "" "";
+        height: 1px;
+        position: absolute !important;
+        bottom: 0;
+        left: 0;
+    }
+
+    &:before {
+        width: 100% !important;
+        background-color: rgba(0, 0, 0, 0.1) !important;
+    }
+
+    &:after {
+        width: 0% !important;
+        background-color: #A49B8E !important;
+    }
+
+    &:hover:after {
+        width: 100% !important;
+    }
+}
+
+/*END*/
+
+/* Start - Theme content features border bottom */
+.copy-block__item {
+    &:after {
+        background-color: rgba(0, 0, 0, 0.1) !important;
+        opacity: 1 !important;
+    }
+}
+
+/* End */
+
+/* Start - Theme schedule a tour modal footer */
+.schedule__footer.agent {
+    /* Start - Fix long details */
+    .agent__inner {
+        gap: 32px;
+    }
+
+    .agent__inner {
+        .agent__details {
+            .agent__name {
+                .bf-s {
+                    font-size: 12px;
+                }
+            }
+        }
+        
+        .agent__contact a {
+            font-size: 12px;
+            text-transform: lowercase;
+        }
+    }
+
+    .agent__details {
+        .agent__name {
+            .bf-s {
+                white-space: pre;
+            }
+        }
+    }
+    
+    /* End */
+
+    /* Start - Theme contact links */
+    .agent__contact a {
+        position: relative !important;
+        color: #fff !important;
+        transition: 0.4s;
+        opacity: 1 !important;
+        text-decoration: none !important;
+        white-space: pre-line;
+
+        &:hover {
+            color: #fff !important;
+        }
+
+        &:before,
+        &:after {
+            transition: 0.4s;
+            text-decoration: none !important;
+            line-height: 1;
+            content: "" "";
+            height: 1px;
+            position: absolute !important;
+            bottom: 0;
+            left: 0;
+        }
+
+        &:before {
+            width: 100% !important;
+            background-color: rgba(255, 255, 255, 0.25) !important;
+        }
+
+        &:after {
+            width: 0% !important;
+            background-color: #fff !important;
+        }
+
+        &:hover:after {
+            width: 100% !important;
+        }
+    }
+    
+    /* End */
+}
+
+/* End */
+
+/* Start - Theme the CTA link with arrow */
+.link-icon {
+    color: #000;
+
+    &:after {
+        background-color: #A49B8E;
+    }
+
+    &:before {
+        background-color: #fff;
+    }
+
+    &:hover {
+        &:after {
+            background-color: transparent;
+            border: 1px solid #A49B8E;
+        }
+
+        &:before {
+            background-color: #A49B8E;
+        }
+    }
+}
+
+/* End */

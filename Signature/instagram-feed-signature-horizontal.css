@@ -1,0 +1,25 @@
+/* Start - Theme pagination */
+.lp-arrow {
+    &:before {
+        background-color: #BA960C;
+        border-color: #BA960C;
+        transition: 0.4s;
+    }
+    
+    &:after {
+        background-color: #fff !important;
+    }
+    
+    &:hover {
+        &:before {
+            background-color: transparent;
+            border-color: #BA960C !important;
+        }
+
+        &:after {
+            background-color: #BA960C !important;
+        }
+    }
+}
+
+/* End */

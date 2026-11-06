@@ -1,0 +1,109 @@
+/* START - Remove large bottom margin on title */
+div.gallery-component__header {
+    max-width: unset;
+    margin-bottom: 48px;
+
+    div.gallery-component__lead {
+        display: flex;
+        flex-direction: column;
+    }
+
+    h2 {
+        margin-bottom: 8px;
+    }
+
+    p, div {
+        font-size: var(--global-body-font-size);
+    }
+}
+
+/* END */
+
+/* START - Fix paddings on mobile */
+div.gallery-component__container {
+    @media (max-width: 768px) {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+}
+
+/* END */
+
+/* START - Remove and fix dimensions */
+div.gallery-component__container {
+    max-width: unset;
+    padding-left: unset;
+    padding-right: unset;
+}
+
+div.gallery-component__row {
+    margin-left: 0px;
+    margin-right: 0px;
+    gap: 0px;
+
+    &:is(.cols-4) {
+        div.gallery-component__col {
+            flex: 1 1 calc((100% / 4));
+            max-width: calc((100% / 4));
+
+            @media (max-width: 768px) {
+                flex: 1 1 100%;
+                max-width: 100%;
+            }
+        }
+    }
+
+    div.gallery-component__col {
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        padding-left: 0px;
+        padding-right: 0px;
+        width: auto;
+    }
+
+    & > div.gallery-component__col {
+        @media (min-width: 769px) {
+            &:nth-child(2),
+            &:nth-child(4),
+            &:nth-child(5),
+            &:nth-child(7) {
+                a {
+                    height: calc(100% - 50px);
+                }
+            }
+
+            &:nth-child(5),
+            &:nth-child(7) {
+                a {
+                    margin-top: 50px;
+                }
+            }
+
+            &:nth-child(1),
+            &:nth-child(3),
+            &:nth-child(6),
+            &:nth-child(8) {
+                a {
+                    height: calc(100% + 50px);
+                }
+            }
+
+            &:nth-child(6),
+            &:nth-child(8) {
+                a {
+                    margin-top: -50px;
+                }
+            }
+        }
+    }
+}
+
+/* END */
+
+/* Start - Remove specified height */
+a.gallery-card {
+    height: auto;
+}
+
+/* END */

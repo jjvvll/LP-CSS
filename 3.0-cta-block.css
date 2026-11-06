@@ -1,0 +1,28 @@
+/* START - Fix extra dimensions and spacings */
+div.lp-container {
+    gap: 24px;
+
+    div.text-block {
+        max-width: 100%;
+        flex: 1;
+        padding-right: 0px;
+        margin-bottom: 0px;
+
+        * {
+            @media (max-width: 768px) {
+                text-align: center;
+            }
+        }
+
+        h2 {
+            margin-bottom: 0px;
+        }
+
+        *:not(h2) {
+            font-size: var(--global-body-font-size) !important;
+            margin-bottom: 0px;
+        }
+    }
+}
+
+/* END */

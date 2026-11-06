@@ -1,0 +1,25 @@
+/* START - Remove the element min-height */
+div.collection {
+    min-height: unset;
+    padding: unset;
+    display: flex;
+    gap: 48px;
+    padding-top: 96px;
+    padding-bottom: 96px;
+
+    @media (max-width: 768px) {
+        padding-top: 64px;
+        padding-bottom: 64px;
+    }
+
+    div.item {
+        min-height: unset;
+    }
+
+    ul.slick-dots {
+        margin-top: unset;
+        margin-bottom: unset;
+    }
+}
+
+/* END */

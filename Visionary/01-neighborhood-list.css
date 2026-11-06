@@ -1,0 +1,43 @@
+/* ----- NEIGHBORHOOD LIST ----- */
+/* START - Adjust the element's header text width */
+div.lp-title-group {
+    max-width: unset;
+}
+
+.neighborhoods-list-pre-title {
+    opacity: 1;
+}
+
+.neighborhoods-list-title {
+    margin-bottom: unset;
+}
+
+div.neighborhoods-list-desc {
+    max-width: 720px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 16px;
+}
+
+/* END */
+
+/* START - Theme neighorhood grid card horizontal border */
+.neighborhoods-list__text {
+    border-bottom: 1px solid var(--border-dark-inactive);
+}
+
+/* END */
+
+/* START - Theme neighorhood grid read more button */
+.neighborhoods-list__link {
+    color: var(--typography-dark) !important;
+}
+
+.neighborhoods-list__link:hover {
+    color: var(--accent-dark) !important;
+    opacity: 0.5;
+}
+
+/* END */
+
+/* ----- NEIGHBORHOOD LIST ----- */

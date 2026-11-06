@@ -1,0 +1,16 @@
+/* START - Adjust the text content width */
+div.lp-title-group {
+    max-width: unset;
+
+    h2.lp-h2 {
+        max-width: 100%;
+    }
+
+    p.pre-line {
+        max-width: 560px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/* END */

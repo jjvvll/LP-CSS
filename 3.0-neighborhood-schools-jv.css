@@ -1,0 +1,164 @@
+/* Start - Adjust the element dimensions */
+div.lp-container {
+  padding-top: 0px;
+  padding-bottom: 0px;
+
+  h2.title {
+    max-width: 100%;
+
+    h2 {
+      max-width: 100%;
+    }
+  }
+
+  div.description {
+    font-size: var(--global-body-font-size);
+  }
+
+  div.btn-wrap {
+    margin-top: 48px;
+
+    button {
+      margin-bottom: unset;
+    }
+
+    &:has(button[style="display: none;"]) {
+      display: none;
+    }
+  }
+}
+
+/* END */
+
+/* START - Theme pill buttons */
+div.type-list {
+  div.type-list__item {
+    text-transform: var(--text-case);
+    color: var(--color-dark);
+    background-color: transparent;
+    border-color: var(--color-dark);
+
+    &.active,
+    &:hover {
+      color: var(--color-light);
+      background-color: var(--color-dark);
+      border-color: var(--color-dark);
+    }
+  }
+}
+
+/* END */
+
+/* START - Theme school icon */
+div.type-item {
+  div.type-item__icon {
+    background: var(--color-dark) !important;
+
+    svg {
+      path {
+        fill: var(--color-light);
+      }
+    }
+  }
+}
+
+/* END */
+
+/* START - Theme title link arrow up */
+div.name-item {
+  svg {
+    path {
+      fill: var(--color-dark) !important;
+    }
+  }
+}
+
+/* END */
+
+/* START - Theme hoverable links */
+div.name-item__description {
+  opacity: 1;
+
+  a.lp-link {
+    color: var(--color-dark);
+    font-weight: 400;
+    text-decoration: none !important;
+    border-bottom: 0px;
+
+    &::before {
+      background-color: var(--secondary-dark);
+    }
+
+    &::after {
+      width: 0px;
+      background-color: var(--color-dark);
+    }
+
+    &:hover {
+      color: var(--color-dark) !important;
+
+      &::after {
+        width: 100%;
+      }
+    }
+  }
+}
+
+/* END */
+
+/* START - Theme the element categories */
+div.category-wrap {
+  background: var(--primary-light);
+  color: var(--color-dark);
+  text-transform: var(--text-case);
+}
+
+/* END */
+
+/* START - Theme star ratings */
+div.rate-item {
+  .star-row:before {
+    background: linear-gradient(
+      90deg,
+      var(--color-dark) var(--percent),
+      rgba(from var(--color-dark) r g b / 0.5) var(--percent)
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .star-amount {
+    color: var(--color-dark);
+  }
+}
+
+/* END */
+
+/* START - Theme the element borders */
+div.items-box__filters {
+  border-top: 1px solid var(--color-extra);
+  border-bottom: 1px solid rgba(from var(--color-dark) r g b / 0.5);
+  div {
+    color: var(--color-dark);
+  }
+}
+
+div.items-box__content {
+  border-bottom: 1px solid rgba(from var(--color-dark) r g b / 0.5);
+  .item-cell {
+    color: var(--color-dark);
+  }
+}
+
+/* END */
+
+/* START - Theme Filter (Sort) Arrows */
+div.filter-arrows {
+  svg {
+    path {
+      fill: var(--color-dark);
+    }
+  }
+}
+
+/* END */

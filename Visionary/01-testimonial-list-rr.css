@@ -1,0 +1,30 @@
+/* RR# START - Make the testimonial modal not accomodate the whole screen */
+/* Note: For tablets and desktop only */
+@media (min-width: 768px) {
+    .testimonial-list-modal {
+        background: rgba(0, 0, 0, 0.25);
+        overflow: hidden;
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+
+    .testimonial-list-modal__card {
+        background: #FFF;
+        padding: 64px;
+        overflow-y: auto;
+        max-height: 640px;
+        max-width: 640px;
+    }
+
+    .testimonial-list__body {
+        overflow: hidden;
+    }
+
+    .testimonial-list-modal__close {
+        &:before {
+            background: #FFF;
+        }
+    }
+}
+
+/* END */

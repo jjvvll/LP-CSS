@@ -1,0 +1,165 @@
+/*START - header nav after link */
+nav#global-navbar .navigation__link:hover:after {
+    width: 100%;
+}
+
+nav .navigation__link:after {
+    opacity: 1 !important;
+}
+
+/*END*/
+
+/*START - change header nav color*/
+nav#global-navbar {
+    .navigation {
+        ul {
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+        }
+
+        ul>li {
+            margin-right: 0px;
+        }
+    }
+
+    div.header.scroll {
+        background-color: #DFD6C6 !important;
+
+        .hamburger {
+            color: #fff;
+
+            span {
+                background-color: #fff;
+
+                &:before,
+                &:after {
+                    background-color: #fff;
+                }
+            }
+        }
+
+        .navigation__link {
+            color: #fff;
+
+            &:after {
+                background-color: #fff;
+            }
+        }
+    }
+
+    div.sub-nav {
+        background: #DFD6C6;
+
+        ul li {
+            a {
+                color: #fff;
+            }
+
+            border-bottom: 1px solid #626262;
+
+            &:hover a {
+                color: #fff;
+                background-color: #DFD6C6;
+            }
+        }
+    }
+}
+
+/*END - Change Header nav color*/
+
+/*Start - show light logo when scroll*/
+nav#global-navbar div.header.scroll {
+    a img.logo__img.dark {
+        display: none !important;
+    }
+
+    a img.logo__img.light {
+        display: block !important;
+    }
+}
+
+/*End - Show light logo when scroll*/
+
+/* Start - Customize header theme for privacy policy */
+body:has(.terms-and-conditions) {
+    /*START - header nav after link */
+    nav#global-navbar .navigation__link:hover:after {
+        width: 100%;
+    }
+    
+    nav .navigation__link:after {
+        opacity: 1 !important;
+    }
+    
+    /*END*/
+    
+    /*START - change header nav color*/
+    nav#global-navbar {
+        .navigation {
+            ul {
+                display: flex;
+                flex-direction: row;
+                gap: 10px;
+            }
+    
+            ul>li {
+                margin-right: 0px;
+            }
+        }
+    
+        div.header:not(.scroll) {
+            background-color: transparent !important;
+    
+            .hamburger {
+                color: #000;
+    
+                span {
+                    background-color: #000;
+    
+                    &:before,
+                    &:after {
+                        background-color: #000;
+                    }
+                }
+            }
+    
+            .navigation__link {
+                color: #000;
+    
+                &:after {
+                    background-color: #000;
+                }
+            }
+        }
+    
+        div.sub-nav {
+            background: #fff;
+    
+            ul li {
+                a {
+                    color: #000;
+                }
+    
+                border-bottom: 1px solid #000;
+    
+                &:hover a {
+                    color: #fff;
+                    background-color: #DFD6C6;
+                }
+            }
+        }
+        
+        a img.logo__img.dark {
+            display: block !important;
+        }
+    
+        a img.logo__img.light {
+            display: none !important;
+        }
+    }
+    
+    /*END - Change Header nav color*/
+}
+
+/* End */

@@ -1,0 +1,233 @@
+/* START - Add background image to contact overlay */
+div#modal-global-contact-us {
+    div.contact-popup__container {
+        background: url(https://media-production.lp-cdn.com/media/cac69c56-de1e-4be1-abd3-0428ab2281bd);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+
+        &:before {
+            content: "";
+            display: block;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            background: rgba(from var(--accent-light) r g b / 90%);
+            z-index: 1;
+        }
+
+        .contact-popup__close,
+        .contact-popup__col {
+            z-index: 2;
+        }
+    }
+}
+
+/* END */
+
+/* START - Update the contact overlay phone number titles */
+div#modal-global-contact-us {
+    div.info-zone {
+        div.info-zone_contact:nth-child(1) {
+            div.info-zone_contact_cell:has(a[href*="tel"]) {
+                p.contact_title {
+                    font-size: 0px;
+
+                    &:before {
+                        content: "Phone Number";
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+
+        div.info-zone_contact:nth-child(2) {
+            div.info-zone_contact_cell:has(a[href*="tel"]) {
+                p.contact_title {
+                    font-size: 0px;
+
+                    &:before {
+                        content: "Office Number";
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* END */
+
+/*Start - Hide Address Label*/
+div.contact-form.redesign {
+    div.info-zone div.info-zone_contact:not(.type_user) {
+        .info-wrap-contact_title {
+            display: none;
+        }
+    }
+}
+
+/*End*/
+
+/* Start - Remove bold weight in the contact overlay disclaimer */
+#modal-global-contact-us {
+    .lp-disclaimer {
+        .lp-tcr-message {
+            font-weight: normal;
+        }
+    }
+}
+
+/* End */
+
+/* Start - Arrange the Contact Overlay arrangement for the 3rd phone number */
+#modal-global-contact-us {
+    .info-zone {
+        display: flex;
+        flex-direction: column;
+
+        .info-zone_contact {
+            margin-bottom: 0px !important;
+        }
+
+        .info-zone_contact:nth-child(1) {
+            order: 1;
+        }
+
+        .info-zone_contact:nth-child(2) {
+            order: 3;
+
+            .info-zone_contact_cell:nth-child(1) {
+                .contact_title {
+                    &:before {
+                        content: "OFFICE NUMBER 2";
+                    }
+                }
+            }
+        }
+
+        .info-zone_contact:nth-child(3) {
+            order: 4;
+        }
+
+        .info-zone_contact:nth-child(4) {
+            order: 2;
+            position: relative;
+
+            .info-zone_contact_cell {
+                position: unset;
+
+                .contact_title {
+                    &:before {
+                        content: "OFFICE NUMBER 1";
+                    }
+                }
+
+                i {
+                    @media only screen and (min-width: 768px) {
+                        position: absolute;
+                    }
+                }
+            }
+        }
+
+        .lp-socials {
+            order: 5;
+        }
+    }
+}
+
+/* End */
+
+#modal-global-contact-us div.section-details > div {
+    display: flex;
+    flex-direction: column;
+
+    & > div:nth-child(4) {
+        order: 2;
+
+        .info-zone_contact_cell {
+            @media only screen and (min-width: 768px) {
+                padding-left: 45px;
+            }
+
+            i {
+                @media only screen and (min-width: 768px) {
+                    position: absolute;
+                    left: 0px;
+                }
+            }
+        }
+
+        & > div {
+            padding-left: 0px !important;
+        }
+    }
+
+    & > div:nth-child(1) {
+        order: 1;
+    }
+
+    & > div:nth-child(2) {
+        order: 3;
+    }
+
+    & > div:nth-child(3) {
+        order: 4;
+    }
+
+    & > ul {
+        order: 5;
+    }
+}
+
+/* START - Style custom addresses on contact overlay */
+#modal-global-contact-us {
+    div.info-zone_contact_cell:has(style) {
+        padding-left: unset !important;
+
+        #i6nh {
+            ul {
+                list-style-type: none;
+                margin: unset;
+                display: flex;
+                flex-direction: column;
+                gap: 18px;
+
+                li {
+                    padding-left: 45px;
+                    position: relative;
+
+                    &:before {
+                        content: "";
+                        display: block;
+                        width: 31px;
+                        height: 30px;
+                        position: absolute;
+                        left: 0px;
+                        background: url('data:image/svg+xml,<svg width="31" height="30" viewBox="0 0 31 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M29.9821 6.49489C29.7931 6.35756 29.679 6.32046 29.4572 6.39228L20.298 9.41368L16.1952 8.03558L15.8172 9.41525L19.7644 10.7038V28.1462L9.89831 25.7069V22.1034H8.71438V25.7515L1.21616 28.2532V15.3945H0.0322266V29.2729C0.0322266 29.5077 0.130098 29.7279 0.321106 29.8645C0.445418 29.9541 0.585911 29.9999 0.735086 29.9999C0.814804 29.9999 0.890971 29.9868 0.967926 29.96L9.48433 27.029L20.1792 29.7887C20.3224 29.8254 20.4751 29.8171 20.6152 29.7654L29.8104 26.2235C30.0942 26.1177 30.0251 25.8466 30.0251 25.5431V7.08291C30.0251 6.85086 30.17 6.63144 29.9821 6.49489ZM28.8412 25.0388L20.9483 28.0361V10.7065L28.8412 8.08649V25.0388Z" fill="%231A1A1A"></path><path d="M6.57515 19.1142C6.6671 19.422 6.95006 19.6323 7.2713 19.6323C7.59215 19.6323 7.87511 19.422 7.96746 19.1142C8.67742 16.7514 10.0393 15.2447 11.3559 13.788C12.9944 11.9747 14.5422 10.2615 14.5422 7.2717C14.5422 3.39788 11.1451 0 7.2713 0C3.39827 0 0 3.39748 0 7.2717C0 10.2615 1.54819 11.9747 3.18674 13.788C4.50328 15.2447 5.86479 16.7514 6.57515 19.1142ZM7.2713 1.45426C10.316 1.45426 13.0883 4.22663 13.0883 7.2717C13.0883 9.70191 11.7852 11.1435 10.2769 12.8121C9.2461 13.9534 8.10992 15.2096 7.2713 16.9199C6.43229 15.2096 5.29651 13.953 4.2657 12.8121C2.75698 11.1432 1.45426 9.70191 1.45426 7.2717C1.45426 4.22663 4.22663 1.45426 7.2713 1.45426Z" fill="%231A1A1A"></path><path d="M7.26193 10.1616C8.8705 10.1616 10.1795 8.86084 10.1795 7.26175C10.1795 5.66305 8.87089 4.3623 7.26193 4.3623C5.65297 4.3623 4.34473 5.66305 4.34473 7.26175C4.34512 8.86084 5.65336 10.1616 7.26193 10.1616ZM7.26193 5.81657C8.06898 5.81657 8.72527 6.46536 8.72527 7.26175C8.72527 8.05932 8.06898 8.70733 7.26193 8.70733C6.45528 8.70733 5.79899 8.05893 5.79899 7.26175C5.79899 6.46536 6.45528 5.81657 7.26193 5.81657Z" fill="%231A1A1A"></path></svg>');
+                        background-position: top;
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        filter: brightness(0) saturate(100%) invert(100%)
+                            sepia(3%) saturate(12%) hue-rotate(103deg)
+                            brightness(105%) contrast(105%);
+                    }
+
+                    @media (max-width: 768px) {
+                        padding-left: unset;
+
+                        &:before {
+                            position: relative;
+                            margin-bottom: 7px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* END */

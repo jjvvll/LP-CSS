@@ -1,0 +1,178 @@
+/* START - Fit the content of home valuation */
+div.home-valuation {
+    div.opening-wrapper {
+        min-height: fit-content;
+    }
+}
+
+/* END */
+
+/* START - Add padding bottom to see the loading */
+div.home-valuation {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 50px;
+    padding-right: 50px;
+
+    @media (max-width: 768px) {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    div.opening-wrapper {
+        max-width: 1300px;
+        margin: auto;
+
+        div.content {
+            max-width: 100%;
+            padding-top: 196px;
+            padding-bottom: 64px;
+            padding-left: 64px;
+            padding-right: 64px;
+
+            @media (max-width: 768px) {
+                padding-left: 24px;
+                padding-right: 24px;
+                padding-top: 96px;
+                padding-bottom: 96px;
+            }
+
+            h2.title {
+                text-align: center;
+            }
+
+            ul.benefits {
+                font-size: 12px;
+                justify-content: center;
+            }
+
+            div.search-wrapper {
+                padding: 16px;
+                background: rgba(255, 255, 255, 0.75);
+                backdrop-filter: blur(5px);
+
+                @media (max-width: 768px) {
+                    background: rgba(255, 255, 255, 0);
+                    backdrop-filter: blur(0px);
+                    padding: 0px;
+                }
+
+                div.search-icon {
+                    path {
+                        fill: #CDB499;
+                    }
+                }
+
+                input.search-input {
+                    background: transparent;
+                    padding: 8px;
+
+                    @media (max-width: 768px) {
+                        padding: 20px;
+                        background: rgba(255, 255, 255, 0.5);
+                        backdrop-filter: blur(5px);
+                    }
+                }
+
+                button.lp-btn[disabled] {
+                    opacity: 0.75;
+                }
+            }
+        }
+    }
+}
+
+/* END */
+
+div.opening-wrapper {
+    h2.title {
+        text-align: center;
+    }
+
+    ul.benefits {
+        font-size: 12px;
+        justify-content: center;
+    }
+}
+
+/* START - Theme loading bar and fix position */
+div.loader {
+    bottom: unset;
+    top: 100%;
+
+    .line {
+        background: #78AAA1;
+    }
+}
+
+/* END */
+
+/*START - fix button theme on mobile view*/
+div.home-valuation {
+    .search-wrapper {
+        .lp-btn {
+            @media (max-width: 768px) {
+                background-color: transparent !important;
+                color: #78AAA1 !important;
+                border: 1px solid #78AAA1 !important;
+
+                &:hover {
+                    border: 2px solid #78AAA1 !important;
+                    color: #FFF !important;
+                    background-color: #78AAA1 !important;
+                }
+            }
+        }
+    }
+}
+
+/*bg image opacity*/
+div.home-valuation .background:after {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.75) 0%, rgba(255, 255, 255, 0.75) 100%);
+}
+
+/*1st page checklist*/
+.home-valuation .benefits .benefit {
+    text-transform: uppercase;
+}
+
+/*button font size*/
+.lp-btn,
+.redesign .lp-btn {
+    font-size: 12px !important;
+}
+
+/*enter home address*/
+@media (max-width: 768px) {
+
+    input,
+    select:focus,
+    textarea {
+        font-size: 13px !important;
+    }
+}
+
+/*2nd page title*/
+.hv-modal__title {
+    font-size: 25px !important;
+}
+
+/*2nd page checklist*/
+.hv-checklist--small {
+    text-transform: uppercase;
+}
+
+/* START - Uppercase 2nd form input labels */
+.lp-input-group .lp-label {
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+/* END */
+
+/* START - Fix issue with fullscreen for Home Valuation form */
+& {
+    transform: unset;
+}
+
+/* END */

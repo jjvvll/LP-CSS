@@ -1,0 +1,57 @@
+/* START - Adjust the height of the column if no content on mobile */
+div.image-subsection {
+    &:not(:has(.double-cta__content > *)) {
+        @media (max-width: 768px) {
+            aspect-ratio: 1/1;
+        }
+    }
+}
+
+/* END */
+
+/* START - Adjust the content max width */
+div.double-cta__content {
+    max-width: 700px;
+}
+
+/* END */
+
+/* START - Adjust the video container */
+section.video-subsection {
+    @media (max-width: 768px) {
+        aspect-ratio: 3/4;
+    }
+
+    div.video-wrapper {
+        div.full-screen-video-component {
+            div.video-wrapper.hidable {
+                display: block;
+            }
+
+            div.poster {
+                display: none;
+            }
+        }
+    }
+}
+
+/* END */
+
+/* START - Remove ellipsis on the content description */
+div.cta-section__lead {
+    -webkit-line-clamp: unset;
+    line-clamp: unset;
+    overflow: unset;
+    text-overflow: unset;
+    display: block;
+    white-space: initial;
+    padding-left: 60px;
+    padding-right: 60px;
+
+    @media (max-width: 768px) {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+}
+
+/* END */

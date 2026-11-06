@@ -1,0 +1,11 @@
+/* START - Hide element since the button will go to the neighborhoods details for NWMLS */
+& {
+  display: none;
+}
+
+/* END */
+
+/*hide margin*/
+.vertical-margin {
+  display: none;
+}

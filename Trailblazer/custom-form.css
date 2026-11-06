@@ -1,0 +1,10 @@
+/* START - Fix the textarea label position */
+div.lp-form-group {
+    &:has(textarea) {
+        div.lp-input-group {
+            align-items: start;
+        }
+    }
+}
+
+/* END */

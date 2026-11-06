@@ -1,0 +1,51 @@
+/*START - SERACH ELEMENT IN THE OPENING WB JV*/
+div.opening-with-search {
+  div.search-form {
+    div.search-wrapper {
+      /* // Dropdown results container background */
+      div.search-results {
+        background-color: var(--color-dark);
+      }
+
+      /* // Predefined location links container */
+      .predefined-links {
+        background-color: var(--color-dark);
+        color: var(--color-white);
+      }
+
+      /* // Individual location links */
+      .results-link {
+        color: var(--color-white);
+      }
+
+      /* // "Search Near Me" link */
+      .search-near {
+        color: var(--color-white);
+      }
+
+      /* // "Locations" label */
+      .results-title-label {
+        color: var(--color-white);
+      }
+
+      /* // Search input container */
+      div.search-input-container {
+        background: transparent !important;
+        border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+        padding-left: 0px;
+        padding-right: 0px;
+
+        input {
+          color: var(--color-white);
+
+          &::placeholder {
+            color: var(--color-white);
+            opacity: 0.5;
+          }
+        }
+      }
+    }
+  }
+}
+
+/*END - SERACH ELEMENT IN THE OPENING WB JV*/

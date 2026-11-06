@@ -1,0 +1,21 @@
+/* ----- GALLERY STYLE MENU ----- */
+/* START - Adjust the element max width title */
+.gallery-style-menu-title-group {
+    margin-bottom: 48px;
+    max-width: unset;
+}
+
+/* END */
+
+/* START - Center titles horizontally */
+.gallery-style-menu-grid__title {
+    text-align: center;
+
+    &:after {
+        display: none;
+    }
+}
+
+/* END */
+
+/* ----- GALLERY STYLE MENU ----- */

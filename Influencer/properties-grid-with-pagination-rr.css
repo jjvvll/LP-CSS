@@ -1,0 +1,15 @@
+/* START - Theme the property tiles information */
+figure.gallery-grid__item {
+    background: var(--blockBG);
+
+    figcaption.gallery-grid__content {
+        padding: 24px 32px;
+        text-align: center;
+
+        h3 {
+            margin-top: unset;
+        }
+    }
+}
+
+/* END */

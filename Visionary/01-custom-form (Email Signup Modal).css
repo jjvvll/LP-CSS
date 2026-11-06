@@ -1,0 +1,86 @@
+/* START - Adjust close button position */
+.close {
+    top: 32px;
+    right: 32px;
+
+    @media (max-width: 768px) {
+        top: 16px;
+        right: 16px;
+    }
+}
+
+/* END */
+
+/* START - Remove custom form close button invert filter */
+.close {
+    .lp-close-icon {
+        filter: unset;
+    }
+}
+
+/* END */
+
+/* START - Adjust custom form layout */
+.custom-form__header {
+    max-width: 100%;
+}
+
+.custom-form__heading {
+    text-transform: uppercase;
+    font-size: var(--global-h2-font-size);
+}
+
+.custom-form__footer {
+    justify-content: center;
+}
+
+/* END */
+
+/* START - Add background overlay to custom form */
+.modal-content {
+    background: rgba(0, 0, 0, 0.4);
+}
+
+/* END */
+
+/* START - Adjust background image to fullbleed */
+.custom-form__img-col {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 100%;
+    max-width: unset;
+    z-index: -1;
+}
+
+.custom-form__img-block {
+    height: 100%;
+
+    img {
+        display: block;
+    }
+}
+
+/* END */
+
+/* START - Theme input boxes */
+.lp-input,
+.lp-input:not(:placeholder-shown),
+.lp-input:hover,
+.lp-input:focus {
+    background: var(--background-light-inactive);
+    color: var(--typography-light);
+    border: 1px solid transparent;
+
+    &::placeholder {
+        color: rgb(from var(--typography-light) r g b / 50%);
+    }
+}
+
+.lp-input-icon:after {
+    --iconColor: var(--accent-light);
+}
+
+/* END */

@@ -1,0 +1,30 @@
+/* START - Adjust container to give spacing for title */
+div.container {
+    max-width: 1440px !important;
+
+    @media (min-width: 768px) {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    @media (max-width: 768px) {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    p.custom-intro__subtitle {
+        max-width: 560px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/* END */
+
+/* START - Adjust the description font size and text case */
+p.custom-intro__subtitle {
+    font-size: var(--global-body-font-size) !important;
+    text-transform: var(--text-case);
+}
+
+/* END */

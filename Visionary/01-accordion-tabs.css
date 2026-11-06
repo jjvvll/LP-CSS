@@ -1,0 +1,77 @@
+/* START - Adjust the title max width */
+.accordion-tabs__top {
+    max-width: 1400px;
+}
+
+/* END */
+
+/* START - Adjust element padding */
+div.accordion-tabs {
+    @media (min-width: 1440px) {
+        padding: 0 173px;
+    }
+}
+
+/* END */
+
+/* START - Disable if empty descriptiopn */
+.accordion-tabs__accordion-header {
+    &:not(:has(+ .accordion-tabs__accordion-content > .accordion-tabs__content  > *)) {
+        pointer-events: none;
+
+        .accordion-tabs__accordion-opener {
+            opacity: 0;
+
+            @media (max-width: 768px) {
+                display: none;
+            }
+        }
+    }
+}
+
+/* END */
+
+/* START - Fix accordion header layout if opened */
+.accordion-tabs__accordion-header {
+    span.accordion-tabs__accordion-opener {
+        transition: 0.25s;
+    }
+
+    &:is(.is-active) {
+        padding-bottom: unset;
+
+        span.accordion-tabs__accordion-opener {
+            transform: rotate(180deg);
+        }
+    }
+
+    &:not(.is-active) {
+        span.accordion-tabs__accordion-opener {
+            transform: rotate(0deg);
+        }
+    }
+}
+
+/* END */
+
+/* START - Theme the button with arrow */
+.accordion-tabs__accordion-opener {
+    border: 2px solid var(--accent-dark);
+    background: var(--accent-dark);
+    transition: 0.4s;
+
+    &:before {
+        border-color: var(--accent-light);
+    }
+
+    &:hover {
+        border: 2px solid var(--accent-dark);
+        background: transparent;
+
+        &:before {
+            border-color: var(--accent-dark);
+        }
+    }
+}
+
+/* END */

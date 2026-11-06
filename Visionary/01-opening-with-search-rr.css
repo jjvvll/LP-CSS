@@ -1,0 +1,242 @@
+.fair-housing-link {
+    font-size: 16px;
+    color: #FFF;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    text-decoration-color: rgba(255, 255, 255, 0.25);
+    text-transform: uppercase;
+    transition: 0.4s;
+
+    &:hover {
+        text-decoration-color: rgba(255, 255, 255, 1);
+    }
+}
+
+/* START - Center the opening element components */
+div.opening-search__content {
+    display: flex;
+    flex-direction: column;
+    padding-left: unset;
+
+    @media (max-width: 768px) {
+        padding-top: 180px;
+    }
+}
+
+div.opening-search__text-slider {
+    max-width: unset;
+
+    li.opening-search__item {
+        display: flex;
+        flex-direction: column;
+
+        div.opening-search__pre-title {
+            margin: unset;
+
+            @media (max-width: 1024px) {
+                margin-bottom: 16px;
+            }
+        }
+
+        h1.opening-search__title {
+            transform: unset;
+            margin-bottom: 16px;
+        }
+
+        div.opening-search__description {
+            &>* {
+                font-size: 12px;
+                font-weight: bold;
+
+                &:last-child {
+                    margin-bottom: 0px;
+                }
+            }
+        }
+    }
+}
+
+div.opening-search__search-box {
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-bottom: calc(15.59px + 16px);
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-top: 32px;
+    margin-bottom: 0px;
+    align-self: start;
+    position: relative;
+
+    div.opening-search-sound {
+        display: none !important;
+    }
+
+    @media (max-width: 1024px) {
+        align-self: unset;
+    }
+}
+
+div.opening-search__content {
+    align-self: center;
+    position: relative;
+    padding-left: unset;
+    padding-bottom: unset;
+    gap: 32px;
+    padding-top: 128px;
+
+    div.opening-search__text-slider {
+        align-self: center;
+
+        h1.opening-search__title {
+            text-align: center;
+        }
+
+        div.opening-search__description {
+            text-align: center;
+        }
+    }
+
+    div.opening-search__search-box {
+        left: 0px;
+        right: 0px;
+        margin: auto;
+        max-width: fit-content;
+        align-self: unset;
+        flex-direction: column;
+        gap: 16px;
+        top: calc(100% + 48px);
+
+        @media (max-width: 768px) {
+            padding-left: unset;
+            padding-right: unset;
+            padding-bottom: unset;
+        }
+
+        button.opening-search__search-button {
+            margin-left: unset;
+            margin-top: unset;
+        }
+    }
+}
+
+/* END */
+
+/* START - Show video on mobile */
+div.video-wrapper:is(.hidable) {
+    display: block;
+}
+
+div.poster {
+    display: none;
+}
+
+/* END */
+
+/* START - Center element layout */
+.opening-search__container {
+    justify-content: center;
+    align-items: center;
+}
+
+.opening-search__content {
+    @media (min-width: 1025px) {
+        flex-direction: column;
+        padding-bottom: 0px;
+        gap: 32px;
+        align-items: center;
+
+        .opening-search__pre-title,
+        .opening-search__title,
+        .opening-search__description {
+            text-align: center;
+        }
+
+        .opening-search__search-box {
+            align-self: unset;
+            max-width: fit-content;
+        }
+    }
+
+    .opening-search__search-box {
+        position: relative;
+        padding-top: 0px;
+        padding-bottom: 0px;
+
+        @media (max-width: 768px) {
+            padding-top: 32px;
+        }
+    }
+}
+
+.opening-search__content {
+    padding-left: 0px;
+}
+
+.opening-search__text-slider {
+    max-width: 100%;
+}
+
+.opening-search__pre-title {
+    margin-bottom: 0px;
+}
+
+.opening-search__control-box {
+    display: none;
+}
+
+.opening-search__search-box {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+/* END */
+
+/* START - Hide the opening element search */
+.opening-search__search-box {
+    display: none;
+}
+
+/* END */
+
+/* START - Display only sliding text contents */
+div.full-bleed-cta-button-container {
+    justify-content: unset;
+
+    @media (max-width: 1024px) {
+        justify-content: center;
+    }
+
+    a.lp-btn {
+        @media (max-width: 768px) {
+            width: 100%;
+        }
+    }
+}
+
+div.opening-search__content {
+    padding-left: unset;
+}
+
+div.opening-search__text-slider {
+    max-width: unset;
+
+    .opening-search__pre-title {
+        margin-bottom: unset;
+    }
+
+    .opening-search__description {
+        p {
+            font-size: var(--global-body-font-size);
+        }
+    }
+}
+
+div.opening-search__control-box {
+    display: none;
+}
+
+div.opening-search__search-box {
+    display: none;
+}
+
+/* END */

@@ -1,0 +1,87 @@
+/* START - Adjust the element dimensions */
+div.solid-subsection:is(.top-block) {
+    display: none;
+}
+
+div.solid-subsection:is(.bottom-block) {
+    div.lp-container {
+        max-width: 1200px;
+
+        div.content-slider__container {
+            div.content-slider {
+                padding-top: 0px;
+                padding-bottom: 0px;
+
+                @media (max-width: 768px) {
+                    padding-left: 0px !important;
+                    padding-right: 0px !important;
+                }
+            }
+        }
+
+        div.slick-track {
+            &:before,
+            &:after {
+                display: none;
+            }
+        }
+    }
+}
+
+div.content-slider__item {
+    @media (min-width: 768px) {
+        padding: 32px;
+    }
+
+    div.content-slider__text {
+        @media (min-width: 768px) {
+            padding-right: 0px;
+        }
+    }
+}
+
+div.content-slider__arrows {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    padding-bottom: 0px;
+
+    @media (max-width: 768px) {
+        position: relative;
+        justify-content: center;
+        gap: 24px;
+    }
+
+    button.lp-arrow {
+        top: 0px;
+        bottom: 0px;
+        margin: auto;
+
+        @media (max-width: 768px) {
+            margin: 0px;
+        }
+    }
+}
+
+/* END */
+
+/* START - Theme pagination buttons */
+button.lp-arrow {
+    border-color: #383761;
+    background: #383761;
+
+    &:before {
+        border-color: #FFF;
+    }
+
+    &:hover {
+        background: transparent;
+
+        &:before {
+            border-color: #383761;
+        }
+    }
+}
+
+/* END */

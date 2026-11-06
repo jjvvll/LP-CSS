@@ -1,0 +1,28 @@
+/* START- Center the testimonials */
+.testimonials {
+    .author__image {
+        background: var(--primary-light) !important;
+        margin-right: 0px;
+    }
+}
+
+div.name__position {
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+div.testimonials__item-content,
+div.testimonials-list__item-content {
+    text-align: center;
+}
+
+div.expand-link-container {
+    span.btn-more {
+        right: 0px;
+        margin: auto;
+        max-width: fit-content;
+    }
+}
+
+/* END */

@@ -1,0 +1,197 @@
+/* START - Adjust the pill button text case */
+div.poi-table__filters {
+  button {
+    text-transform: var(--text-case);
+  }
+}
+
+/* END */
+
+/* START - Theme neighborhood points & interest borders */
+div.scores:not(:empty) {
+  border-color: var(--color-fallback-2);
+}
+
+span.divider,
+thead,
+td,
+th {
+  border: unset;
+  border-bottom: 1px solid var(--color-fallback-2);
+}
+
+/* END */
+
+/* START - Adjust title diemension */
+div.lp-container {
+  div.title {
+    max-width: 100%;
+  }
+}
+
+/* END */
+
+/* START - Fix element not using the body font size */
+p.description {
+  font-size: var(--global-body-font-size);
+}
+
+/* END */
+
+/* START - Adjust points and interest score titles text case */
+div.score {
+  h6.score__title {
+    text-transform: uppercase;
+  }
+}
+
+/* END */
+
+/* START - Theme the points and interest name list */
+a.poi-table__card-title {
+  color: var(--color-dark);
+}
+
+/* END */
+
+/* START - Theme popup dialog */
+div.score__help {
+  svg {
+    cursor: pointer;
+
+    path {
+      fill: var(--color-dark);
+    }
+  }
+
+  div.tippy-box {
+    background-color: var(--color-dark);
+
+    div.tippy-content {
+      background-color: var(--color-dark);
+
+      span,
+      p {
+        color: var(--color-light);
+      }
+
+      a.lp-link {
+        text-transform: var(--text-case);
+      }
+    }
+
+    div.tippy-arrow {
+      color: var(--color-dark);
+    }
+  }
+}
+
+/* END */
+
+/* START - Theme star ratings */
+div.stars {
+  span.star:is(.is-filled) {
+    background-color: var(--color-dark);
+  }
+}
+
+/* END */
+
+/* START - Theme neighborhood category tag */
+tr.item-point {
+  span.tag {
+    color: var(--color-dark);
+    background: var(--color-light);
+    text-transform: var(--text-case);
+  }
+}
+
+/* END */
+
+/* START - Theme neighborhoods points and interest popup link */
+div.score__help-content {
+  a.lp-link {
+    color: var(--color-light);
+
+    &:hover {
+      color: var(--color-light);
+    }
+  }
+}
+
+/* END */
+
+/* START - Theme table row title name arrow */
+a.poi-table__card-title {
+  &:after {
+    background: var(--color-dark);
+  }
+}
+
+/* END */
+
+/* START - Theme table hoverable links */
+div.poi-table__card-details {
+  a.poi-table__card-link {
+    color: var(--color-dark);
+    font-size: 12px;
+    opacity: 1;
+    font-weight: 400;
+    border-bottom: 0px;
+
+    &::before {
+      background-color: var(--color-fallback-2);
+    }
+
+    &::after {
+      width: 0px;
+      background-color: var(--color-dark);
+    }
+
+    &:hover {
+      color: var(--color-dark) !important;
+
+      &::after {
+        width: 100%;
+      }
+    }
+  }
+}
+
+/* END */
+
+/* START - Fix Points of interest scroll bar on mobile*/
+div.lp-container {
+  table tr {
+    &::-webkit-scrollbar {
+      height: 0;
+    }
+  }
+}
+
+/* END */
+
+/* START - Uppercased popup title */
+.score__help-content {
+  span {
+    text-transform: uppercase !important;
+  }
+}
+
+/*End*/
+
+/* START - Theme circular chart */
+div.score__chart {
+  &:after {
+    background-image: conic-gradient(
+      var(--color-fallback-2) var(--percentage),
+      var(--color-dark) var(--percentage)
+    ) !important;
+  }
+
+  div.score__chart-inner {
+    background: #fff;
+  }
+}
+
+/* END */

@@ -1,0 +1,22 @@
+/* START - Replace testimonial logo with quote icon */
+div.top-block {
+    div.userpic {
+        &:before {
+            content: '';
+            height: 104px;
+            width: 104px;
+            display: block;
+            background: url(https://media-production.lp-cdn.com/cdn-cgi/image/format=auto,quality=85/https://media-production.lp-cdn.com/media/256de6b8-0d18-4089-9f64-1449e3aba392);
+            background-size: 60%;
+            background-repeat: no-repeat;
+            background-position: center;
+            filter: invert(1);
+        }
+        
+        img {
+            display: none;
+        }
+    }
+}
+
+/* END */

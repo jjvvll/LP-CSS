@@ -1,0 +1,27 @@
+div.row {
+    gap: 130px;
+
+    @media (max-width: 768px) {
+        gap: 48px;
+    }
+
+    div.col {
+        @media (min-width: 769px) {
+            flex: 1 1 calc((100% / 2) - 130px + (130px / 2));
+            max-width: calc((100% / 2) - 130px + (130px / 2));
+        }
+    }
+
+    div.col:has(.image-wrap) {
+        height: 100%;
+
+        div.image-wrap {
+            height: 100%;
+            padding-right: unset;
+
+            @media (max-width: 768px) {
+                padding-bottom: unset;
+            }
+        }
+    }
+}

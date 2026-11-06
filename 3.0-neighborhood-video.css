@@ -1,0 +1,27 @@
+/* START - Adjust the element padding */
+div.property-video {
+    padding-top: 96px !important;
+    padding-bottom: 96px !important;
+
+    @media (max-width: 768px) {
+        padding-top: 64px !important;
+        padding-bottom: 64px !important;
+    }
+}
+
+/* END */
+
+/* START - Theme the video gallery play button */
+div.play-btn {
+    border-color: var(--accent-dark) !important;
+
+    &:before {
+        background: var(--accent-dark) !important;
+    }
+
+    &:after {
+        border-color: transparent transparent transparent var(--accent-light);
+    }
+}
+
+/* END */

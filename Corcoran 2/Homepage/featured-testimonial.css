@@ -1,0 +1,41 @@
+/*START - adjust paddings*/
+div.basic-margins {
+    margin-bottom: 0px;
+
+    @media only screen and (max-width: 768px) {
+        margin-bottom: 140px;
+    }
+}
+
+div.f-t .top-bar {
+    padding-top: 0px;
+
+    @media (max-width: 768px) {
+        padding-top: 40px;
+    }
+}
+
+/*END*/
+
+/*START - change slick arrow them*/
+div.container div.js-arrows-container i.arrow-in-circle {
+    border: 2px solid #fff;
+    background-color: transparent;
+
+    &:after {
+        border: solid #fff;
+        border-width: 0 2px 2px 0;
+    }
+
+    &:hover {
+        border: 2px solid #fff;
+        background-color: #fff;
+
+        &:after {
+            border: solid #000;
+            border-width: 0 2px 2px 0;
+        }
+    }
+}
+
+/*END - change slick arrow theme*/

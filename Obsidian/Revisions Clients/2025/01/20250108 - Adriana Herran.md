@@ -1,0 +1,7 @@
+
+C7C1BA
+F4E09B
+BLACK
+WHITE
+
+bfa46a

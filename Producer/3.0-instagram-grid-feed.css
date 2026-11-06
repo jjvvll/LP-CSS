@@ -1,0 +1,62 @@
+/* START - Adjust pagination arrow button border width */
+a.slick-arrow {
+    border-width: 2px;
+}
+
+/* END */
+
+/* START - Adjust the instagram name style */
+a.instagram-link {
+    h4.instagram-name {
+        font-family: var(--global-secondary-font-family);
+        color: var(--accent);
+    }
+}
+
+/* END */
+
+/* START - IG Element Padding Fix*/
+.ig-feed {
+    padding-top: 96px !important;
+    padding-bottom: 0px !important;
+
+    @media only screen and (max-width: 768px) {
+        padding-top: 64px !important;
+        padding-bottom: 0px !important;
+    }
+}
+
+/* END */
+
+/* START - Theme the play icon */
+.video-icon::before {
+    border-color: transparent transparent transparent var(--accent) !important;
+}
+
+/* END */
+
+/* START - Theme pagination buttons */
+.nav-button,
+.bottom-nav-button {
+    border: 2px solid var(--accent) !important;
+    background: var(--accent) !important;
+
+    svg {
+        path {
+            stroke: var(--white);
+        }
+    }
+
+    &:hover {
+        border: 2px solid var(--accent) !important;
+        background: transparent !important;
+
+        svg {
+            path {
+                stroke: var(--accent);
+            }
+        }
+    }
+}
+
+/* END */

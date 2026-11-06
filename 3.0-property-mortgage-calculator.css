@@ -1,0 +1,159 @@
+/* START - Fix element not using the body font size */
+div.mg-calc__description {
+  * {
+    font-size: var(--global-body-font-size);
+  }
+}
+
+input.lp-input,
+button.lp-input,
+span.legend__val,
+a.lp-link {
+  font-size: var(--global-body-font-size);
+}
+
+/* END */
+
+/* START - Adjust the title and description text alignment */
+div.mg-calc__col {
+  h2.mg-calc__title,
+  div.mg-calc__description {
+    @media (max-width: 768px) {
+      text-align: center;
+    }
+  }
+}
+
+/* END */
+
+/* START - Adjust the element layout and dimensions */
+div.lp-container {
+  div.mg-calc__row {
+    @media (min-width: 1025px) {
+      --element-gap: 96px;
+      margin-left: 0px;
+      margin-right: 0px;
+      gap: var(--element-gap);
+
+      div.mg-calc__col {
+        padding-left: 0px;
+        padding-right: 0px;
+        flex: 1 1
+          calc((100% / 2) - var(--element-gap) + (var(--element-gap) / 2));
+      }
+    }
+  }
+}
+
+/* END */
+
+/* START - Theme element inputs */
+div.lp-container {
+  div.mg-calc__row {
+    & > div.mg-calc__col:first-child {
+      div.mg-calc__form {
+        input.lp-input,
+        button.custom-select-toggle {
+          border-color: var(--color-light);
+          color: var(--color-light);
+
+          &:hover,
+          &:active,
+          &:focus {
+            border-color: var(--color-light);
+          }
+        }
+
+        button.custom-select-toggle {
+          &:after {
+            border-color: var(--color-light);
+          }
+        }
+      }
+    }
+  }
+}
+
+/* END */
+
+/* START - Theme element button controls (ex: reset) */
+div.lp-container {
+  div.mg-calc__row {
+    & > div.mg-calc__col:first-child {
+      div.mg-calc__form {
+        ul.legend {
+          li.is-hovered {
+            opacity: 1;
+
+            a.lp-link {
+              opacity: 1;
+            }
+          }
+        }
+
+        a.lp-link {
+          font-weight: 400;
+          text-transform: uppercase;
+          color: var(--color-light) !important;
+
+          &:hover {
+            color: var(--color-light) !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* END */
+
+/* START - Theme element form links */
+div.lp-container {
+  div.mg-calc__row {
+    & > div.mg-calc__col:last-child {
+      div.results__legend {
+        a.lp-link {
+          font-weight: 400;
+          text-transform: uppercase;
+          color: var(--color-dark) !important;
+
+          &::before {
+            background-color: rgba(from var(--color-dark) r g b / 0.5);
+          }
+
+          &::after {
+            width: 0px;
+            background-color: var(--color-dark);
+          }
+
+          &:hover {
+            color: var(--color-dark) !important;
+
+            &::after {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* END */
+
+/* START - Theme element expand on mobile button */
+div.lp-container {
+  div.mg-calc__row {
+    & > div.mg-calc__col:last-child {
+      div.results__expand {
+        background: var(--color-dark);
+
+        svg {
+          stroke: var(--color-light);
+        }
+      }
+    }
+  }
+}
+
+/* END */

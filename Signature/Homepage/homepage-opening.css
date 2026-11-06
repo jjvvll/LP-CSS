@@ -1,0 +1,11 @@
+/* Start - Theme Search Button */
+.search-btn {
+    background: #A49B8E !important;
+    color: #fff !important;
+    
+    svg path {
+        fill: #fff !important;
+    }
+}
+
+/* End */

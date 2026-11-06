@@ -1,0 +1,66 @@
+/* START - Adjust the element header max-width */
+div.lp-container {
+    div.lp-title-group {
+        max-width: unset;
+        margin-bottom: 48px;
+
+        p.lp-text--subtitle {
+            max-width: 480px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+}
+
+/* END */
+
+/* START - Theme the featured blog titles */
+h5.lp-h5,
+p.item-text {
+    color: var(--typography-dark);
+}
+
+/* END */
+
+/* START - Center CTA button if the arrows are hidden */
+div.lp-container {
+    div.bottom-bar {
+        &:has(.arrows:empty) {
+            justify-content: center;
+        }
+    }
+}
+
+/* END */
+
+/* START - Hide element if there are no blogs available to display */
+& {
+    &:has(div.slick-track:empty) {
+        display: none;
+    }
+}
+
+/* END */
+
+/* START - Theme the pagination arrow */
+div.arrows {
+    button.lp-arrow {
+        background: var(--accent-dark);
+        border-color: var(--accent-dark);
+
+        &:before {
+            border-color: var(--accent-light);
+        }
+
+        &:hover {
+            background: transparent;
+            border-color: var(--accent-dark);
+
+            &:before {
+                border-color: var(--accent-dark);
+            }
+        }
+    }
+}
+
+/* END */

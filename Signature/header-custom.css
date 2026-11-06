@@ -1,0 +1,94 @@
+/*Start - Make the hamburger menu more visible*/
+.hamburger-component.hamburger {
+    transition: 0.4s;
+}
+
+.theme-light {
+    .hamburger-component.hamburger {
+        border: 1px solid #fff;
+        border-radius: 50%;
+        aspect-ratio: 1/1;
+        height: 54px;
+        width: 54px;
+        padding: 10px;
+        
+        &:hover {
+            background: #fff;
+            border-color: #fff;
+            
+            span,
+            span:before,
+            span:after {
+                background-color: #000 !important;
+            }
+        }
+    }
+}
+
+.theme-light.scroll {
+    .hamburger-component.hamburger {
+        border: 1px solid #4974F0;
+        border-radius: 50%;
+        aspect-ratio: 1/1;
+        height: 54px;
+        width: 54px;
+        padding: 10px;
+        
+        &:hover {
+            background: #4974F0;
+            border-color: #4974F0;
+            
+            span,
+            span:before,
+            span:after {
+                background-color: #fff !important;
+            }
+        }
+    }
+}
+
+.theme-dark {
+    .hamburger-component.hamburger {
+        border: 1px solid #000;
+        border-radius: 50%;
+        aspect-ratio: 1/1;
+        height: 54px;
+        width: 54px;
+        padding: 10px;
+        
+        &:hover {
+            background: transparent;
+            border-color: #000;
+            
+            span,
+            span:before,
+            span:after {
+                background-color: #000 !important;
+            }
+        }
+    }
+}
+
+.theme-dark.scroll {
+    .hamburger-component.hamburger {
+        border: 1px solid #000;
+        border-radius: 50%;
+        aspect-ratio: 1/1;
+        height: 54px;
+        width: 54px;
+        padding: 10px;
+        
+        &:hover {
+            background: #4974F0;
+            border-color: #4974F0;
+            
+            span,
+            span:before,
+            span:after {
+                background-color: #000 !important;
+            }
+        }
+    }
+}
+
+/*End*/

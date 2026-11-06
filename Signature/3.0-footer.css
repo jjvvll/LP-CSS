@@ -1,0 +1,83 @@
+/* START - Adjust footer logo size */
+footer#global-footer {
+    div.logo-holder {
+        & > div {
+            @media (max-width: 768px) {
+                width: 100%;
+            }
+
+            img {
+                max-height: 48px;
+
+                @media (max-width: 768px) {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+/* END */
+
+/* START - Adjust footer layout */
+footer#global-footer {
+    div.lp-container {
+        @media (max-width: 768px) {
+            padding-top: 64px;
+            text-align: center;
+        }
+
+        div.top-row {
+            div.info {
+                ul.lp-socials {
+                    @media (max-width: 768px) {
+                        justify-content: center;
+                    }
+                }
+            }
+        }
+
+        ul.nav {
+            margin-bottom: 60px;
+        }
+
+        div.bottom-row {
+            & > * {
+                @media (max-width: 768px) {
+                    width: 100%;
+                }
+            }
+
+            div.by {
+                @media (max-width: 768px) {
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+        }
+    }
+}
+
+/* END */
+
+/* START - Adjust footer link theme */
+footer#global-footer {
+    li.navigation__item {
+        &:hover {
+            color: var(--accent-link);
+        }
+
+        a {
+            padding-bottom: 4px;
+        }
+    }
+
+    a:not(.lp-socials__link) {
+        &:hover {
+            color: var(--accent-link);
+            cursor: pointer;
+        }
+    }
+}
+
+/* END */

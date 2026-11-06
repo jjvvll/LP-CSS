@@ -1,0 +1,40 @@
+/* START - Adjust element header container */
+div.lp-container {
+    div.lp-title-group {
+        max-width: 1400px;
+        margin-bottom: 48px;
+
+        div.lp-text--subtitle {
+            max-width: unset;
+        }
+    }
+}
+
+/* END */
+
+/* START - Adjust the element title size */
+div.lp-title-group {
+    h2.lp-h2 {
+        @media (max-width: 768px) {
+            font-size: 28px;
+        }
+    }
+}
+
+/* END */
+
+/* START - Fix button dimensions on mobile */
+div.button-container {
+    @media (max-width: 768px) {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+    
+    a.lp-btn {
+        @media (max-width: 768px) {
+            width: 100%;
+        }
+    }
+}
+
+/* END */

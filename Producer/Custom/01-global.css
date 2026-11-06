@@ -1,0 +1,37 @@
+/* START - Adjust button border width and font weight globally */
+.btn,
+.lp-btn,
+.slick-arrow,
+a[role="button"] {
+    border-width: 1px !important;
+    font-weight: normal !important;
+    
+    &:before,
+    &:after {
+        border-bottom-width: 1px !important;
+        border-left-width: 1px !important;
+    }
+}
+
+/* END */
+
+/* START - Adjust pagination width and weight */
+div.pagination-container {
+    li.paginationjs-prev,
+    li.paginationjs-next {
+        a {
+            &:before,
+            &:after {
+                border-width: 1px !important;
+            }
+        }
+    }
+    
+    li.paginationjs-page {
+        a {
+            font-weight: normal !important;
+        } 
+    }
+}
+
+/* END */

@@ -1,0 +1,41 @@
+/*START - IG Element Padding Fix*/
+.ig-feed {
+    padding-top: 96px !important;
+    padding-bottom: 0px !important;
+
+    @media only screen and (max-width: 768px) {
+        padding-top: 64px !important;
+        padding-bottom: 0px !important;
+    }
+}
+
+/*END*/
+
+/*START - play icon*/
+.video-icon::before {
+    border-color: transparent transparent transparent #BA960C !important;
+}
+
+/*END*/
+
+/*START - fix ig pagination */
+.nav-button {
+    border: 2px solid #BA960C !important;
+    border-radius: 4px;
+}
+
+@media (max-width: 768px) {
+    .bottom-nav-button {
+        border: 2px solid #BA960C !important;
+        border-radius: 4px;
+    }
+}
+
+/*END*/
+
+/* Start - Theme instagram name */
+.instagram-name {
+    color: #BA960C;
+}
+
+/* End */

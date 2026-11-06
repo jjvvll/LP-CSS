@@ -1,0 +1,51 @@
+/* START - Theme the contact overlay links */
+div#modal-global-contact-us {
+    a:not(.lp-socials__link) {
+        position: relative;
+        color: #FFF;
+        transition: 0.4s;
+        font-weight: 400;
+        text-decoration: none;
+        
+        &:before,
+        &:after {
+            transition: 0.4s;
+            text-decoration: none !important;
+            line-height: 1;
+            content: "" "";
+            height: 1px;
+            position: absolute !important;
+            bottom: 0;
+            left: 0;
+        }
+        
+        &:before {
+            width: 100% !important;
+            background-color: rgba(255, 255, 255, 0.25);
+        }
+
+        &:after {
+            width: 0%;
+            background-color: #FFF;
+        }
+
+        &:hover:after {
+            width: 100%;
+        }
+
+        @media only screen and (max-width: 768px) {
+            text-decoration: underline;
+
+            &:before,
+            &:after {
+                display: none;
+            }
+
+            &:hover {
+                color: #FFF;
+            }
+        }
+    }
+}
+
+/* END */

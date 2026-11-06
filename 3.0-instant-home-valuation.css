@@ -1,0 +1,114 @@
+/*START - INSTANT HOME VALUATION - WB JV*/
+
+/* START - Adjust the main form layout of the element */
+div.home-valuation {
+    div.opening-wrapper {
+        min-height: unset;
+
+        div.content {
+            max-width: 1400px;
+            padding-top: 240px;
+            padding-bottom: 80px;
+            padding-left: 50px;
+            padding-right: 50px;
+            margin-left: auto;
+            margin-right: auto;
+
+            @media only screen and (max-width: 768px) {
+                padding-top: 180px;
+                padding-bottom: 64px;
+                padding-left: 25px;
+                padding-right: 25px;
+            }
+
+            ul.benefits {
+                text-transform: var(--text-case);
+            }
+
+            input.search-input {
+                @media (max-width: 768px) {
+                    padding-top: 20px;
+                    padding-bottom: 20px;
+                    margin-bottom: 16px;
+                }
+            }
+
+            button.home-val-btn {
+                @media (max-width: 768px) {
+                    padding-left: 20px !important;
+                    padding-right: 20px !important;
+                }
+            }
+        }
+    }
+}
+
+/* END */
+
+/* START - Adjust the second form layout of the element */
+div.modal {
+    h2.lp-h1,
+    h3.lp-h3 {
+        font-size: var(--global-h3-font-size);
+    }
+
+    button.hv-modal__back,
+    label.lp-label,
+    ul.hv-checklist,
+    p.content-item__address,
+    p.hv-modal__how-calc {
+        font-weight: 400;
+        text-transform: var(--text-case);
+    }
+}
+
+/* END */
+
+/* START - Theme the main form of the instant home valuation */
+div.home-valuation {
+    div.opening-wrapper {
+        min-height: unset;
+
+        div.background {
+            &:after {
+                background: linear-gradient(180deg, rgba(0, 0, 0, 0.3) 0%, #000 100%);
+            }
+
+            img.image {
+                object-position: 50% 75%;
+            }
+        }
+
+        div.content {
+            div.search-icon {
+                path {
+                    fill: var(--color-dark);
+                }
+            }
+
+            button.home-val-btn {
+                &:is([disabled]) {
+                    opacity: 0.5;
+                }
+
+                @media (max-width: 768px) {
+                    background-color: var(--color-light) !important;
+                    border-color: var(--color-light) !important;
+                    color: var(--color-dark) !important;
+                }
+            }
+
+            div.line-wrapper {
+                background: var(--color-light);
+
+                div.line {
+                    background: var(--color-dark);
+                }
+            }
+        }
+    }
+}
+
+/* END */
+
+/*END - INSTANT HOME VALUATION - WB JV*/

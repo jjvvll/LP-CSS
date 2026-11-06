@@ -1,0 +1,58 @@
+/* START - Fix element dimensions */
+div.development-list-section {
+    ul.development-list {
+        margin-bottom: 0px;
+        margin-left: auto;
+        margin-right: auto;
+        column-gap: 16px;
+        row-gap: 32px;
+        justify-content: start;
+
+        li {
+            margin: 0px;
+            flex: 1 1 calc((100% / 3) - 30px + (30px / 3));
+            width: auto;
+            max-width: calc((100% / 3) - 30px + (30px / 3));
+
+            @media (max-width: 768px) {
+                flex: 1 1 100%;
+                max-width: 100%;
+            }
+
+            a {
+                display: flex;
+                flex-direction: column;
+
+                figure {
+                    aspect-ratio: 4/3;
+                    height: unset;
+
+                    img {
+                        height: unset;
+                        aspect-ratio: 4/3;
+                    }
+                }
+
+                h3,
+                p {
+                    text-align: center;
+                }
+
+                p {
+                    white-space: normal;
+                    line-clamp: 2;
+                    -webkit-line-clamp: 2;
+                    display: -webkit-box;
+                    -webkit-box-orient: vertical;
+                    overflow: hidden;
+                }
+            }
+        }
+    }
+}
+
+div.pagination-container {
+    margin-top: 48px;
+}
+
+/* END */

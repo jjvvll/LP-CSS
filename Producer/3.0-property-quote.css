@@ -1,0 +1,71 @@
+/* START - Adjust the element layout */
+div.property-quote {
+    padding-top: 96px;
+    padding-bottom: 96px;
+
+    @media (max-width: 768px) {
+        padding-top: 64px;
+        padding-bottom: 64px;
+    }
+}
+
+/* END */
+
+/* START - Fix the sizing on desktop */
+div.container {
+    @media (min-width: 1025px) {
+        height: unset !important;
+    }
+}
+
+div.property-quote-item {
+    @media (min-width: 1025px) {
+        aspect-ratio: 1/1;
+    }
+}
+
+div.property-quote-item-text {
+    @media (min-width: 1025px) {
+        height: unset;
+    }
+}
+
+/* END */
+
+/* START - Theme the quote name and border */
+div.property-quote-item-text {
+    blockquote {
+        strong {
+            color: var(--accent-light);
+
+            &:before {
+                background: var(--accent-light);
+            }
+        }
+    }
+}
+
+/* END */
+
+/* START - Adjust the element if it only contains 1 image */
+div.property-quote.single-image {
+    div.container {
+        height: fit-content;
+
+        div.property-quote-item {
+            img {
+                aspect-ratio: 1/1;
+            }
+        }
+
+        div.property-quote-item-text {
+            height: auto;
+
+            @media (max-width: 768px) {
+                margin-bottom: 0px;
+            }
+        }
+    }
+}
+
+/* END */

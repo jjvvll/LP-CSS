@@ -1,0 +1,10 @@
+/* START - Adjust title size */
+h1.lp-h1 {
+    font-size: var(--global-h1-font-size);
+
+    @media (max-width: 768px) {
+        font-size: var(--global-h3-font-size);
+    }
+}
+
+/* END */

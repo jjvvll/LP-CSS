@@ -1,0 +1,33 @@
+/* START - Fix theme input boxes globally */
+/* Note 2: This can also be inserted per element or per media queries */
+.lp-input,
+.lp-input:not(:placeholder-shown),
+.lp-input:hover,
+.lp-input:focus {
+    background: var(--color-light);
+    color: var(--color-dark);
+    border: 1px solid transparent;
+
+    &::placeholder {
+        color: var(--color-dark);
+        opacity: 0.25;
+    }
+
+    &:-webkit-autofill,
+    &:-webkit-autofill:focus,
+    &:-webkit-autofill:hover {
+        color: var(--color-light);
+    }
+}
+
+.lp-input-icon:after {
+    --iconColor: var(--color-light);
+    cursor: pointer;
+}
+
+.lp-combo-input__wrapper:last-child:before {
+    --lp-color-primary-accent: var(--color-dark);
+}
+
+/* END */
+

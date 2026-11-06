@@ -1,0 +1,18 @@
+/* START - Turn logo into white */
+div.properties-grid {
+    div.properties-grid__item {
+        a.lp-listing-card {
+            div.listing-card__info {
+                div.listing-card__logo {
+                    margin-bottom: 10px;
+
+                    img {
+                        filter: brightness(0) saturate(100%) invert(99%) sepia(77%) saturate(5762%) hue-rotate(184deg) brightness(125%) contrast(100%);
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* END */

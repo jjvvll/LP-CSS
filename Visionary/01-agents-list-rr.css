@@ -1,0 +1,20 @@
+/* START - Convert team grid to flex box */
+div.agents-list--columns-3 {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    a.agents-list__item {
+        flex: 1 1 calc((100% / 3) - 16px + (16px / 3));
+        max-width: calc((100% / 3) - 16px + (16px / 3));
+
+        @media (max-width: 768px) {
+            flex: 1 1 100%;
+            max-width: 100%;
+        }
+    }
+}
+
+/* END */

@@ -1,0 +1,15 @@
+/* Start - Theme Border */
+.nav-row.property-bar {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* End */
+
+/* Start - Theme active selected navigation underline */
+.nav-item.link.active {
+    &:before {
+        background-color: #A49B8E;
+    }
+}
+
+/* End */

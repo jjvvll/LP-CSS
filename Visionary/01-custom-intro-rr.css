@@ -1,0 +1,51 @@
+/* START - Theme the custom intro underline */
+div.custom-intro__content-box {
+    h1.custom-intro__title {
+        &:before {
+            border-color: var(--accent-dark);
+        }
+    }
+}
+
+/* END */
+
+/* START - Hide arrow button */
+.custom-intro__scroll-btn {
+    display: none;
+}
+
+/* END */
+
+/* START - Adjust the background image position vertically */
+& {
+    background-position-y: 75%;
+}
+
+/* END */
+
+/* START - Adjust custom intro max width */
+.custom-intro__content-box {
+    max-width: fit-content;
+}
+
+.custom-intro__description {
+    max-width: 540px;
+}
+
+/* END */
+
+/* START - Adjust font size on mobile */
+.custom-intro__title {
+    @media (max-width: 768px) {
+        font-size: 28px;
+    }
+}
+
+/* END */
+
+/* START - Add background blur to the content background container */
+.custom-intro__content-box {
+    backdrop-filter: blur(6px);
+}
+
+/* END */

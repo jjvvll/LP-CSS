@@ -1,0 +1,12 @@
+/* START - Align the contents to the center */
+div.instant-home-valuation__content {
+    h2.title {
+        text-align: center;
+    }
+
+    ul.instant-home-valuation-benefits {
+        justify-content: center;
+    }
+}
+
+/* END */

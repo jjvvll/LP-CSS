@@ -1,0 +1,83 @@
+/* START - Fix element container dimensions */
+div.lp-container {
+    max-width: 1400px;
+    padding-left: 50px;
+    padding-right: 50px;
+
+    @media (max-width: 768px) {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+}
+
+/* END */
+
+/* START - Adjust the featured development grid layout */
+div.lp-container {
+    div.title-group {
+        margin-bottom: 48px;
+
+        & > * {
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        &:has(p) {
+            h2 {
+                margin-bottom: 16px;
+            }
+
+            p {
+                margin-bottom: unset;
+            }
+        }
+    }
+
+    div.collection {
+        margin: unset;
+        gap: 16px;
+
+        & > a.item {
+            margin: 0px;
+            width: unset;
+            min-height: unset;
+            aspect-ratio: 1/1;
+
+            @media (max-width: 768px) {
+                flex: 1 1 100%;
+                max-width: 100%;
+            }
+        }
+
+        &:is(.collection--3) {
+            & > a.item {
+                flex: 1 1 calc((100% / 3) - 16px + (16px /3));
+                max-width: calc((100% / 3) - 16px + (16px /3));
+            }
+        }
+
+        &:not(.collection--3) {
+            & > a.item {
+                flex: 1 1 calc((100% / 2) - 16px + (16px /2));
+                max-width: calc((100% / 2) - 16px + (16px /2));
+            }
+        }
+
+        &:is(.collection--3),
+        &:not(.collection--3) {
+            & > a.item {
+                @media (max-width: 768px) {
+                    flex: 1 1 100%;
+                    max-width: 100%;
+                }
+            }
+        }
+    }
+
+    div.pagination-container {
+        margin-top: 48px;
+    }
+}
+
+/* END */

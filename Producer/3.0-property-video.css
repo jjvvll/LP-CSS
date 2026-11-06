@@ -1,0 +1,14 @@
+/* START - Theme the property video play button */
+div.play-btn {
+    border-color: var(--color-dark) !important;
+
+    &:before {
+        background: var(--color-dark) !important;
+    }
+
+    &:after {
+        border-color: transparent transparent transparent var(--color-light);
+    }
+}
+
+/* END */

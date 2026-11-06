@@ -1,0 +1,227 @@
+/* START - Adjust the element layout */
+footer#global-footer {
+    div.footer {
+        max-width: 1400px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 50px;
+        padding-right: 50px;
+
+        @media (max-width: 768px) {
+            padding-left: 25px;
+            padding-right: 25px;
+        }
+
+        div.contact-information,
+        div.middle-row,
+        div.bottom-row {
+            & > div.lp-container {
+                padding-left: unset;
+                padding-right: unset;
+            }
+        }
+
+        div.contact-information {
+            padding-top: 96px;
+            padding-bottom: 32px;
+
+            @media (max-width: 768px) {
+                padding-top: 64px;
+            }
+
+            & > div.lp-container {
+                a.logo {
+                    max-width: 232px;
+
+                    &:before,
+                    &:after {
+                        display: none;
+                    }
+
+                    @media (max-width: 768px) {
+                        margin-left: auto;
+                        margin-right: auto;
+                    }
+                }
+
+                div.contact-row {
+                    gap: 96px;
+
+                    @media (max-width: 768px) {
+                        gap: 32px;
+                    }
+
+                    & > div {
+                        width: unset;
+
+                        @media (max-width: 768px) {
+                            min-width: unset;
+                            width: 100%;
+                            text-align: center;
+                        }
+
+                        &:first-child {
+                            @media (min-width: 1025px) {
+                                min-width: 240px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        div.middle-row {
+            padding-top: 32px;
+            padding-bottom: 32px;
+
+            & > div.lp-container {
+                & > div:not(.disclaimer-logos) {
+                    div.disclaimer {
+                        font-size: 14px;
+
+                        @media (max-width: 768px) {
+                            text-align: center;
+                        }
+                    }
+
+                    div.disclaimer-logos {
+                        gap: 16px;
+                    }
+                }
+
+                & > div.disclaimer-logos {
+                    gap: 16px;
+                    margin-top: unset;
+                    justify-content: center;
+                }
+            }
+        }
+
+        div.bottom-row {
+            padding-top: 32px;
+            padding-bottom: 96px;
+
+            @media (max-width: 768px) {
+                padding-bottom: 64px;
+            }
+
+            & > div.lp-container {
+                flex-direction: column;
+
+                ul.fnav {
+                    @media (max-width: 768px) {
+                        width: 100%;
+                        flex-direction: column;
+                        align-items: center;
+                    }
+
+                    li {
+                        min-height: unset;
+                        text-transform: var(--text-case);
+                    }
+                }
+
+                div.copyright-container {
+                    justify-content: initial;
+                    width: 100%;
+
+                    @media (max-width: 768px) {
+                        width: 100%;
+                        align-items: center;
+                    }
+
+                    div.by {
+                        flex: 1;
+
+                        @media (max-width: 768px) {
+                            flex-direction: column;
+                        }
+                    }
+
+                    div.copy {
+                        @media (max-width: 768px) {
+                            flex-direction: column;
+                        }
+                    }
+
+                    ul.lp-socials {
+                        @media (max-width: 768px) {
+                            align-items: center;
+                            width: 100%;
+                        }
+                    }
+
+                    &:not(:has(.lp-socials__link)) {
+                        ul.lp-socials {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* END */
+
+/* START - Invert Footer Logos */
+footer#global-footer {
+    div.disclaimer-logos img,
+    div.img-wrap img {
+        filter: invert(1);
+    }
+}
+
+/* END */
+
+/* START - Theme footer links */
+footer#global-footer {
+    a:not(.lp-socials__link) {
+        color: var(--typography-light) !important;
+        font-weight: 300;
+
+        &:hover {
+            color: var(--accent-light) !important;
+        }
+    }
+
+    div.contact-row {
+        a {
+            text-transform: var(--text-case);
+        }
+    }
+}
+
+/* END */
+
+/* START - Adjust the footer text size */
+footer#global-footer {
+    div.contact-row {
+        &:not(h6) {
+            font-size: 14px;
+        }
+    }
+
+    ul.fnav {
+        font-size: 14px;
+    }
+
+    div.by,
+    div.copy {
+        font-size: 16px;
+        text-transform: var(--text-case);
+        opacity: 1;
+    }
+}
+
+/* END */
+
+/* START - Theme the footer borders */
+footer#global-footer {
+    div.middle-row,
+    div.bottom-row {
+        border-color: var(--border-light-inactive);
+    }
+}
+
+/* END */

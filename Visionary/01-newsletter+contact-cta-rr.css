@@ -1,0 +1,76 @@
+/* START - Adjust the font weight of the text beside the phone number */
+span.newsletter-contact-cta__prefix-cell {
+    opacity: unset;
+    font-weight: 600;
+}
+
+/* END */
+
+/* START - Add background blur to the content background container */
+.newsletter-contact-cta__block {
+    backdrop-filter: blur(6px);
+}
+
+/* END */
+
+/* START - Theme underline border */
+.newsletter-contact-cta__heading {
+    .newsletter-contact-cta__title {
+        &:before {
+            border-color: var(--accent-dark);
+        }
+    }
+}
+
+/* END */
+
+/* START - Theme underline of 'or' */
+.newsletter-contact-cta__word-divide:before,
+.newsletter-contact-cta__word-divide:after {
+    background: var(--border-light-active);
+    opacity: 1;
+}
+
+/* END */
+
+/* START - Align the WWU description box */
+.newsletter-contact-cta__wrapper {
+    justify-content: center;
+}
+
+/* END */
+
+/* START - Align the WWU description to left or right */
+.newsletter-contact-cta__block {
+    max-width: fit-content;
+}
+
+.newsletter-contact-cta__wrapper {
+    @media (min-width: 1024px) {
+        justify-content: left;
+
+        .newsletter-contact-cta__heading {
+            margin: unset;
+
+            .newsletter-contact-cta__pre-title,
+            .newsletter-contact-cta__title,
+            .newsletter-contact-cta__description {
+                text-align: left;
+            }
+
+            .newsletter-contact-cta__title {
+                padding-top: unset;
+
+                &:before {
+                    display: none;
+                }
+            }
+        }
+
+        .newsletter-contact-cta__btn-wrap {
+            text-align: left;
+        }
+    }
+}
+
+/* END */

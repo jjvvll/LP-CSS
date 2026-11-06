@@ -1,0 +1,188 @@
+/* START - Theme contact overlay */
+div#modal-global-contact-us {
+    div.contact-popup {
+        @media (max-width: 768px) {
+            padding: 0px;
+        }
+    }
+
+    div.contact-popup__container {
+        background: var(--primary-light);
+        color: var(--typography-dark);
+    }
+}
+
+/* END */
+
+/* START - Theme contact overlay close button */
+div#modal-global-contact-us {
+    div.contact-popup__container {
+        button.contact-popup__close {
+            &:before,
+            &:after {
+                background: var(--accent-dark);
+            }
+        }
+    }
+}
+
+/* END */
+
+/* START - Theme contact overlay input elements */
+div#modal-global-contact-us {
+    div.contact-popup__container {
+        div.contact-popup__col {
+            input.contact-popup__input,
+            textarea.contact-popup__input {
+                border: 1px solid var(--border-dark-inactive);
+                color: var(--typography-dark);
+
+                &::placeholder {
+                    color: var(--typography-dark);
+                    opacity: 0.25;
+                }
+            }
+        }
+    }
+}
+
+/* END */
+
+/* START - Theme the contact overlay title */
+#modal-global-contact-us {
+    h1.contact-popup__title,
+    h3.contact-popup__subtitle {
+        color: var(--typography-dark);
+    }
+}
+
+/* END */
+
+/* START - Theme contact overlay hoverable links */
+div#modal-global-contact-us {
+    div.contact-popup__container {
+        div.contact-popup__col {
+            a:not(.lp-socials__link) {
+                position: relative !important;
+                color: var(--typography-dark) !important;
+                transition: 0.4s;
+                font-weight: 400;
+                text-decoration: none !important;
+
+                &:hover {
+                    color: var(--accent-dark) !important;
+                }
+
+                &:before,
+                &:after {
+                    transition: 0.4s;
+                    text-decoration: none !important;
+                    line-height: 1;
+                    content: "" "";
+                    height: 1px;
+                    position: absolute !important;
+                    bottom: 0;
+                    left: 0;
+                }
+
+                &:before {
+                    width: 100% !important;
+                    background-color: var(--border-dark-inactive) !important;
+                }
+
+                &:after {
+                    width: 0% !important;
+                    background-color: var(--accent-dark) !important;
+                }
+
+                &:hover:after {
+                    width: 100% !important;
+                }
+
+                @media only screen and (max-width: 768px) {
+                    text-decoration: underline !important;
+
+                    &:before,
+                    &:after {
+                        display: none;
+                    }
+
+                    &:hover {
+                        color: var(--accent-dark);
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* END */
+
+/* START - Resize contact overlay title */
+#modal-global-contact-us {
+    h1.contact-popup__title {
+        font-size: var(--global-h1-font-size);
+
+        @media (max-width: 768px) {
+            font-size: var(--global-h3-font-size);
+        }
+    }
+}
+
+/* END */
+
+/* START - Adjust contact overlay layout dimensions */
+div#modal-global-contact-us {
+    div.contact-popup {
+        overflow-y: auto;
+        display: flex;
+        justify-content: center;
+        align-items: safe center;
+
+        div.contact-popup__container {
+            height: auto;
+            overflow: unset !important;
+            padding: 96px;
+
+            @media (max-width: 768px) {
+                padding: 64px 32px;
+            }
+
+            div.contact-popup__col:has(h1) {
+                h1.contact-popup__title,
+                p {
+                    @media (max-width: 768px) {
+                        text-align: center;
+                    }
+                }
+            }
+
+            div.contact-popup__col:has(ul.lp-socials) {
+                div.contact-popup__info {
+                    padding-top: 0px;
+
+                    @media (max-width: 768px) {
+                        text-align: center;
+                    }
+                }
+
+                ul.lp-socials {
+                    margin-top: 64px;
+                    justify-content: start;
+                    gap: 16px;
+
+                    li {
+                        margin: 0px;
+                    }
+
+                    @media (max-width: 768px) {
+                        justify-content: center;
+                        margin-top: 0px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* END */

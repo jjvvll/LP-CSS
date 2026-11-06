@@ -1,0 +1,46 @@
+div.image-gallery {
+    @media (max-width: 768px) {
+        margin-bottom: 0px;
+    }
+
+    div.slider-navigation {
+        top: unset;
+        bottom: 32px;
+        width: unset;
+        left: 0px;
+        right: 0px;
+        max-width: fit-content;
+        margin: auto;
+        height: auto;
+
+        div.nav-container {
+            height: auto;
+            padding: 0px;
+            background: transparent;
+
+            div.nav-arrows {
+                position: relative;
+                transform: none;
+                gap: 16px;
+
+                button.slick-arrow {
+                    border: 2px solid #fff;
+                    background: transparent;
+                    opacity: 1;
+
+                    &:hover {
+                        background: #fff;
+
+                        &:after {
+                            border-color: #924920;
+                        }
+                    }
+                }
+            }
+        }
+
+        div.carousel-container {
+            display: none;
+        }
+    }
+}

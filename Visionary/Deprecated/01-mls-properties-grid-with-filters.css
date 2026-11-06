@@ -1,0 +1,236 @@
+/* START - Fix MLS Properties dropdown menu not showing up */
+div.input-group {
+    position: relative;
+}
+
+div.custom-select {
+    position: static;
+}
+
+div.custom-select-menu:not(.open) {
+    opacity: 1;
+    max-height: unset;
+}
+
+/* END */
+
+/* START - Remove MLS Properties card extra spacings */
+div.properties-grid__container:is(.three) {
+    gap: 24px;
+    
+    div.properties-grid__item {
+        padding-left: 0px;
+        padding-right: 0px;
+        width: unset;
+        flex: 1 1 calc((100% / 3) - 24px + (24px / 3));
+        max-width: calc((100% / 3) - 24px + (24px / 3));
+        
+        a.listing-card {
+            margin-bottom: 0px;
+        }
+
+        @media (max-width: 768px) {
+            flex: 1 1 100%;
+            max-width: 100%;
+        }
+    }
+}
+
+/* END */
+
+/* START - Theme the input boxes to match the template design */
+div.lp-input-group {
+    background: rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    border-radius: 50px;
+    padding: 0px 32px;
+    
+    &:before {
+        left: 24px;
+        filter: invert(0);
+    }
+    
+    input.lp-input {
+        border-bottom: none;
+        padding: 24px;
+        color: #F00;
+        
+        &::placeholder {
+            color: #0F0;
+        }
+    }
+}
+
+/* END */
+
+/* START - Theme the dropdown boxes to match the template design */
+div.input-group:has(div.custom-select) {
+    background: rgba(255, 0, 0, 0.05);
+    border: 1px solid rgba(255, 0, 0, 0.25);
+    border-radius: 50px;
+    padding: 0px 32px;
+    
+    div.custom-select {
+        button.custom-select-toggle {
+            border-bottom: none;
+            color: #F00;
+            
+            &:after {
+                border-color: #0F0;
+            }
+        }
+    }
+}
+
+div.custom-select-menu {
+    border-radius: 24px;
+    overflow: hidden;
+    border: 1px solid #F00;
+    margin-top: 8px;
+}
+
+div.custom-select-content {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    background: #0F0;
+}
+
+button.custom-select-item {
+    padding: .75rem 1.5rem;
+    color: #F00;
+
+    &:hover {
+        background: #F00;
+        color: #FFF;
+    }
+}
+
+/* END */
+
+/* START - Theme the mls properties range slider */
+div.range-slider {
+    span.irs--round {
+        span.irs-bar {
+            background: #F00;
+        }
+        
+        span.irs-handle {
+            background: #F00;
+            border: 1px solid #0F0;
+            transition: 0.25s;
+
+            i {
+                background: #FFF;
+            }
+            
+            &:hover {
+                background: #0F0;
+
+                i {
+                    background: #000;
+                }
+            }
+        }
+    }
+}
+
+/* END */
+
+/* START - Theme the MLS Properties cards */
+a.listing-card {
+    color: #F00;
+    
+    div.listing-card__status {
+        div.listing-card__label,
+        div.listing-card__mls-key {
+            background: #F00;
+            color: #0F0;
+        }
+    }
+    
+    div.listing-card__info {
+        background: #F6F6F6;
+        box-shadow: none;
+    }
+}
+
+/* END */
+
+/* START - Adjust the text case of the mls properties title */
+.title {
+    text-transform: uppercase;
+}
+
+/* END */
+
+/* START - Fix theme filter input boxes on mobile */
+button.filters__toggle {
+    background: rgba(255, 0, 0, 0.05);
+    border: 1px solid rgba(255, 0, 0, 0.25);
+    border-radius: 50px;
+    color: #000;
+    display: flex;
+
+    svg {
+        path {
+            fill: #F00;
+        }
+    }
+}
+
+div.filters__grid {
+    .range-title {
+        color: #0F0;
+    }
+
+    .lp-input-group,
+    .input-group:has(div.custom-select) {
+        padding-left: unset;
+        padding-right: unset;
+        border: 1px solid #000;
+    }
+
+    .lp-input-group {
+        .lp-input {
+            padding-top: 16px;
+            padding-bottom: 16px;
+            padding-left: 54px;
+        }
+
+        &:before {
+            filter: invert(0);
+        }
+    }
+
+    .custom-select-toggle {
+        padding-left: 32px;
+        padding-right: 32px;
+
+        &:after {
+            right: 32px;
+            border-color: #FF0 !important;
+        }
+    }
+
+    .lp-input,
+    .lp-input:not(:placeholder-shown) {
+        background: #0F0;
+        color: #F00;
+    }
+
+    .lp-input:hover {
+        background: #00F;
+        color: #F00;
+    }
+
+    .lp-input:focus {
+        background: #F00;
+        color: #00F;
+    }
+
+    .lp-combo-input__wrapper:last-child:before {
+        --lp-color-primary-accent: rgba(255, 0, 0, 0.2);
+    }
+}
+
+/* END */

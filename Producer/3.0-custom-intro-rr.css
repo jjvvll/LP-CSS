@@ -1,0 +1,42 @@
+/* START - Adjust custom intro height */
+div.custom-intro {
+    height: 80vh;
+}
+
+/* END */
+
+/* START - Adjust vertical position of background image */
+& {
+    background-position-y: 75%;
+}
+
+/* END */
+
+/* START - Resize title on mobile */
+h1.custom-intro__title {
+    @media (max-width: 768px) {
+        font-size: var(--global-h3-font-size);
+    }
+}
+
+/* END */
+
+/* START - Add white line to titles */
+div.custom-intro {
+    div.container {
+        h1.custom-intro__title {
+            &:after {
+                content: "";
+                display: block;
+                height: 1px;
+                width: 160px;
+                background: #ffffff;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 16px;
+            }
+        }
+    }
+}
+
+/* END */

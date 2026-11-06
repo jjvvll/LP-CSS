@@ -1,0 +1,53 @@
+
+    /* START - Adjust title max width */
+div.lp-container {
+    h2.title {
+        max-width: 100%;
+    }
+
+    p.description {
+        max-width: 100%;
+    }
+}
+
+/* END */
+
+/* START - Fix element not using the body font size */
+p.description {
+    font-size: var(--global-body-font-size);
+}
+
+/* END */
+
+/* START - Adjust neigborhood overview popup dialog title text case */
+span.item__hint {
+    span.weight-bold {
+        text-transform: uppercase;
+    }
+}
+
+/* END */
+
+/* START - Theme neigborhood overview popup */
+div.item__copy {
+    p.item__name--hint {
+        &:after {
+            background-color: var(--color-light);
+        }
+
+        span.item__hint {
+            background-color: var(--color-light);
+
+            span {
+                color: var(--color-dark);
+            }
+
+            &:after {
+                background-color: var(--color-light);
+            }
+        }
+    }
+}
+
+/* END */
+

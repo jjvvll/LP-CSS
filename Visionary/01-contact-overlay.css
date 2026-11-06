@@ -1,0 +1,95 @@
+/* ----- CONTACT OVERLAY -----  WB JV*/
+/* START - Fix contact overlay title to maximize spacing for title */
+.contact-form-modal-details__title {
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    font-size: var(--lp-h2-font-size);
+}
+
+.contact-form-modal-details:is(.only-desktop) {
+    @media (max-width: 1366px) {
+        padding-right: 5vw;
+    }
+}
+
+.contact-form-modal-form__title {
+    &:is(.only-mobile) {
+        text-align: center;
+    }
+}
+
+.contact-form-modal-form__label {
+    text-transform: var(--text-case);
+}
+
+/* END */
+
+/* START - Fix the opacity of the contact overlay text information */
+.contact-form-modal-agent {
+    opacity: 1;
+
+    .contact-form-modal-agent__contact {
+        @media (min-width: 1025px) {
+            max-width: unset;
+        }
+    }
+}
+
+/* END */
+
+/* START - Theme the contact overlay links */
+.contact-form-modal-agent__link {
+    transition: 0.25s;
+    --lp-color-secondary-gray-600: rgba(211, 211, 211, .7);
+}
+
+.contact-form-modal-agent__link:hover,
+.contact-form-modal-agent__link:focus {
+    color: var(--color-light);
+    --lp-color-primary-accent: var(--background-main);
+}
+
+.contact-form-modal-agent__link:active {
+    --lp-color-primary-accent-dark: var(--color-dark);
+}
+
+/* END */
+
+/* START - The the contact overlay close button */
+.contact-form-modal__close-container {
+    top: 16px;
+    right: 16px;
+    height: 40px;
+    width: 40px;
+
+    .contact-form-modal__close {
+        top: unset !important;
+        right: 0px !important;
+        padding: 0px;
+        min-width: 40px;
+        display: flex !important;
+        background: var(--color-light) !important;
+        border: 1px solid var(--color-light) !important;
+
+        &:after {
+            background: var(--color-dark);
+            mask-image: var(--lp-icon-close);
+            transform: unset;
+        }
+
+        &:hover {
+            background: transparent !important;
+            border: 1px solid var(--color-light) !important;
+
+            &:after {
+                background: var(--color-light);
+            }
+        }
+    }
+}
+
+/* END */
+
+/* ----- CONTACT OVERLAY ----- WB JV*/

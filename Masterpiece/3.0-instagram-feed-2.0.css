@@ -1,0 +1,32 @@
+/*START - fix IG padding when active*/
+h3,
+.lp-h3 {
+    font-size: 25px !important;
+}
+
+/*END*/
+
+div.lp-container {
+    svg:not(:root) {
+        path {
+            fill: #fff !important;
+        }
+    }
+}
+
+.lp-container {
+    padding-top: 96px !important;
+    padding-bottom: 96px !important;
+    
+    @media only screen and (max-width: 768px) {
+        padding-top: 51px !important;
+        padding-bottom: 31px !important;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .slider-holder, 
+    .slick-track {
+        height: 510px !important;
+    }
+}

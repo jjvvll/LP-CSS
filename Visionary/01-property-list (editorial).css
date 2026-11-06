@@ -1,0 +1,147 @@
+/* ----- PROPERTIES LIST ----- */
+/* START - Fix the properties list extra margins/paddings */
+.properties-list {
+    display: flex;
+    flex-direction: column;
+    max-width: 1196px;
+    gap: 48px;
+
+    .properties-list__collection {
+        margin: initial;
+    }
+
+    .properties-list__title-group,
+    .properties-list__filters,
+    .properties-list__show-btn,
+    .properties-list__hide-btn,
+    .properties-list__collection {
+        margin-bottom: 0px;
+    }
+
+    .properties-list .pagination-container {
+        margin-top: 0px;
+    }
+
+    .properties-list__btn-holder {
+        margin-top: 0px;
+    }
+
+    .properties-list__filters {
+        width: 100%;
+    }
+}
+
+/* END */
+
+/* START - Theme title underline */
+.properties-list__title-group {
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+
+    .properties-list__title {
+        &:before {
+            color: var(--accent-dark);
+        }
+    }
+}
+
+/* END */
+
+/* START - Adjust the pagination top margin */
+.properties-list {
+    .pagination-container {
+        margin-top: 48px;
+    }
+}
+
+/* END */
+
+/* START - Theme the properties list filters border */
+.properties-list__filters,
+.properties-list-range__block {
+    border-color: var(--border-dark-inactive);
+}
+
+/* END */
+
+/* START - Theme the property list filter buttons on mobile */
+/* Note: You may combine the selectors if designs will be the same for each button */
+.properties-list__show-btn,
+.properties-list__hide-btn {
+    background: var(--accent-dark);
+    color: var(--typography-light);
+    border: 1px solid var(--accent-dark);
+}
+
+/* END */
+
+/* START - Theme the properties list title */
+.properties-list__title {
+    color: var(--accent-dark);
+}
+
+/* END */
+
+/* START - Theme properties list cards amenities tag */
+.properties-list-item__icon-tag {
+    background: var(--accent-dark);
+    color: var(--typography-light);
+    border: 1px solid var(--accent-dark);
+    text-transform: var(--text-case);
+}
+
+/* END */
+
+/* START - Theme the properties list card underline */
+.properties-list-item__top-block {
+    border-bottom: 1px solid var(--border-dark-inactive);
+}
+
+/* END */
+
+/* START - Theme the properties list card status tag */
+.properties-list-item__tag {
+    background: var(--accent-light);
+    color: var(--typography-dark);
+    border: 1px solid var(--accent-light);
+    opacity: 1;
+    text-transform: var(--text-case);
+}
+
+/* END */
+
+/* START - Theme the title underline */
+div.properties-list__title-group {
+    h2.properties-list__title {
+        &:before {
+            border-color: var(--accent-dark);
+        }
+    }
+}
+
+/* END*/
+
+/* START - Uppercase proeprty title */
+.properties-list-item__address {
+    text-transform: var(--text-case);
+}
+
+/* END */
+
+/* START - Theme the properties grid search CTA button */
+.properties-list__btn {
+    background: transparent;
+    border-color: var(--accent-dark);
+    color: var(--accent-dark);
+
+    &:hover:not(:disabled) {
+        background: var(--accent-dark);
+        border-color: var(--accent-dark);
+        color: var(--typography-light);
+    }
+}
+
+/* END */
+
+/* ----- PROPERTIES LIST ----- */

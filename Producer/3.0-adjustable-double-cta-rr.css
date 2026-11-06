@@ -1,0 +1,74 @@
+/* START - Reduce the spaces on mobile */
+div.cta-section {
+    @media (max-width: 768px) {
+        aspect-ratio: 1/1;
+    }
+}
+
+div.cta-section__lead {
+    @media (max-width: 768px) {
+        margin-bottom: 16px;
+    }
+}
+
+div.cta-section__btn-wrap {
+    @media (max-width: 768px) {
+        margin-top: 16px;
+    }
+}
+
+/* END */
+
+/* START - Adjust element layout */
+div.double-image-grid {
+    @media (max-width: 768px) {
+        & > div.cta-section:first-child {
+            @media (max-width: 768px) {
+                padding-bottom: 0px;
+
+                div.cta-section__lead {
+                    margin-bottom: 0px;
+                }
+
+                div.cta-section__btn-wrap {
+                    display: none;
+                }
+            }
+        }
+
+        & > div.cta-section:last-child {
+            @media (max-width: 768px) {
+                padding-top: 32px;
+
+                div.cta-section__lead {
+                    margin-bottom: 0px;
+                }
+
+                div.cta-section__btn-wrap {
+                    a {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* END */
+
+/* START - Play video on mobile */
+section.video-subsection {
+    div.video-wrapper {
+        div.poster {
+            display: none;
+        }
+
+        div.video-wrapper {
+            &:is(.hidable) {
+                display: block;
+            }
+        }
+    }
+}
+
+/* END */

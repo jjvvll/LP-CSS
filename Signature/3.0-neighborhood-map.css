@@ -1,0 +1,13 @@
+div.lp-container {
+    padding-left: 64px;
+    padding-right: 64px;
+
+    @media (max-width: 768px) {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+
+    div.neighborhood-map__address {
+        text-transform: var(--text-case);
+    }
+}

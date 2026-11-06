@@ -1,0 +1,26 @@
+/* START - Fix paddings */
+div.lp-container {
+    padding-top: 178px;
+    padding-bottom: 96px;
+
+    @media (max-width: 768px) {
+        padding-top: 124px;
+        padding-bottom: 64px;
+    }
+}
+
+/* END */
+
+
+/* START - Fix theme on mobile */
+.neighborhood-intro {
+    .text {
+        .title h1 {
+            @media (max-width: 768px) {
+                color: #A49B8E !important;
+            }
+        }
+    }
+}
+
+/* END */

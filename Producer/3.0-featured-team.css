@@ -1,0 +1,91 @@
+/* START - Adjust the element dimensions */
+div.container {
+    max-width: 1300px;
+
+    ul.featured-team {
+        @media (max-width: 768px) {
+            max-width: 100%;
+        }
+
+        li.slick-slide {
+            @media (max-width: 768px) {
+                padding-left: 0px;
+                padding-right: 0px;
+            }
+        }
+    }
+}
+
+/* END */
+
+/* START - Center the header contents */
+div.featured-team-header {
+    margin-bottom: 48px !important;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    ul.slick-links-nav {
+        padding-top: 0px;
+        margin-top: 16px;
+
+        &:has(.slick-hidden) {
+            display: none;
+        }
+    }
+}
+
+/* END */
+
+/* START - Theme previous and next button */
+ul.slick-links-nav {
+    span.spacer {
+        background-color: var(--border-dark-inactive) !important;
+    }
+
+    li span.link {
+        color: var(--typography-dark);
+        user-select: none;
+
+        &:is(.slick-disabled) {
+            opacity: 0.5;
+        }
+
+        &:not(.slick-disabled) {
+            cursor: pointer;
+            
+            &:hover {
+                color: var(--accent-dark);
+
+                &:after {
+                    width: 100%;
+                }
+            }
+        }
+
+        &:before {
+            background-color: var(--border-dark-inactive) !important;
+        }
+
+        &:after {
+            background-color: var(--accent-dark) !important;
+        }
+    }
+}
+
+/* END */
+
+/* START - Theme border lines on hover */
+div.featured-team__hover {
+    &:before {
+        border-right-color: var(--accent-dark);
+        border-top-color: var(--accent-dark);
+    }
+
+    &:after {
+        border-bottom-color: var(--accent-dark);
+        border-left-color: var(--accent-dark);
+    }
+}
+
+/* END */

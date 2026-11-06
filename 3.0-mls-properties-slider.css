@@ -1,0 +1,76 @@
+/* START - Theme mls properties slider pagination arrow */
+.lp-arrow {
+    background-color: var(--accent-dark);
+    border: solid 2px var(--accent-dark);
+    color: var(--accent-light);
+
+    &:hover {
+        background-color: transparent;
+        color: var(--accent-dark);
+    }
+}
+
+/* END */
+
+/* START - Adjust the header layout */
+.properties-grid__header {
+    @media only screen and (min-width: 769px) {
+        padding-bottom: 20px !important;
+        align-items: center !important;
+        .lp-h2 {
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+    }
+
+    @media only screen and (max-width: 768px) {
+        .lp-title-group {
+            margin-right: 0px;
+            width: 100%;
+
+            .lp-h2 {
+                text-align: center !important
+            }
+        }
+
+        align-items: center !important;
+    }
+}
+
+/* END */
+
+/* START - Theme MLS Properties Card */
+div.properties-grid {
+    div.properties-grid__item {
+        a.lp-listing-card {
+            div.listing-card__img-wrap {
+                div.listing-card__status {
+                    div.listing-card__label,
+                    div.listing-card__mls-key {
+                        background-color: var(--accent-dark);
+                        color: var(--typography-light);
+                        text-transform: var(--text-case);
+                        font-weight: 700;
+                    }
+                }
+
+                div.listing-card__attribution {
+                    background-color: rgb(from var(--accent-dark) r g b / 75%);
+                }
+            }
+
+            div.listing-card__info {
+                background-color: var(--primary-light);
+                color: var(--typography-dark);
+                box-shadow: none;
+                text-transform: uppercase;
+
+                .listing-card__logo {
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+}
+
+/* END */

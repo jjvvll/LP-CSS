@@ -1,0 +1,1349 @@
+/* ----- GLOBAL ELEMENTS FIXES ----- */
+
+/* ----- 404 ----- */
+/* START - Fix 404 height in dashboard view */
+.error-page {
+    height: auto;
+    min-height: 100dvh;
+}
+
+/* END */
+
+/* START - Fix element not using the global font size */
+.error-page__description {
+    font-size: var(--global-secondary-font-size);
+}
+
+/* END */
+
+/* START - Reduce CTA button top margin */
+.error-page__text-box+.error-page__btn {
+    margin-top: 32px;
+}
+
+/* END */
+
+/* ----- 404 ----- */
+
+/* ----- AGENT BIO ----- */
+/* START - Fix agent bio container layout */
+.agent-bio__container {
+    @media (min-width: 1025px) {
+        gap: 96px;
+        justify-content: center;
+        padding-bottom: 93px;
+    }
+}
+
+.agent-bio__image {
+    margin-right: 0px;
+}
+
+.agent-bio__text {
+    max-width: unset;
+}
+
+/* END */
+
+/* START - Theme the read more button */
+.read-more {
+    color: var(--color-dark);
+
+    &:hover {
+        color: var(--color-dark);
+    }
+}
+
+/* END */
+
+/* START - Center social icons on mobile */
+.agent-bio-socials {
+    .lp-socials {
+        @media (max-width: 768px) {
+            justify-content: center;
+
+            li {
+                margin-bottom: 0px;
+            }
+        }
+    }
+}
+
+/* END */
+
+/* ----- AGENT BIO ----- */
+
+/* ----- AGENT CARD ----- */
+/* START - Fix the client info position for large screen */
+.agent-card__wrapper {
+    justify-content: center;
+}
+
+/* END */
+
+/* START - Adjust agent card content z-index */
+.agent-card__content {
+    z-index: 1;
+}
+
+/* END */
+
+/* START - Fix agent card description max width */
+.agent-card__description {
+    max-width: unset;
+    text-overflow: unset;
+    line-clamp: unset;
+    -webkit-line-clamp: unset;
+}
+
+/* END */
+
+/* START - Adjust the agent card info overlay on mobile */
+.agent-card__photo {
+    @media (max-width: 768px) {
+        padding-top: 400px;
+    }
+}
+
+/* END */
+
+/* START - Adjust agent headshot */
+.agent-card__image-wrapper {
+    @media (min-width: 769px) {
+        height: 900px;
+    }
+
+    @media (max-width: 768px) {
+        height: auto;
+    }
+}
+
+/* END */
+
+/* START - Theme agent card underline */
+.agent-card__pre-title {
+    &:before {
+        border-color: var(--color-dark);
+    }
+}
+
+/* END */
+
+/* START - Adjust the agent card info container on desktop */
+.agent-card__heading {
+    @media (min-width: 1025px) {
+        margin-top: unset;
+        bottom: 10%;
+    }
+}
+
+/* END */
+
+/* ----- AGENT CARD ----- */
+
+/* ----- AGENT DETAILS ----- */
+/* START - Fix element unidentified border bottom */
+.agent-details__item {
+    position: relative;
+
+    &:is(.agent-details__item--address),
+    &:is(.agent-details__item--license) {
+        &:before {
+            display: none;
+        }
+    }
+}
+
+/* END */
+
+/* START - Adjust contact details paddings */
+div.agent-details__cell {
+    padding-left: 0px;
+    padding-right: 0px;
+    align-items: center;
+}
+
+/* END */
+
+/* START - Adjust the agent details address text case */
+.agent-details__item--address {
+    text-transform: uppercase;
+}
+
+/* END */
+
+/* START - Theme contact details icons */
+span.lp-icon {
+    --lp-color-primary-accent: var(--color-dark);
+}
+
+/* END */
+
+/* START - Theme contact details labels */
+span.agent-details__label {
+    color: var(--color-dark);
+    opacity: 1;
+    max-height: fit-content;
+}
+
+/* END */
+
+/* START - Theme the agent details border */
+div.agent-details__cell {
+    border-bottom: 1px solid var(--border-dark-inactive);
+}
+
+/* END */
+
+/* START - Theme links hover effect */
+a.agent-details__item:before {
+    background: var(--border-dark-inactive);
+}
+
+a.agent-details__item:hover:before {
+    background: var(--color-dark);
+}
+
+.agent-details__item--address,
+.agent-details__item--license {
+    color: var(--color-dark);
+}
+
+/* END */
+
+/* START - Adjust the element padding */
+.agent-details__container {
+    padding-left: unset;
+    padding-right: unset;
+
+    @media (max-width: 1440px) {
+        padding-left: 62px;
+        padding-right: 62px;
+    }
+
+    @media (max-width: 768px) {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+}
+
+/* END */
+
+/* ----- AGENT DETAILS ----- */
+
+/* ----- BLOG POST SLIDER ----- */
+
+/* START - Adjust blog card text case */
+.blog-posts-slider-item__tag {
+    margin-top: 16px;
+    text-transform: var(--text-case);
+}
+
+.blog-posts-slider-item__name {
+    text-transform: var(--text-case);
+}
+
+/* END */
+
+/* START - Theme pre-title underline */
+.blog-posts-slider__title-group {
+    .blog-posts-slider__pretitle {
+        &:before {
+            border-color: var(--color-dark);
+        }
+    }
+}
+
+/* END */
+
+/* ----- BLOG POST SLIDER ----- */
+
+/* ----- BLOG POSTS LIST ----- */
+/* START - Adjust the blog grid container */
+.blog-posts-list-item__image-container {
+    height: unset;
+    aspect-ratio: 16/9;
+}
+
+.blog-posts-list-item__details {
+    text-transform: var(--text-case);
+}
+
+.blog-posts-list-item__title {
+    white-space: nowrap;
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* END */
+
+/* ----- BLOG POSTS LIST ----- */
+
+/* ----- CONTACT FORM ----- */
+/* START - Adjust the label text case */
+.contact-form__label {
+    text-transform: var(--text-case);
+}
+
+/* END */
+
+/* START - Fix textarea being off centered vertically */
+.contact-form__input[name="message"] {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+/* END */
+
+/* START - Hide textarea scrollbar */
+.contact-form__input:is(textarea) {
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+/* END */
+
+/* ----- CONTACT FORM ----- */
+
+/* ----- CUSTOM INTRO ----- */
+/* START - Adjust the element layout */
+.custom-intro {
+    &:is(.custom-intro__horizon-left) {
+        .custom-intro__pre-title {
+            margin: unset;
+        }
+    }
+}
+
+.custom-intro__description {
+    margin-top: 8px;
+}
+
+.custom-intro__scroll-btn {
+    margin-top: 48px;
+}
+
+.custom-intro__content-box {
+    @media (min-width: 1025px) {
+        padding: 56px;
+    }
+}
+
+/* END */
+
+/* START - Fix element not using the global font size */
+.custom-intro__title {
+    font-size: var(--global-h1-font-size);
+
+    @media (max-width: 768px) {
+        font-size: var(--global-h3-font-size);
+    }
+}
+
+.custom-intro__description {
+    font-size: var(--global-secondary-font-size);
+}
+
+/* END */
+
+/* START - Fix the arrow button theme */
+.custom-intro__scroll-btn {
+    border-color: var(--color-dark);
+    background: var(--color-dark);
+
+    &:after {
+        background: var(--color-light);
+    }
+
+    &:hover {
+        border-color: var(--color-dark);
+        background: transparent;
+
+        &:after {
+            background: var(--color-dark);
+        }
+    }
+}
+
+/* END */
+
+/* ----- CUSTOM INTRO ----- */
+
+/* ----- FULL BLEED CTA ----- */
+/* START - Fix the element layout */
+div.full-bleed-cta {
+    div.full-bleed-cta__container {
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+
+        &:not(:has(div.full-bleed-cta-button-container)) {
+            div.full-bleed-cta__description {
+                margin-bottom: unset;
+            }
+        }
+    }
+
+    &:has(.full-bleed-cta__image) {
+
+        &:not(.full-bleed-cta--right):not(.full-bleed-cta--full-bleed),
+        &:not(.full-bleed-cta--right) {
+            div.full-bleed-cta__container {
+                @media (min-width: 769px) {
+                    padding-left: 50px;
+                    padding-right: 0px;
+                }
+            }
+        }
+
+        &:not(.full-bleed-cta--full-bleed) {
+            div.full-bleed-cta__container {
+                padding-left: unset;
+            }
+        }
+    }
+
+    &:not(:has(.full-bleed-cta__image)) {
+        .full-bleed-cta__title-group {
+            margin-bottom: 8px;
+        }
+    }
+}
+
+/* END */
+
+/* ----- FULL BLEED CTA ----- */
+
+/* ----- GALLERY STYLE MENU ----- */
+/* START - Adjust the element max width title */
+.gallery-style-menu-title-group {
+    margin-bottom: 48px;
+    max-width: unset;
+}
+
+/* END */
+
+/* START - Center titles horizontally */
+.gallery-style-menu-grid__title {
+    text-align: center;
+
+    &:after {
+        display: none;
+    }
+}
+
+/* END */
+
+/* ----- GALLERY STYLE MENU ----- */
+
+/* ----- INSTANT HOME VALUATION ----- */
+/* START - Theme home valuation */
+div.instant-home-valuation {
+    @media (min-width: 769px) {
+        min-height: 65vh !important;
+    }
+
+    &:after {
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 1));
+    }
+
+    div.instant-home-valuation__content {
+        padding-left: 62px;
+        padding-right: 62px;
+
+        @media (max-width: 768px) {
+            padding-left: 16px;
+            padding-right: 16px;
+            padding-bottom: 64px;
+        }
+
+        h2.title {
+            text-transform: var(--text-case);
+        }
+
+        ul.instant-home-valuation-benefits {
+            text-transform: var(--text-case);
+        }
+
+        div.instant-home-valuation-search {
+            &:after {
+                background: var(--color-dark);
+            }
+
+            input.instant-home-valuation-search__input {
+                @media (max-width: 768px) {
+                    border-radius: 50px;
+                }
+            }
+
+            div.instant-home-valuation-search__icon {
+                path {
+                    fill: var(--color-dark);
+                }
+            }
+
+            button.instant-home-valuation-search__btn {
+                @media (max-width: 768px) {
+                    color: var(--color-dark) !important;
+                    background: var(--color-light) !important;
+                    border-color: var(--color-light) !important;
+                }
+            }
+        }
+    }
+}
+
+/* END */
+
+/* START - Theme home valuation second form */
+div.instant-home-valuation-modal:is(.js-modal) {
+    .instant-home-valuation-modal__close {
+        text-transform: uppercase;
+    }
+
+    .lp-input,
+    .lp-input:not(:placeholder-shown),
+    .lp-input:hover,
+    .lp-input:focus {
+        background: var(--color-dark);
+        color: var(--color-dark);
+        border: 1px solid transparent;
+
+        &::placeholder {
+            color: var(--color-dark);
+            opacity: 0.25;
+        }
+
+        &:-webkit-autofill,
+        &:-webkit-autofill:focus,
+        &:-webkit-autofill:hover {
+            color: var(--color-dark);
+        }
+    }
+}
+
+/* END */
+
+/* START - Align the contents to the center */
+div.instant-home-valuation__content {
+    h2.title {
+        text-align: center;
+    }
+
+    ul.instant-home-valuation-benefits {
+        justify-content: center;
+        font-size: 12px;
+    }
+}
+
+/* END */
+
+/* ----- INSTANT HOME VALUATION ----- */
+
+/* ----- MLS PROPERTIES WITH MAP ----- */
+/* START - Adjust the element's layout */
+.mls-properties-with-map__title-group {
+    margin-bottom: 32px;
+}
+
+.mls-properties-with-map__filters {
+    margin-bottom: 0px;
+}
+
+.mls-properties-with-map-filters__grid-switcher-tab:hover {
+    color: var(--color-dark);
+}
+
+/* END */
+
+/* START - Theme the mls properties modal buttons */
+.mls-properties-with-map-modal__reset-button,
+.mls-properties-with-map-modal__close-modal {
+    border-color: var(--color-dark);
+    background: var(--color-dark);
+    color: var(--color-light);
+
+    &:hover:not(:disabled) {
+        background: transparent;
+        border-color: var(--color-dark);
+        color: var(--color-dark);
+    }
+}
+
+/* END */
+
+/* START - Fix search input inconsistent dimensions */
+.mls-properties-with-map__footer {
+    padding-bottom: 0px;
+}
+
+.mls-properties-with-map__filters-content {
+    align-items: center;
+}
+
+.mls-properties-with-map__input-group {
+    margin-bottom: unset;
+}
+
+.mls-properties-with-map__input {
+    background: var(--color-dark) !important;
+    border: 1px solid transparent !important;
+    padding-top: 16px !important;
+    padding-left: 54px !important;
+    margin-bottom: unset;
+}
+
+.mls-properties-with-map__input-reset {
+    right: 18px;
+}
+
+.mls-properties-with-map__input-group--search:before {
+    left: 18px;
+}
+
+/* END */
+
+/* START - Uppercase property address */
+.mls-properties-with-map-card__address {
+    text-transform: uppercase;
+}
+
+/* END */
+
+/* START - Theme the MLS with map input fields */
+.mls-properties-with-map {
+    .mls-properties-with-map__input-group--search {
+        &:before {
+            background: var(--color-dark);
+            ;
+            mask-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%2724%27 height=%2724%27 fill=%27none%27%3E%3Cpath fill=%27%23000%27 fill-rule=%27evenodd%27 d=%27M8 11a5 5 0 1 0 10 0 5 5 0 0 0-10 0m12 0a7 7 0 0 1-10.594 6.008l-3.699 3.7a1 1 0 0 1-1.414-1.415l3.554-3.555A7 7 0 1 1 20 11%27 clip-rule=%27evenodd%27/%3E%3C/svg%3E");
+        }
+    }
+
+    .lp-input,
+    .lp-input:not(:placeholder-shown),
+    .lp-input:hover,
+    .lp-input:focus {
+        background: var(--color-dark);
+        color: var(--color-dark);
+        border: 1px solid transparent;
+
+        &::placeholder {
+            color: var(--color-dark);
+            opacity: 0.25;
+        }
+
+        &:-webkit-autofill,
+        &:-webkit-autofill:focus,
+        &:-webkit-autofill:hover {
+            color: var(--color-dark);
+        }
+
+        &:after {
+            border-color: var(--color-dark);
+        }
+    }
+
+    .custom-select {
+        .custom-select-toggle {
+            &:is(.is-placeholder) {
+                color: var(--color-dark);
+                opacity: 0.5;
+            }
+
+            &:not(:placeholder-shown) {
+                color: var(--color-dark);
+                border-color: transparent;
+                background: var(--color-dark);
+            }
+
+            &:not(:placeholder-shown):after {
+                background-color: var(--color-dark);
+            }
+        }
+    }
+
+    .custom-select-toggle:after {
+        background: transparent !important;
+    }
+
+    .mls-properties-with-map-filters__grid-switcher {
+        background: var(--color-dark);
+    }
+
+    .mls-properties-with-map-filters__grid-switcher-tab {
+        color: var(--color-dark);
+
+        &:hover,
+        &:is(.active) {
+            background: var(--color-dark);
+            color: var(--typography-light);
+        }
+    }
+
+    .mls-properties-with-map-filters__grid-price-range-popup {
+        .mls-properties-with-map-filters__grid-price-range-label {
+            color: var(--color-dark);
+        }
+
+        .custom-select {
+            .custom-select-toggle {
+                &:is(.is-placeholder) {
+                    color: var(--color-dark);
+                    opacity: 0.5;
+                }
+
+                &:not(:placeholder-shown) {
+                    color: var(--color-dark);
+                    border-color: transparent;
+                    background: var(--color-dark);
+                }
+
+                &:not(:placeholder-shown):after {
+                    background-color: var(--color-dark);
+                }
+
+                &:after {
+                    border-color: var(--color-dark);
+                }
+            }
+        }
+    }
+}
+
+/* END */
+
+/* ----- MLS PROPERTIES WITH MAP ----- */
+
+/* ----- NEIGHBORHOOD LIST ----- */
+/* START - Adjust the element's header text width */
+div.lp-title-group {
+    max-width: unset;
+}
+
+.neighborhoods-list-pre-title {
+    opacity: 1;
+}
+
+.neighborhoods-list-title {
+    margin-bottom: unset;
+}
+
+.neighborhoods-list-desc {
+    max-width: 720px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 16px;
+}
+
+/* END */
+
+/* START - Theme neighorhood grid card horizontal border */
+.neighborhoods-list__text {
+    border-bottom: 1px solid var(--border-dark-inactive);
+}
+
+/* END */
+
+/* START - Theme neighorhood grid read more button */
+.neighborhoods-list__link {
+    color: var(--color-dark) !important;
+}
+
+.neighborhoods-list__link:hover {
+    color: var(--color-dark) !important;
+    opacity: 0.5;
+}
+
+/* END */
+
+/* ----- NEIGHBORHOOD LIST ----- */
+
+/* ----- NEIGHBORHOOD LIST ----- */
+/* START - Adjust the element layout */
+.neighborhoods-slider {
+    @media (min-width: 769px) {
+        grid-template-columns: 1fr 1fr auto;
+    }
+
+    &:not(:has(.neighborhoods-slider__images--fullwidth)) {
+        &:has(.neighborhoods-slider__card-content:not(.neighborhoods-slider__card-content--centered)) {
+            .neighborhoods-slider__images {
+                @media (min-width: 769px) {
+                    margin-bottom: 48px;
+                }
+            }
+
+            .neighborhoods-slider__card-content {
+                @media (min-width: 769px) {
+                    bottom: -48px;
+                }
+            }
+        }
+    }
+
+    &:has(.neighborhoods-slider__images--fullwidth) {
+        .neighborhoods-slider__images {
+            @media (min-width: 769px) and (max-width: 1024px) {
+                margin-bottom: 48px;
+            }
+        }
+
+        .neighborhoods-slider__card-content {
+            @media (min-width: 1025px) {
+                bottom: -98px;
+            }
+        }
+    }
+}
+
+.neighborhoods-slider__list-slider {
+    &:after {
+        display: none;
+    }
+}
+
+.neighborhoods-slider__title {
+    max-width: unset;
+}
+
+.neighborhoods-slider__subtitle {
+    max-width: 560px;
+}
+
+.neighborhoods-slider__card-content {
+    min-height: unset;
+}
+
+.neighborhoods-slider__list-item-text {
+    text-transform: var(--text-case);
+}
+
+.neighborhoods-slider__card-blur {
+    display: none !important;
+}
+
+/* END */
+
+/* ----- NEIGHBORHOOD SLIDER LAYOUT ----- */
+
+/* ----- NEIGHBORHOOD SLIDER THEME ----- */
+/* START - Theme the neighborhoods slider title border */
+.neighborhoods-slider__pretitle {
+    &:before {
+        border-color: var(--color-dark);
+    }
+}
+
+/* END */
+
+/* START - Theme read more button */
+.neighborhoods-slider__card-link {
+    color: var(--color-dark);
+
+    &:hover {
+        color: var(--color-dark);
+    }
+}
+
+/* END */
+
+/* ----- NEIGHBORHOOD SLIDER THEME ----- */
+
+/* ----- NEWSLETTER + CONTACT CTA ----- */
+/* START - Adjust description opacity */
+.newsletter-contact-cta__description {
+    opacity: 1 !important;
+}
+
+/* END */
+
+/* START - Adust the newsletter container max width */
+.newsletter-contact-cta__block {
+    @media (min-width: 701px) {
+        width: unset;
+        max-width: 800px;
+    }
+
+    .newsletter-contact-cta__heading {
+        max-width: 100%;
+
+        .newsletter-contact-cta__description {
+            max-width: 600px;
+            margin: auto;
+        }
+    }
+}
+
+/* END */
+
+/* ----- NEWSLETTER + CONTACT CTA ----- */
+
+/* ----- PROPERTIES SLIDER ----- */
+/* START - Adjust the element layout */
+div.properties-slider {
+    div.properties-slider__title-group {
+        div.properties-slider__subtitle {
+            max-width: 720px;
+
+            &>*:last-child {
+                margin-bottom: 0px;
+            }
+        }
+    }
+
+    div.properties-slider__arrows {
+        display: flex;
+        gap: 16px;
+
+        button.properties-slider__arrow--next {
+            margin-left: unset;
+        }
+    }
+
+    &:not(.properties-slider--left-aligned) {
+        div.properties-slider__title-group {
+            margin-bottom: 32px;
+            max-width: unset;
+
+            div.properties-slider__subtitle {
+                max-width: 480px;
+            }
+
+            p.properties-slider__pretitle {
+                margin-bottom: 16px;
+            }
+        }
+
+        div.properties-slider__arrows {
+            @media (min-width: 769px) {
+                margin-top: unset;
+                margin-bottom: 40px;
+            }
+        }
+    }
+
+    &:is(.properties-slider--left-aligned) {
+        @media (min-width: 769px) {
+            grid-template-areas: "title-group title-group arrows" "gallery gallery gallery" "cta cta cta";
+        }
+
+        @media (max-width: 768px) {}
+
+        div.properties-slider__title-group {
+            margin-bottom: 40px;
+            max-width: unset;
+
+            @media (min-width: 769px) {
+                padding-right: 40px;
+            }
+
+            h2.properties-slider__title {
+                margin-bottom: 16px;
+            }
+
+            div.properties-slider__subtitle {
+                margin-bottom: unset;
+            }
+        }
+    }
+}
+
+/* END */
+
+/* START - Theme the title underline */
+div.properties-slider__title-group {
+
+    p.properties-slider__pretitle,
+    h2.properties-slider__title {
+        &:before {
+            border-color: var(--color-dark);
+        }
+    }
+}
+
+/* END */
+
+/* START - Theme properties slider amenities status tag */
+.properties-slider-card__tag {
+    background: var(--color-dark);
+    color: var(--typography-light);
+    text-transform: var(--text-case);
+}
+
+/* END */
+
+/* START - Theme properties slider amenities tag */
+.properties-slider-card__feature {
+    background: var(--color-dark);
+    color: var(--typography-light);
+    text-transform: var(--text-case);
+}
+
+/* END */
+
+/* START - Uppercase properties card address */
+.properties-slider-card__address {
+    text-transform: var(--text-case);
+}
+
+/* END */
+
+/* ----- PROPERTIES SLIDER ----- */
+
+/* ----- PROPERTIES LIST ----- */
+/* START - Fix the properties list extra margins/paddings */
+.properties-list {
+    display: flex;
+    flex-direction: column;
+    max-width: 1196px;
+    gap: 48px;
+
+    .properties-list__collection {
+        margin: initial;
+    }
+
+    .properties-list__title-group,
+    .properties-list__filters,
+    .properties-list__show-btn,
+    .properties-list__hide-btn,
+    .properties-list__collection {
+        margin-bottom: 0px;
+    }
+
+    .properties-list .pagination-container {
+        margin-top: 0px;
+    }
+
+    .properties-list__btn-holder {
+        margin-top: 0px;
+    }
+
+    .properties-list__filters {
+        width: 100%;
+    }
+}
+
+/* END */
+
+/* START - Theme title underline */
+.properties-list__title-group {
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+
+    .properties-list__title {
+        &:before {
+            color: var(--color-dark);
+        }
+    }
+}
+
+/* END */
+
+/* START - Adjust the pagination top margin */
+.properties-list {
+    .pagination-container {
+        margin-top: 48px;
+    }
+}
+
+/* END */
+
+/* START - Theme the properties list filters border */
+.properties-list__filters,
+.properties-list-range__block {
+    border-color: var(--border-dark-inactive);
+}
+
+/* END */
+
+/* START - Theme the property list filter buttons on mobile */
+/* Note: You may combine the selectors if designs will be the same for each button */
+.properties-list__show-btn,
+.properties-list__hide-btn {
+    background: var(--color-dark);
+    color: var(--typography-light);
+    border: 1px solid var(--color-dark);
+}
+
+/* END */
+
+/* START - Theme the properties list title */
+.properties-list__title {
+    color: var(--color-dark);
+}
+
+/* END */
+
+/* START - Theme properties list cards amenities tag */
+.properties-list-item__icon-tag {
+    background: var(--color-dark);
+    color: var(--typography-light);
+    border: 1px solid var(--color-dark);
+    text-transform: var(--text-case);
+}
+
+/* END */
+
+/* START - Theme the properties list card underline */
+.properties-list-item__top-block {
+    border-bottom: 1px solid var(--border-dark-inactive);
+}
+
+/* END */
+
+/* START - Theme the properties list card status tag */
+.properties-list-item__tag {
+    background: var(--color-light);
+    color: var(--color-dark);
+    border: 1px solid var(--color-light);
+    opacity: 1;
+    text-transform: var(--text-case);
+}
+
+/* END */
+
+/* START - Theme the title underline */
+div.properties-list__title-group {
+    h2.properties-list__title {
+        &:before {
+            border-color: var(--color-dark);
+        }
+    }
+}
+
+/* END*/
+
+/* START - Uppercase proeprty title */
+.properties-list-item__address {
+    text-transform: var(--text-case);
+}
+
+/* END */
+
+/* START - Theme the properties grid search CTA button */
+.properties-list__btn {
+    background: transparent;
+    border-color: var(--color-dark);
+    color: var(--color-dark);
+
+    &:hover:not(:disabled) {
+        background: var(--color-dark);
+        border-color: var(--color-dark);
+        color: var(--typography-light);
+    }
+}
+
+/* END */
+
+/* ----- PROPERTIES LIST ----- */
+
+/* ----- SIMPLE CTA ----- */
+/* START - Adjust title max width */
+.simple-cta__text-block {
+    max-width: 100%;
+    margin-bottom: unset;
+
+    &>*:not(.simple-cta__title) {
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/* END */
+
+/* START - Adjust the element layout */
+div.simple-cta__text-block {
+    &>* {
+        margin-bottom: unset;
+
+        @media (max-width: 768px) {
+            text-align: center;
+        }
+    }
+}
+
+/* END */
+
+/* START - Adjust title bottom margin */
+.simple-cta__text-block {
+    margin-bottom: 0px;
+
+    @media (max-width: 768px) {
+        margin-bottom: 16px;
+    }
+}
+
+/* END */
+
+/* ----- SIMPLE CTA ----- */
+
+/* ----- TESTIMONIAL LIST ----- */
+/* START - Adjust testimonial cards top padding */
+.testimonials-list__item {
+    padding-top: 3rem;
+}
+
+/* END */
+
+/* START - Theme the testimonial cards */
+.testimonials-list__item {
+    &:before {
+        --iconColor: var(--color-dark);
+    }
+
+    border-bottom: 1px solid var(--border-dark-inactive);
+}
+
+/* END */
+
+/* START - Adjust the element paddings */
+.testimonials-list {
+    padding: unset;
+}
+
+/* END */
+
+/* START - Adjust the element author name text case */
+.testimonials-list__author {
+    text-transform: var(--text-case);
+}
+
+/* END */
+
+/* ----- TESTIMONIAL LIST ----- */
+
+/* ----- TESTIMONIALS SLIDER ----- */
+/* START - Fix the max width of the title content */
+.testimonials-slider-heading {
+    max-width: unset;
+
+    div.testimonials-slider-heading__description {
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/* END */
+
+/* START - Adjust the opacity of the description container */
+section:not([class^=lp-theme]) {
+    .testimonials-slider-heading__description {
+        opacity: 1;
+    }
+}
+
+/* END */
+
+/* START - Theme read more button */
+.read-more {
+    color: var(--color-dark);
+
+    &:hover {
+        color: var(--color-dark);
+    }
+}
+
+/* END */
+
+/* START - Fix the testimonial slider items being off centered on tablet and desktop */
+.testimonials-slider-slider__item {
+    @media (min-width: 769px) {
+        margin-right: 0px !important;
+        gap: 32px;
+        justify-content: center;
+    }
+}
+
+/* END */
+
+/* START - Adjust the text content of the testimonial slider */
+.testimonials-slider-slider__body {
+    font-size: 26px;
+    line-height: 1.5;
+
+    @media (max-width: 768px) {
+        font-size: 16px;
+        text-align: center;
+    }
+}
+
+/* END */
+
+/* START - Adjust the bottom padding of the testimonial slider on mobile */
+.testimonials-slider-slider__item {
+    @media (max-width: 768px) {
+        padding-bottom: 72px !important;
+    }
+}
+
+/* END */
+
+/* START - Theme the title underline */
+div.testimonials-slider-heading {
+    h2.testimonials-slider-heading__title {
+        &:before {
+            border-color: var(--color-dark);
+        }
+    }
+}
+
+/* END*/
+
+/* START - Theme the quote icon */
+.testimonials-slider-slider__quotes:after {
+    background: var(--color-light);
+}
+
+/* END*/
+
+/* ----- TESTIMONIALS SLIDER ----- */
+
+/* ----- GLOBAL ELEMENTS FIXES ----- */
+
+/* START - Theme the dropdown (hover and is-selected) - wB JV */
+.custom-select-item:hover,
+.custom-select-item.is-selected:hover {
+  background-color: var(--color-dark) !important;
+  color: var(--color-light) !important;
+}
+
+.custom-select-item.is-selected {
+  color: var(--color-dark) !important;
+}
+/* END */
+
+
+/* START - Theme the dropdown scrollbar - WB JV */
+.custom-select-menu {
+  max-height: 200px;
+  overflow-y: auto;
+
+  /* Firefox */
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-dark) var(--color-light);
+}
+
+.custom-select-menu::-webkit-scrollbar {
+  width: 3px;
+}
+
+.custom-select-menu::-webkit-scrollbar-track {
+  background: var(--color-light);
+  border-radius: 4px;
+}
+
+.custom-select-menu::-webkit-scrollbar-thumb {
+  background-color: var(--color-dark);
+  border-radius: 4px;
+}
+
+.custom-select-menu::-webkit-scrollbar-thumb:hover {
+  filter: brightness(0.8);
+}
+/* END */

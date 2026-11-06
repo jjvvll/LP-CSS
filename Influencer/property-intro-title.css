@@ -1,0 +1,35 @@
+/* START - Adjust the element layout */
+div.opening-property-title__content {
+    display: flex;
+    flex-direction: column;
+
+    h1 {
+        font-size: var(--global-h1-font-size);
+        margin-right: unset;
+        margin-bottom: 32px;
+
+        @media (max-width: 768px) {
+            font-size: var(--global-h3-font-size);
+            margin-bottom: 16px;
+        }
+    }
+
+    div.opening-property-title__price {
+        font-size: var(--global-h3-font-size);
+
+        @media (max-width: 768px) {
+            font-size: var(--global-h4-font-size);
+        }
+    }
+
+    div.opening-property-title__address {
+        font-size: var(--global-h4-font-size);
+        text-transform: var(--text-case);
+
+        @media (max-width: 768px) {
+            font-size: var(--global-body-font-size);
+        }
+    }
+}
+
+/* END */

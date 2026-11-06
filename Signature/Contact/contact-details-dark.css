@@ -1,0 +1,87 @@
+/*Start - Theme title border*/
+.heading {
+    &:before,
+    &:after {
+        background-color: #A49B8E !important;
+    }
+}
+
+/*End*/
+
+/*Start - Theme underline links*/
+.lp-link {
+    color: #000 !important;
+    display: inline-block;
+    
+    &:before,
+    &:after {
+        transition: 0.4s;
+        text-decoration: none !important;
+        line-height: 1;
+        content: "" "";
+        height: 1px;
+        position: absolute !important;
+        bottom: 0;
+        left: 0;
+    }
+    
+    &:before {
+        background-color: rgba(0, 0, 0, 0.1) !important;
+        width: 100%;
+    }
+    
+    &:after {
+        width: 0px;
+        background: #A49B8E;
+    }
+    
+    &:hover {
+        color: #A49B8E !important;
+        
+        &:after {
+            width: 100%;
+        }
+    }
+}
+
+/*End*/
+
+/* Start - Remove extra border in the social icons*/
+.lp-socials__link {
+    transition: 0.4s;
+    
+    &:before {
+        display: none;
+    }
+}
+
+/*End*/
+
+/* Start - Remove overlay text from image */
+p.image-text {
+    display: none;
+}
+
+/* End */
+
+.copy {
+    .heading {
+        @media (max-width: 1366px) {
+            width: 100%;
+            max-width: 100%;
+            position: relative;
+            
+            .lp-h2 {
+                text-align: center;
+            }
+            
+            &:after {
+                top: unset;
+                right: 0px;
+                left: 0px;
+                margin-left: auto !important;
+                margin-right: auto !important;
+            }
+        }
+    }
+}

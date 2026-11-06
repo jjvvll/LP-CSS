@@ -1,0 +1,83 @@
+/* START - Adjust the modal layout */
+.email-sign-up-modal {
+    max-height: 720px;
+}
+
+.email-sign-up-modal__form {
+    max-width: 1400px;
+}
+
+.email-sign-up-modal__title-group {
+    text-transform: unset;
+    width: 100%;
+    margin-bottom: unset;
+    
+    .email-sign-up-modal__title {
+        text-align: center;
+        margin-bottom: unset;
+    }
+
+    /*description*/
+    .email-sign-up-modal__subheader {
+        font-size: var(--global-secondary-font-size);
+        font-family: var(--global-secondary-font-family);
+        max-width: unset;
+        line-height: 1.5;
+        text-align: center;
+    }
+}
+
+.email-sign-up-modal__form-field {
+    max-width: unset;
+}
+
+.email-sign-up-modal__submit {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.email-sign-up-modal__container--with-image {
+    .email-sign-up-modal__scroll {
+        height: 100%;
+        min-height: unset;
+    }
+    
+    .email-sign-up-modal__form-group {
+        @media (min-width: 769px) and (max-width: 1640px) {
+            padding-left: 64px;
+            padding-right: 64px;
+        }
+    }
+}
+
+/* END */
+
+/* START - Adjust the title font size */
+.email-sign-up-modal__title {
+    font-size: var(--global-h2-font-size);
+
+    @media (min-width: 769px) and (max-width: 1440px) {
+        font-size: var(--global-h3-font-size);
+    }
+}
+
+/* END */
+
+/* START - Theme the modal close button */
+.email-sign-up-modal__close {
+    opacity: 1 !important;
+
+    &:before,
+    &:after {
+        background-color: var(--color-dark) !important;
+    }
+
+    @media (max-width: 768px) {
+        &:before,
+        &:after {
+            background-color: var(--color-light) !important;
+        }
+    }
+}
+
+/* END */

@@ -1,0 +1,171 @@
+/*START - change hyperlink icon color*/
+div.lp-container div.mg-calc__wrap span.link-icon {
+    &:hover {
+        &:after {
+            background-color: #F51010;
+        }
+
+        &:before {
+            background-color: #fff !important;
+        }
+    }
+
+    &:before {
+        background-color: #F51010 !important;
+    }
+}
+
+/*END - change hyperlink icon color*/
+
+/*START - Mortgage link underline */
+div.jsShareBtn,
+span.jsCalcReset,
+a.lp-link {
+    position: relative !important;
+    color: #FFFFFF !important;
+
+    &:before,
+    &:after {
+        transition: 0.4s;
+        text-decoration: none;
+        content: "" "";
+        height: 1px;
+        position: absolute !important;
+        bottom: 0px;
+        left: 0;
+    }
+
+    &:before {
+        width: 100% !important;
+        background-color: rgba(255, 255, 255, 0.1) !important;
+    }
+
+    &:after {
+        background-color: #FFFFFF !important;
+        width: 0% !important;
+    }
+}
+
+span.jsCalcReset,
+div.jsShareBtn {
+    span {
+        color: #fff !important;
+        
+        &:hover {
+            color: #FFF !important;
+        }
+    }
+}
+
+span.jsCalcReset {
+    &:before {
+        width: 50% !important;
+    }
+
+    &:hover:after {
+        width: 50% !important;
+    }
+}
+
+div.jsShareBtn {
+
+    &:before,
+    &:after {
+        bottom: 3px;
+    }
+
+    &:before {
+        width: 53% !important;
+    }
+
+    &:hover:after {
+        width: 53% !important;
+    }
+}
+
+a.lp-link {
+    &:hover:after {
+        width: 100% !important;
+    }
+}
+
+/*END - Mortgage link underline*/
+
+/*START - dropdown color*/
+.custom-select {
+    .custom-select-toggle {
+        &:after {
+            background-color: #F51010;
+        }
+
+        &:hover:after {
+            background-color: #F51010 !important;
+        }
+    }
+
+    .custom-select-content {
+        color: #000;
+        background-color: #ffffff;
+
+        button.custom-select-item:hover {
+            color: #F51010 !important;
+        }
+        
+        .custom-select-item.is-selected {
+            color: #F51010 !important;
+        }
+    }
+}
+/*END - dropdown color*/
+
+/*START - change button color*/
+div.btn-wrap a.lp-btn {
+    background-color: #F51010;
+    border-color: #F51010;
+    color: #fff !important;
+
+    &:hover {
+        background-color: transparent;
+        border-color: #F51010;
+        color: #F51010 !important;
+    }
+}
+
+/*END- change button color*/
+
+/*START - mortgage change input text color and dropdown*/
+.lp-input {
+    color: #fff !important;
+    border-color: rgba(255, 255, 255, 0.25) !important;
+
+    &:after {
+        border-color: #fff !important;
+    }
+
+    &:hover {
+        color: #fff;
+
+        &:after {
+            border-color: #fff !important;
+        }
+    }
+
+    &:focus {
+        border-color: #fff !important;
+    }
+}
+
+/*end*/
+
+/*use when your chart background is white*/
+li.legend__item.is-hovered {
+    a.legend__name {
+        opacity: 1;
+    }
+
+    span.legend__val {
+        opacity: 1;
+    }
+}
+
+/*END - mortgage change input text color and dropdown*/

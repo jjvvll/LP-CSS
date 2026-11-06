@@ -1,0 +1,111 @@
+/* ----- PROPERTIES SLIDER ----- */
+/* START - Adjust the element layout */
+div.properties-slider {
+    div.properties-slider__title-group {
+        div.properties-slider__subtitle {
+            max-width: 720px;
+
+            & > *:last-child {
+                margin-bottom: 0px;
+            }
+        }
+    }
+
+    div.properties-slider__arrows {
+        display: flex;
+        gap: 16px;
+
+        button.properties-slider__arrow--next {
+            margin-left: unset;
+        }
+    }
+
+    &:not(.properties-slider--left-aligned) {
+        div.properties-slider__title-group {
+            margin-bottom: 32px;
+            max-width: unset;
+
+            div.properties-slider__subtitle {
+                max-width: 480px;
+            }
+
+            p.properties-slider__pretitle {
+                margin-bottom: 16px;
+            }
+        }
+
+        div.properties-slider__arrows {
+            @media (min-width: 769px) {
+                margin-top: unset;
+                margin-bottom: 40px;
+            }
+        }
+    }
+
+    &:is(.properties-slider--left-aligned) {
+        @media (min-width: 769px) {
+            grid-template-areas: "title-group title-group arrows" "gallery gallery gallery" "cta cta cta";
+        }
+
+        @media (max-width: 768px) {
+        }
+
+        div.properties-slider__title-group {
+            margin-bottom: 40px;
+            max-width: unset;
+
+            @media (min-width: 769px) {
+                padding-right: 40px;
+            }
+
+            h2.properties-slider__title {
+                margin-bottom: 16px;
+            }
+
+            div.properties-slider__subtitle {
+                margin-bottom: unset;
+            }
+        }
+    }
+}
+
+/* END */
+
+/* START - Theme the title underline */
+div.properties-slider__title-group {
+    p.properties-slider__pretitle,
+    h2.properties-slider__title {
+        &:before {
+            border-color: var(--color-dark);
+        }
+    }
+}
+
+/* END */
+
+/* START - Theme properties slider amenities status tag */
+.properties-slider-card__tag {
+    background: var(--color-dark);
+    color: var(--typography-light);
+    text-transform: var(--text-case);
+}
+
+/* END */
+
+/* START - Theme properties slider amenities tag */
+.properties-slider-card__feature {
+    background: var(--color-dark);
+    color: var(--typography-light);
+    text-transform: var(--text-case);
+}
+
+/* END */
+
+/* START - Uppercase properties card address */
+.properties-slider-card__address {
+    text-transform: var(--text-case);
+}
+
+/* END */
+
+/* ----- PROPERTIES SLIDER ----- */

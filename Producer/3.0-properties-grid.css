@@ -1,0 +1,74 @@
+/* START - Fix the property element dimensions */
+.property-list-section > div {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  & > .container:is(.title-container) {
+    padding-top: 0px !important;
+  }
+
+  & > .container:is(.description-container) {
+    padding-top: 0px !important;
+    margin-bottom: 28px;
+    max-width: 720px;
+    font-size: var(--global-body-font-size);
+  }
+
+  & > .container:not(.title-container) {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    .property-list {
+      margin-top: 0px !important;
+      margin-bottom: 0px !important;
+
+      @media only screen and (max-width: 768px) {
+        .property-list__item {
+          max-width: initial !important;
+        }
+      }
+    }
+  }
+}
+
+/* END */
+
+/* START - Theme property card */
+li.property-list__item {
+  background-color: transparent;
+
+  a.property-list__item-link {
+    div.open-house,
+    span.property-list__label {
+      background: var(--color-dark);
+      color: var(--color-light);
+    }
+
+    div.property-list__text {
+      background-color: var(--color-dark);
+      padding: 40px 32px;
+
+      & > * {
+        color: var(--color-light);
+      }
+    }
+
+    div.mls-compliance-container {
+      background-color: var(--color-dark);
+    }
+
+    &:has(div.mls-compliance-container) {
+      div.property-list__text {
+        padding-bottom: 0px;
+
+        @media (max-width: 768px) {
+          margin-bottom: unset;
+        }
+      }
+    }
+  }
+}
+
+/* END */

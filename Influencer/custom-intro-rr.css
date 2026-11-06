@@ -1,0 +1,8 @@
+/* START - Adjust title size on mobile */
+h1.hero-heading {
+    @media (max-width: 768px) {
+        font-size: var(--global-h3-font-size);
+    }
+}
+
+/* END */

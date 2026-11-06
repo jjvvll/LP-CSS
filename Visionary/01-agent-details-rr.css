@@ -1,0 +1,15 @@
+.agent-details__item--license {
+    &:before {
+        content: 'CA DRE';
+        position: unset;
+        height: unset;
+        background: unset;
+        display: inline
+    }
+
+    &:hover {
+        &:before {
+            background: unset;
+        }
+    }
+}

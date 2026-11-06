@@ -1,0 +1,86 @@
+/* ----- TESTIMONIALS SLIDER ----- */
+/* START - Fix the max width of the title content */
+.testimonials-slider-heading {
+    max-width: unset;
+
+    div.testimonials-slider-heading__description {
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/* END */
+
+/* START - Adjust the opacity of the description container */
+section:not([class^=lp-theme]) {
+    .testimonials-slider-heading__description {
+        opacity: 1;
+    }
+}
+
+/* END */
+
+/* START - Theme read more button */
+.read-more {
+    color: var(--typography-dark);
+
+    &:hover {
+        color: var(--accent-dark);
+    }
+}
+
+/* END */
+
+/* START - Fix the testimonial slider items being off centered on tablet and desktop */
+.testimonials-slider-slider__item {
+    @media (min-width: 769px) {
+        margin-right: 0px !important;
+        gap: 32px;
+        justify-content: center;
+    }
+}
+
+/* END */
+
+/* START - Adjust the text content of the testimonial slider */
+.testimonials-slider-slider__body {
+    font-size: 26px;
+    line-height: 1.5;
+
+    @media (max-width: 768px) {
+        font-size: 16px;
+        text-align: center;
+    }
+}
+
+/* END */
+
+/* START - Adjust the bottom padding of the testimonial slider on mobile */
+.testimonials-slider-slider__item {
+    @media (max-width: 768px) {
+        padding-bottom: 72px !important;
+    }
+}
+
+/* END */
+
+/* START - Theme the title underline */
+div.testimonials-slider-heading {
+    h2.testimonials-slider-heading__title {
+        &:before {
+            border-color: var(--accent-dark);
+        }
+    }
+}
+
+/* END*/
+
+/* START - Theme the quote icon */
+.testimonials-slider-slider__quotes:after {
+    background: var(--accent-light);
+}
+
+/* END*/
+
+/* ----- TESTIMONIALS SLIDER ----- */

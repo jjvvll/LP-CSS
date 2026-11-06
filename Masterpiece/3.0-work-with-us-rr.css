@@ -1,0 +1,28 @@
+/* START - Align contents to the left */
+div.lp-container {
+    @media only screen and (min-width: 768px) {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        .lp-title-group {
+            margin-left: 0px;
+            margin-right: 0px;
+
+            h2,
+            p {
+                text-align: left;
+            }
+
+            .pre-line {
+                margin-bottom: 0px;
+            }
+        }
+
+        .btn-container {
+            margin-top: 0px;
+        }
+    }
+}
+
+/* END */

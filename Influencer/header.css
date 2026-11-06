@@ -1,0 +1,105 @@
+/* START - Adjust header navigation layout */
+nav#global-navbar {
+    header.header:not(.scroll) {
+        @media (min-width: 769px) {
+            margin-top: var(--global-body-padding);
+        }
+    }
+
+    header.header:is(.scroll) {
+        transform: unset !important;
+    }
+
+    ul:has(> li.navigation__item) {
+        gap: 8px;
+
+        li.navigation__item {
+            margin-left: unset;
+
+            a.navigation__link {
+                text-transform: var(--text-case);
+                font-size: 12px;
+                letter-spacing: 1px;
+                transition: 0.4s;
+            }
+        }
+    }
+}
+
+/* END */
+
+/* START - Theme the header navigation layout */
+nav#global-navbar {
+    header.header:not(.scroll) {
+        div.header__container {
+            border-bottom: 1px solid var(--border-light-active);
+        }
+
+        a.navigation__link {
+            color: var(--typography-light);
+        }
+    }
+
+    header.header:is(.scroll) {
+        div.header__container {
+            border-bottom: 1px solid transparent;
+        }
+
+        a.navigation__link {
+            color: var(--typography-dark);
+
+            &:hover {
+                color: var(--accent-dark);
+
+                &:after {
+                    background: var(--accent-dark);
+                }
+            }
+        }
+    }
+}
+
+/* END */
+
+/* START - Adjust the header navigation logo */
+nav#global-navbar {
+    div.logo__wrap {
+        a.logo {
+            img {
+                max-width: 96px;
+                max-height: unset;
+
+                @media (max-width: 768px) {
+                    max-width: 80px;
+                }
+            }
+        }
+    }
+}
+
+/* END */
+
+/* START - Theme the header submenu */
+nav#global-navbar {
+    div.sub-nav {
+        background: var(--primary-light);
+        width: fit-content;
+        max-width: 400px !important;
+
+        a.nav-link {
+            color: var(--typography-dark);
+            transition: 0.25s;
+            text-transform: var(--text-case);
+            font-size: 12px;
+            letter-spacing: 1px;
+            white-space: nowrap;
+
+            &:hover {
+                background: var(--accent-dark);
+                color: var(--accent-light);
+            }
+        }
+    }
+}
+
+/* END */

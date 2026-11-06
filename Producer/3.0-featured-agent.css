@@ -1,0 +1,51 @@
+/* START - Fix element not using the body font size */
+div.bio-container {
+  font-size: var(--global-body-font-size);
+}
+
+/* END */
+
+/* START - Adjust the element layout */
+div.featured-agent {
+  div.featured-agent__photo {
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: 769px) {
+      max-width: 50%;
+      min-height: 100%;
+    }
+
+    div.featured-agent__image {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+
+      img {
+        max-height: unset;
+        max-width: unset;
+        object-fit: cover;
+        height: 100%;
+      }
+    }
+  }
+
+  div.featured-agent__info {
+    @media (min-width: 769px) {
+      padding-top: unset;
+    }
+
+    ul.links-row {
+      li {
+        margin-bottom: unset;
+      }
+    }
+  }
+}
+
+/* END */
+
+/*Change the color of the line*/
+.h2::after {
+  background-color: var(--color-dark) !important;
+}

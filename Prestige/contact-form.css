@@ -1,0 +1,6 @@
+/*START - adjust title width - */
+div.custom-form__header {
+    max-width: 1500px;
+}
+
+/*END*/

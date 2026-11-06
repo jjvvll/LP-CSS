@@ -1,0 +1,54 @@
+.redesign {
+    padding-top: 96px !important;
+    padding-bottom: 96px !important;
+    
+    @media only screen and (max-width: 768px) {
+        padding-top: 64px !important;
+        padding-bottom: 64px !important;
+    }
+}
+
+.lp-input-group {
+    label {
+        text-transform: uppercase;
+    }
+    
+    .lp-input {
+        border-color: rgba(0, 0, 0, 0.1);
+        
+        &:focus {
+            border-color: rgba(0, 0, 0, 0.75);
+        }
+    }
+}
+
+.custom-form__img-block {
+    img {
+        object-fit: contain !important;
+        background-color: #FFFFFF;
+    }
+    
+    @media only screen and (max-width: 768px) {
+        height: auto !important;
+    }
+}
+
+.lp-disclaimer {
+    a {
+        &:hover {
+            color: #C3B19E;
+        }
+    }
+}
+
+.custom-form__header {
+    max-width: 1000px !important;
+}
+
+.lp-text--subtitle p {
+    text-transform: lowercase;
+}
+
+.lp-text--subtitle p:first-letter {
+    text-transform: uppercase;
+}

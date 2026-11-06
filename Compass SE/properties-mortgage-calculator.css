@@ -1,0 +1,62 @@
+/* START - Theme expand mobile button */
+div.results__expand {
+    background: #000;
+
+    svg {
+        stroke: #FFF;
+    }
+}
+
+/* END */
+
+/* START - Uppercase reset button */
+div.calc__footer {
+    a.lp-link {
+        text-transform: uppercase;
+    }
+}
+
+/* END */
+
+/* START - Theme the dropdown menu */
+div.custom-select {
+    button.custom-select-toggle {
+        border-color: #878787;
+    }
+
+    div.custom-select-menu {
+        div.custom-select-content {
+            border-color: #878787;
+            background-color: #000;
+
+            button.custom-select-item {
+                &:hover {
+                    background: #FFF;
+                    color: #000;
+                }
+            }
+        }
+    }
+}
+
+/* END */
+
+/* START - Theme legends link */
+div.results__legend {
+    ul.legend {
+        li.legend__item {
+            &:hover {
+                a.lp-link {
+                    color: #000 !important;
+                    opacity: 1;
+                }
+
+                span.legend__val {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
+
+/* END */

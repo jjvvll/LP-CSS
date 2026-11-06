@@ -1,0 +1,9 @@
+/* START - Adjust Loading Screen Logo Size */
+div#global-loader {
+    img {
+        max-height: 240px;
+        max-width: 100%;
+    }
+}
+
+/* END */

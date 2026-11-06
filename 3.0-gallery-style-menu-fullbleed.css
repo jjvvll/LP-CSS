@@ -1,0 +1,8 @@
+div.grid__item-overlay {
+    display: none;
+}
+
+div.grid__item-wrap {
+    height: auto;
+    aspect-ratio: 1/1;
+}

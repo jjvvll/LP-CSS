@@ -1,0 +1,8 @@
+/* START - Adjust the element layout */
+div.section__text {
+    @media (max-width: 768px) {
+        padding: 64px 25px;
+    }
+}
+
+/* END */

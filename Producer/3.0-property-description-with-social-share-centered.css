@@ -1,0 +1,36 @@
+/* START - Adjust the element dimensions */
+div.property-description {
+    div.property-description__container {
+        max-width: 1400px;
+        padding-left: 50px;
+        padding-right: 50px;
+
+        @media (max-width: 768px) {
+            padding-left: 25px;
+            padding-right: 25px;
+        }
+
+        hr {
+            margin-top: unset;
+            margin-bottom: unset;
+        }
+
+        div.property-description__footer {
+            a.btn {
+                margin: unset;
+                border-width: 2px;
+            }
+        }
+    }
+}
+
+/* END */
+
+/* START - Theme the horizontal border */
+div.property-description {
+    hr {
+        border-bottom: 1px solid var(--border-dark-inactive);
+    }
+}
+
+/* END */

@@ -1,0 +1,29 @@
+/* START - Fixed large content boxed spacings */
+.developments-slider-carousel__box {
+    min-height: auto;
+}
+
+.lp-link {
+    margin-top: 48px;
+}
+
+/* END */
+
+/* START - Update button text */
+.lp-btn__content {
+    font-size: 0px;
+    display: flex;
+    align-items: center;
+    
+    &:before {
+        content: 'View All';
+        font-size: 12px;
+        display: inline-block;
+    }
+    
+    &:after {
+        transform: unset;
+    }
+}
+
+/* END */

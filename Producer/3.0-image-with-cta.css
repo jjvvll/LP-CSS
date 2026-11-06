@@ -1,0 +1,100 @@
+/* START - Adjust element on desktop view */
+div.lp-container {
+    div.media-text__content {
+        @media (min-width: 1025px) {
+            padding-left: 60px;
+            padding-right: 60px;
+            max-width: 700px;
+        }
+    }
+}
+
+/* END */
+
+/* START - Adjust the element padding */
+div.media-text__content {
+    @media (max-width: 768px) {
+        padding-top: 64px;
+        padding-bottom: unset;
+    }
+}
+
+/* END */
+
+/* START - Adjust paddings on mobile */
+div.media-text {
+    background: var(--primary-light);
+
+    @media (max-width: 768px) {
+        padding-bottom: 64px;
+
+        div.media-text__content {
+            padding-top: 32px;
+        }
+    }
+}
+
+/* END */
+
+/* START - Remove extra spacings and dimensions */
+div.media-text__container {
+    div.media-text__content {
+        @media (max-width: 768px) {
+            padding-bottom: 0px;
+        }
+    }
+}
+
+/* END */
+
+/* START - Adjust position of media image */
+img.media-text__image {
+    object-position: right;
+}
+
+/* END */
+
+/* START - Fix image resolution on mobile */
+img.media-text__image {
+    @media (max-width: 768px) {
+        content: url(https://media-production.lp-cdn.com/cdn-cgi/image/format=auto,quality=85/https://media-production.lp-cdn.com/media/3bcbaa3d-a7a2-45d7-a4a5-0254d7df6de1);
+    }
+}
+
+/* END */
+
+/* START - Center text content on mobile */
+div.lp-title-group {
+    @media (max-width: 768px) {
+        p.lp-text--pretitle,
+        h2.lp-h2,
+        div.description {
+            text-align: center;
+        }
+    }
+}
+
+/* END */
+
+/* START - Add a image overlay */
+div.media-text {
+    &:before {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        background: rgba(0, 0, 0, 0.4);
+        z-index: 2;
+    }
+
+    @media (max-width: 768px) {
+        &:before {
+            height: 332px;
+        }
+    }
+}
+
+/* END */

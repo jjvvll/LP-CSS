@@ -1,0 +1,96 @@
+/* START - Theme arrow button theme */
+.neighborhood-intro__scroll-btn {
+    border-color: var(--color-light);
+    background: var(--color-light);
+
+    &:after {
+        background: var(--color-dark);
+    }
+
+    &:hover {
+        border-color: var(--color-light);
+        background: transparent;
+
+        &:after {
+            background: var(--color-light);
+        }
+    }
+}
+
+/* END */
+
+/* START - Theme the neigyborhood intro underline */
+div.neighborhood-intro__content-box {
+    h1.neighborhood-intro__title {
+        &:before {
+            border-color: var(--color-dark);
+        }
+    }
+}
+
+/* END */
+
+/* START - Add background overlay to neighborhoods intro */
+.neighborhood-intro:not(:has(.neighborhood-intro__back-image)) {
+    .neighborhood-intro__container:before {
+        content: "";
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        background: rgba(0, 0, 0, 0.3);
+        z-index: 1;
+    }
+}
+
+.neighborhood-intro:has(.neighborhood-intro__back-image) {
+    .neighborhood-intro__back-image:before {
+        content: "";
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        background: rgba(0, 0, 0, 0.3);
+        z-index: 1;
+    }
+}
+
+.neighborhood-intro__content-wrapper {
+    z-index: 2;
+}
+
+/* END */
+
+/* START - Adjust the element layout */
+.neighborhood-intro {
+    &:is(.neighborhood-intro__horizon-left) {
+        .neighborhood-intro__pre-title {
+            margin: unset;
+        }
+    }
+}
+
+.neighborhood-intro__content-box {
+    @media (min-width: 769px) {
+        padding: 56px;
+    }
+}
+
+/* END */
+
+/* START - Fix element not using the global font size */
+.neighborhood-intro__title {
+    font-size: var(--global-h1-font-size);
+
+    @media (max-width: 768px) {
+        font-size: var(--global-h3-font-size);
+    }
+}
+
+.neighborhood-intro__description {
+    font-size: var(--global-secondary-font-size);
+}
+
+/* END */

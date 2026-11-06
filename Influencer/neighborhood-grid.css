@@ -1,0 +1,23 @@
+/* START - Fix grid items spacings */
+.gallery-grid {
+    .gallery-grid__container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 90px 50px;
+
+        @media (max-width: 768px) {
+            grid-template-columns: 1fr;
+            gap: 50px 50px;
+        }
+
+        .gallery-grid__item {
+            margin-bottom: 0px;
+        }
+    }
+}
+
+div.pagination-container {
+    margin-bottom: 0px;
+}
+
+/* END */

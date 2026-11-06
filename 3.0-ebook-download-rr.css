@@ -1,0 +1,25 @@
+/* START - Add background to the form */
+div.ebook-download {
+    div.ebook-download__row {
+        gap: 0px;
+
+        @media (max-width: 768px) {
+            flex-direction: column-reverse;
+        }
+
+        div.ebook-download__col--form {
+            padding: 96px 64px;
+            background: var(--primary-light);
+
+            @media (max-width: 768px) {
+                padding: 25px 25px;
+            }
+
+            .input-group-select {
+                background: transparent;
+            }
+        }
+    }
+}
+
+/* END */

@@ -1,0 +1,108 @@
+/* START - Adjust element if text content background is transparent */
+.testimonials-slider-slider__item {
+    min-height: unset;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+
+    @media (max-width: 768px) {
+        padding-bottom: 0px !important;
+    }
+}
+
+.testimonials-slider-slider__quotes {
+    @media (max-width: 560px) {
+        left: 0px;
+        right: 0px;
+        margin: auto;
+    }
+}
+
+/* END */
+
+.testimonials-slider-slider {
+    @media (min-width: 769px) {
+        width: 800px;
+    }
+}
+
+.testimonials-slider-slider__item {
+    min-height: unset;
+    justify-content: center;
+}
+
+.testimonials-slider-slider__body,
+.short {
+    @media (min-width: 769px) {
+        font-size: var(--global-body-font-size);
+        line-height: 1.76;
+        display: -webkit-box;
+        line-clamp: 3;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        max-height: 100px;
+    }
+}
+
+/* START - Add background image to testimonial cards */
+.testimonials-slider-slider__item {
+    position: relative;
+
+    &:after {
+        content: "";
+        display: block;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background: url("https://media-production.lp-cdn.com/cdn-cgi/image/format=auto,quality=85,fit=scale-down,width=960/https://media-production.lp-cdn.com/media/1fb0c4aa-b5f0-481c-827c-73c04a52655e");
+        top: 0px;
+        left: 0px;
+        background-size: cover;
+        z-index: -1;
+    }
+}
+
+/* END */
+
+/* RR2 - Make all heights consistent on mobile */
+.testimonials-slider-slider__item {
+    @media (max-width: 768px) {
+        padding-top: 64px !important;
+        padding-bottom: 32px !important;
+        padding-left: 32px !important;
+        padding-right: 32px !important;
+
+        height: 300px !important;
+    }
+}
+
+.testimonials-slider-slider__body--mobile {
+    height: 100%;
+    position: relative;
+    flex-direction: column;
+
+    .text-wrap {
+        height: auto;
+        flex: 1;
+
+        .full {
+            opacity: 1;
+        }
+
+        .short {
+            display: none;
+        }
+    }
+
+    .link {
+        display: none;
+    }
+}
+
+/* END */
+
+.testimonials-slider-slider__item {
+    backdrop-filter: blur(6px);
+}

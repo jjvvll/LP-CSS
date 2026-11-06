@@ -1,0 +1,70 @@
+/*START -  video gallery padding */
+.video-card h6 {
+    letter-spacing: 1px !important;
+}
+
+div.video-gallery {
+    padding-top: 76px;
+    padding-bottom: 0px;
+
+    @media (max-width: 768px) {
+        padding-top: 64px;
+        padding-bottom: 64px;
+    }
+}
+/* END */
+
+/*START - fix play button hover state*/
+.lp-play:after {
+    border-color: transparent transparent transparent #F51010;
+}
+
+.lp-play:hover:before {
+    background-color: #F51010 !important;
+}
+
+.lp-play:hover:after {
+    border-color: transparent transparent transparent #fff;
+}
+
+/*END - fix play button hover state*/
+
+/*Start - Theme pagination*/
+.paginationjs-next a,
+.paginationjs-prev a {
+    background: #fff !important;
+    border-radius: 50%;
+    transition: 0.4s;
+    -webkit-tap-highlight-color: transparent;
+    
+    &:before {
+        border: 1px solid transparent;
+    }
+    
+    &:after {
+        background-color: #F51010 !important;
+    }
+    
+    &:hover {
+        background: transparent !important;
+        
+        &:before {
+            border-color: #fff;
+        }
+        
+        &:after {
+            background-color: #fff !important;
+        }
+    }
+}
+
+/*End*/
+
+/*Start - Theme the underline pagination*/
+.slick-active.active {
+    a:after {
+        background-color: #fff !important;
+    }
+}
+
+/*End*/

@@ -1,0 +1,78 @@
+/* START - Adjust the element vertical paddings */
+div.section {
+    padding-top: 96px;
+    padding-bottom: 0px;
+
+    @media (max-width: 768px) {
+        padding-top: 64px;
+        padding-bottom: 0px;
+    }
+}
+
+/* END */
+
+/* START - Adjust the element text content width */
+div.lp-title-group {
+    max-width: unset;
+
+    h2.lp-h2 {
+        max-width: unset;
+        margin-top: unset;
+    }
+
+    div.lp-text--subtitle {
+        max-width: 900px;
+    }
+}
+
+/* END */
+
+/* START - Adjust the video thumbnails position */
+div.gallery__item {
+    img.gallery__poster {
+        object-position: bottom;
+    }
+}
+
+/* END */
+
+/* START - Theme play button */
+button.gallery__play {
+    border-color: var(--accent-light);
+    transition: 0.4s;
+
+    &:hover {
+        background: var(--accent-light);
+    }
+
+    &:before {
+        background: var(--accent-light);
+    }
+
+    &:after {
+        border-color: transparent transparent transparent var(--accent-dark);
+    }
+}
+
+/* END */
+
+/* START - Theme the pagination buttons */
+button.lp-arrow {
+    border-color: var(--accent-light);
+    background: var(--accent-light);
+
+    &:before {
+        border-color: var(--accent-dark);
+    }
+
+    &:hover {
+        border-color: var(--accent-light);
+        background: transparent;
+
+        &:before {
+            border-color: var(--accent-light);
+        }
+    }
+}
+
+/* END */

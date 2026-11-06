@@ -1,0 +1,27 @@
+/* START - Make the agent name font size equal */
+.agents-slider__name {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+
+    .agents-slider__first-name,
+    .agents-slider__last-name {
+        font-size: var(--global-h4-font-size);
+        line-height: 1.25;
+    }
+}
+
+/* END */
+
+/* START - Fix layout if only 2 agents */
+ul.splide__list {
+    &:has(> li.splide__slide:nth-child(2):last-child) {
+        & > li.splide__slide {
+            @media (min-width: 769px) {
+                width: calc((100% / 2) - 16px + (16px / 2)) !important;
+            }
+        }
+    }
+}
+
+/* END */

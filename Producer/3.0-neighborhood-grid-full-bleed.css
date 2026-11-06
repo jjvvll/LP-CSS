@@ -1,0 +1,39 @@
+/* START - Adjust the grid header max width */
+div.lp-title-group {
+    max-width: unset;
+
+    h2.lp-h2 {
+        max-width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    div.lp-text--subtitle {
+        max-width: 600px;
+        font-size: var(--global-body-font-size);
+    }
+}
+
+/* END */
+
+/* START - Hide pagination container if hidden */
+.lp-container:has(.lp-pagination[style="display: none;"]) {
+    .collection {
+        margin-bottom: 0px;
+    }
+}
+
+/* END */
+
+/* START - Adjust element font size */
+div.data-container {
+    div.grid-item {
+        div.content-container {
+            h3.lp-h3 {
+                font-size: var(--global-h4-font-size);
+            }
+        }
+    }
+}
+
+/* END */

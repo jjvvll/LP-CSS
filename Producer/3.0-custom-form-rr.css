@@ -1,0 +1,31 @@
+/* START - Update submit button text */
+div.custom-form__footer {
+    button.lp-btn {
+        font-size: 0px;
+
+        &:after {
+            content: 'Sample';
+            font-size: 14px;
+            display: block;
+        }
+    }
+}
+
+/* END */
+
+/* START - Theme the contact form dropdown */
+div.uf-cus-sel-content {
+    background: var(--primary-light);
+    border-color: var(--border-dark-inactive);
+
+    & > button {
+        color: var(--typography-dark);
+
+        &:hover {
+            background: var(--accent-dark);
+            color: var(--typography-light);
+        }
+    }
+}
+
+/* END */

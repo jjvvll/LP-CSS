@@ -1,0 +1,25 @@
+/* START - Adjust the blog grid layout */
+div.blog-posts-list-item__image-container {
+    aspect-ratio: 16/9;
+    height: unset;
+
+    @media (max-width: 768px) {
+        aspect-ratio: 4/3;
+    }
+}
+
+p.blog-posts-list-item__details {
+    text-transform: var(--text-case);
+}
+
+h6.blog-posts-list-item__title {
+    border-color: var(--border-dark-inactive);
+}
+
+.blog-posts-list__title {
+    &:before {
+        border-color: var(--accent-dark);
+    }
+}
+
+/* END */

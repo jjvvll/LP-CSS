@@ -1,0 +1,106 @@
+/* START - Adjust the element's dimension */
+div.properties-slider {
+    &:not(.full-bleed) {
+        div.content-box {
+            max-width: 1400px !important;
+            padding-left: 50px !important;
+            padding-right: 50px !important;
+
+            @media (max-width: 768px) {
+                padding-left: unset !important;
+                padding-right: unset !important;
+            }
+
+            div.properties-slider-padding,
+            div.properties-slider__wrapper {
+                padding-left: 64px !important;
+                padding-right: 64px !important;
+
+                @media (max-width: 768px) {
+                    padding-left: unset !important;
+                    padding-right: unset !important;
+                }
+            }
+        }
+    }
+
+    div.properties-slider__wrapper {
+        margin: unset;
+
+        button.lp-arrow {
+            @media (min-width: 769px) {
+                top: calc(50% - 40px);
+            }
+
+            &:is(.lp-arrow--prev) {
+                @media (min-width: 769px) {
+                    margin-left: unset;
+                }
+            }
+
+            &:is(.lp-arrow--next) {
+                @media (min-width: 769px) {
+                    margin-right: unset;
+                }
+            }
+        }
+    }
+
+    div.view-all-container {
+        margin-top: 48px;
+    }
+}
+
+/* END */
+
+/* START - Adjust the property address text case */
+div.properties-slider__item-info {
+    text-align: center;
+    text-transform: uppercase;
+
+    * {
+        width: 100%;
+    }
+}
+
+/* END */
+
+/* START - Theme the element's property categories */
+div.properties-slider__tabs {
+    div.tabs__item {
+        text-transform: uppercase;
+
+        &:is(.active) {
+            color: var(--accent-dark);
+        }
+    }
+}
+
+/* END */
+
+/* START - Theme the properties status label */
+div.properties-slider__item-image {
+    height: unset;
+    aspect-ratio: 4/3;
+
+    div.properties-slider__item-status {
+        top: 16px;
+        right: 16px;
+        padding: 4px 16px;
+        line-height: unset;
+        font-size: 14px;
+        text-transform: uppercase;
+        background: var(--accent-dark);
+        color: var(--accent-light);
+    }
+}
+
+a.properties-slider__item {
+    div.properties-slider__item-address,
+    div.properties-slider__amenities {
+        font-size: 12px;
+        font-weight: normal;
+    }
+}
+
+/* END */

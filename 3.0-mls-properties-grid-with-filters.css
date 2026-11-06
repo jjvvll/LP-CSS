@@ -1,0 +1,183 @@
+/* START - Adjust the element extra dimensions and spacings */
+div.lp-container {
+  div.properties-grid__container {
+    gap: 24px;
+    margin-left: 0px;
+    margin-right: 0px;
+
+    div.properties-grid__item {
+      padding-left: 0px;
+      padding-right: 0px;
+      width: auto;
+      flex: 1 1 calc((100% / 3) - 24px + (24px / 3));
+      max-width: calc((100% / 3) - 24px + (24px / 3));
+
+      a.lp-listing-card {
+        margin-bottom: 0px;
+      }
+
+      @media (max-width: 768px) {
+        flex: 1 1 100%;
+        max-width: 100%;
+      }
+    }
+  }
+
+  &:has(.properties-grid__footer) {
+    div.properties-grid__footer {
+      padding-top: 0px;
+      padding-bottom: 0px;
+      margin-top: 48px;
+    }
+  }
+}
+
+/* END */
+
+/* START - Theme filter input elements */
+div.lp-input-group {
+  &:before {
+    filter: invert(0);
+  }
+}
+
+input.lp-input,
+button.lp-input {
+  color: var(--color-dark);
+  border-color: var(--color-dark);
+
+  &:hover,
+  &:focus,
+  &:active {
+    border-color: var(--color-dark) !important;
+  }
+}
+
+input.lp-input::placeholder,
+button.lp-input:is(.is-placeholder) {
+  /* color: rgb(from var(--color-dark) r g b / 50%); */
+  color: color-mix(in srgb, var(--color-dark) 50%, transparent) !important;
+}
+
+/* END */
+
+/* START - Theme range slider input */
+div.lp-container {
+  div.slider-content {
+    span.irs--round {
+      span.irs-handle {
+        background-color: var(--color-light);
+        border: 1px solid var(--color-dark);
+
+        i {
+          background: var(--color-dark);
+        }
+
+        &:hover {
+          background-color: var(--color-dark);
+          border: 1px solid var(--color-dark);
+
+          i {
+            background: var(--color-light);
+          }
+        }
+      }
+
+      span.irs-line {
+        background-color: var(--color-dark);
+      }
+
+      span.irs-bar {
+        background-color: var(--color-dark);
+      }
+
+      span.irs-from,
+      span.irs-to,
+      span.irs-single {
+        color: var(--color-dark);
+      }
+    }
+  }
+}
+
+/* END */
+
+/* START - Theme the filter modal on mobile */
+div#filtersModal[aria-expanded="true"] {
+  background: var(--color-light);
+
+  button.filters__close {
+    svg {
+      path {
+        fill: var(--color-light);
+      }
+    }
+  }
+
+  button#filtersSubmit {
+    border: 2px solid var(--color-dark);
+    background: var(--color-dark);
+    color: var(--color-light);
+
+    &:hover {
+      border: 2px solid var(--color-dark);
+      background: transparent;
+      color: var(--color-dark);
+    }
+  }
+}
+
+/* END */
+
+/* START - Theme MLS Properties Card */
+div.properties-grid {
+  div.properties-grid__item {
+    a.lp-listing-card {
+      div.listing-card__img-wrap {
+        div.listing-card__status {
+          div.listing-card__label,
+          div.listing-card__mls-key {
+            background-color: var(--color-dark);
+            color: var(--color-light);
+            text-transform: var(--text-case);
+            font-weight: 700;
+          }
+        }
+
+        div.listing-card__attribution {
+          /* background-color: rgb(from var(--color-dark) r g b / 75%); */
+          background-color: color-mix(
+            in srgb,
+            var(--color-dark) 75%,
+            transparent
+          );
+
+          color: var(--color-light);
+        }
+      }
+
+      div.listing-card__info {
+        background-color: var(--color-light);
+        color: var(--color-dark);
+        box-shadow: none;
+        text-transform: uppercase;
+      }
+    }
+  }
+}
+
+/* END */
+
+/*change the color of svg icon*/
+.lp-input-group--search::before {
+  background-image: none !important;
+  background-color: var(--color-dark) !important;
+  opacity: 0.4;
+
+  mask-image: url("data:image/svg+xml,%3Csvg width='16' height='16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='m.978 16 5.844-5.844a4.9 4.9 0 0 0 1.556.9 5.5 5.5 0 0 0 1.889.322c1.6 0 2.955-.556 4.066-1.667C15.444 8.6 16 7.26 16 5.69c0-1.57-.556-2.911-1.667-4.022C13.223.556 11.874 0 10.29 0 8.719 0 7.38.556 6.278 1.667c-1.104 1.11-1.656 2.452-1.656 4.022 0 .637.104 1.252.311 1.844A5.64 5.64 0 0 0 5.867 9.2L0 15.022.978 16Zm9.31-5.956c-1.2 0-2.221-.425-3.066-1.277-.844-.852-1.266-1.878-1.266-3.078s.422-2.226 1.266-3.078c.845-.852 1.867-1.278 3.067-1.278 1.215 0 2.248.426 3.1 1.278.852.852 1.278 1.878 1.278 3.078s-.426 2.226-1.278 3.078c-.852.852-1.885 1.277-3.1 1.277Z' fill='%23FFFFFF'/%3E%3C/svg%3E");
+  mask-repeat: no-repeat;
+  mask-size: contain;
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg width='16' height='16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='m.978 16 5.844-5.844a4.9 4.9 0 0 0 1.556.9 5.5 5.5 0 0 0 1.889.322c1.6 0 2.955-.556 4.066-1.667C15.444 8.6 16 7.26 16 5.69c0-1.57-.556-2.911-1.667-4.022C13.223.556 11.874 0 10.29 0 8.719 0 7.38.556 6.278 1.667c-1.104 1.11-1.656 2.452-1.656 4.022 0 .637.104 1.252.311 1.844A5.64 5.64 0 0 0 5.867 9.2L0 15.022.978 16Zm9.31-5.956c-1.2 0-2.221-.425-3.066-1.277-.844-.852-1.266-1.878-1.266-3.078s.422-2.226 1.266-3.078c.845-.852 1.867-1.278 3.067-1.278 1.215 0 2.248.426 3.1 1.278.852.852 1.278 1.878 1.278 3.078s-.426 2.226-1.278 3.078c-.852.852-1.885 1.277-3.1 1.277Z' fill='%23FFFFFF'/%3E%3C/svg%3E");
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: contain;
+}

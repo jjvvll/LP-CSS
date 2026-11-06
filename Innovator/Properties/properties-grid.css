@@ -1,0 +1,32 @@
+/* Start - Set paddings for desktop and mobile */
+.properties-grid {
+    padding-top: 96px;
+    padding-bottom: 96px;
+    
+    @media only screen and (max-width: 768px) {
+        padding-top: 64px;
+        padding-bottom: 64px;
+    }
+}
+
+/* End */
+
+/* Start - Remove unnecessary dimensions */
+.properties-grid__container {
+    margin-top: 0px !important;
+    row-gap: 106px;
+    
+    .properties-grid__item-wrap {
+        margin-bottom: 0px;
+    }
+}
+
+/* End */
+
+.pagination-container {
+    margin-top: 106px;
+}
+
+.status-tile {
+    font-size: 18px !important;
+}

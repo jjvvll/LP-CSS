@@ -1,0 +1,23 @@
+/* START - Adjust sidemenu theme */
+div#global-sidemenu {
+    a.sidebar-nav-link {
+        &:hover {
+            background: #1A1A1A;
+        }
+    }
+    
+    button.sidebar-nav-link {
+        &:hover {
+            background: #1A1A1A;
+        }
+    }
+    
+    li.sidebar-subnav-item,
+    a.sidebar-subnav-link {
+        &:hover {
+            background: #1A1A1A;
+        }
+    }
+}
+
+/* END */

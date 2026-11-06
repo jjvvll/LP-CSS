@@ -1,0 +1,76 @@
+/* START - Adjust similar neighborhoods text content width */
+div.lp-title-group {
+    max-width: 1400px;
+
+    p.lp-text--pretitle {
+        font-style: unset;
+        max-width: unset;
+    }
+
+    h2.lp-h2 {
+        max-width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    div.lp-text--subtitle {
+        max-width: 700px;
+        font-size: var(--global-body-font-size);
+    }
+}
+
+/* END */
+
+/* START - Add gaps to the grid */
+div.featured-neighborhoods-grid {
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+div.items {
+    gap: 16px;
+
+    div.item {
+        flex: 1 1 calc((100% / 3) - 16px + (16px / 3));
+        max-width: calc((100% / 3) - 16px + (16px / 3));
+
+        @media (max-width: 768px) {
+            flex: 1 1 100%;
+            max-width: 100%;
+        }
+    }
+}
+
+/* END */
+
+/* START - Adjust title font size on mobile */
+div.lp-title-group {
+    h2.lp-h2 {
+        @media (max-width: 768px) {
+            font-size: var(--global-h3-font-size);
+        }
+    }
+}
+
+/* END */
+
+/* START - Adjust neighborhood tiles font size */
+div.items {
+    div.item {
+        div.content-container {
+            h3.neighborhood-name {
+                font-size: var(--global-h4-font-size);
+            }
+        }
+    }
+}
+
+/* END */
+
+/* START - Hide element if it only has 1 neighborhood */
+&:has(.items > .removed-item:nth-child(2):is(:last-child)),
+&:has(.items > .removed-item:nth-child(1):is(:last-child)) {
+    display: none;
+}
+
+/* END */

@@ -1,0 +1,95 @@
+/* START - Adjust the header container text content width */
+div.gallery-component__header {
+  max-width: unset;
+  margin-bottom: 48px;
+
+  h2.gallery-component__heading {
+    margin-bottom: 8px;
+    max-width: 720px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  div.gallery-component__lead {
+    display: flex;
+    flex-direction: column;
+    max-width: 640px;
+    margin-left: auto;
+    margin-right: auto;
+
+    p,
+    div {
+      font-size: var(--global-body-font-size);
+    }
+  }
+}
+
+/* END */
+
+/* START - Fix paddings on mobile */
+div.gallery-component__container {
+  @media (max-width: 768px) {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+}
+
+/* END */
+
+/* START - Remove and fix dimensions */
+div.gallery-component__row {
+  --tiles-gap: 16px;
+  margin-left: 0px;
+  margin-right: 0px;
+  gap: var(--tiles-gap);
+
+  &:is(.cols-2) {
+    div.gallery-component__col {
+      flex: 1 1 calc((100% / 2) - var(--tiles-gap) + (var(--tiles-gap) / 2));
+      max-width: calc((100% / 2) - var(--tiles-gap) + (var(--tiles-gap) / 2));
+    }
+  }
+
+  &:is(.cols-3) {
+    div.gallery-component__col {
+      flex: 1 1 calc((100% / 3) - var(--tiles-gap) + (var(--tiles-gap) / 3));
+      max-width: calc((100% / 3) - var(--tiles-gap) + (var(--tiles-gap) / 3));
+    }
+  }
+
+  &:is(.cols-4) {
+    div.gallery-component__col {
+      flex: 1 1 calc((100% / 4) - var(--tiles-gap) + (var(--tiles-gap) / 4));
+      max-width: calc((100% / 4) - var(--tiles-gap) + (var(--tiles-gap) / 4));
+    }
+  }
+
+  &:is(.cols-2),
+  &:is(.cols-3),
+  &:is(.cols-4) {
+    div.gallery-component__col {
+      @media (max-width: 768px) {
+        flex: 1 1 100%;
+        max-width: 100%;
+      }
+    }
+  }
+
+  div.gallery-component__col {
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px !important;
+    padding-left: 0px;
+    padding-right: 0px;
+    width: auto;
+  }
+}
+
+/* END */
+
+/* Start - Remove specified height */
+a.gallery-card {
+  height: auto;
+}
+
+/* END */

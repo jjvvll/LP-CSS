@@ -1,0 +1,50 @@
+/* START - Adjust the title font size on mobile */
+h2.lp-h2 {
+    @media (max-width: 768px) {
+        font-size: 28px;
+    }
+}
+
+/* END */
+
+/* START - Adjust button minimum size */
+a.lp-btn {
+    @media (min-width: 769px) {
+        min-width: 250px;
+    }
+}
+
+/* END */
+
+/* START - Add a quotation icon */
+div.boxed-text__description {
+    position: relative;
+
+    &:before,
+    &:after {
+        content: '';
+        display: block;
+        height: 50px;
+        width: 100px;
+        background: url(https://media-production.lp-cdn.com/media/a3cf7309-8c28-4c2b-b89f-6e021c859d4d);
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 0px;
+        opacity: 0.25;
+    }
+
+    &:before {
+        left: 0px;
+        transform: rotate(180deg);
+    }
+
+    &:after {
+        top: unset;
+        bottom: 0px;
+        right: 0px;
+    }
+}
+
+/* END */

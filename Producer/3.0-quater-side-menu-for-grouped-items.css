@@ -1,0 +1,60 @@
+/* START - Adjust the sidemenu layout */
+div#global-sidemenu {
+    div.sidebar {
+        padding-bottom: 40px;
+
+        button.close {
+            top: 16px;
+            right: 16px;
+        }
+    }
+}
+
+/* END */
+
+/* START - Add hover effect to the side menu links */
+div#global-sidemenu {
+    li.sidebar__nav-item {
+        a.sidebar__nav-link,
+        button.sidebar__nav-link,
+        a.sidebar__subnav-link {
+            opacity: 1;
+            text-transform: var(--text-case);
+            width: 100%;
+
+            &:hover{
+                color: var(--color-dark);
+
+                &:after {
+                    border-color: var(--color-dark);
+                }
+            }
+        }
+
+        a.sidebar__subnav-link {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        &:has(.visible) {
+            a.sidebar__nav-link {
+                color: var(--color-dark);
+
+                &:after {
+                    border-color: var(--color-dark);
+                }
+            }
+        }
+    }
+}
+
+/* END */
+
+/* START - Theme the sidemenu links border bottom */
+div#global-sidemenu {
+    li.sidebar__nav-item {
+        border-bottom: 1px solid transparent;
+    }
+}
+
+/* END */

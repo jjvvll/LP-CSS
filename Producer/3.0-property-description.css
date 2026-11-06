@@ -1,0 +1,26 @@
+/* START - Theme the border */
+div.property-description {
+    margin-bottom: unset;
+
+    &:after {
+        bottom: 48px;
+        border-color: var(--border-);
+    }
+
+    @media (max-width: 768px) {
+        &:after {
+            bottom: 32px;
+        }
+    }
+}
+
+/* END */
+
+
+/*modify padding */
+.property-description {
+    padding: 20px 20px!important;
+    padding-top: calc(4 / 4 * var(--global-section-padding)) !important;
+    padding-bottom: calc(4 / 4 * var(--global-section-padding)) !important;
+}
+/* END */

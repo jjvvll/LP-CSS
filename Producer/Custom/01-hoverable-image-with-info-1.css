@@ -1,0 +1,57 @@
+div.hoverable-section {
+    position: relative;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+
+    &:before,
+    &:after {
+        content: '';
+        display: block;
+        width: 1px;
+        background:  rgba(0, 0, 0, 0.1);
+        position: absolute;
+        height: 100%;
+        top: 0px;
+        z-index: 2;
+    }
+
+    &:before {
+        left: 50px;
+    }
+
+    &:after {
+        right: 50px;
+    }
+
+    @media (max-width: 768px) {
+        &:before {
+            left: 24px;
+        }
+
+        &:after {
+            right: 24px;
+        }
+    }
+
+    div.hoverable-image__text-col {
+        div.lp-container {
+            @media (max-width: 768px) {
+                padding-left: 50px;
+                padding-right: 50px;
+            }
+
+            div.hoverable-image__text-wrap {
+                & > h2 {
+                    border-top: 1px solid rgba(0, 0, 0, 0.1);
+                    margin-bottom: 8px;
+                    padding-top: 32px;
+
+                    @media (max-width: 768px) {
+                        padding-top: unset;
+                        border-top: unset;
+                        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+                    }
+                }
+            }
+        }
+    }
+}

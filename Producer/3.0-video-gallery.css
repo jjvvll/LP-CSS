@@ -1,0 +1,110 @@
+/* START - Adjust the header margins */
+div.video-gallery__header {
+    margin-bottom: 0px;
+    max-width: 1000px;
+
+    h2.video-gallery__heading {
+        margin-bottom: 0px;
+    }
+
+    div.video-gallery__lead {
+        max-width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/* END */
+
+/*START -  video gallery padding */
+.video-card h6 {
+    letter-spacing: 1px !important;
+}
+
+@media (max-width: 768px) {
+
+    .paginationjs .paginationjs-pages li:first-child,
+    .paginationjs .paginationjs-pages li:first-child>a {
+        border-radius: 0 0 0 0 !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .paginationjs .paginationjs-pages li:last-child>a {
+        border-radius: 0 0 0 0 !important;
+    }
+}
+
+/* END */
+
+/* START - Theme the video gallery play button */
+span.lp-play {
+    border-color: var(--accent-dark);
+
+    &:before {
+        background: var(--accent-dark);
+    }
+
+    &:after {
+        border-color: transparent transparent transparent var(--accent-light);
+    }
+}
+
+/* END */
+
+/* Start - Fix dimensions */
+.slick-list {
+    height: auto !important;
+
+    .slick-slide {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        row-gap: 50px;
+
+        & > div {
+            margin-bottom: 0px !important;
+            flex-wrap: wrap;
+            width: 100%;
+
+            @media only screen and (max-width: 768px) {
+                &:first-child {
+                    .video-gallery__slide {
+                        padding-top: 0px;
+                    }
+                }
+
+                &:last-child {
+                    .video-gallery__slide {
+                        padding-bottom: 0px;
+                    }
+                }
+            }
+        }
+
+        & > div:empty {
+            display: none !important;
+        }
+
+        @media only screen and (max-width: 768px) {
+            row-gap: 0px;
+            flex-direction: column;
+        }
+    }
+}
+
+/* End */
+
+/* Start - Fix preview dimensions */
+.video-gallery__slide {
+    .video-card__preview {
+        aspect-ratio: 16/9;
+        height: auto;
+    }
+
+    @media only screen and (max-width: 768px) {
+        width: 100% !important;
+    }
+}
+
+/* End */

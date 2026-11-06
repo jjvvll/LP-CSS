@@ -1,0 +1,14 @@
+/*START - WWU line color*/
+.title:before,
+.title:after {
+    background-color: #D9C489 !important;
+}
+
+/*END*/
+
+/*START Line Width*/
+div.wrapper {
+    max-width: 464px;
+}
+
+/*END*/

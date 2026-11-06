@@ -1,0 +1,181 @@
+/* START - Make the header navigation sticky */
+nav#global-navbar {
+    header.header--hide {
+        top: unset !important;
+    }
+}
+
+/* END */
+
+/* START RR# - Center navigation links */
+ul.header-navigation {
+    @media (min-width: 1025px) {
+        max-width: fit-content;
+        position: absolute;
+        left: 0px;
+        right: 0px;
+        margin: auto;
+    }
+}
+
+/* END */
+
+/* START RR# - Make the header navigation sticky */
+nav#global-navbar {
+    header.header {
+        transform: unset !important;
+        top: 0px !important;
+    }
+}
+
+/* END */
+
+/* START RR# - Add rounded corners to the header submenu */
+ul.header-navigation__sub-nav {
+    border-radius: 16px;
+}
+
+/* END */
+
+/* START - Add underline hover effect to header navigation links */
+li.header-navigation__item {
+    a.header-navigation__link {
+        text-decoration: underline;
+        text-underline-offset: 4px;
+        text-decoration-color: rgba(255, 255, 255, 0.25);
+
+        &:before {
+            display: none;
+        }
+
+        &:hover {
+            opacity: 1;
+            text-decoration-color: rgba(255, 255, 255, 1);
+        }
+    }
+}
+
+.page-property-details {
+    .header:not(.scroll) {
+        li.header-navigation__item {
+            a.header-navigation__link {
+                text-decoration: underline;
+                text-underline-offset: 4px;
+                text-decoration-color: rgba(0, 0, 0, 0.1);
+
+                &:before {
+                    display: none;
+                }
+
+                &:hover {
+                    opacity: 1;
+                    text-decoration-color: rgba(0, 0, 0, 1);
+                }
+            }
+        }
+    }
+}
+
+/* END */
+
+/* START - Prevent header navigation from hiding on scroll */
+.header {
+    transform: unset !important;
+    top: 0px !important;
+}
+
+/* END */
+
+/* START - Adjust the header navigation links to the right */
+.header-navigation {
+    justify-content: end;
+}
+
+.header-buttons-wrapper {
+    @media (min-width: 1025px) {
+        margin-left: 32px;
+    }
+}
+
+.header-navigation__sub-nav {
+    left: unset;
+    right: 0px;
+}
+
+/* END */
+
+/* START - Adjust the header navigation logo size */
+.header-logo {
+    height: unset;
+    max-width: 92px;
+
+    @media (max-width: 768px) {
+        max-width: 80px;
+    }
+}
+
+/* END */
+
+/* START - Adjust header navigation search paddings */
+.header-search {
+    padding: 31px;
+}
+
+/* END */
+
+/* START - Hide the header navigation contact button */
+.header-contact-btn {
+    display: none;
+}
+
+/* END */
+
+/* START - Adjust the navigation links position */
+.header-navigation {
+    justify-content: end;
+}
+
+.header-buttons-wrapper {
+    margin-left: 32px;
+}
+
+/* END */
+
+/* START - Replace header navigation contact button text to phone number */
+.header-contact-btn {
+    font-size: 0px;
+    gap: 0px;
+
+    &:before {
+        font-size: 12px;
+        content: '(901) 246-8782';
+    }
+}
+
+/* END */
+
+/* START - Turn the hamburger icon into text */
+.header-hamburger-btn {
+    width: auto;
+    border-radius: 500px;
+}
+
+.header-hamburger-btn:hover:empty:before {
+    color: #002A4E;
+}
+
+.header-hamburger-btn:empty:before {
+    content: 'Menu';
+    width: auto;
+    height: auto;
+    background-color: transparent !important;
+    line-height: 1;
+    color: #FFF;
+    padding: 12px 20px;
+}
+
+.header-hamburger-btn:empty:after {
+    display: none;
+}
+
+/* END */

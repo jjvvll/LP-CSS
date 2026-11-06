@@ -1,0 +1,320 @@
+/* ----- HEADER NAVIGATION ----- */
+/* START - Adjust the header navigation layout */
+.header-container {
+  @media (max-width: 768px) {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+.header-logo {
+  margin-right: 64px;
+
+  @media (min-width: 1025px) and (max-width: 1440px) {
+    margin-right: 32px;
+  }
+}
+
+.header-navigation {
+  @media (min-width: 1025px) and (max-width: 1440px) {
+    gap: 18px;
+  }
+
+  &__link {
+    white-space: nowrap;
+  }
+
+  &__link,
+  &__sub-nav-link {
+    @media (min-width: 1025px) and (max-width: 1440px) {
+      font-size: 12px;
+    }
+  }
+}
+
+/* END */
+
+/* START - Adjust the header displayed logo */
+.header {
+  &:not(.scroll) {
+    .header-logo__img--dark {
+      display: none !important;
+    }
+
+    .header-logo__img--light {
+      display: block !important;
+    }
+  }
+
+  &:is(.scroll),
+  &:has(.header-search[style="display: block;"]) {
+    .header-logo__img--dark {
+      display: none !important;
+    }
+
+    .header-logo__img--light {
+      display: block !important;
+    }
+  }
+}
+
+/* END */
+
+/* START - Theme header default */
+.header:not(.scroll) {
+  background: transparent !important;
+
+  /* START - Theme the header navigation links */
+  .header-navigation__link {
+    color: var(--typography-light);
+
+    &:before,
+    &:after {
+      background-color: var(--typography-light);
+    }
+  }
+
+  /* END */
+
+  /* START - Theme the header buttons */
+  .header-contact-btn,
+  .header-search-btn,
+  .header-hamburger-btn {
+    color: var(--accent-dark);
+    border-color: var(--accent-light);
+    background: var(--accent-light);
+
+    &:after,
+    &:empty:before,
+    &:empty:after {
+      background-color: var(--accent-dark);
+    }
+
+    &:hover:not(:disabled) {
+      color: var(--accent-light);
+      border-color: var(--accent-light);
+      background: transparent;
+
+      &:before,
+      &:after {
+        background-color: var(--accent-light);
+      }
+    }
+  }
+
+  /* END */
+}
+
+/* END */
+
+/* START - Theme header default on property details */
+/* NOTE: Add page-property-details class on the property details page settings */
+.page-property-details {
+  .header:not(.scroll) {
+    /* START - Adjust the header displayed logo */
+    .header-logo__img--dark {
+      display: block !important;
+    }
+
+    .header-logo__img--light {
+      display: none !important;
+    }
+
+    /* END */
+
+    /* START - Theme the header navigation links */
+    .header-navigation__link {
+      color: var(--typography-dark);
+
+      &:before,
+      &:after {
+        background-color: var(--typography-dark);
+      }
+
+      &:hover {
+        color: var(--accent-dark);
+
+        &:before,
+        &:after {
+          background-color: var(--accent-dark);
+        }
+      }
+    }
+
+    /* END */
+
+    /* START - Theme the header buttons */
+    .header-contact-btn,
+    .header-search-btn,
+    .header-hamburger-btn {
+      color: var(--accent-light);
+      border-color: var(--accent-dark);
+      background: var(--accent-dark);
+
+      &:after,
+      &:empty:before,
+      &:empty:after {
+        background-color: var(--accent-light);
+      }
+
+      &:hover:not(:disabled) {
+        color: var(--accent-dark);
+        border-color: var(--accent-dark);
+        background: transparent;
+
+        &:before,
+        &:after {
+          background-color: var(--accent-dark);
+        }
+      }
+    }
+
+    /* END */
+  }
+}
+
+/* END */
+
+/* START - Theme header on scroll */
+.header:is(.scroll),
+.header:has(.header-search[style="display: block;"]) {
+  background: var(--accent-dark) !important;
+
+  /* START - Theme the header navigation links */
+  .header-navigation__link {
+    color: var(--typography-light);
+
+    &:before,
+    &:after {
+      background-color: var(--typography-light);
+    }
+
+    &:hover {
+      color: var(--accent-light);
+
+      &:before,
+      &:after {
+        background-color: var(--accent-light);
+      }
+    }
+  }
+
+  /* END */
+
+  /* START - Theme the header buttons */
+  .header-contact-btn,
+  .header-search-btn,
+  .header-hamburger-btn {
+    color: var(--accent-dark);
+    border-color: var(--accent-light);
+    background: var(--accent-light);
+
+    &:after,
+    &:empty:before,
+    &:empty:after {
+      background-color: var(--accent-dark);
+    }
+
+    &:hover:not(:disabled) {
+      color: var(--accent-light);
+      border-color: var(--accent-light);
+      background: transparent;
+
+      &:before,
+      &:after {
+        background-color: var(--accent-light);
+      }
+    }
+  }
+
+  /* END */
+}
+
+/* END */
+
+/* START - Theme the header dropdown menu */
+.header-navigation {
+  &__sub-nav {
+    padding: 0px;
+    background: var(--accent-light);
+  }
+
+  &__sub-nav-link {
+    padding: 12px 16px;
+    background: var(--primary-light);
+    color: var(--typography-dark);
+    font-weight: 400;
+
+    &:hover {
+      background: var(--accent-dark);
+      color: var(--accent-light);
+      opacity: 1;
+      font-weight: 400;
+      cursor: pointer;
+    }
+  }
+}
+
+/* END */
+
+/* START - Theme header navigation search */
+.header-search,
+.header-search-results-holder {
+  background: var(--accent-dark);
+}
+
+.header-search {
+  &__title {
+    color: var(--typography-light);
+  }
+
+  &__input,
+  &__input:not(:placeholder-shown),
+  &__input:hover,
+  &__input:focus {
+    background: var(--background-light-inactive);
+    color: var(--typography-light);
+    border: 1px solid transparent;
+    transition: 0.4s;
+
+    &::placeholder {
+      color: var(--typography-light);
+      opacity: 0.25;
+    }
+
+    &:-webkit-autofill,
+    &:-webkit-autofill:focus,
+    &:-webkit-autofill:hover {
+      color: var(--typography-light);
+    }
+  }
+
+  &__btn:after {
+    background: var(--accent-light);
+    cursor: pointer;
+  }
+}
+
+.header-search-results {
+  &__title {
+    color: var(--typography-light);
+  }
+
+  &__link {
+    color: var(--typography-light);
+    transition: 0.4s;
+
+    &:hover {
+      --lp-color-primary-accent: var(--accent-light);
+      opacity: 0.5;
+    }
+  }
+
+  &__block + &__block {
+    border-top: 1px solid var(--border-light-inactive);
+  }
+}
+
+/* END */
+
+/* ----- HEADER NAVIGATION ----- */

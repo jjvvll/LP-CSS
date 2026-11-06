@@ -1,0 +1,251 @@
+/* START - Global variable theme */
+:root {
+    --primary-dark: #000000;
+    --color-light: #FFFFFF;
+    --color-dark: #000000;
+    --color-light: #FFFFFF;
+    --background-dark-inactive: rgba(0, 0, 0, 0.05);
+    --background-light-inactive: rgba(255, 255, 255, 0.1);
+    --color-dark: rgba(0, 0, 0, 0.125);
+    --border-dark-active: rgba(0, 0, 0, 0.75);
+    --border-light-inactive: rgba(255, 255, 255, 0.125);
+    --border-light-active: rgba(255, 255, 255, 0.75);
+    --color-dark: #000000;
+    --typography-light: #FFFFFF;
+    --text-case: uppercase;
+    --global-h4-font-size: 28px;
+    --global-h5-font-size: 24px;
+    --global-h6-font-size: 20px;
+}
+
+/* END */
+
+/* ----- GLOBAL STYLES ----- */
+/* START - Uppercase title and navigation links */
+[class*="__title"],
+[class$="-title"],
+[class*="__link"],
+[class*="__sub-nav-link"] {
+    text-transform: var(--text-case);
+}
+
+[class*="__description"],
+[class*="__subtitle"] {
+    text-transform: none;
+}
+
+/* END */
+
+/* START - Fix pagination number arrows on hover globally */
+/* Note: Pagination of element with numbers */
+li[class^="paginationjs"] {
+    a:hover {
+        &:after {
+            --lp-color-primary-2: currentColor;
+        }
+    }
+}
+
+/* END */
+
+/* START - Fix theme input boxes globally */
+/* Note 2: This can also be inserted per element or per media queries */
+.lp-input,
+.lp-input:not(:placeholder-shown),
+.lp-input:hover,
+.lp-input:focus {
+    background: rgba(0, 0, 0, 0.15);
+    color: var(--color-dark);
+    border: 1px solid transparent;
+
+    &::placeholder {
+        color: var(--color-dark);
+        opacity: 0.25;
+    }
+
+    &:-webkit-autofill,
+    &:-webkit-autofill:focus,
+    &:-webkit-autofill:hover {
+        color: var(--color-dark);
+    }
+}
+
+.lp-input-icon:after {
+    --iconColor: var(--color-dark);
+    cursor: pointer;
+}
+
+.lp-combo-input__wrapper:last-child:before {
+    --lp-color-primary-accent: var(--color-dark);
+}
+
+/* END */
+
+/* START - Theme dropdown menu toggle */
+.custom-select {
+    .custom-select-toggle {
+        &:is(.is-placeholder) {
+            color: var(--color-dark);
+            opacity: 0.5;
+        }
+
+        &:not(:placeholder-shown) {
+            color: var(--color-dark);
+            border-color: transparent;
+            background: var(--color-inactive);
+        }
+
+        &:not(:placeholder-shown):after {
+            background-color: var(--color-dark);
+        }
+    }
+}
+
+/* END */
+
+/* START - Theme dropdown menu option box */
+.custom-select-menu {
+    &::-webkit-scrollbar-track {
+        background: #f4f4f4 !important;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: var(--color-dark) !important;
+    }
+
+    &::-webkit-scrollbar-thumb:hover {
+        background: var(--color-dark) !important;
+    }
+}
+
+.custom-select-menu {
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.025);
+
+    &:is(.open) {
+        --lp-color-secondary-gray-700: var(--color-dark);
+    }
+
+    &:not(.open) {
+        opacity: 0;
+    }
+
+    .custom-select-content {
+        background: var(--color-light);
+        color: var(--color-dark);
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+    }
+}
+
+/* END */
+
+/* START - Theme dropdown menu option when hovered, clicked, and selected */
+.custom-select {
+    .custom-select-item {
+
+        &:hover,
+        &:focus,
+        &:active {
+            color: var(--typography-light);
+            background: var(--color-dark);
+        }
+
+        &:is(.is-selected) {
+            /* Specific variable selector for selected dropdown item */
+            --lp-color-primary-accent: var(--color-dark);
+        }
+    }
+}
+
+/* END */
+
+/* START - Theme the elements detailed gallery popup view */
+div.lp-lightbox {
+    .lp-lightbox__close {
+        border-color: var(--color-light);
+        background: var(--color-light);
+        color: var(--color-dark);
+
+        &:hover:not(:disabled):after {
+            color: var(--color-light);
+        }
+
+        &:hover {
+            border-color: var(--color-light);
+            background: transparent;
+            color: var(--color-light);
+        }
+    }
+
+    .slick-arrow {
+        border-color: var(--color-light);
+        background: var(--color-light);
+
+        &:before {
+            border-color: var(--color-dark);
+        }
+
+        &:hover:not(:disabled) {
+            border-color: var(--color-light);
+            background: transparent;
+
+            &:before {
+                border-color: var(--color-light);
+            }
+        }
+    }
+}
+
+/* END */
+
+/* START - Theme the map marker icon */
+.map-marker {
+    svg {
+        rect {
+
+            /* Circle - Outer */
+            &:nth-child(1) {
+                fill: var(--color-dark);
+            }
+
+            /* Circle - Inner */
+            &:nth-child(2) {
+                stroke: var(--color-light);
+            }
+        }
+
+        path {
+
+            /* Pin Icon - Outer */
+            &:nth-child(3) {
+                stroke: var(--color-light);
+            }
+
+            /* Pin Icon - Inner */
+            &:nth-child(4) {
+                stroke: var(--color-light);
+            }
+        }
+    }
+}
+
+/* END */
+
+/* START - Remove unnecessary spacings on social icons */
+.lp-socials {
+    &>* {
+        margin-bottom: unset;
+    }
+}
+
+/* END */
+
+/* ----- GLOBAL STYLES ----- */
+
+/* ----- GLOBAL ELEMENTS FIXES ----- */
+
+
+
+/* ----- GLOBAL ELEMENTS FIXES ----- */
